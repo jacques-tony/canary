@@ -27,25 +27,25 @@ maintainModeMessage = ""
 -- NOTE: refundManaOnBeginningWeapons: wand of vortex and snakebite refund mana used (allows training for mages)
 worldType = "pvp"
 hotkeyAimbotEnabled = true
-protectionLevel = 7
+protectionLevel = 250
 pzLocked = 60 * 1000
-removeChargesFromRunes = true
+removeChargesFromRunes = false
 removeChargesFromPotions = true
-removeWeaponAmmunition = true
-removeWeaponCharges = true
-removeBeginningWeaponAmmunition = true
+removeWeaponAmmunition = false
+removeWeaponCharges = false
+removeBeginningWeaponAmmunition = false
 refundBeginningWeaponMana = false
-timeToDecreaseFrags = 24 * 60 * 60 * 1000
-whiteSkullTime = 15 * 60 * 1000
-stairJumpExhaustion = 2 * 1000
+timeToDecreaseFrags = 1 * 60 * 1000
+whiteSkullTime = 5 * 60 * 1000
+stairJumpExhaustion = 0
 experienceByKillingPlayers = false
 expFromPlayersLevelRange = 75
-dayKillsToRedSkull = 3
-weekKillsToRedSkull = 5
-monthKillsToRedSkull = 10
-redSkullDuration = 1
-blackSkullDuration = 3
-orangeSkullDuration = 7
+dayKillsToRedSkull = 30
+weekKillsToRedSkull = 90
+monthKillsToRedSkull = 200
+redSkullDuration = 3
+blackSkullDuration = 5
+orangeSkullDuration = 1
 
 cleanProtectionZones = false
 
@@ -53,15 +53,16 @@ cleanProtectionZones = false
 -- NOTE: allowOldProtocol can allow login on 10x protocol. (11.00)
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25
-ip = "127.0.0.1"
+ip = "144.217.201.226"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-serverName = "OTServBR-Global"
-serverMotd = "Welcome to the OTServBR-Global!"
+serverName = "PhoenixOT"
+serverMotd = "Welcome to the PhoenixOT!"
+onePlayerOnlinePerAccount = false
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -134,8 +135,8 @@ forgeFiendishIntervalTime = "1"
 -- Bestiary & Bosstiary system
 -- NOTE: bestiaryKillMultiplier, multiplier value of monster killed, default 1
 -- NOTE: bosstiaryKillMultiplier, multiplier value of boss killed, default 1
-bestiaryKillMultiplier = 1
-bosstiaryKillMultiplier = 1
+bestiaryKillMultiplier = 2
+bosstiaryKillMultiplier = 2
 bestiaryRateCharmShopPrice  = 1.0
 boostedBossSlot = true
 boostedBossLootBonus = 250
@@ -158,7 +159,7 @@ hazardPodsDamage = 5
 hazardSpawnPlunderMultiplier = 25
 
 -- Loyalty system
-loyaltyEnabled = true
+loyaltyEnabled = false
 loyaltyPointsPerCreationDay = 1
 loyaltyPointsPerPremiumDaySpent = 0
 loyaltyPointsPerPremiumDayPurchased = 0
@@ -215,15 +216,15 @@ thunderEffect = false
 allConsoleLog = false
 stashMoving = false
 depotChest = 4
-autoLoot = false
-autoBank = false
-toggleGoldPouchAllowAnything = false
-toggleGoldPouchQuickLootOnly = false
-toggleServerIsRetroPVP = false
+autoLoot = true
+autoBank = true
+toggleGoldPouchAllowAnything = true
+toggleGoldPouchQuickLootOnly = true
+toggleServerIsRetroPVP = true
 toggleTravelsFree = false
 buyAolCommandFee = 0
 buyBlessCommandFee = 0
-teleportPlayerToVocationRoom = true
+teleportPlayerToVocationRoom = false
 toggleReceiveReward = false
 randomMonsterSpawn = false
 
@@ -234,19 +235,19 @@ teleportSummons = false
 -- NOTE: true will allow the /reload command to be used
 -- NOTE: Using this script might cause unwanted changes
 -- This script forces a reload in the entire server, this means that everything that is stored in memory might stop to work properly and/or completely, this script should be used in test environments only
-allowReload = false
+allowReload = true
 
 -- Stamina in Trainers
-staminaTrainer = false
+staminaTrainer = true
 staminaTrainerDelay = 5
 staminaTrainerGain = 1
 -- Stamina in PZ
-staminaPz = false
+staminaPz = true
 staminaOrangeDelay = 1
 staminaGreenDelay = 5
 staminaPzGain = 1
 -- Max players allowed on a dummy.
-maxAllowedOnADummy = 1
+maxAllowedOnADummy = 15
 
 -- Save interval per time
 -- NOTE: toggleSaveInterval: true = enable the save interval, false = disable the save interval
@@ -291,7 +292,7 @@ housePriceEachSQM = 1000
 houseRentPeriod = "never"
 houseRentRate = 1.0
 houseOwnedByAccount = false
-houseBuyLevel = 100
+houseBuyLevel = 250
 housePurchasedShowPrice = false
 houseLoseAfterInactivity = 30 -- days; 0 = never
 onlyInvitedCanMoveHouseItems = true
@@ -307,7 +308,7 @@ timeBetweenExActions = 1000
 -- NOTE: pushWhenAttacking: true = enable the push during attack, false = disable the push during attack
 pushDelay = 1000
 pushDistanceDelay = 1500
-pushWhenAttacking = false
+pushWhenAttacking = true
 
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
@@ -315,8 +316,8 @@ pushWhenAttacking = false
 -- NOTE: If a map with the name already exists in the world folder, the map will not be downloaded even if the toggleDownloadMap is true
 toggleDownloadMap = true
 mapName = "otservbr"
-mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.0.0/otservbr.otbm"
-mapAuthor = "OpenTibiaBR"
+mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v1.5.0/otservbr.otbm"
+mapAuthor = "Tony"
 
 -- Party List limitations
 -- max distance in which players in party list are visible
@@ -335,9 +336,9 @@ maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "root"
-mysqlPass = "root"
-mysqlDatabase = "otservbr-global"
+mysqlUser = "fenix"
+mysqlPass = "exbdfadz@891"
+mysqlDatabase = "fenix"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
@@ -369,7 +370,7 @@ maxMessageBuffer = 4
 emoteSpells = false
 allowWalkthrough = true
 coinPacketSize = 25
-coinImagesURL = "http://127.0.0.1/images/store/"
+coinImagesURL = "https://phoenixot.com.br/images/store/"
 classicAttackSpeed = false
 showScriptsLogInConsole = false
 -- configure maximum value of critical imbuement
@@ -381,7 +382,7 @@ experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
 -- multiplierSpeedOnFist * 5  (multiplies the value obtained from the player fist skill and multiplies it * 5) max 25 is recommended due minTicks limits else player stop attack
 -- maxSpeedOnFist 500 miliseconds  (The maximum attack speed that can be obtained no matter how high the player has the Fist Fighting skill.)
-toggleAttackSpeedOnFist = false
+toggleAttackSpeedOnFist = true
 multiplierSpeedOnFist = 5
 maxSpeedOnFist = 500
 disableLegacyRaids = false
@@ -396,7 +397,7 @@ maxDamageReflection = 200
 globalServerSaveNotifyMessage = true
 globalServerSaveNotifyDuration = 5
 globalServerSaveCleanMap = false
-globalServerSaveClose = false
+globalServerSaveClose = true
 globalServerSaveShutdown = true
 globalServerSaveTime = "06:00:00"
 
@@ -405,17 +406,17 @@ globalServerSaveTime = "06:00:00"
 -- rateLoot to avoid losing all rare items when
 -- the corpse size is less than the total of loots
 -- the monster can drop
-sortLootByChance = false
+sortLootByChance = true
 
 -- Rates
 -- NOTE: rateExp, rateSkill and rateMagic is used when 'rateUseStages = false' - or a fallback only
 -- To configure rates see file data/stages.lua
 -- lowLevelBonusExp works up to level 50
-rateUseStages = false
+rateUseStages = true
 lowLevelBonusExp = 50
 rateExp = 1
 rateSkill = 1
-rateLoot = 1
+rateLoot = 2
 rateMagic = 1
 rateSpawn = 1
 
@@ -467,9 +468,9 @@ defaultPriority = "high"
 startupDatabaseOptimization = true
 
 -- Status server information
-ownerName = "OpenTibiaBR"
-ownerEmail = "opentibiabr@outlook.com"
-url = "http://docs.opentibiabr.com/"
+ownerName = "Marllon"
+ownerEmail = ""
+url = "https://phoenixot.com.br/"
 location = "South America"
 
 -- Sends Discord webhook notifications on startup, raids and shutdown.
@@ -491,7 +492,7 @@ discordSendFooter = true
 -- 		If you use 'vipFamiliarTimeCooldownReduction' greater than half of 'familiarTime', it will get the highest possible value, in this case 15
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
-vipSystemEnabled = false
+vipSystemEnabled = true
 vipBonusExp = 0
 vipBonusLoot = 0
 vipBonusSkill = 0
