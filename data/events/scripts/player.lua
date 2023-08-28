@@ -210,6 +210,15 @@ function Player:onLookInBattleList(creature, distance)
 				It will disappear in " .. getTimeInWords(master:getStorageValue(Global.Storage.FamiliarSummon) - os.time())
 		end
 	end
+
+	if creature:isPlayer() then
+		description = string.format("%s\nResets: %d", description, creature:getResets())
+ 	end
+
+	 if thing:isPlayer() then
+		description = string.format("%s\nResets: %d", description, thing:getResets())
+ 	end
+
 	if self:getGroup():getAccess() then
 		local str = "%s\nHealth: %d / %d"
 		if creature:isPlayer() and creature:getMaxMana() > 0 then
@@ -563,6 +572,11 @@ function Player:onGainExperience(target, exp, rawExp)
 	local lowLevelBonuxExp = self:getFinalLowLevelBonus()
 	local baseRate = self:getFinalBaseRateExperience()
 
+	if self:getLevel() >= self:getResetLevel() then
+		exp = 0
+		self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "Voc� n�o ganhar� mais experi�ncia a partir de agora, voc� atingiu o level m�ximo, por favor reset seu personagem.")
+	end
+	
 	return (exp + (exp * (storeXpBoostAmount / 100) + (exp * (lowLevelBonuxExp / 100)))) * staminaBonusXp * baseRate
 end
 

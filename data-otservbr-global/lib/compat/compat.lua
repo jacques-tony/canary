@@ -1550,8 +1550,17 @@ function doTileAddItemEx(pos, uid, flags)
 	return false
 end
 
-function isInArray(array, value)
-	return table.contains(array, value)
+-- sistema de reset
+function getTilePzInfo(position)
+    local t = Tile(position)
+    if not t then
+        return false
+    end
+    return t:hasFlag(TILESTATE_PROTECTIONZONE)
+end
+
+function isInArray(array, value) 
+	return table.contains(array, value) 
 end
 
 function doCreateItem(itemid, count, pos)
