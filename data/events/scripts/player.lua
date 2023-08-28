@@ -216,10 +216,6 @@ function Player:onLookInBattleList(creature, distance)
 		description = string.format("%s\nResets: %d", description, creature:getResets())
  	end
 
-	 if thing:isPlayer() then
-		description = string.format("%s\nResets: %d", description, thing:getResets())
- 	end
-
 	if self:getGroup():getAccess() then
 		local str = "%s\nHealth: %d / %d"
 		if creature:isPlayer() and creature:getMaxMana() > 0 then
