@@ -1,4 +1,4 @@
-local resetSys = TalkAction("!reset")
+local reset = TalkAction("!reset")
 
 local config = {
     backToLevel = 8,
@@ -29,7 +29,7 @@ local config = {
     }
 }
 
-function resetSys.onSay(player, words, param)
+function reset.onSay(player, words, param)
     local function getExperienceForLevel(lv)
         lv = lv - 1
         return ((50 * lv * lv * lv) - (150 * lv * lv) + (400 * lv)) / 3
@@ -79,4 +79,5 @@ function resetSys.onSay(player, words, param)
     return false
 end
 
-resetSys:register() 
+reset:groupType("normal")
+reset:register() 
