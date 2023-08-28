@@ -311,9 +311,9 @@ pushWhenAttacking = true
 -- NOTE: set mapName WITHOUT .otbm at the end
 -- NOTE: If toggleDownloadMap if false, then the mapDownloadUrl will not be used
 -- NOTE: If a map with the name already exists in the world folder, the map will not be downloaded even if the toggleDownloadMap is true
-toggleDownloadMap = true
-mapName = "otservbr"
-mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v1.5.0/otservbr.otbm"
+toggleDownloadMap = false
+mapName = "phoenix"
+mapDownloadUrl = ""
 mapAuthor = "Tony"
 
 -- Party List limitations
