@@ -258,7 +258,7 @@ saveIntervalTime = 1
 
 -- Imbuement
 toggleImbuementShrineStorage = false
-toggleImbuementNonAggressiveFightOnly = false
+toggleImbuementNonAggressiveFightOnly = true
 
 -- Free quests
 -- Add quest access to player when logging in
