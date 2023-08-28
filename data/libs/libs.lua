@@ -33,3 +33,6 @@ dofile(CORE_DIRECTORY .. "/libs/encounters_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/raids_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/concoctions_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/kill_lib.lua")
+
+-- Custom 
+dofile(CORE_DIRECTORY .. "/libs/custom/reset_system.lua")
