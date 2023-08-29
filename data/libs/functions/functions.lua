@@ -902,6 +902,20 @@ function kickPlayersAfterTime(players, fromPos, toPos, exit)
 	end
 end
 
+	-- função adicionada para funciona o sistema de crafting 
+function capAll(str)
+    local newStr = ""; wordSeparate = string.gmatch(str, "([^%s]+)")
+    for v in wordSeparate do
+        v = v:gsub("^%l", string.upper)
+        if newStr ~= "" then
+            newStr = newStr.." "..v
+        else
+            newStr = v
+        end
+    end
+    return newStr 
+end	
+
 function Player:doCheckBossRoom(bossName, fromPos, toPos)
 	if self then
 		for x = fromPos.x, toPos.x do
