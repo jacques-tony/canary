@@ -17,3 +17,4 @@ dofile(CORE_DIRECTORY .. "/libs/tables/load.lua")
 
 -- Custom 
 dofile(CORE_DIRECTORY .. "/libs/custom/reset_system.lua")
+dofile(CORE_DIRECTORY .. "/libs/custom/simple_crafting_system.lua")
