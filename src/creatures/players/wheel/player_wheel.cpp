@@ -914,8 +914,9 @@ bool PlayerWheel::saveDBPlayerSlotPointsOnLogout() const {
 }
 
 uint16_t PlayerWheel::getExtraPoints() const {
-	if (m_player.getLevel() < 51) {
-		g_logger().error("Character level must be above 50.");
+	auto resets = m_player.getStorageValue(500);
+	if (resets == -1 || resets < 1) {
+		g_logger().error("Character resets must be above 1.");
 		return 0;
 	}
 
@@ -931,9 +932,10 @@ uint16_t PlayerWheel::getExtraPoints() const {
 }
 
 uint16_t PlayerWheel::getWheelPoints(bool includeExtraPoints /* = true*/) const {
-	uint32_t level = m_player.getLevel();
-	auto totalPoints = std::max(0u, (level - m_minLevelToStartCountPoints)) * m_pointsPerLevel;
-
+	auto resets = m_player.getStorageValue(500);
+	auto diff = static_cast<unsigned int>(resets == -1 ? 0 : resets) - m_minResetsToStartCountPoints;
+	auto totalPoints = std::max(0u, diff) * m_pointsPerResets;
+	
 	if (includeExtraPoints) {
 		const auto extraPoints = getExtraPoints();
 		totalPoints += extraPoints;
@@ -949,7 +951,8 @@ bool PlayerWheel::canOpenWheel() const {
 	}
 
 	// Level check, This is hardcoded on the client, cannot be changed
-	if (m_player.getLevel() <= 50) {
+	auto resets = m_player.getStorageValue(500);
+	if (resets == -1 || resets < 1) {
 		return false;
 	}
 
