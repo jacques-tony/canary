@@ -324,7 +324,7 @@ bool ConfigManager::load() {
 	loadFloatConfig(L, LOYALTY_BONUS_PERCENTAGE_MULTIPLIER, "loyaltyBonusPercentageMultiplier", 1.0);
 
 	loadBoolConfig(L, TOGGLE_WHEELSYSTEM, "wheelSystemEnabled", true);
-	loadIntConfig(L, WHEEL_POINTS_PER_LEVEL, "wheelPointsPerLevel", 1);
+	loadIntConfig(L, WHEEL_POINTS_PER_RESETS, "wheelPointsPerResets", 1);
 
 	loadBoolConfig(L, PARTY_AUTO_SHARE_EXPERIENCE, "partyAutoShareExperience", true);
 	loadBoolConfig(L, PARTY_SHARE_LOOT_BOOSTS, "partyShareLootBoosts", true);
