@@ -196,7 +196,7 @@ pvpMaxLevelDifference = 0
 -- NOTE: set wheelSystemEnabled = false to disable the wheel of destiny
 -- NOTE: only the wheel points are modified, all other data is on the client executable and cannot be modified
 wheelSystemEnabled = true
-wheelPointsPerLevel = 1
+wheelPointsPerResets = 42
 
 -- Gem Atelier
 wheelAtelierRotateLesserCost = 125000
