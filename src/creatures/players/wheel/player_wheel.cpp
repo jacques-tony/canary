@@ -145,8 +145,8 @@ namespace {
 
 PlayerWheel::PlayerWheel(Player &initPlayer) :
 	m_player(initPlayer) {
-	auto pointsPerLevel = (uint16_t)g_configManager().getNumber(WHEEL_POINTS_PER_LEVEL, __FUNCTION__);
-	m_pointsPerLevel = pointsPerLevel > 0 ? pointsPerLevel : 1;
+	auto pointsPerResets = (uint16_t)g_configManager().getNumber(WHEEL_POINTS_PER_RESETS, __FUNCTION__);
+	m_pointsPerResets = pointsPerResets > 0 ? pointsPerResets : 1;
 }
 
 bool PlayerWheel::canPlayerSelectPointOnSlot(WheelSlots_t slot, bool recursive) const {
@@ -1232,8 +1232,9 @@ bool PlayerWheel::saveDBPlayerSlotPointsOnLogout() const {
 }
 
 uint16_t PlayerWheel::getExtraPoints() const {
-	if (m_player.getLevel() < 51) {
-		g_logger().error("Character level must be above 50.");
+	auto resets = m_player.getStorageValue(500);
+	if (resets == -1 || resets < 1) {
+		g_logger().error("Character resets must be above 1.");
 		return 0;
 	}
 
@@ -1249,9 +1250,10 @@ uint16_t PlayerWheel::getExtraPoints() const {
 }
 
 uint16_t PlayerWheel::getWheelPoints(bool includeExtraPoints /* = true*/) const {
-	uint32_t level = m_player.getLevel();
-	auto totalPoints = std::max(0u, (level - m_minLevelToStartCountPoints)) * m_pointsPerLevel;
-
+	auto resets = m_player.getStorageValue(500);
+	auto diff = static_cast<unsigned int>(resets == -1 ? 0 : resets) - m_minResetsToStartCountPoints;
+	auto totalPoints = std::max(0u, diff) * m_pointsPerResets;
+	
 	if (includeExtraPoints) {
 		const auto extraPoints = getExtraPoints();
 		totalPoints += extraPoints;
@@ -1267,7 +1269,8 @@ bool PlayerWheel::canOpenWheel() const {
 	}
 
 	// Level check, This is hardcoded on the client, cannot be changed
-	if (m_player.getLevel() <= 50) {
+	auto resets = m_player.getStorageValue(500);
+	if (resets == -1 || resets < 1) {
 		return false;
 	}
 
