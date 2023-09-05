@@ -364,7 +364,7 @@ maxMessageBuffer = 4
 emoteSpells = false
 allowWalkthrough = true
 coinPacketSize = 25
-coinImagesURL = "https://phoenixot.com.br/images/store/"
+coinImagesURL = "http://144.217.201.226/images/store/"
 classicAttackSpeed = false
 showScriptsLogInConsole = false
 -- configure maximum value of critical imbuement
