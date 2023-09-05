@@ -145,8 +145,8 @@ private:
 	uint8_t getPlayerVocationEnum() const;
 
 	// Members variables
-	const uint16_t m_minResetsToStartCountPoints = 0;
-	uint16_t m_pointsPerResets = 1;
+	const uint16_t m_minLevelToStartCountPoints = 50;
+	uint16_t m_pointsPerLevel = 1;
 
 public:
 	// Wheel of destiny
