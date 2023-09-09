@@ -4,16 +4,16 @@ Dawnport = {
 	skillsLimit = {
 		[VOCATION.ID.NONE] = {},
 		[VOCATION.ID.SORCERER] = {
-			[SKILL_MAGLEVEL] = 20,
+			[SKILL_MAGLEVEL] = 300,
 		},
 		[VOCATION.ID.DRUID] = {
-			[SKILL_MAGLEVEL] = 20,
-		},
+			[SKILL_MAGLEVEL] = 300,
+		}, 
 		[VOCATION.ID.PALADIN] = {
-			[SKILL_MAGLEVEL] = 9,
+			[SKILL_MAGLEVEL] = 300,
 		},
 		[VOCATION.ID.KNIGHT] = {
-			[SKILL_MAGLEVEL] = 4,
+			[SKILL_MAGLEVEL] = 300,
 		},
 	},
 }
