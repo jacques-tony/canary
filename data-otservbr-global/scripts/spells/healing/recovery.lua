@@ -18,7 +18,7 @@ end
 spell:name("Recovery")
 spell:words("utura")
 spell:group("healing")
-spell:vocation("knight;true", "elite knight;true", "paladin;true", "royal paladin;true")
+spell:vocation("knight;true", "elite knight;true", "paladin;true", "royal paladin;true","rageful knight;true","supreme rageful;true","glorious paladin;true","supreme glorious;true")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_RECOVERY)
 spell:id(159)
 spell:cooldown(1 * 60 * 1000)

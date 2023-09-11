@@ -21,10 +21,10 @@ end
 spell:name("Intense Wound Cleansing")
 spell:words("exura gran ico")
 spell:group("healing")
-spell:vocation("knight;true", "elite knight;true")
+spell:vocation("knight;true", "elite knight;true","rageful knight;true","supreme rageful;true")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_INTENSE_WOUND_CLEANSING)
 spell:id(158)
-spell:cooldown(600000) -- 600 sec
+spell:cooldown(60000) -- 60 sec
 spell:groupCooldown(1000)
 spell:level(80)
 spell:mana(200)
