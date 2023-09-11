@@ -1,13 +1,13 @@
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, variant)
-	return creature:conjureItem(0, 25759, 30, CONST_ME_MAGIC_BLUE)
+	return creature:conjureItem(0, 25757, 100, CONST_ME_MAGIC_BLUE)
 end
 
 spell:group("support")
-spell:id(191)
-spell:name("Conjure Royal Star")
-spell:words("exevo gran con grav")
+spell:id(192)
+spell:name("Conjure Diamond Arrow")
+spell:words("exevo gran con hur")
 spell:cooldown(2 * 1000)
 spell:groupCooldown(2 * 1000)
 spell:level(150)
