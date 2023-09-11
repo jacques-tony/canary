@@ -78,7 +78,7 @@ end
 spell:name("Find Person")
 spell:words("exiva")
 spell:group("support")
-spell:vocation("druid;true", "elder druid;true", "knight;true", "elite knight;true", "paladin;true", "royal paladin;true", "sorcerer;true", "master sorcerer;true")
+spell:vocation("druid;true", "elder druid;true", "knight;true", "elite knight;true", "paladin;true", "royal paladin;true", "sorcerer;true", "master sorcerer;true","ancient druid;true","supreme ancient;true","glorious paladin;true","supreme glorious;true","masterful sorcerer;true","supreme masterful;true")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_FIND_PERSON)
 spell:id(20)
 spell:cooldown(2 * 1000)
