@@ -43,6 +43,11 @@ function reset.onSay(player, words, param)
         player:setStorageValue(500, getPlayerResets() + count)
     end
    
+    if player:getStorageValue(storage da quest aqui..) == -1 then
+        player:sendCancelMessage("You need to do a mission first to be able to reset.")
+        return false
+    end
+    
     if config.redskull and player:getSkull() == 4 then
         player:sendCancelMessage("You need to be without red skull to reset.")
         return false
