@@ -571,7 +571,7 @@ function Player:onGainExperience(target, exp, rawExp)
 
 	if self:getLevel() >= self:getResetLevel() then
 		exp = 0
-		self:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "Voc� n�o ganhar� mais experi�ncia a partir de agora, voc� atingiu o level m�ximo, por favor reset seu personagem.")
+		self:sendTextMessage(MESSAGE_STATUS_WARNING, "Voce nao ganhara mais experiencia a partir de agora, voce atingiu o level maximo, por favor reset seu personagem.")
 	end
 	
 	return (exp + (exp * (storeXpBoostAmount / 100) + (exp * (lowLevelBonuxExp / 100)))) * staminaBonusXp * baseRate
