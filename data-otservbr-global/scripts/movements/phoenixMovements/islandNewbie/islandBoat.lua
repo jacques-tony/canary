@@ -8,7 +8,7 @@ local player = Player(creature)
 if not player then return true end
 
 if player:getStorageValue(Storage) < 1 then
-	player:sendTextMessage(MESSAGE_INFO_DESCR, "Você ainda não pegou seus items.")
+	player:sendTextMessage(MESSAGE_INFO_DESCR, "You haven't picked up your items yet.")
     player:teleportTo({x = 17626, y = 17700, z = 6})		
 	return true
 end
