@@ -8,10 +8,10 @@ function islandReward.onStepIn(creature, item, position, fromPosition)
 	local storage666 = 666
 
 	if player:getLevel(cid) >= 80 then
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "Parabéns guerreiro!")
+            player:sendTextMessage(MESSAGE_INFO_DESCR, "Congratulations warrior!")
             player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			else
-			player:sendTextMessage(MESSAGE_INFO_DESCR, "Você precisa ser level 80.")
+			player:sendTextMessage(MESSAGE_INFO_DESCR, "You need to be level 80.")
 			creature:teleportTo(Position(17635, 17694, 7))
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
     end

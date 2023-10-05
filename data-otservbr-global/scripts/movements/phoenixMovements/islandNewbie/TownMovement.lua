@@ -11,7 +11,7 @@ function townMovement.onStepIn(creature, item, position, fromPosition)
     player:setTown(town)
     player:teleportTo(town:getTemplePosition())
     town:getTemplePosition():sendMagicEffect(CONST_ME_TELEPORT)
-    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Agora você é morador da cidade ".. town:getName() .. ".")
+    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Now you are a city dweller ".. town:getName() .. ".")
     return true
 end
 
