@@ -6,7 +6,9 @@ local effects = {
     {position = Position(17579, 17564, 6), text = 'TRAINER', effect = CONST_ME_GROUNDSHAKER}, 
     {position = Position(17581, 17564, 6), text = 'BOSSES', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17583, 17564, 6), text = 'INVASION', effect = CONST_ME_GROUNDSHAKER},  
-    -------
+    ------- QUESTS
+    {position = Position(17548, 17818, 11), text = 'USE!', effect = CONST_ME_GROUNDSHAKER}, 	
+   -------	
     {position = Position(17569, 17560, 6), text = 'FORGE!', effect = CONST_ME_GROUNDSHAKER}, 
     {position = Position(17586, 17560, 6), text = 'CASTLE!', effect = CONST_ME_GROUNDSHAKER}, 
     {position = Position(17564, 17560, 6), text = 'CRAFT!', effect = CONST_ME_GROUNDSHAKER},
