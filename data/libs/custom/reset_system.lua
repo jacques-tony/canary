@@ -5,27 +5,14 @@ resetConfig = {
     battle = true, -- need to be without battle to reset?
     pz = true, -- need to be in protect zone to reset?
     stages = {
-        {resets = 4,      level = 100,  premium  = 330},
-        {resets = 9,      level = 355,  premium  = 340},
-        {resets = 14,     level = 360,  premium  = 355},
-        {resets = 19,     level = 365,  premium  = 360},
-        {resets = 24,     level = 380,  premium  = 370},
-        {resets = 29,     level = 390,  premium  = 380},
-        {resets = 34,     level = 410,  premium  = 400},
-        {resets = 39,     level = 430,  premium  = 420},
-        {resets = 44,     level = 450,  premium  = 440},
-        {resets = 49,     level = 480,  premium  = 470},
-        {resets = 54,     level = 510,  premium  = 500},
-        {resets = 59,     level = 550,  premium  = 540},
-        {resets = 64,     level = 590,  premium  = 580},
-        {resets = 69,     level = 630,  premium  = 620},
-        {resets = 74,     level = 680,  premium  = 670},
-        {resets = 79,     level = 730,  premium  = 720},
-        {resets = 84,     level = 780,  premium  = 770},
-        {resets = 89,     level = 860,  premium  = 840},
-        {resets = 94,     level = 930,  premium  = 910},
-        {resets = 2^1024, level = 1010, premium  = 990}
-    }
+        {resets = 4,      level = 950,  premium  = 900},
+        {resets = 9,      level = 1330,  premium  = 1170},
+        {resets = 14,     level = 1862,  premium  = 1521},
+        {resets = 19,     level = 2607,  premium  = 1977},
+        {resets = 24,     level = 3780,  premium  = 2570},
+        {resets = 30,     level = 5481,  premium  = 3342},
+        {resets = 31,     level = 999999, premium  = 999999}
+    } 
 }
 
 function getExperienceForLevel(lv)
