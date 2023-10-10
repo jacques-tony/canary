@@ -1,4 +1,4 @@
-	local action_aid, movement_aid, storage = 2258, 2259, 57604
+	local action_aid, movement_aid, storage = 7237, 7238 , 77557
 
 	local action = Action()
 	function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
@@ -24,7 +24,7 @@
 		end
 
 		if player:getStorageValue(storage) == -1 then
-			creature:teleportTo(Position(17607, 17796, 7))
+			creature:teleportTo(Position(17244, 17724, 12))
 			player:sendCancelMessage("You can't enter here yet")
 			return true
 		end

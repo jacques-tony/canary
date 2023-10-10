@@ -372,21 +372,21 @@ ChestUnique = {
 	-- Steel boots
 	[6029] = {
 		itemId = 2472,
-		itemPos = { x = 33313, y = 31574, z = 15 },
+		itemPos = { x = 17991, y = 17433, z = 11 },
 		reward = { { 3554, 1 } },
 		storage = Storage.Quest.U6_4.DemonHelmet.Rewards.SteelBoots,
 	},
 	-- Demon helmet
 	[6030] = {
 		itemId = 2472,
-		itemPos = { x = 33313, y = 31575, z = 15 },
+		itemPos = { x = 17991, y = 17432, z = 11 },
 		reward = { { 3387, 1 } },
 		storage = Storage.Quest.U6_4.DemonHelmet.Rewards.DemonHelmet,
 	},
 	-- Demon shield
 	[6031] = {
 		itemId = 2472,
-		itemPos = { x = 33313, y = 31576, z = 15 },
+		itemPos = { x = 17991, y = 17434, z = 11 },
 		reward = { { 3420, 1 } },
 		storage = Storage.Quest.U6_4.DemonHelmet.Rewards.DemonShield,
 	},
@@ -806,33 +806,41 @@ ChestUnique = {
 	-- Demon armor
 	[6085] = {
 		itemId = 2472,
-		itemPos = { x = 33227, y = 31656, z = 13 },
+		itemPos = { x = 17934, y = 17514, z = 10 },
 		reward = { { 3388, 1 } },
 		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
 	},
 	-- Magic sword
 	[6086] = {
 		itemId = 2472,
-		itemPos = { x = 33229, y = 31656, z = 13 },
+		itemPos = { x = 17936, y = 17514, z = 10 },
 		reward = { { 3288, 1 } },
 		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
 	},
 	-- Stonecutter axe
 	[6087] = {
 		itemId = 2472,
-		itemPos = { x = 33231, y = 31656, z = 13 },
+		itemPos = { x = 17938, y = 17514, z = 10 },
 		reward = { { 3319, 1 } },
 		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
 	},
 	-- Present (annihilation bear)
 	[6088] = {
 		itemId = 2472,
-		itemPos = { x = 33233, y = 31656, z = 13 },
+		itemPos = { x = 17940, y = 17514, z = 10 },
 		container = 2856,
-		weight = 50,
+		weight = 50, 
 		reward = { { 3213, 1 } },
 		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
 	},
+	-- thunder hammer
+	[60888] = {
+		itemId = 2472,
+		itemPos = { x = 17940, y = 17514, z = 10 },
+		container = 2856,
+		reward = { { 3213, 1 } },
+		storage = Storage.Quest.U7_24.TheAnnihilator.Reward,
+	},	
 	-- The paradox tower quest
 	-- Phoenix egg
 	[6089] = {
