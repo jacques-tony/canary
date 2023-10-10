@@ -42,7 +42,7 @@ spell:name("Avatar of Light")
 spell:words("uteta res sac")
 spell:level(1)
 spell:mana(800)
-spell:isPremium(true)
+spell:isPremium(false)
 spell:cooldown(1000) -- Cooldown is calculated on the casting
 spell:groupCooldown(2 * 1000)
 spell:vocation("paladin;true", "royal paladin;true","glorious paladin;true","supreme glorious;true")
