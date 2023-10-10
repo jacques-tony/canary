@@ -42,7 +42,7 @@ spell:name("Avatar of Steel")
 spell:words("uteta res eq")
 spell:level(300)
 spell:mana(800)
-spell:isPremium(true)
+spell:isPremium(false)
 spell:cooldown(1000) -- Cooldown is calculated on the casting
 spell:groupCooldown(2 * 1000)
 spell:vocation("knight;true", "elite knight;true","rageful knight;true","supreme rageful;true")
