@@ -42,7 +42,7 @@ spell:name("Avatar of Nature")
 spell:words("uteta res dru")
 spell:level(1)
 spell:mana(800)
-spell:isPremium(true)
+spell:isPremium(false)
 spell:cooldown(1000) -- Cooldown is calculated on the casting
 spell:groupCooldown(2 * 1000)
 spell:vocation("druid;true", "elder druid;true","ancient druid;true","supreme ancient;true")

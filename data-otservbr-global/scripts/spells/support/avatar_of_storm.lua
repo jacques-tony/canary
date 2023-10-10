@@ -42,7 +42,7 @@ spell:name("Avatar of Storm")
 spell:words("uteta res ven")
 spell:level(1)
 spell:mana(800)
-spell:isPremium(true)
+spell:isPremium(false)
 spell:cooldown(1000) -- Cooldown is calculated on the casting
 spell:groupCooldown(2 * 1000)
 spell:vocation("sorcerer;true", "master sorcerer;true","masterful sorcerer;true","supreme masterful;true")
