@@ -173,8 +173,8 @@ LeverUnique = {
 	-- Path: data\scripts\quests\the_annihilator\lever.lua
 	[30025] = {
 		itemId = 2772,
-		itemPos = { x = 33226, y = 31671, z = 13 },
-	},
+		itemPos = { x = 17933, y = 17529, z = 10 },
+	}, 
 	-- Path: data\scripts\quests\the_paradox_tower\action-3-third_floor_lever.lua
 	[30026] = {
 		itemId = 9125,

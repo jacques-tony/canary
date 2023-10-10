@@ -4,20 +4,20 @@ local setting = {
 	-- Can it be done daily? true = yes, false = no
 	daily = true,
 	-- Do not change from here down
-	centerDemonRoomPosition = { x = 33221, y = 31659, z = 13 },
+	centerDemonRoomPosition = { x = 17928, y = 17517, z = 10 },
 	demonsPositions = {
-		{ x = 33219, y = 31657, z = 13 },
-		{ x = 33221, y = 31657, z = 13 },
-		{ x = 33223, y = 31659, z = 13 },
-		{ x = 33224, y = 31659, z = 13 },
-		{ x = 33220, y = 31661, z = 13 },
-		{ x = 33222, y = 31661, z = 13 },
+		{ x = 17926, y = 17515, z = 10 },
+		{ x = 17928, y = 17515, z = 10 },
+		{ x = 17927, y = 17519, z = 10 },
+		{ x = 17929, y = 17519, z = 10 },
+		{ x = 17930, y = 17517, z = 10 },
+		{ x = 17931, y = 17517, z = 10 },
 	},
 	playersPositions = {
-		{ fromPos = { x = 33225, y = 31671, z = 13 }, toPos = { x = 33222, y = 31659, z = 13 } },
-		{ fromPos = { x = 33224, y = 31671, z = 13 }, toPos = { x = 33221, y = 31659, z = 13 } },
-		{ fromPos = { x = 33223, y = 31671, z = 13 }, toPos = { x = 33220, y = 31659, z = 13 } },
-		{ fromPos = { x = 33222, y = 31671, z = 13 }, toPos = { x = 33219, y = 31659, z = 13 } },
+		{ fromPos = { x = 17932, y = 17529, z = 10 }, toPos = { x = 17929, y = 17517, z = 10 } },
+		{ fromPos = { x = 17931, y = 17529, z = 10 }, toPos = { x = 17928, y = 17517, z = 10 } },
+		{ fromPos = { x = 17930, y = 17529, z = 10 }, toPos = { x = 17927, y = 17517, z = 10 } },
+		{ fromPos = { x = 17929, y = 17529, z = 10 }, toPos = { x = 17926, y = 17517, z = 10 } },
 	},
 }
 

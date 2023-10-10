@@ -14,20 +14,20 @@ local config = {
 	bonebeastChance = 90,
 	bonebeastCount = 4,
 	waves = 10,
-	questArea = {
-		fromPosition = { x = 32706, y = 32345, z = 7 },
-		toPosition = { x = 32725, y = 32357, z = 7 },
-	},
-	summonPositions = {
-		{ x = 32714, y = 32348, z = 7 },
-		{ x = 32712, y = 32349, z = 7 },
-		{ x = 32711, y = 32351, z = 7 },
-		{ x = 32713, y = 32354, z = 7 },
-		{ x = 32716, y = 32354, z = 7 },
-		{ x = 32719, y = 32354, z = 7 },
-		{ x = 32721, y = 32351, z = 7 },
-		{ x = 32719, y = 32348, z = 7 },
-	},
+questArea = { 
+        fromPosition = { x = 18056, y = 17604, z = 7 },
+        toPosition = { x = 18075, y = 17616, z = 7 }, 
+    },
+    summonPositions = {
+        { x = 18061, y = 17605, z = 7 }, 
+        { x = 18061, y = 17607, z = 7 }, 
+        { x = 18061, y = 17609, z = 7 }, 
+        { x = 18061, y = 17612, z = 7 }, 
+        { x = 18070, y = 17606, z = 7 }, 
+        { x = 18072, y = 17610, z = 7 },  
+        { x = 18071, y = 17612, z = 7 }, 
+        { x = 18070, y = 17614, z = 7 },   
+    },
 	summons = {
 		[914] = {
 			[5] = { "Spectre", "Blightwalker", "Braindeath", "Demon" },
