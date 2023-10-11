@@ -1,10 +1,10 @@
 local talkactions = TalkAction("!reset")
-function talkactions.onSay(player, words, param)
-    if player:getStorageValue(67603) == -1 then
+function talkactions.onSay(player, words, param) 
+    if player:getStorageValue(67606) == -1 then
         player:sendCancelMessage("You need to do a mission first to be able to reset.")
         return false
     end
- player:addReset(1) 
+-- player:addReset(1) 
     if resetConfig.redskull and player:getSkull() == 4 then
         player:sendCancelMessage("You need to be without red skull to reset.")
     elseif resetConfig.pz and not getTilePzInfo(player:getPosition()) then
