@@ -58,7 +58,7 @@ function playerLogin.onLogin(player)
 	end
 	-- Premium Ends Teleport to Temple, change addon (citizen) houseless
 	local defaultTown = "Newbie City" -- default town where player is teleported if his home town is in premium area
-	local freeTowns = { "Phoenix City", "Newbie City" } -- towns in free account area
+	local freeTowns = { "Phoenix City", "Newbie Phoenix" } -- towns in free account area
 
 	if isPremium(player) == false and table.contains(freeTowns, player:getTown():getName()) == false then
 		local town = player:getTown()
@@ -94,6 +94,12 @@ function playerLogin.onLogin(player)
 		player:setVocation(vocation:getDemotion())
 	end
 
+    -- Mining 
+    if player:getStorageValue(configMining.level.storageTentativas) == -1 or player:getStorageValue(configMining.level.storageNivel) == -1 then
+        player:setStorageValue(configMining.level.storageTentativas, 0) -- Tentativas
+        player:setStorageValue(configMining.level.storageNivel, 1) -- Level
+    end
+	
 	-- Recruiter system
 	local resultId = db.storeQuery("SELECT `recruiter` from `accounts` where `id`=" .. getAccountNumberByPlayerName(getPlayerName(player)))
 	local recruiterStatus = Result.getNumber(resultId, "recruiter")

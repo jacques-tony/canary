@@ -35,5 +35,7 @@ dofile(CORE_DIRECTORY .. "/libs/concoctions_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/kill_lib.lua")
 
 -- Custom 
+dofile(CORE_DIRECTORY .. "/libs/custom/items_with_resets.lua") 
 dofile(CORE_DIRECTORY .. "/libs/custom/reset_system.lua")
-dofile(CORE_DIRECTORY .. "/libs/custom/simple_crafting_system.lua")
+dofile(CORE_DIRECTORY .. "/libs/custom/simple_crafting_system.lua")  
+dofile(CORE_DIRECTORY .. "/libs/custom/mining.lua")
