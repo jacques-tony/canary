@@ -36,6 +36,9 @@ local function magicshield(player)
 	player:addCondition(condition)
 end
 
+local storage = 1150 -- Storage.
+local percentage = 100 -- igual 50% de cura
+
 local potions = {
 	[6558] = {
 		transform = {
@@ -251,11 +254,21 @@ function flaskPotion.onUse(player, item, fromPosition, target, toPosition, isHot
 
 	if potion.health or potion.mana or potion.combat then
 		if potion.health then
-			doTargetCombatHealth(player, target, COMBAT_HEALING, potion.health[1], potion.health[2], CONST_ME_MAGIC_BLUE)
+			local min, max = potion.health[1], potion.health[2]
+			if player:getStorageValue(storage) == 1 then
+				min = min + ((min * percentage) / 100)
+				max = max + ((max * percentage) / 100)
+			end
+			doTargetCombatHealth(player, target, COMBAT_HEALING, min, max, CONST_ME_MAGIC_BLUE)
 		end
 
 		if potion.mana then
-			doTargetCombatMana(0, target, potion.mana[1], potion.mana[2], CONST_ME_MAGIC_BLUE)
+			local min, max = potion.mana[1], potion.mana[2]
+			if player:getStorageValue(storage) == 1 then
+				min = min + ((min * percentage) / 100)
+				max = max + ((max * percentage) / 100)
+			end
+			doTargetCombatMana(0, target, min, max, CONST_ME_MAGIC_BLUE)
 		end
 
 		if potion.combat then
