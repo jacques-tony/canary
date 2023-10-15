@@ -6,7 +6,7 @@ function talkaction.onSay(player, words, param)
         return false
     end
     
-    if not monster then
+    if not monster then 
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This monster does not exist.")
         return false
     end
@@ -18,13 +18,12 @@ function talkaction.onSay(player, words, param)
     end
 
     if #lootList ~= 0 then
-        player:showTextDialog(639, table.concat(lootList, "\n"))
+        player:showTextDialog(32917, table.concat(lootList, "\n"))
     else
         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This monster has no loot.")
     end
     return false
 end
-
-talkaction:separator(" ")
 talkaction:groupType("normal")
+talkaction:separator(" ")
 talkaction:register()

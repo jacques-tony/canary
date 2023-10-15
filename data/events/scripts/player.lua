@@ -216,6 +216,10 @@ function Player:onLookInBattleList(creature, distance)
 		description = string.format("%s\nResets: %d", description, creature:getResets())
  	end
 
+	if creature:isPlayer() then
+    description = string.format("%s\nNivel de Mining: %s", description, configMining.level[creature:getStorageValue(configMining.level.storageNivel)].name)
+    end
+
 	if self:getGroup():getAccess() then
 		local str = "%s\nHealth: %d / %d"
 		if creature:isPlayer() and creature:getMaxMana() > 0 then

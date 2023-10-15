@@ -544,21 +544,21 @@ ChestUnique = {
 	-- Guardian halberd
 	[6052] = {
 		itemId = 2472,
-		itemPos = { x = 33295, y = 31658, z = 13 },
+		itemPos = { x = 17739, y = 17616, z = 10 },
 		reward = { { 3315, 1 } },
 		storage = Storage.Quest.U7_2.Behemoth.GuardianHalberd,
 	},
 	-- Demon shield
 	[6053] = {
 		itemId = 2472,
-		itemPos = { x = 33297, y = 31658, z = 13 },
+		itemPos = { x = 17742, y = 17616, z = 10 },
 		reward = { { 3420, 1 } },
 		storage = Storage.Quest.U7_2.Behemoth.DemonShield,
 	},
 	-- Golden armor
 	[6054] = {
 		itemId = 2472,
-		itemPos = { x = 33298, y = 31658, z = 13 },
+		itemPos = { x = 17742, y = 17616, z = 10 },  
 		reward = { { 3360, 1 } },
 		storage = Storage.Quest.U7_2.Behemoth.GoldenArmor,
 	},
@@ -722,13 +722,13 @@ ChestUnique = {
 	-- Bag
 	[6075] = {
 		itemId = 2472,
-		itemPos = { x = 33294, y = 31658, z = 13 },
+		itemPos = { x = 17738, y = 17616, z = 10 }, 
 		container = 2853,
 		reward = { { 3028, 3 }, { 3029, 4 }, { 3007, 1 }, { 3052, 1 }, { 3055, 1 } },
 		weight = 50,
 		storage = Storage.Quest.U7_2.Behemoth.Bag,
 	},
-	-- Parchment room quest
+	-- Parchment room quest 
 	-- Bag
 	[6076] = {
 		itemId = 2474,
