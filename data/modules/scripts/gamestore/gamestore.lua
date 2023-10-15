@@ -6469,6 +6469,7 @@ GameStore.Categories = {
 				icons = { "Tournament_Restricted.png" },
 				name = "Restricted Tournament Ticket",
 				price = 500,
+                coinType = GameStore.CoinType.Transferable,				
 			},
 		},
 	},

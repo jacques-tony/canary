@@ -11,6 +11,12 @@ function buyHouse.onSay(player, words, param)
 		return true
 	end
 
+
+    if player:getResets() < 1 then
+    player:sendCancelMessage("You need 1 reset.")
+    return false
+    end
+
 	local houseBuyLevel = configManager.getNumber(configKeys.HOUSE_BUY_LEVEL)
 	if player:getLevel() < houseBuyLevel then
 		player:sendCancelMessage("You need to be level " .. houseBuyLevel .. " to buy a house.")

@@ -10,7 +10,8 @@ function tileCastle2.onStepIn(creature, item, position, fromPosition)
     local guild = player:getGuild()
     if not guild then
         local town = player:getTown():getTemplePosition()
-        player:teleportTo(town)
+--        player:teleportTo(town)
+        player:teleportTo(Position(17586, 17563, 6))	
         town:sendMagicEffect(CONST_ME_TELEPORT)
         player:say('You dont have a guild.', TALKTYPE_MONSTER_SAY)
         return true
@@ -22,7 +23,8 @@ function tileCastle2.onStepIn(creature, item, position, fromPosition)
 
     if player:getLevel() < 500 then  
         local town = player:getTown():getTemplePosition()
-        player:teleportTo(town)
+--      player:teleportTo(town)
+        player:teleportTo(Position(17586, 17564, 6))	
         town:sendMagicEffect(MESSAGE_INFO_DESCR)
         player:say('You dont have enough level.', TALKTYPE_MONSTER_SAY)
         return true
