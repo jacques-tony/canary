@@ -1,21 +1,21 @@
 local config = {
-	lionPosition = {
-		Position(32444, 32512, 7),
-		Position(32449, 32516, 7),
-		Position(32444, 32520, 7),
-	},
-	usurperPosition = {
-		Position(32450, 32520, 7),
-		Position(32444, 32516, 7),
-		Position(32448, 32512, 7),
-	},
-	firstPlayerPosition = Position(32457, 32508, 6),
-	centerPosition = Position(32439, 32523, 7), -- Center Room
-	exitPosition = Position(32453, 32503, 7), -- Exit Position
-	newPosition = Position(32453, 32510, 7),
-	rangeX = 22,
-	rangeY = 16,
-	timeToKill = 20, -- time in minutes to remove the player
+    lionPosition = {
+        Position(17313, 17596, 7),
+        Position(17318, 17600, 7),
+        Position(17313, 17604, 7),
+    },
+    usurperPosition = {
+        Position(17319, 17604, 7),
+        Position(17313, 17600, 7),
+        Position(17317, 17596, 7),
+    },
+    firstPlayerPosition = Position(17326, 17592, 6),
+    centerPosition = Position(17308, 17607, 7), -- Center Room
+    exitPosition = Position(17328, 17592, 6), -- Exit Position
+    newPosition = Position(17322, 17594, 7),
+    rangeX = 22,
+    rangeY = 16,
+    timeToKill = 20, -- time in minutes to remove the player
 }
 
 local currentEvent = nil

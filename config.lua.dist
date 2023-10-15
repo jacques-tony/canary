@@ -126,11 +126,11 @@ forgeConvergenceTransferCost = 160
 forgeBaseSuccessRate = 50
 forgeBonusSuccessRate = 15
 forgeTierLossReduction = 50
-forgeAmountMultiplier = 3
-forgeMinSlivers = 3
-forgeMaxSlivers = 7
-forgeInfluencedLimit = 300
-forgeFiendishLimit = 3
+forgeAmountMultiplier = 30
+forgeMinSlivers = 25
+forgeMaxSlivers = 25
+forgeInfluencedLimit = 3000
+forgeFiendishLimit = 100
 forgeFiendishIntervalType = "hour"
 forgeFiendishIntervalTime = "1"
 
@@ -329,7 +329,7 @@ housePriceEachSQM = 1000
 houseRentPeriod = "never"
 houseRentRate = 1.0
 houseOwnedByAccount = false
-houseBuyLevel = 250
+houseBuyLevel = 8 
 housePurchasedShowPrice = false
 houseLoseAfterInactivity = 30 -- days; 0 = never
 onlyInvitedCanMoveHouseItems = true

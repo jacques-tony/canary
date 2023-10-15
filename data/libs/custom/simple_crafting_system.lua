@@ -4,7 +4,12 @@ function Player:sendMainCraftWindow(config)
  
 	-- Modal Window Functionallity 
 		if button.name == "Select" then
-			self:sendVocCraftWindow(config, choice.id)
+			local resets = config.system[choice.id].resets
+			if self:getResets() >= resets then
+				self:sendVocCraftWindow(config, choice.id)
+			else
+				self:sendCancelMessage("You need ".. resets .." resets to open this window.")
+			end
 		end	
 	end
  
@@ -20,7 +25,7 @@ function Player:sendMainCraftWindow(config)
  
 	-- Add choices from the action script
     for i = 1, #config.system do
-		window:addChoice(config.system[i].vocation)
+		window:addChoice(config.system[i].vocation) 
     end
  
 	-- Set what button is pressed when the player presses enter or escape.

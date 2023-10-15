@@ -18,7 +18,7 @@ local function removeCombatProtection(playerUid)
 		local playerEvent = Player(playerFuncUid)
 		if not playerEvent then
 			return
-		end
+		end 
 
 		playerEvent:kv():remove("combat-protection")
 		playerEvent:remove()
@@ -29,6 +29,14 @@ function Creature:onTargetCombat(target)
 	if not self then
 		return true
 	end
+
+	if self and target then
+        if self:isPlayer() then
+--			print(target:getName())
+            target:registerEvent("RESET_Damage___HealthChange")
+            target:registerEvent("RESET_Damage___ManaChange")
+        end
+    end
 
 	if target:isPlayer() then
 		if self:isMonster() then

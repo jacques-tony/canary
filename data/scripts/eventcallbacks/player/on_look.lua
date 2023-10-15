@@ -35,6 +35,11 @@ function callback.playerOnLook(player, thing, position, distance)
             description = string.format("%s\nResets: %d", description, thing:getResets())
             end
 
+    if thing:isPlayer() then
+    description = string.format("%s\nNivel de Mining: %s", description, configMining.level[thing:getStorageValue(configMining.level.storageNivel)].name)
+            end
+
+
 	if player:getGroup():getAccess() then
 		if thing:isItem() then
 			description = string.format("%s\nClient ID: %d", description, thing:getId())

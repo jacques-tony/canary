@@ -1,6 +1,6 @@
 local config = {
-	centerPosition = Position(32439, 32523, 7), -- Center Room
-	exitPosition = Position(32453, 32503, 7), -- Exit Position
+    centerPosition = Position(17308, 17607, 7), -- Center Room
+    exitPosition = Position(17328, 17592, 6), -- Exit Position
 	rangeX = 22,
 	rangeY = 16,
 }
@@ -33,8 +33,8 @@ function usurperCommanderDeath.onPrepareDeath(creature)
 	if totalCommanders > 0 then
 		Game.setStorageValue(GlobalStorage.TheOrderOfTheLion.Drume.TotalUsurperCommanders, totalCommanders - 1)
 		if totalCommanders == 1 then
-			Game.createMonster("Kesar", Position(32444, 32515, 7), false, true)
-			Game.createMonster("Drume", Position(32444, 32516, 7), false, true)
+			Game.createMonster("Kesar", Position(17313, 17599, 7), false, true)
+			Game.createMonster("Drume", Position(17313, 17600, 7), false, true)
 		end
 	end
 	return true

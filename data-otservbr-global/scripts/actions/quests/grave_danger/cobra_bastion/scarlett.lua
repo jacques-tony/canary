@@ -47,8 +47,8 @@ local transformTo = {
 }
 
 local mirror = {
-	fromPos = Position(33389, 32641, 6),
-	toPos = Position(33403, 32655, 6),
+	fromPos = Position(18172, 17825, 6),
+	toPos = Position(18186, 17839, 6),
 	mirrors = { 31474, 31475, 31476, 31477 },
 }
 

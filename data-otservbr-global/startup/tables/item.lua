@@ -18,29 +18,28 @@ ItemAction = {
 		itemId = 21572,
 		itemPos = { { x = 32022, y = 32918, z = 10 } },
 	},
-	-- Grave danger quest
+	-- Grave danger quest - phoenixot
 	-- data\scripts\actions\quests\grave_danger\cobra_bastion\scarlett.lua
 	[40003] = {
 		itemId = false,
 		itemPos = {
-			{ x = 33390, y = 32642, z = 6 },
-			{ x = 33394, y = 32642, z = 6 },
-			{ x = 33398, y = 32642, z = 6 },
-			{ x = 33402, y = 32642, z = 6 },
-			{ x = 33390, y = 32646, z = 6 },
-			{ x = 33394, y = 32646, z = 6 },
-			{ x = 33398, y = 32646, z = 6 },
-			{ x = 33402, y = 32646, z = 6 },
-			{ x = 33390, y = 32650, z = 6 },
-			{ x = 33394, y = 32650, z = 6 },
-			{ x = 33398, y = 32650, z = 6 },
-			{ x = 33402, y = 32650, z = 6 },
-			{ x = 33390, y = 32654, z = 6 },
-			{ x = 33394, y = 32654, z = 6 },
-			{ x = 33398, y = 32654, z = 6 },
-			{ x = 33402, y = 32654, z = 6 },
-			{ x = 33398, y = 32640, z = 6 },
-			{ x = 33395, y = 32667, z = 6 },
+			{ x = 18173, y = 17826, z = 6 },
+			{ x = 18177, y = 17826, z = 6 },
+			{ x = 18181, y = 17826, z = 6 },
+			{ x = 18185, y = 17826, z = 6 },
+			{ x = 18173, y = 17830, z = 6 },
+			{ x = 18177, y = 17830, z = 6 },
+			{ x = 18181, y = 17830, z = 6 },
+			{ x = 18185, y = 17830, z = 6 },
+			{ x = 18173, y = 17834, z = 6 },  
+			{ x = 18177, y = 17834, z = 6 },
+			{ x = 18181, y = 17834, z = 6 },
+			{ x = 18185, y = 17834, z = 6 },
+			{ x = 18173, y = 17838, z = 6 },
+			{ x = 18177, y = 17838, z = 6 },
+			{ x = 18181, y = 17838, z = 6 },
+			{ x = 18185, y = 17838, z = 6 },
+			{ x = 18181, y = 17824, z = 6 },
 		},
 	},
 	-- Kilmaresh
@@ -360,7 +359,7 @@ ItemUnique = {
 	},
 	[40026] = {
 		itemId = 12938,
-		itemPos = { x = 33478, y = 31197, z = 3 },
+		itemPos = { x = 33478, y = 31197, z = 3 }, 
 	},
 	-- The rare herb
 	-- data\scripts\actions\quests\dawnport\the_rare_herb.lua
@@ -368,11 +367,11 @@ ItemUnique = {
 		itemId = 21377,
 		itemPos = { x = 32028, y = 31882, z = 7 },
 	},
-	-- Grave danger (cobra bastion)
+	-- Grave danger (cobra bastion) phoenixot
 	-- data\scripts\actions\quests\grave_danger\cobra_bastion
 	[40028] = {
 		itemId = 31484,
-		itemPos = { x = 33395, y = 32660, z = 6 },
+		itemPos = { x = 18178, y = 17844, z = 6 },
 	},
 
 	-- Kilmaresh

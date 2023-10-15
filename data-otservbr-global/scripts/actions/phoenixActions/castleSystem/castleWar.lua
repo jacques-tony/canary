@@ -13,19 +13,21 @@ function castleWar.onStepIn(creature, item, position, fromPosition)
 		} 
 		
 		if not guild then
-            player:teleportTo(player:getTown():getTemplePosition())
+		    player:teleportTo(Position(17586, 17564, 6))	
+--          player:teleportTo(player:getTown():getTemplePosition())			
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, "You don't have a Guild.")
 			return true
 		end
 		
-		local guildId = guild:getId()
+		local guildId = guild:getId() 
 
 		if Game.getStorageValue(3560) == guildId then
 			player:setStorageValue(40, 1)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, config.msgWelcome)
 		else
-            player:teleportTo(player:getTown():getTemplePosition())
+		    player:teleportTo(Position(17586, 17564, 6))	
+--          player:teleportTo(player:getTown():getTemplePosition())
 			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, config.msgDenied)
 		end 
