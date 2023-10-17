@@ -3,7 +3,11 @@ local bosses = {
 	["Drume"] = {storage = Storage.TheOrderOfTheLion.Drume.Timer},	
 	["Grand Master Oberon"] = {storage = Storage.TheSecretLibrary.TheOrderOfTheFalcon.OberonTimer},
 	["Scarlett Etzel"] = {storage = Storage.GraveDanger.CobraBastion.ScarlettTimer},	
-	["The Duke Of The Depths"] = {storage = GlobalStorage.DangerousDepths.Geodes.WarzoneVI},	
+	["Gnomevil"] = {storage = 376355},	
+	["Deathstrike"] = {storage = 376352},	
+	["abyssador"] = {storage = 376353},	
+	["Mazoran"] = {storage = Storage.FerumbrasAscension.MazoranTimer},	
+	["Kroazur"] = {storage = 376356},		
 	
 }
 
