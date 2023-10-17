@@ -7,23 +7,23 @@ local function summonHungry(creature)
 		local oldBossHealth = monster:getHealth()
 		monster:setType("The Hungry Baron From Below")
 		monster:addHealth(-(monster:getHealth() - oldBossHealth))
-		monster:teleportTo(Position(33648, 32300, 15))
-		local organicMatter = Game.createMonster("organic matter", Position(33647, 32300, 15), true, true)
+		monster:teleportTo(Position(18037, 17827, 14))
+		local organicMatter = Game.createMonster("organic matter", Position(18036, 17827, 14), true, true)
 		if not organicMatter then
 			return false
 		end
 		if monster and monster:getName():lower() == "the hungry baron from below" then
 			monster:addHealth(-(monster:getHealth() - oldBossHealth))
-			monster:say("Gulp!", TALKTYPE_MONSTER_SAY)
+			monster:say("Gulp!", TALKTYPE_MONSTER_SAY) 
 			addEvent(function()
 				if monster then
 					monster:say("Gulp!", TALKTYPE_MONSTER_SAY)
 				end
 			end, 2 * 1000)
 			addEvent(function()
-				local spectators = Game.getSpectators(Position(33648, 32303, 15), false, false, 20, 20, 20, 20)
+				local spectators = Game.getSpectators(Position(18037, 17830, 14), false, false, 20, 20, 20, 20)
 				for _, checagem in pairs(spectators) do
-					if checagem then
+					if checagem then 
 						if checagem:getName():lower() == "organic matter" then
 							organic = true
 						end
