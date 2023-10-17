@@ -234,7 +234,7 @@ function Player:onLookInBattleList(creature, distance)
 		end
 	end
 	self:sendTextMessage(MESSAGE_LOOK, description)
-end
+end 
 
 local exhaust = {}
 
@@ -243,7 +243,12 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 		self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
 		return false
 	end
-
+    -- No move online token
+    -- No move online token
+    if item:getId() == 19082 then
+    self:sendCancelMessage('You cannot move this item out of this store.')
+    return false
+    end
 	-- No move if tile item count > 20 items
 	local tile = Tile(toPosition)
 	if tile and tile:getItemCount() > 20 then

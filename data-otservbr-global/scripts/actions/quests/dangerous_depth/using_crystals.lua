@@ -1,70 +1,70 @@
 local beastPositions = {
-	[1] = Position(33677, 32333, 15),
-	[2] = Position(33677, 32337, 15),
-	[3] = Position(33685, 32333, 15),
-	[4] = Position(33685, 32337, 15),
+	[1] = Position(18004, 18231, 14),
+	[2] = Position(18004, 18235, 14),
+	[3] = Position(18012, 18231, 14),
+	[4] = Position(18012, 18235, 14),
 }
 
 local machinePositions = {
 	[1] = {
-		[1] = Position(33672, 32331, 15),
-		[2] = Position(33673, 32331, 15),
-		[3] = Position(33674, 32331, 15),
-		[4] = Position(33675, 32331, 15),
+		[1] = Position(17999, 18229, 14),
+		[2] = Position(18000, 18229, 14),
+		[3] = Position(18001, 18229, 14),
+		[4] = Position(18002, 18229, 14),
 	},
 	[2] = {
-		[1] = Position(33676, 32339, 15),
-		[2] = Position(33677, 32339, 15),
-		[3] = Position(33678, 32339, 15),
-		[4] = Position(33679, 32339, 15),
+		[1] = Position(18003, 18237, 14),
+		[2] = Position(18004, 18237, 14),
+		[3] = Position(18005, 18237, 14),
+		[4] = Position(18006, 18237, 14),
 	},
 	[3] = {
-		[1] = Position(33680, 32330, 15),
-		[2] = Position(33681, 32330, 15),
-		[3] = Position(33682, 32330, 15),
-		[4] = Position(33683, 32330, 15),
+		[1] = Position(18007, 18228, 14),
+		[2] = Position(18008, 18228, 14),
+		[3] = Position(18009, 18228, 14),
+		[4] = Position(18010, 18228, 14),
 	},
 	[4] = {
-		[1] = Position(33684, 32339, 15),
-		[2] = Position(33685, 32339, 15),
-		[3] = Position(33686, 32339, 15),
-		[4] = Position(33687, 32339, 15),
+		[1] = Position(18011, 18237, 14),
+		[2] = Position(18012, 18237, 14),
+		[3] = Position(18013, 18237, 14),
+		[4] = Position(18014, 18237, 14),
 	},
 	[5] = {
-		[1] = Position(33688, 32332, 15),
-		[2] = Position(33689, 32332, 15),
-		[3] = Position(33690, 32332, 15),
-		[4] = Position(33691, 32332, 15),
+		[1] = Position(18015, 18230, 14),
+		[2] = Position(18016, 18230, 14),
+		[3] = Position(18017, 18230, 14),
+		[4] = Position(18018, 18230, 14),
 	},
 }
 
 local fieryHearts = {
-	[1] = Position(33712, 32299, 15),
-	[2] = Position(33715, 32301, 15),
-	[3] = Position(33714, 32305, 15),
-	[4] = Position(33710, 32305, 15),
-	[5] = Position(33709, 32301, 15),
+	[1] = Position(17482, 17712, 11),
+	[2] = Position(17485, 17714, 11),
+	[3] = Position(17484, 17718, 11),
+	[4] = Position(17480, 17718, 11),
+	[5] = Position(17479, 17714, 11),
 }
 
 local aggressiveLavasIV = {
-	[1] = Position(33648, 32295, 15),
-	[2] = Position(33648, 32313, 15),
+	[1] = Position(18037, 17822, 14),
+	[2] = Position(18037, 17840, 14),
 }
 
 local aggressiveLavasVI = {
-	[1] = Position(33712, 32296, 15),
-	[2] = Position(33712, 32310, 15),
+	[1] = Position(17482, 17709, 11),
+	[2] = Position(17482, 17723, 11),
 }
 
 local function lavaHoles(i)
 	local lavaHolesArray = {
-		[1] = Position(33652, 32307, 15),
-		[2] = Position(33644, 32307, 15),
-		[3] = Position(33644, 32299, 15),
-		[4] = Position(33652, 32299, 15),
+		[1] = Position(18041, 17834, 14),
+		[2] = Position(18033, 17834, 14),
+		[3] = Position(18033, 17826, 14),
+		[4] = Position(18041, 17826, 14),
 	}
 	local boss = false
-	local positionCenter = Position(33648, 32302, 15)
+	local positionCenter = Position(18037, 17829, 14)
 	local spectator = Game.getSpectators(positionCenter, false, false, 20, 20, 20, 20)
 	for _, creature in pairs(spectator) do
 		if creature:isMonster() then
@@ -121,7 +121,7 @@ end
 
 local function sumonarLavasIV(i)
 	local boss = false
-	local positionCenter = Position(33648, 32302, 15)
+	local positionCenter = Position(18037, 17829, 14)
 	local spectator = Game.getSpectators(positionCenter, false, false, 20, 20, 20, 20)
 	for _, creature in pairs(spectator) do
 		if creature:isMonster() then
@@ -148,7 +148,7 @@ end
 
 local function sumonarLavasVI(i)
 	local boss = false
-	local positionCenter = Position(33712, 32303, 15)
+	local positionCenter = Position(17482, 17716, 11)
 	local spectator = Game.getSpectators(positionCenter, false, false, 20, 20, 20, 20)
 	for _, creature in pairs(spectator) do
 		if creature:isMonster() then
@@ -177,7 +177,7 @@ local function sumonarFieryHearts()
 	local boss = false
 	local bossId
 	local contagemHearts = 0
-	local positionCenter = Position(33712, 32303, 15)
+	local positionCenter = Position(17482, 17716, 11)
 	local spectator = Game.getSpectators(positionCenter, false, false, 20, 20, 20, 20)
 	for _, creature in pairs(spectator) do
 		if creature:isMonster() then
@@ -212,7 +212,7 @@ end
 
 local function startMachines()
 	local random = math.random(1, 5)
-	local positionCenter = Position(33681, 32335, 15)
+	local positionCenter = Position(18008, 18233, 14)
 	local spectator = Game.getSpectators(positionCenter, false, false, 20, 20, 20, 20)
 	local checagem = false
 	for _, monster in pairs(spectator) do
@@ -322,7 +322,7 @@ end
 local function checarSala(qnt)
 	local temBoss = false
 	local hpBoss
-	local position = Position(33681, 32334, 15)
+	local position = Position(18008, 18232, 14)
 	local spectators = Game.getSpectators(position, false, false, 20, 20, 20, 20)
 	for _, checagem in pairs(spectators) do
 		if checagem:isMonster() then
@@ -370,7 +370,7 @@ end
 
 local function startWarzoneIV()
 	addEvent(function()
-		Game.createMonster("The Baron From Below", Position(33648, 32303, 15))
+		Game.createMonster("The Baron From Below", Position(18037, 17830, 14))
 		addEvent(sumonarLavasIV, 15 * 1000, 5)
 		addEvent(lavaHoles, 15 * 1000, 1)
 	end, 10 * 1000)
@@ -378,7 +378,7 @@ end
 
 local function startWarzoneV()
 	addEvent(function()
-		local monstro = Game.createMonster("The Count Of The Core", Position(33681, 32334, 15))
+		local monstro = Game.createMonster("The Count Of The Core", Position(18008, 18232, 14))
 		if monstro then
 			monstro:registerEvent("SnailSlimeThink")
 		end
@@ -390,7 +390,7 @@ end
 
 local function startWarzoneVI()
 	addEvent(function()
-		local monstro = Game.createMonster("The Duke Of The Depths", Position(33712, 32303, 15))
+		local monstro = Game.createMonster("The Duke Of The Depths", Position(17482, 17716, 11))
 		if monstro then
 			monstro:registerEvent("FieryHeartThink")
 		end
@@ -398,7 +398,7 @@ local function startWarzoneVI()
 		addEvent(sumonarLavasVI, 15 * 1000, 5)
 	end, 10 * 1000)
 end
-
+ 
 local dangerousDepthCrystals = Action()
 function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not player then
@@ -413,109 +413,109 @@ function dangerousDepthCrystals.onUse(player, item, fromPosition, target, toPosi
 		return false
 	end
 
-	local WarzoneVI = Position(33274, 32316, 15)
-	local WarzoneIV = Position(33459, 32267, 15)
-	local WarzoneV = Position(33323, 32109, 15)
+	local WarzoneVI = Position(17416, 17710, 11)
+	local WarzoneIV = Position(18062, 17822, 14)
+	local WarzoneV = Position(17981, 18232, 14)
 	local geodeId = 27510
 	local targetPosition = target:getPosition()
 
 	if targetPosition == WarzoneIV and target:getId() == geodeId then -- Warzone 4 BOSS!!!
-		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) < 30 then
+		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) < 1 then
 			targetPosition:sendMagicEffect(CONST_ME_HITAREA)
-			item:remove(1)
+--			item:remove(1)
 			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) < 0 then
 				Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV, 0)
 			end
 			Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV, Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) + 1)
-			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) == 30 then
+			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneIV) == 1 then
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
 						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
 					end
-				end
-				local stalagmites = Tile(Position(33460, 32267, 15)):getItemById(388)
+				end  
+				local stalagmites = Tile(Position(18063, 17822, 14)):getItemById(388)
 				if stalagmites then
 					stalagmites:remove()
-					local teleport = Game.createItem(1949, 1, Position(33460, 32267, 15))
+					local teleport = Game.createItem(1949, 1, Position(18063, 17822, 14))
 					teleport:setActionId(57243)
 					addEvent(function()
 						if teleport then
 							teleport:remove(1)
-							Game.createItem(388, 1, Position(33460, 32267, 15))
+							Game.createItem(388, 1, Position(18063, 17822, 14))
 						end
 					end, 8 * 1000)
-					addEvent(clearForgotten, 30 * 60 * 1000, Position(33638, 32291, 15), Position(33675, 32313, 15), Position(33462, 32267, 15), GlobalStorage.DangerousDepths.Geodes.WarzoneIV)
+					addEvent(clearForgotten, 120 * 60 * 1000, Position(18027, 17818, 14), Position(18047, 17841, 14), Position(18065, 17822, 14), GlobalStorage.DangerousDepths.Geodes.WarzoneIV)
 					startWarzoneIV()
-				end
+				end 
 			end
 		else
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The crystal geode can't carry any more crystals.")
 		end
 	end
-
+ 
 	if targetPosition == WarzoneV and target:getId() == geodeId then -- Warzone 5 BOSS!!!
-		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) < 30 then
+		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) < 1 then
 			targetPosition:sendMagicEffect(CONST_ME_HITAREA)
-			item:remove(1)
+--			item:remove(1)
 			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) < 0 then
 				Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV, 0)
 			end
 			Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV, Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) + 1)
-			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) == 30 then
+			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneV) == 1 then
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
 						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
 					end
 				end
-				local stalagmites = Tile(Position(33324, 32109, 15)):getItemById(388)
+				local stalagmites = Tile(Position(17982, 18232, 14)):getItemById(388)
 				if stalagmites then
 					stalagmites:remove()
-					local teleport = Game.createItem(1949, 1, Position(33324, 32109, 15))
+					local teleport = Game.createItem(1949, 1, Position(17982, 18232, 14))
 					teleport:setActionId(57243)
 					addEvent(function()
 						if teleport then
 							teleport:remove(1)
-							Game.createItem(388, 1, Position(33324, 32109, 15))
+							Game.createItem(388, 1, Position(17982, 18232, 14))
 						end
-					end, 8 * 1000)
-					addEvent(clearForgotten, 30 * 60 * 1000, Position(33668, 32310, 15), Position(33695, 32343, 15), Position(33323, 32111, 15), GlobalStorage.DangerousDepths.Geodes.WarzoneV)
+					end, 60 * 1000)
+					addEvent(clearForgotten, 120 * 60 * 1000, Position(17996, 18224, 14), Position(18020, 18239, 14), Position(17981, 18234, 14), GlobalStorage.DangerousDepths.Geodes.WarzoneV)
 					startWarzoneV()
 				end
 			end
 		else
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "The crystal geode can't carry any more crystals.")
 		end
-	end
+	end 
 
 	if targetPosition == WarzoneVI and target:getId() == geodeId then -- Warzone 6 BOSS!!!
-		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) < 30 then
+		if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) < 1 then
 			targetPosition:sendMagicEffect(CONST_ME_HITAREA)
-			item:remove(1)
-			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) < 0 then
+--			item:remove(1)
+			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) < 0 then 
 				Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI, 0)
 			end
 			Game.setStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI, Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) + 1)
-			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) == 30 then
+			if Game.getStorageValue(GlobalStorage.DangerousDepths.Geodes.WarzoneVI) == 1 then
 				local spectators = Game.getSpectators(targetPosition, false, true, 3, 3, 3, 3)
 				for _, spectator in pairs(spectators) do
 					if spectator:isPlayer() then
 						spectator:sendTextMessage(MESSAGE_EVENT_ADVANCE, "This crystal geode is shaking from a battle nearby.")
 					end
 				end
-				local stalagmites = Tile(Position(33275, 32316, 15)):getItemById(388)
+				local stalagmites = Tile(Position(17417, 17710, 11)):getItemById(388)
 				if stalagmites then
 					stalagmites:remove()
-					local teleport = Game.createItem(1949, 1, Position(33275, 32316, 15))
+					local teleport = Game.createItem(1949, 1, Position(17417, 17710, 11))
 					teleport:setActionId(57243)
 					addEvent(function()
 						if teleport then
 							teleport:remove(1)
-							Game.createItem(388, 1, Position(33275, 32316, 15))
+							Game.createItem(388, 1, Position(17417, 17710, 11)) 
 						end
-					end, 8 * 1000)
-					addEvent(clearForgotten, 30 * 60 * 1000, Position(33684, 32293, 15), Position(33724, 32314, 15), Position(33275, 32318, 15), GlobalStorage.DangerousDepths.Geodes.WarzoneVI)
+					end, 60 * 1000)
+					addEvent(clearForgotten, 120 * 60 * 1000, Position(17471, 17705, 11), Position(17491, 17726, 11), Position(17417, 17712, 11), GlobalStorage.DangerousDepths.Geodes.WarzoneVI)
 					startWarzoneVI()
 				end
 			end

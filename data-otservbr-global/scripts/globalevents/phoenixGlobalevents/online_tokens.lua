@@ -11,19 +11,30 @@ function onlineTokensEvent.onThink(interval)
     local players = Game.getPlayers()
     if #players == 0 then
         return true
-    end 
+    end
 
     local checkIp = {}
     for _, player in pairs(players) do
+        local tile = player:getPosition():getTile()
+          if not tile then
+            return true
+        end
+
+        if tile:hasFlag(TILESTATE_PROTECTIONZONE) then
+            return true
+        end
+
         local ip = player:getIp()
         if ip ~= 0 and (not config.checkDuplicateIps or not checkIp[ip]) then
             checkIp[ip] = true
             local seconds = math.max(0, player:getStorageValue(config.storage))
-            if seconds >= 3600 then
+            if seconds >= 360 then 
                 player:setStorageValue(config.storage, 0)
-                local item = player:addItem(config.tokenItemId, config.tokensPerHour)
-                if item then
-			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received an Online Token for being online for one hour.")
+                local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+                local targetContainer = inbox and inbox:getEmptySlots() > 0 and inbox or player
+                if targetContainer then
+                    targetContainer:addItem(config.tokenItemId, config.tokensPerHour)
+                    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received an Online Token for being online for one hour.")
                 end
                 return true
             end
@@ -33,5 +44,5 @@ function onlineTokensEvent.onThink(interval)
     return true
 end
 
-onlineTokensEvent:interval(10000)
+onlineTokensEvent:interval(100)
 onlineTokensEvent:register()

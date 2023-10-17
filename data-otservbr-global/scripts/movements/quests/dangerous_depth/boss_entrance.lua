@@ -7,14 +7,14 @@ function bossEntrance.onStepIn(creature, item, position, fromPosition, toPositio
 		return true
 	end
 
-	local WarzoneIV = Position(33460, 32267, 15)
-	local WarzoneIV_b = Position(33650, 32310, 15)
+	local WarzoneIV = Position(18063, 17822, 14)
+	local WarzoneIV_b = Position(18039, 17837, 14)
 
-	local WarzoneV = Position(33324, 32109, 15)
-	local WarzoneV_b = Position(33681, 32338, 15)
+	local WarzoneV = Position(17982, 18232, 14)  
+	local WarzoneV_b = Position(18008, 18236, 14)
 
-	local WarzoneVI = Position(33275, 32316, 15)
-	local WarzoneVI_b = Position(33717, 32302, 15)
+	local WarzoneVI = Position(17417, 17710, 11) 
+	local WarzoneVI_b = Position(17487, 17715, 11)
 
 	local bossName = "The Count of the Core"
 	local destination = WarzoneV_b
