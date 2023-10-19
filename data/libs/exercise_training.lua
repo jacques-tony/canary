@@ -1,6 +1,7 @@
 ExerciseWeaponsTable = {
 	-- MELE
-	[28540] = { skill = SKILL_SWORD },
+	[38650] = { skill = SKILL_FIST },	
+	[28540] = { skill = SKILL_SWORD }, 
 	[28552] = { skill = SKILL_SWORD },
 	[35279] = { skill = SKILL_SWORD },
 	[35285] = { skill = SKILL_SWORD },
@@ -113,11 +114,14 @@ function ExerciseEvent(playerId, tilePosition, weaponId, dummyId)
 	end
 
 	if weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES) <= 0 then
-		weapon:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
-		LeaveTraining(playerId)
-		return false
-	end
+    weapon:remove(1)
+    local weapon = player:getItemById(weaponId, true)
+    if not weapon or (not weapon:isItem() or not weapon:hasAttribute(ITEM_ATTRIBUTE_CHARGES)) then
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
+        LeaveTraining(playerId)
+        return false
+    end
+end
 
 	local vocation = player:getVocation()
 	_G.OnExerciseTraining[playerId].event = addEvent(ExerciseEvent, vocation:getBaseAttackSpeed() / configManager.getFloat(configKeys.RATE_EXERCISE_TRAINING_SPEED), playerId, tilePosition, weaponId, dummyId)
