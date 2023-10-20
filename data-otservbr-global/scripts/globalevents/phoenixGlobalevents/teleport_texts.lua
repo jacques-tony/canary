@@ -19,6 +19,11 @@ local effects = {
     {position = Position(17645, 17694, 5), text = 'Welcome to, PHOENIX OT!', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17635, 17690, 7), text = 'GO HUNTING!', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17631, 17694, 7), text = 'SELL LOOT!', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17621, 17694, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17627, 17694, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17623, 17705, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17629, 17706, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
+	
     {position = Position(17635, 17686, 7), text = '!EXERCISE', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17634, 17692, 7), text = '!PROMOTION', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17636, 17692, 7), text = '!TOOLS', effect = CONST_ME_GROUNDSHAKER},
