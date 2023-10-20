@@ -1,4 +1,5 @@
 -- Core settings
+-- Core settings
 -- Note: If you want to use datapack folder canary (custom), put only "data-canary"
 -- If you want to use the global datapack folder, put "data-otservbr-global"
 -- If "useAnyDatapackFolder" is set to true then you can choose any datapack folder for your server
@@ -400,11 +401,11 @@ resetSessionsOnStartup = false
 -- NOTE: disableLegacyRaids: set to true to disable legacy XML raids
 -- NOTE: combatChainDelay: set to minimum 50 miliseconds
 allowChangeOutfit = true
-toggleMountInProtectionZone = false
+toggleMountInProtectionZone = true
 freePremium = false
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
-emoteSpells = true
+emoteSpells = false
 allowWalkthrough = true
 coinPacketSize = 25
 coinImagesURL = "http://144.217.201.226/images/store/"
@@ -415,7 +416,7 @@ minDelayBetweenConditions = 0
 -- configure maximum value of critical imbuement
 criticalChance = 10
 inventoryGlowOnFiveBless = false
-adventurersBlessingLevel = 21
+adventurersBlessingLevel = 500
 skulledDeathLoseStoreItem = false
 experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
@@ -462,7 +463,7 @@ rateUseStages = true
 lowLevelBonusExp = 50
 rateExp = 1
 rateSkill = 1
-rateLoot = 2
+rateLoot = 3 
 rateMagic = 1
 rateSpawn = 1
 
@@ -492,8 +493,8 @@ rateMonsterDefense = 1.0
 rateBossHealth = 1.0
 rateBossAttack = 1.0
 rateBossDefense = 1.0
-
-bossDefaultTimeToFightAgain = 20 * 60 * 60 -- 20 hours
+ 
+bossDefaultTimeToFightAgain = 8 * 60 * 60 -- 20 hours
 bossDefaultTimeToDefeat = 20 * 60 -- 20 minutes
 
 -- Monsters

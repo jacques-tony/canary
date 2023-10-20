@@ -28,7 +28,7 @@ function onlineTokensEvent.onThink(interval)
         if ip ~= 0 and (not config.checkDuplicateIps or not checkIp[ip]) then
             checkIp[ip] = true
             local seconds = math.max(0, player:getStorageValue(config.storage))
-            if seconds >= 360 then 
+            if seconds >= 3600 then 
                 player:setStorageValue(config.storage, 0)
                 local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
                 local targetContainer = inbox and inbox:getEmptySlots() > 0 and inbox or player
@@ -44,5 +44,5 @@ function onlineTokensEvent.onThink(interval)
     return true
 end
 
-onlineTokensEvent:interval(100)
+onlineTokensEvent:interval(10000)
 onlineTokensEvent:register()
