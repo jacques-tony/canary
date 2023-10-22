@@ -1,10 +1,10 @@
 local config = {
-	{name = "durable exercise sword", itemId = 35279, charges = 8000, storage = 998000},
-	{name = "durable exercise axe", itemId = 35280, charges = 8000, storage = 998000},
-	{name = "durable exercise club", itemId = 35281, charges = 8000, storage = 998000},
-	{name = "durable exercise bow", itemId = 35282, charges = 8000, storage = 998000},
-	{name = "durable exercise rod", itemId = 35283, charges = 8000, storage = 998000},
-	{name = "durable exercise wand", itemId = 35284, charges = 8000, storage = 998000}
+	{name = "durable exercise sword", itemId = 35279, charges = 3000, storage = 998000},
+	{name = "durable exercise axe", itemId = 35280, charges = 3000, storage = 998000},
+	{name = "durable exercise club", itemId = 35281, charges = 3000, storage = 998000},
+	{name = "durable exercise bow", itemId = 35282, charges = 3000, storage = 998000},
+	{name = "durable exercise rod", itemId = 35283, charges = 3000, storage = 998000},
+	{name = "durable exercise wand", itemId = 35284, charges = 3000, storage = 998000}
 }
 
 local exercise_reward_modal = TalkAction("!exercise")
