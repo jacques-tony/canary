@@ -1,7 +1,3 @@
-local damage = {
-    percent_reset = 0.85 -- 25,5% com 30 resets
-} 
-
 local healthChange = CreatureEvent("RESET_Damage___HealthChange")
 function healthChange.onHealthChange(creature, attacker, primaryDamage, primaryType, secondaryDamage, secondaryType, origin)
     if not creature or not attacker then

@@ -26,14 +26,14 @@ function callback.playerOnLook(player, thing, position, distance)
 		end
 	end
 
-    if thing:isPlayer() then
-            description = string.format("%s\nResets: %d", description, thing:getResets())
-            end
+	if thing:isPlayer() then
+		local value = thing:getResets() * damage.percent_reset
+		description = string.format("%s\nResets: %d | Damage: %d%%", description, thing:getResets(), value)
+ 	end
 
     if thing:isPlayer() then
-    description = string.format("%s\nNivel de Mining: %s", description, configMining.level[thing:getStorageValue(configMining.level.storageNivel)].name)
-            end
-
+    	description = string.format("%s\nNivel de Mining: %s", description, configMining.level[thing:getStorageValue(configMining.level.storageNivel)].name)
+    end
 
 	if player:getGroup():getAccess() then
 		if thing:isItem() then
