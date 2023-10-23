@@ -221,11 +221,12 @@ function Player:onLookInBattleList(creature, distance)
 	end
 
 	if creature:isPlayer() then
-		description = string.format("%s\nResets: %d", description, creature:getResets())
+		local value = creature:getResets() * damage.percent_reset
+		description = string.format("%s\nResets: %d | Damage: %d%%", description, creature:getResets(), value)
  	end
 
 	if creature:isPlayer() then
-    description = string.format("%s\nNivel de Mining: %s", description, configMining.level[creature:getStorageValue(configMining.level.storageNivel)].name)
+    	description = string.format("%s\nNivel de Mining: %s", description, configMining.level[creature:getStorageValue(configMining.level.storageNivel)].name)
     end
 
 	if self:getGroup():getAccess() then

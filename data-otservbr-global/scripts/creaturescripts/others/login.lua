@@ -1,6 +1,47 @@
 local playerLogin = CreatureEvent("PlayerLogin")
 
 function playerLogin.onLogin(player)
+	--- Comecou aqui
+	local items = {
+		{ 3003, 1 },
+		{ 3457, 1 },
+	}
+	if player:getLastLoginSaved() == 0 then
+		player:sendOutfitWindow()
+		local backpack = player:addItem(2854)
+		if backpack then
+			for i = 1, #items do
+				backpack:addItem(items[i][1], items[i][2])
+			end
+		end
+
+		db.query("UPDATE `players` SET `istutorial` = 0 where `id`=" .. player:getGuid())
+		-- Open channels
+		if table.contains({ TOWNS_LIST.DAWNPORT, TOWNS_LIST.DAWNPORT_TUTORIAL }, player:getTown():getId()) then
+			player:openChannel(3) -- World chat
+		else
+			player:openChannel(3) -- World chat
+			player:openChannel(5) -- Advertsing main
+		end
+	else
+		player:sendTextMessage(MESSAGE_STATUS, SERVER_MOTD)
+		player:sendTextMessage(MESSAGE_LOGIN, string.format("Your last visit in " .. SERVER_NAME .. ": %s.", os.date("%d. %b %Y %X", player:getLastLoginSaved())))
+	end
+
+    -- Outfit bonus
+    local bonusCondition = getBonusCondition(getAddonsAmount(player))
+    if bonusCondition then player:addCondition(bonusCondition) end
+	
+	-- Reset bosstiary time
+	local lastSaveServerTime = GetDailyRewardLastServerSave()
+	if lastSaveServerTime >= player:getLastLoginSaved() then
+		player:setRemoveBossTime(1)
+	end
+
+	if isPremium(player) then
+		player:setStorageValue(Storage.PremiumAccount, 1)
+	end
+	--- Terminou aqui
 	-- Premium Ends Teleport to Temple, change addon (citizen) houseless
 	local defaultTown = "Newbie City" -- default town where player is teleported if his home town is in premium area
 	local freeTowns = { "Phoenix City", "Newbie Phoenix" } -- towns in free account area
