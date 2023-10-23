@@ -47,6 +47,10 @@ function playerLogin.onLogin(player)
 		player:sendTextMessage(MESSAGE_LOGIN, string.format("Your last visit in " .. SERVER_NAME .. ": %s.", os.date("%d. %b %Y %X", player:getLastLoginSaved())))
 	end
 
+    -- Outfit bonus
+    local bonusCondition = getBonusCondition(getAddonsAmount(player))
+    if bonusCondition then player:addCondition(bonusCondition) end
+	
 	-- Reset bosstiary time
 	local lastSaveServerTime = GetDailyRewardLastServerSave()
 	if lastSaveServerTime >= player:getLastLoginSaved() then

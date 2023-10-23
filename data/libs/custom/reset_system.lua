@@ -1,3 +1,7 @@
+damage = {
+    percent_reset = 0.85 -- 25,5% com 30 resets
+}
+
 resetConfig = {
 	storage = 500,
     backToLevel = 8,
