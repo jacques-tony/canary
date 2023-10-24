@@ -1,9 +1,10 @@
 local config = {
 	{ name="Sala de craft", position = Position(17564, 17561, 6) },
-	{ name="Sala de monstros", position = Position(17501, 17620, 7) }
+	{ name="Sala de reset", position = Position(17548, 17819, 11) },
+	{ name="Sala de monsters", position = Position(17501, 17620, 7) }
 }
 
-local teleportBoss = Action()
+local teleportBoss = Action() 
 function teleportBoss.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local window = ModalWindow {
 		title = "Teleport Rapidos",
@@ -27,5 +28,5 @@ function teleportBoss.onUse(player, item, fromPosition, target, toPosition, isHo
 	window:sendToPlayer(player)
 	return true
 end
-teleportBoss:id(33313)
+teleportBoss:id(33313) 
 teleportBoss:register()
