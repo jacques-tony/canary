@@ -17,7 +17,7 @@ local weapons = {
 		-- sanguine rod
 		itemId = 43885,
 		type = WEAPON_WAND,
-		wandType = "earth",
+		wandType = "fire",
 --		level = 600,
 		mana = 20,
 		damage = { 100, 124 },
@@ -28,6 +28,45 @@ local weapons = {
 		},
 	},
 	{
+		itemId = 26043,
+		type = WEAPON_WAND,
+		wandType = "ice",
+--		level = 600,
+		mana = 20,
+		damage = { 100, 124 },
+		unproperly = true,
+		vocation = {
+			{ "Druid", true },
+			{ "Elder Druid" },
+		},
+	},
+	{	
+		itemId = 26012,
+		type = WEAPON_WAND,
+		wandType = "death",
+--		level = 600,
+		mana = 20,
+		damage = { 100, 124 },
+		unproperly = true,
+		vocation = {
+			{ "Druid", true },
+			{ "Elder Druid" },
+		},
+	},
+	{	
+		itemId = 26073,
+		type = WEAPON_WAND,
+		wandType = "earth",
+--		level = 600,
+		mana = 20,
+		damage = { 100, 124 },
+		unproperly = true,
+		vocation = {
+			{ "Druid", true },
+			{ "Elder Druid" },
+		},
+	},
+	{		
 		-- grand sanguine coil
 		itemId = 43883,
 		type = WEAPON_WAND,
@@ -56,6 +95,47 @@ local weapons = {
 		},
 	},
 	{
+	
+
+		itemId = 26040,
+		type = WEAPON_WAND,
+		wandType = "energy",
+--		level = 250,
+		mana = 21, 
+		damage = { 113, 125 }, 
+		unproperly = true,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{	
+		itemId = 26009,
+		type = WEAPON_WAND,
+		wandType = "death",
+--		level = 250,
+		mana = 21,
+		damage = { 113, 125 },
+		unproperly = true,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{	
+		itemId = 26070,
+		type = WEAPON_WAND,
+		wandType = "ice",
+--		level = 250,
+		mana = 21,
+		damage = { 113, 125 },
+		unproperly = true,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{		
 		-- grand sanguine crossbow
 		itemId = 43880,
 		type = WEAPON_DISTANCE,
@@ -772,7 +852,7 @@ local weapons = {
 		wandType = "energy",
 --		level = 270,
 		mana = 22,
-		damage = { 94, 100 },
+		damage = { 94, 100 }, 
 		vocation = {
 			{ "Sorcerer", true },
 			{ "Master Sorcerer" },
@@ -1198,6 +1278,12 @@ local weapons = {
 		-- ornate carving mace
 		itemid = 26058,
 		type = WEAPON_CLUB,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable carving mace
@@ -1228,6 +1314,12 @@ local weapons = {
 		-- ornate carving axe
 		itemid = 26052,
 		type = WEAPON_AXE,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable carving axe
@@ -1288,6 +1380,12 @@ local weapons = {
 		-- ornate remedy mace
 		itemid = 26028,
 		type = WEAPON_CLUB,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable remedy mace
@@ -1318,6 +1416,12 @@ local weapons = {
 		-- ornate remedy axe
 		itemid = 26022,
 		type = WEAPON_AXE,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable remedy axe
@@ -1378,6 +1482,12 @@ local weapons = {
 		-- ornate mayhem mace
 		itemid = 25997,
 		type = WEAPON_CLUB,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable mayhem mace
@@ -1408,6 +1518,12 @@ local weapons = {
 		-- ornate mayhem axe
 		itemid = 25991,
 		type = WEAPON_AXE,
+--		level = 200,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
 	},
 	{
 		-- valuable mayhem axe
