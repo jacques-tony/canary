@@ -11,7 +11,7 @@ function healthChange.onHealthChange(creature, attacker, primaryDamage, primaryT
     if attacker:isPlayer() then
         if attacker:getResets() > 0 then
 --            print("Antes: ", math.abs(primaryDamage))
-            primaryDamage = math.abs(primaryDamage) + math.floor(math.abs(primaryDamage) * (attacker:getResets() * damage.percent_reset) / 100)
+            primaryDamage = math.abs(primaryDamage) + math.floor(math.abs(primaryDamage) * attacker:getDamageResets() / 100)
 --            print("Depois: ", primaryDamage)
         end
     end
@@ -27,7 +27,7 @@ function manaChange.onManaChange(creature, attacker, primaryDamage, primaryType,
 
     if attacker:isPlayer() then
         if attacker:getResets() > 0 then
-            primaryDamage = math.abs(primaryDamage) + math.floor(math.abs(primaryDamage) * (attacker:getResets() * damage.percent_reset) / 100)
+            primaryDamage = math.abs(primaryDamage) + math.floor(math.abs(primaryDamage) * attacker:getDamageResets() / 100)
         end
     end
     return primaryDamage, primaryType, secondaryDamage, secondaryType
@@ -36,8 +36,7 @@ manaChange:register()
 
 local talkaction = TalkAction("!bonusreset")
 function talkaction.onSay(player, words, param)
-    local damage = player:getResets() * damage.percent_reset
-    player:sendTextMessage(MESSAGE_INFO_DESCR, "You have ".. damage .."% more attack!")
+    player:sendTextMessage(MESSAGE_INFO_DESCR, "You have ".. player:getDamageResets() .."% more attack!")
 end
 talkaction:groupType("normal")
 talkaction:register()
