@@ -45737,9 +45737,9 @@
 		<attribute key="description" value="This replica looks heavily charged"/>
 		<attribute key="attack" value="5"/>
 		<attribute key="defense" value="5"/>
-		<attribute key="weight" value="5000"/>
+		<attribute key="weight" value="5000"/> 
 	</item>
-	<item id="26016" article="an" name="ornate remedy blade">
+	<item id="26016" article="an" name="phoenix earth sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="8"/>
@@ -46091,7 +46091,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26058" article="an" name="ornate carving mace">
+	<item id="26058" article="an" name="phoenix ice club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
@@ -68734,7 +68734,7 @@
 		<attribute key="description" value="Souvenir from Thais Museum."/>
 		<attribute key="weight" value="6800"/>
 	</item>
-	<item id="43864" article="a" name="sanguine blade">
+	<item id="43864" article="a" name="phoenix sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="8"/>
@@ -68766,11 +68766,11 @@
 			<attribute key="skillboost sword" value="3"/>
 		</attribute>
 	</item>
-	<item id="43866" article="a" name="sanguine cudgel">
+	<item id="43866" article="a" name="phoenix club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
-		<attribute key="elementdeath" value="46"/>
+		<attribute key="elementfire" value="46"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -68798,7 +68798,7 @@
 			<attribute key="skillboost club" value="3"/>
 		</attribute>
 	</item>
-	<item id="43868" article="a" name="sanguine hatchet">
+	<item id="43868" article="a" name="phoenix axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="attack" value="8"/>
@@ -68948,7 +68948,7 @@
 		<attribute key="armor" value="12"/>
 		<attribute key="weight" value="3800"/>
 	</item>
-	<item id="43877" article="a" name="sanguine bow">
+	<item id="43877" article="a" name="phoenix bow">
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
@@ -68990,7 +68990,7 @@
 			<attribute key="skillboost distance" value="3"/>
 		</attribute>
 	</item>
-	<item id="43879" article="a" name="sanguine crossbow">
+	<item id="43879" article="a" name="phoenix crossbow">
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
@@ -69041,7 +69041,7 @@
 		<attribute key="armor" value="11"/>
 		<attribute key="weight" value="3200"/>
 	</item>
-	<item id="43882" article="a" name="phoenix fire wand">
+	<item id="43882" article="a" name="phoenix wand"> 
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/> 
@@ -69089,7 +69089,7 @@
 			<attribute key="increase speed" value="10"/>
 		</attribute>
 	</item>
-	<item id="43885" article="a" name="phoenix fire rod">
+	<item id="43885" article="a" name="phoenix rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>

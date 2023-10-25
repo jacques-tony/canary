@@ -32,8 +32,7 @@ function callback.playerOnLook(player, thing, position, distance)
 	end
 
 	if thing:isPlayer() then
-		local value = thing:getResets() * damage.percent_reset
-		description = string.format("%s\nResets: %d | Damage: %d%%", description, thing:getResets(), value)
+		description = string.format("%s\nResets: %d | Damage: %.2f%%", description, thing:getResets(), thing:getDamageResets())
  	end
 
     if thing:isPlayer() then
