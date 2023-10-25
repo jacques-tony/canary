@@ -221,8 +221,7 @@ function Player:onLookInBattleList(creature, distance)
 	end
 
 	if creature:isPlayer() then
-		local value = creature:getResets() * damage.percent_reset
-		description = string.format("%s\nResets: %d | Damage: %d%%", description, creature:getResets(), value)
+		description = string.format("%s\nResets: %d | Damage: %.2f%%", description, creature:getResets(), creature:getDamageResets())
  	end
 
 	if creature:isPlayer() then

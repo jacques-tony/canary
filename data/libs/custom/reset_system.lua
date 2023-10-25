@@ -1,6 +1,21 @@
-damage = {
-    percent_reset = 0.85 -- 25,5% com 30 resets
+damage_resets = {
+    {1, 9, 0.85},
+    {10, 19, 1.00},
+    {20, 24, 1.25},
+    {30, 50, 1.50}
 }
+
+function Player.getDamageResets(self) 
+    local percent = 0.0
+    for _, range in ipairs(damage_resets) do
+        local i, f, value = range[1], range[2], range[3]
+        if self:getResets() >= i and self:getResets() <= f then
+            percent = value * self:getResets()  
+            break
+        end
+    end
+    return percent
+end
 
 resetConfig = {
 	storage = 500,

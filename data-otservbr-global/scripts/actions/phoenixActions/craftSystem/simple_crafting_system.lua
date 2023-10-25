@@ -15,7 +15,7 @@ local config = {
 	[1] = {vocation = "PHOENIX WEAPONS", -- This is the category can be anything.
 		resets = 0, -- Quantidade de resets para poder abrir a janela. 
 		items = {
-			[1] = {item = "Sanguine Blade", -- phoenix sword
+			[1] = {item = "Phoenix Sword", -- phoenix sword
 				itemID = 43864, -- item to be made
 				reqItems = { -- items and the amounts in order to craft.
 					[1] = {item = 28723, count = 1}, -- Falcon Longsword
@@ -27,7 +27,7 @@ local config = {
 				},
 			},
 			
-			[2] = {item = "Sanguine Hatchet",   -- phoenix axe
+			[2] = {item = "Phoenix Axe",   -- phoenix axe
 				itemID = 43868,
 				reqItems = {
 					[1] = {item = 28724, count = 1}, -- Falcon Axe
@@ -39,7 +39,7 @@ local config = {
 				},
 			},
 
-			[3] = {item = "sanguine cudgel", -- phoenix club
+			[3] = {item = "Phoenix Club", -- phoenix club
 				itemID = 43866,
 				reqItems = {
 					[1] = {item = 28725, count = 1}, -- Falcon Mace
@@ -51,7 +51,7 @@ local config = {
 				},
 			},
 
-			[4] = {item = "Sanguine Bow", -- phoenix bow
+			[4] = {item = "Phoenix Bow", -- phoenix bow
 				itemID = 43877,
 				reqItems = {
 					[1] = {item = 28718, count = 1}, -- Falcon Bow
@@ -63,7 +63,7 @@ local config = {
 				},
 			},
 
-			[5] = {item = "Sanguine Crossbow", -- phoenix crossbow
+			[5] = {item = "Phoenix Crossbow", -- phoenix crossbow
 				itemID = 43879,
 				reqItems = {
 					[1] = {item = 28718, count = 1}, -- Falcon Bow
@@ -75,7 +75,7 @@ local config = {
 				},
 			},
 
-			[6] = {item = "Sanguine Rod", -- phoenix rod
+			[6] = {item = "Phoenix Rod", -- phoenix rod
 				itemID = 43885,
 				reqItems = {
 					[1] = {item = 28716, count = 1}, -- Falcon Rod
@@ -87,7 +87,7 @@ local config = {
 				},
 			},
 			 
-			[7] = {item = "Sanguine Coil", -- phoenix wand
+			[7] = {item = "Phoenix wand", -- phoenix wand
 				itemID = 43882, 
 				reqItems = {
 					[1] = {item = 28717, count = 1}, -- Falcon Wand

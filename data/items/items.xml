@@ -50470,7 +50470,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="26016" article="an" name="ornate remedy blade">
+	<item id="26016" article="an" name="phoenix earth sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="attack" value="8"/>
 		<attribute key="elementenergy" value="46"/>
@@ -50926,7 +50926,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="26058" article="an" name="ornate carving mace">
+	<item id="26058" article="an" name="phoenix ice club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="attack" value="8"/>
 		<attribute key="elementice" value="46"/>
@@ -75159,7 +75159,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="duration" value="10"/>
 		<attribute key="fluidSource" value="blood"/>
 	</item>
-	<item id="43864" article="a" name="sanguine blade">
+	<item id="43864" article="a" name="phoenix sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="8"/>
@@ -75205,11 +75205,11 @@ Granted by TibiaGoals.com"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="43866" article="a" name="sanguine cudgel">
+	<item id="43866" article="a" name="phoenix club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
-		<attribute key="elementdeath" value="46"/>
+		<attribute key="elementfire" value="46"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -75251,7 +75251,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
-	<item id="43868" article="a" name="sanguine hatchet">
+	<item id="43868" article="a" name="phoenix axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="attack" value="8"/>
@@ -75456,7 +75456,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Knight;true, Elite Knight"/>
 		</attribute>
 	</item>
-	<item id="43877" article="a" name="sanguine bow">
+	<item id="43877" article="a" name="phoenix bow">
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
@@ -75510,7 +75510,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
-	<item id="43879" article="a" name="sanguine crossbow">
+	<item id="43879" article="a" name="phoenix crossbow">
 		<attribute key="primarytype" value="distance weapons"/>
 		<attribute key="weaponType" value="distance"/>
 		<attribute key="slotType" value="two-handed"/>
@@ -75578,7 +75578,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Paladin;true, Royal Paladin"/>
 		</attribute>
 	</item>
-	<item id="43882" article="a" name="phoenix fire wand">
+	<item id="43882" article="a" name="phoenix wand"> 
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/> 
@@ -75653,7 +75653,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
 		</attribute>
 	</item>
-	<item id="43885" article="a" name="phoenix fire rod">
+	<item id="43885" article="a" name="phoenix rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>
