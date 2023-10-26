@@ -99,6 +99,543 @@ GameStore.Categories = {
 		},
 	},
 
+ -- General Items
+{
+	icons = { "Category_ExclusiveOffers.png" }, 
+	name = "General Items",
+	rookgaard = true,
+	subclasses = {"Utilities", "Tokens", "Stones", "Forge System", "Wheel Scrolls"},
+},
+-- Soul
+ {
+	icons = { "Category_ExclusiveOffers.png" },
+	name = "Utilities",
+	parent = "General Items", 
+	rookgaard = true,
+	state = GameStore.States.STATE_NONE, 
+	offers = {
+		{
+			icons = { "Soulcutter.png" },
+			name = "Teleport House",
+			price = 100, 
+			itemtype = 8827,  
+			charges = 1,
+			description = "Item Infinite.\n\nonly usable by purchasing characterTeleport to the house without this pz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true	
+		},
+		{
+			icons = { "Soulshredder.png" },
+			name = "Soulshredder",
+			price = 500,
+			itemtype = 34083,
+			charges = 1,
+			description = "(Atk:10 physical + 47 ice, Def:35, sword fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 81.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulbiter.png" },
+			name = "Soulbiter",
+			price = 500,
+			itemtype = 34084,
+			charges = 1,
+			description = "(Atk:7 physical + 45 death, Def:32 +3, axe fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 40.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Souleater.png" },
+			name = "Souleater",
+			price = 500,
+			itemtype = 34085,
+			charges = 1,
+			description = "(Atk:10 physical + 47 ice, Def:35, axe fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 72.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulcrusher.png" },
+			name = "Soulcrusher",
+			price = 500,
+			itemtype = 34086,
+			charges = 1,
+			description = "(Atk:6 physical + 46 ice, Def:33 +3, club fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 41.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulmaimer.png" },
+			name = "Soulmaimer",
+			price = 500,
+			itemtype = 34087,
+			charges = 1,
+			description = "(Atk:10 physical + 47 energy, Def:35, club fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 89.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	 	{
+			icons = { "Soulbleeder.png" },
+			name = "Soulbleeder",
+			price = 500,
+			itemtype = 34088,
+			charges = 1,
+			description = "(Range: 6, Atk +8, Hit% +5, distance fighting +4, critical hit chance 10, critical extra damage +10, protection holy +7%). It can only be wielded properly by paladins of level 400 or higher. It weighs 47.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	 	{
+			icons = { "Soulpiercer.png" },
+			name = "Soulpiercer",
+			price = 500,
+			itemtype = 34089,
+			charges = 1,
+			description = "(Range: 6, Atk +9, Hit% +6, distance fighting +4, critical hit chance 10, critical extra damage +10, protection death +7%). It can only be wielded properly by paladins of level 400 or higher. It weighs 40.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soultainter.png" },
+			name = "Soultainter",
+			price = 500,
+			itemtype = 34090,
+			charges = 1,
+			description = "(critical hit chance 10%, critical extra damage +10%, magic level +5, protection death +12%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 19.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulhexer.png" },
+			name = "Soulhexer",
+			price = 500,
+			itemtype = 34091,
+			charges = 1,
+			description = "(life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%, magic level +5, protection ice +12%). It can only be wielded properly by druids of level 400 or higher. It weighs 25.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulshanks.png" },
+			name = "Soulshanks",
+			price = 500,
+			itemtype = 34092,
+			charges = 1,
+			description = "(Arm:10, magic level +3, protection death +10%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 38.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulstrider.png" },
+			name = "Soulstrider",
+			price = 500,
+			itemtype = 34093,
+			charges = 1,
+			description = "(Arm:10, magic level +3, protection fire +10%). It can only be wielded properly by druids of level 400 or higher. It weighs 38.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	 	{
+			icons = { "Soulshell.png" },
+			name = "Soulshell",
+			price = 500,
+			itemtype = 34094,
+			charges = 1,
+			description = "(Arm:18, distance fighting +4, protection physical +3%, fire +15%). It can only be wielded properly by paladins of level 400 or higher. It weighs 123.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulmantle.png" },
+			name = "Soulmantle",
+			price = 500,
+			itemtype = 34095,
+			charges = 1,
+			description = "(Arm:17, magic level +4, protection physical +4%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 24.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulshroud.png" },
+			name = "Soulshroud",
+			price = 500,
+			itemtype = 34096,
+			charges = 1,
+			description = "(Arm:17, magic level +4, protection death +10%). It can only be wielded properly by druids of level 400 or higher. It weighs 24.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Pair_Of_Soulwalkers.png" },
+			name = "Pair of Soulwalkers",
+			price = 500,
+			itemtype = 34097,
+			charges = 1,
+			description = "(Arm:4, club fighting +1, sword fighting +1, axe fighting +1, protection physical +7%, fire +5%, speed +15). It can only be wielded properly by knights of level 400 or higher. It weighs 13.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Pair_Of_Soulstalkers.png" },
+			name = "Pair of Soulstalkers",
+			price = 500,
+			itemtype = 34098,
+			charges = 1,
+			description = "(Arm:3, distance fighting +1, protection physical +5%, speed +20). It can only be wielded properly by paladins of level 400 or higher. It weighs 13.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Soulbastion.png" },
+			name = "SoulBastion",
+			price = 500,
+			itemtype = 34099,
+			charges = 1,
+			description = "(Def:42, protection physical +10%, death +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 58.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	},
+},
+-- Falcon
+{
+ icons = { "Category_ExclusiveOffers.png" },
+	name = "Tokens",
+	parent = "General Items",
+	rookgaard = true,
+	state = GameStore.States.STATE_NONE,
+	    offers = {
+		{
+			icons = { "Falcon_Circlet.png" },
+			name = "Cassino Token",
+			price = 75,
+			itemtype = 22724, 
+			count = 1,
+			description = "You can use in Cassino Lounge good luck.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Falcon_Circlet.png" },
+			name = "Cassino Token",
+			price = 375,
+			itemtype = 22724, 
+			count = 5,
+			description = "You can use in Cassino Lounge good luck.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{		
+			icons = { "Falcon_Coif.png" },
+			name = "Cluster Of Solace",
+			price = 20,
+			itemtype = 20062,
+			count = 1,
+			description = "You can change Dream Matter for items with Eraruan.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Falcon_Coif.png" },
+			name = "Cluster Of Solace",
+			price = 500,
+			itemtype = 20062,
+			count = 5,
+			description = "You can change Dream Matter for items with Eraruan.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{		
+			icons = { "Falcon_Rod.png" },
+			name = "Dream Matter",
+			price = 100,
+			itemtype = 20063,
+			count = 1,
+			description = "You can change Dream Matter for items with Eraruan.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{		
+			icons = { "Falcon_Rod.png" },
+			name = "Dream Matter",
+			price = 500,
+			itemtype = 20063,
+			count = 5,
+			description = "You can change Dream Matter for items with Eraruan.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true			
+		},
+		{
+			icons = { "Falcon_Wand.png" },
+			name = "Gold Token",
+			price = 125,
+			itemtype = 22721,
+			count = 25,
+			description = "You can change Gold Token for items with Yana.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Falcon_Bow.png" },
+			name = "Gold Token",
+			price = 250,
+			itemtype = 22721,
+			count = 50,
+			description = "You can change Gold Token for items with Yana.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Falcon_Plate.png" },
+			name = "Silver Token",
+			price = 100,
+			itemtype = 22516,
+			count = 50,
+			description = "You can change Silver Token for items with Cledywn.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Falcon_Greaves.png" },
+			name = "Silver Token",
+			price = 200,
+			itemtype = 22516,  
+			count = 100,
+			description = "You can change Silver Token for items with Cledywn.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true 
+		},
+	},
+},
+-- Lion
+{
+ icons = { "Category_ExclusiveOffers.png" },
+	name = "Stones",
+	parent = "General Items",
+	rookgaard = true,
+	state = GameStore.States.STATE_NONE,
+	offers = {
+		{
+			icons = { "Lion_Longbow.png" },
+			name = "Teleport House",
+			price = 400,
+			itemtype = 8827,
+			charges = 1,
+			description = "Item Infinite.n/n/only usable by purchasing characterTeleport to the house without this pz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Rod.png" },
+			name = "Lion Rod",
+			price = 400,
+			itemtype = 34151,
+			charges = 1,
+			description = "(critical hit chance 10%, critical extra damage +35%, magic level +2). It can only be wielded properly by druids of level 270 or higher. It weighs 26.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_wand.png" },
+			name = "Lion Wand",
+			price = 400,
+			itemtype = 34152,
+			charges = 1,
+			description = "(life leech chance +100%, life leech amount +18%, magic level +2). It can only be wielded properly by sorcerers of level 220 or higher. It weighs 21.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Spellbook.png" },
+			name = "Lion Spellbook",
+			price = 400,
+			itemtype = 34153,
+			charges = 1,
+			description = "(Def:20, magic level +4, protection physical +3%, ice +7%). It can only be wielded properly by sorcerers and druids of level 220 or higher. It weighs 25.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Longsword.png" },
+			name = "Lion Longsword",
+			price = 400,
+			itemtype = 34155,
+			charges = 1,
+			description = "(Atk:8 physical + 44 earth, Def:31 +2, sword fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 75.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Spangenhelm.png" },
+			name = "Lion Spangenhelm",
+			price = 400,
+			itemtype = 34156,
+			charges = 1,
+			description = "(Arm:7, distance fighting +2, protection physical +3%, earth +5%). It can only be wielded properly by paladins of level 230 or higher. It weighs 30.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Plate.png" },
+			name = "Lion Plate",
+			price = 400,
+			itemtype = 34157,
+			charges = 1,
+			description = "(Arm:17, club fighting +3, sword fighting +3, axe fighting +3, protection physical +6%). It can only be wielded properly by knights of level 270 or higher. It weighs 150.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Amulet.png" },
+			name = "Lion Amulet",
+			price = 400,
+			itemtype = 34158,
+			charges = 1,
+			description = "(Arm:3, protection physical +3%, ice +7%). It can only be wielded properly by players of level 230 or higher. It weighs 5.20 oz. The heraldic animal of the Order of the Lion is emblazoned on this imposing amulet. It is worn with pride by true knights of the lion.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Hammer.png" },
+			name = "Lion Hammer",
+			price = 400,
+			itemtype = 34254,
+			charges = 1,
+			description = "(Atk:8 physical + 44 earth, Def:31 +2, club fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 65.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Shield.png" },
+			name = "Lion Shield",
+			price = 400,
+			itemtype = 34154,
+			charges = 1,
+			description = "(Def:39, protection physical +7%, earth +10%). It can only be wielded properly by knights of level 250 or higher. It weighs 65.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Lion_Axe.png" },
+			name = "Lion Axe",
+			price = 400,
+			itemtype = 34253,
+			charges = 1,
+			description = "(Atk:8 physical + 44 earth, Def:31 +2, axe fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 79.00 oz.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	},
+},
+-- Gnome 
+{
+ icons = { "Category_ExclusiveOffers.png" },
+	name = "Forge System",
+	parent = "General Items",
+	rookgaard = true,
+	state = GameStore.States.STATE_NONE,
+	offers = {
+		{
+			icons = { "Gnome_Helmet.png" },
+			name = "Exalted Core",
+			price = 40,
+			itemtype = 37110, 
+			count = 1,
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Gnome_Helmet.png" },
+			name = "Exalted Core",
+			price = 300,
+			itemtype = 37110,
+			count = 10,
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{		
+			icons = { "Gnome_Helmet.png" },
+			name = "Forge Dusts",
+			price = 5,
+			itemtype = 37160,
+			count = 10,
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true		
+		},
+		{
+			icons = { "Gnome_Helmet.png" },
+			name = "Forge Dusts",
+			price = 50,
+			itemtype = 37160, 
+			count = 100, 
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true		
+		},
+	},
+}, 
+-- Cobra
+ {
+ icons = { "Category_ExclusiveOffers.png" },
+	name = "Wheel Scrolls",
+	parent = "General Items",
+	rookgaard = true,
+	state = GameStore.States.STATE_NONE,
+	offers = {
+		{
+			icons = { "Cobra_Crossbow.png" },
+			name = "Abridged Promotion Scroll",
+			price = 50,
+			itemtype = 43946,
+			charges = 1,
+			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 3 promotion points to the Wheel of Fate.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Cobra_Amulet.png" },
+			name = "Basic Promotion Scroll",
+			price = 70,
+			itemtype = 43947,
+			charges = 1,
+			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 5 promotion points to the Wheel of Fate.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Cobra_Boots.png" },
+			name = "Revised Promotion Scroll",
+			price = 100,
+			itemtype = 43948,
+			charges = 1,
+			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 9 promotion points to the Wheel of Fate.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Cobra_Club.png" },
+			name = "Extended Promotion Scroll",
+			price = 160,
+			itemtype = 43949,
+			charges = 1,
+			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 13 promotion points to the Wheel of Fate.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{
+			icons = { "Cobra_Axe.png" },
+			name = "advanced Promotion Scroll",
+			price = 200,
+			itemtype = 43950,
+			charges = 1,
+			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 20 promotion points to the Wheel of Fate.", 
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+	},
+},
  -- Equipments
 {
 	icons = { "Category_ExclusiveOffers.png" },
@@ -822,119 +1359,9 @@ GameStore.Categories = {
 		icons = { "Category_Consumables.png" },
 		name = "Consumables",
 		rookgaard = true,
-		subclasses = { "Tokens", "Blessings", "Casks", "Exercise Weapons", "Kegs", "Potions", "Runes" },
+		subclasses = { "Blessings", "Casks", "Exercise Weapons", "Kegs", "Potions", "Runes" },
 	},
 	
--- Falcon
-{
-        icons = { "Category_ExclusiveOffers.png" },
-	    name = "Tokens",
-	    parent = "Consumables",
-	    rookgaard = true,
-	    state = GameStore.States.STATE_NONE,
-	    offers = {
-		{
-			icons = { "Falcon_Circlet.png" },
-			name = "Cassino Token",
-			price = 75,
-			itemtype = 22724, 
-			count = 1,
-			description = "You can use in Cassino Lounge good luck.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{
-			icons = { "Falcon_Circlet.png" },
-			name = "Cassino Token",
-			price = 375,
-			itemtype = 22724, 
-			count = 5,
-			description = "You can use in Cassino Lounge good luck.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{		
-			icons = { "Falcon_Coif.png" },
-			name = "Cluster Of Solace",
-			price = 20,
-			itemtype = 20062,
-			count = 1,
-			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{
-			icons = { "Falcon_Coif.png" },
-			name = "Cluster Of Solace",
-			price = 500,
-			itemtype = 20062,
-			count = 5,
-			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{		
-			icons = { "Falcon_Rod.png" },
-			name = "Dream Matter",
-			price = 100,
-			itemtype = 20063,
-			count = 1,
-			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{		
-			icons = { "Falcon_Rod.png" },
-			name = "Dream Matter",
-			price = 500,
-			itemtype = 20063,
-			count = 5,
-			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true			
-		},
-		{
-			icons = { "Falcon_Wand.png" },
-			name = "Gold Token",
-			price = 125,
-			itemtype = 22721,
-			count = 25,
-			description = "You can change Gold Token for items with Yana.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{
-			icons = { "Falcon_Bow.png" },
-			name = "Gold Token",
-			price = 250,
-			itemtype = 22721,
-			count = 50,
-			description = "You can change Gold Token for items with Yana.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{
-			icons = { "Falcon_Plate.png" },
-			name = "Silver Token",
-			price = 100,
-			itemtype = 22516,
-			count = 50,
-			description = "You can change Silver Token for items with Cledywn.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-		{
-			icons = { "Falcon_Greaves.png" },
-			name = "Silver Token",
-			price = 200,
-			itemtype = 22516,  
-			count = 100,
-			description = "You can change Silver Token for items with Cledywn.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
-		},
-	},
-},	
 	-- Consumables ~ Blessings
 	{
 		icons = { "Category_Blessings.png" },
