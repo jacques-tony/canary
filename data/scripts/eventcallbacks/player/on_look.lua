@@ -34,6 +34,10 @@ function callback.playerOnLook(player, thing, position, distance)
 	if thing:isPlayer() then
 		description = string.format("%s\nResets: %d | Damage: %.2f%%", description, thing:getResets(), thing:getDamageResets())
  	end
+	
+	if thing:isPlayer() then
+		description = string.format("%s\nReflect: %.f%%", description, thing:getReflectLevel())  
+ 	end
 
     if thing:isPlayer() then
     	description = string.format("%s\nNivel de Mining: %s", description, configMining.level[thing:getStorageValue(configMining.level.storageNivel)].name)
