@@ -212,8 +212,12 @@ function Player:onLookInBattleList(creature, distance)
 	end
 
 	if creature:isPlayer() then
-		description = string.format("%s\nResets: %d | Damage: %.2f%%", description, creature:getResets(), creature:getDamageResets())
+		description = string.format("%s\nResets: %d | Damage: %.f%%", description, creature:getResets(), creature:getDamageResets())
  	end
+	
+	if creature:isPlayer() then
+		description = string.format("%s\nReflect: %.2f%%", description, creature:getReflectLevel()) 
+ 	end	
 
 	if creature:isPlayer() then
     	description = string.format("%s\nNivel de Mining: %s", description, configMining.level[creature:getStorageValue(configMining.level.storageNivel)].name)

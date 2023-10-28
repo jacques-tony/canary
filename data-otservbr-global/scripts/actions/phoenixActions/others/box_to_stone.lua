@@ -1,5 +1,5 @@
 local save_time, runtime = 0, 10
-local stone, box, actionid = 27503, 8772, 34561 
+local stone, box, actionid = 27504, 27508, 34561 
 
 local action = Action()
 function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
