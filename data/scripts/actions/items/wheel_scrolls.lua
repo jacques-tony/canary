@@ -1,9 +1,9 @@
 local promotionScrolls = {
-	[43946] = { storageName = "wheel.scroll.abridged", points = 3, name = "abridged promotion scroll" },
-	[43947] = { storageName = "wheel.scroll.basic", points = 5, name = "basic promotion scroll" },
-	[43948] = { storageName = "wheel.scroll.revised", points = 9, name = "revised promotion scroll" },
-	[43949] = { storageName = "wheel.scroll.extended", points = 13, name = "extended promotion scroll" },
-	[43950] = { storageName = "wheel.scroll.advanced", points = 20, name = "advanced promotion scroll" },
+    [43946] = { storageName = "wheel.scroll.abridged", points = 3, name = "abridged promotion scroll" },
+    [43947] = { storageName = "wheel.scroll.basic", points = 5, name = "basic promotion scroll" },
+    [43948] = { storageName = "wheel.scroll.revised", points = 9, name = "revised promotion scroll" },
+    [43949] = { storageName = "wheel.scroll.extended", points = 13, name = "extended promotion scroll" },
+    [43950] = { storageName = "wheel.scroll.advanced", points = 20, name = "advanced promotion scroll" },
 }
 
 local scroll = Action()
@@ -27,7 +27,13 @@ function scroll.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 end
 
 for id in pairs(promotionScrolls) do
-	scroll:id(id)
+    scroll:id(id)
 end
 
 scroll:register()
+
+-- Função fictícia para obter o número de resets do jogador
+function playerResets(player)
+    -- Substitua isso pela lógica real do seu jogo para obter o número de resets do jogador
+    return 0
+end

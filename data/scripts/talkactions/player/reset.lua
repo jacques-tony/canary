@@ -18,14 +18,22 @@ function talkactions.onSay(player, words, param)
         return false
     end
    
-    local oldCap = player:getCapacity() -- essa linha mantém o cap após reset.
+    local oldCap = player:getCapacity() -- essa linha mantém o cap após reset. 
     player:addReset(1)
     player:removeExperience(getExperienceForLevel(player:getLevel()) - getExperienceForLevel(resetConfig.backToLevel))
-    player:setMaxHealth(player:getMaxHealth())
-    player:setMaxMana(player:getMaxMana()) 
-    player:addHealth(player:getHealth())
-    player:addMana(player:getMana())
+    player:setMaxHealth(185)
+    player:setMaxMana(90) 
+    player:addHealth(185) 
+    player:addMana(90)
 	player:setCapacity(oldCap) -- essa linha mantém o cap após reset.
+	
+	local conditionsToRemove = {CONDITION_CURSED, CONDITION_DAZZLED, CONDITION_FREEZING, CONDITION_DRUNK, CONDITION_BLEEDING, CONDITION_ENERGY, CONDITION_DROWN, CONDITION_PARALYZE, CONDITION_POISON, CONDITION_SLEEP} -- Lista de condições a serem removidas.
+    for _, condition in ipairs(conditionsToRemove) do
+    if player:getCondition(condition) then
+        player:removeCondition(condition) 
+    end
+end
+
     player:getPosition():sendMagicEffect(CONST_ME_FIREWORK_RED)
     player:sendTextMessage(MESSAGE_INFO_DESCR, "Now you have " .. player:getResets() .. " " .. (player:getResets() == 1 and "reset" or "resets") .. ".")
     return false

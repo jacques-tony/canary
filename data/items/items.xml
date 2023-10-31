@@ -47580,7 +47580,6 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="primarytype" value="tools (objects)"/>
 	</item>
 	<item id="24497" name="unknown item"/>
-	<item fromid="24498" toid="24540" name="old tibia item"/>
 	<item id="24541" article="a" name="closed door">
 		<attribute key="type" value="door"/>
 		<attribute key="blockProjectile" value="1"/>
@@ -47595,7 +47594,6 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item id="24544" article="an" name="open door">
 		<attribute key="type" value="door"/>
 	</item>
-	<item fromid="24545" toid="24802" name="old tibia item"/>
 	<item fromid="24803" toid="24805" name="old stone wall"/>
 	<item id="24806" article="a" name="old ramp">
 		<attribute key="floorchange" value="east"/>
@@ -54134,6 +54132,20 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="vocation" value="Sorcerer;true, Druid;true, Master Sorcerer, Elder Druid"/>
 		</attribute>
 	</item>
+	<item id="24534" article="a" name="phoenix mask">
+		<attribute key="primarytype" value="helmets"/>
+		<attribute key="absorbpercentice" value="10"/>
+		<attribute key="absorbpercentphysical" value="3"/>
+		<attribute key="magiclevelpoints" value="4"/>
+		<attribute key="healingmagiclevelpoints" value="1"/>
+		<attribute key="armor" value="11"/>
+		<attribute key="weight" value="1200"/>
+		<attribute key="imbuementslot" value="2"> 
+			<attribute key="mana leech" value="4"/>
+			<attribute key="skillboost shielding" value="4"/>
+			<attribute key="skillboost magic level" value="4"/>
+		</attribute>		
+	</item>	
 	<item id="28715" article="a" name="falcon coif">
 		<attribute key="primarytype" value="helmets"/>
 		<attribute key="absorbpercentphysical" value="3"/>
@@ -64280,6 +64292,13 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
+	<item id="24514" article="a" name="phoenix kilt">
+		<attribute key="primarytype" value="legs"/>
+		<attribute key="absorbpercentfire" value="11"/>
+		<attribute key="magiclevelpoints" value="4"/>
+		<attribute key="armor" value="12"/>
+		<attribute key="weight" value="3800"/>
+	</item>	
 	<item id="34094" article="a" name="soulshell">
 		<attribute key="primarytype" value="armors"/>
 		<attribute key="absorbpercentphysical" value="3"/>
@@ -64342,6 +64361,21 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
+	<item id="24529" article="a" name="phoenix cape">
+		<attribute key="primarytype" value="armors"/> 
+		<attribute key="absorbpercentdeath" value="11"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="armor" value="19"/>
+		<attribute key="weight" value="2400"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="life leech" value="4"/>
+			<attribute key="elemental protection earth" value="4"/>
+			<attribute key="elemental protection fire" value="4"/>
+			<attribute key="elemental protection ice" value="4"/>
+			<attribute key="elemental protection energy" value="4"/>
+			<attribute key="elemental protection holy" value="4"/>
+		</attribute> 
+	</item>	
 	<item id="34097" name="pair of soulwalkers">
 		<attribute key="absorbpercentphysical" value="7"/>
 		<attribute key="absorbpercentfire" value="5"/>
@@ -75728,6 +75762,19 @@ Granted by TibiaGoals.com"/>
 			<attribute key="vocation" value="Druid;true, Elder Druid"/>
 		</attribute>
 	</item>
+	<item id="24515" article="a" name="phoenix mage boots"> 
+		<attribute key="primarytype" value="boots"/>
+		<attribute key="absorbpercentphysical" value="3"/>
+		<attribute key="absorbpercentfire" value="9"/>
+		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="healingmagiclevelpoints" value="2"/>
+		<attribute key="speed" value="20"/>
+		<attribute key="armor" value="3"/>
+		<attribute key="weight" value="1700"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="increase speed" value="10"/>
+		</attribute>
+	</item>	
 	<item id="43895" article="a" name="bag you covet">
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="20"/>
