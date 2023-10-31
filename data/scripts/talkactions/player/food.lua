@@ -7,7 +7,7 @@ function talk.onSay(cid, words, param)
 			p:addItem(3725, 100)
 			p:sendTextMessage(19, "You bought 100 brown mushrooms!")        
 		else
-			p:sendCancelMessage("You don't have "..cost.." gold coins to buy 100 brown mushrooms.")
+			p:sendCancelMessage("You don't have "..cost.." gold coins to buy 100 brown mushrooms.") 
 		end
 	else
 		p:sendCancelMessage("You cannot buy brown mushroom when you are in a battle.")

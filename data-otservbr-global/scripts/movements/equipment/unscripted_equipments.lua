@@ -1,5 +1,29 @@
 local items = {
 	{
+		-- phoenix boots
+		itemid = 24515,
+		type = "equip",
+		slot = "feet",
+--		level = 500,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Druid", true, true },
+			{ "Master Sorcerer" },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix boots
+		itemid = 24515,
+		type = "deequip",
+		slot = "feet",
+--		level = 500,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{	
 		-- sanguine galoshes
 		itemid = 43887,
 		type = "equip",
@@ -2433,6 +2457,26 @@ local items = {
 		},
 	},
 	{
+		-- phoenix kilt
+		itemid = 24514,
+		type = "deequip",
+		slot = "legs",
+--		level = 400,
+	},
+	{
+		-- phoenix kilt
+		itemid = 24514,
+		type = "equip",
+		slot = "legs",
+--		level = 400, 
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Druid", true, true },
+			{ "Master Sorcerer" },
+			{ "Elder Druid" },
+		},
+	},
+	{	
 		-- soulshanks legs
 		itemid = 34092,
 		type = "deequip",
@@ -4291,6 +4335,26 @@ local items = {
 		},
 	},
 	{
+		-- phoenix mask
+		itemid = 24534,
+		type = "equip",
+		slot = "head",
+--		level = 300,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Druid", true, true },
+			{ "Master Sorcerer" },
+			{ "Elder Druid" },
+		},
+	},
+	{	
+		-- phoenix mask
+		itemid = 24534,
+		type = "deequip",
+		slot = "head",
+--		level = 300,
+	},
+	{	
 		-- falcon circlet
 		itemid = 28714,
 		type = "deequip",
@@ -10817,6 +10881,26 @@ local items = {
 --		level = 100,
 	},
 	{
+		-- phoenix cape
+		itemid = 24529,
+		type = "equip",
+		slot = "armor",
+--		level = 100,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Druid", true, true },
+			{ "Master Sorcerer" },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix cape
+		itemid = 24529,
+		type = "deequip",
+		slot = "armor",
+--		level = 100,
+	}, 
+	{	
 		-- royal draken mail
 		itemid = 11686,
 		type = "equip",

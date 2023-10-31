@@ -1,5 +1,6 @@
 local config = {
 	{ name="Staff house", position = Position(17510, 17569, 6) },
+	{ name="Sala de reset", position = Position(17548, 17819, 11) },	
     { name = "Temple City", position = Position(17563, 17566, 6) },
     { name = "Training Room", position = Position(17638, 17565, 5) },
     { name = "Loot Room", position = Position(17590, 17578, 6) },
