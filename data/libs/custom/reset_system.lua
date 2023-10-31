@@ -1,20 +1,22 @@
 damage_resets = {
     {1, 9, 0.85},
-    {10, 19, 1.00},
+    {10, 19, 10.00},
     {20, 24, 1.25},
     {30, 50, 1.50}
 }
 
 function Player.getDamageResets(self) 
     local percent = 0.0
+    local resets = self:getResets()
+
     for _, range in ipairs(damage_resets) do
-        local i, f, value = range[1], range[2], range[3]
-        if self:getResets() >= i and self:getResets() <= f then
-            percent = value * self:getResets()  
+        local start_range, end_range, value = range[1], range[2], range[3]
+        if resets >= start_range and resets <= end_range then
+            percent = value
             break
         end
     end
-    return percent
+    return percent * resets
 end
 
 resetConfig = {

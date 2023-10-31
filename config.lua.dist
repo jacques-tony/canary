@@ -160,7 +160,7 @@ hazardSpawnPlunderMultiplier = 25
 loyaltyEnabled = false
 loyaltyPointsPerCreationDay = 1
 loyaltyPointsPerPremiumDaySpent = 0
-loyaltyPointsPerPremiumDayPurchased = 0
+loyaltyPointsPerPremiumDayPurchased = 0 
 loyaltyBonusPercentageMultiplier = 1.0
 
 -- Custom PvP system
@@ -371,7 +371,7 @@ classicAttackSpeed = false
 showScriptsLogInConsole = false
 -- configure maximum value of critical imbuement
 criticalChance = 10
-inventoryGlowOnFiveBless = false
+inventoryGlowOnFiveBless = true
 adventurersBlessingLevel = 500
 experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
@@ -405,7 +405,7 @@ rateUseStages = true
 lowLevelBonusExp = 50
 rateExp = 1
 rateSkill = 1
-rateLoot = 3 
+rateLoot = 2
 rateMagic = 1
 rateSpawn = 1
 
@@ -423,8 +423,8 @@ rateSoulRegenSpeed = 1.0
 
 rateSpellCooldown = 1.0
 rateAttackSpeed = 1.0
-rateOfflineTrainingSpeed = rateAttackSpeed
-rateExerciseTrainingSpeed = rateAttackSpeed
+rateOfflineTrainingSpeed = 1.1
+rateExerciseTrainingSpeed = 5.0
 
 -- Monster rates
 rateMonsterHealth = 1.0
@@ -486,7 +486,7 @@ vipBonusLoot = 0
 vipBonusSkill = 0
 vipAutoLootVipOnly = false
 vipStayOnline = false
-vipFamiliarTimeCooldownReduction = 0
+vipFamiliarTimeCooldownReduction = 15
 vipKeepHouse = false
 
 -- NOTE: set rewardChestCollectEnabled to true to enable the reward collect system
