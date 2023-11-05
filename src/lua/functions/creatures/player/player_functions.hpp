@@ -267,6 +267,9 @@ private:
 		registerMethod(L, "Player", "hasSecureMode", PlayerFunctions::luaPlayerHasSecureMode);
 		registerMethod(L, "Player", "getFightMode", PlayerFunctions::luaPlayerGetFightMode);
 
+		registerMethod(L, "Player", "getAttackSpeed", PlayerFunctions::luaPlayerGetAttackSpeed);
+    	registerMethod(L, "Player", "setAttackSpeed", PlayerFunctions::luaPlayerSetAttackSpeed);
+
 		registerMethod(L, "Player", "getBaseXpGain", PlayerFunctions::luaPlayerGetBaseXpGain);
 		registerMethod(L, "Player", "setBaseXpGain", PlayerFunctions::luaPlayerSetBaseXpGain);
 		registerMethod(L, "Player", "getVoucherXpBoost", PlayerFunctions::luaPlayerGetVoucherXpBoost);
@@ -617,6 +620,9 @@ private:
 	static int luaPlayerHasChaseMode(lua_State* L);
 	static int luaPlayerHasSecureMode(lua_State* L);
 	static int luaPlayerGetFightMode(lua_State* L);
+
+	static int luaPlayerSetAttackSpeed(lua_State* L);
+    static int luaPlayerGetAttackSpeed(lua_State* L);
 
 	static int luaPlayerGetBaseXpGain(lua_State* L);
 	static int luaPlayerSetBaseXpGain(lua_State* L);

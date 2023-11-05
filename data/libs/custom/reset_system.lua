@@ -1,9 +1,9 @@
 damage_resets = {
-    {1, 9, 0.85},
-    {10, 19, 10.00},
-    {20, 24, 1.25},
-    {30, 50, 1.50}
-}
+    {1, 9, 1.00},
+    {10, 19, 1.25},
+    {20, 29, 1.50},
+    {30, 50, 2.00} 
+} 
 
 function Player.getDamageResets(self) 
     local percent = 0.0
@@ -19,9 +19,37 @@ function Player.getDamageResets(self)
     return percent * resets
 end
 
+attackspeed_resets = { 
+    {1, 30, 13},
+}
+
+function Player.getAttackSpeedResets(self) 
+    local attackSpeed = 0
+    local resets = self:getResets()
+
+    for _, range in ipairs(attackspeed_resets) do
+        local start_range, end_range, value = range[1], range[2], range[3]
+        if resets >= start_range and resets <= end_range then
+            attackSpeed = value
+            break
+        end
+    end
+ 
+    local limitSpeed = 100 
+    local maxResetToSpeed = 30 
+    if resets >= maxResetToSpeed then
+        return limitSpeed
+    else 
+        return 510 - attackSpeed * resets
+    end
+end
+
 resetConfig = {
+    storage_time = 499,
+    time_to_reset = 24 * 60 * 60, -- 24 horas.
 	storage = 500,
-    backToLevel = 8,
+	limitResets = 30,
+    backToLevel = 8, 
     redskull = true, -- need to be without redskull to reset?
     battle = true, -- need to be without battle to reset?
     pz = true, -- need to be in protect zone to reset?
@@ -32,7 +60,7 @@ resetConfig = {
         {resets = 19,     level = 2607,  premium  = 1977},
         {resets = 24,     level = 3780,  premium  = 2570},
         {resets = 30,     level = 5481,  premium  = 3342},
-        {resets = 31,     level = 999999, premium  = 999999}
+        {resets = 100,     level = 999999, premium  = 999999}
     } 
 }
 

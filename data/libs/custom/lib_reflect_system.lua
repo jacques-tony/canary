@@ -1,8 +1,8 @@
 reflect_system = {
     stones = {
-        [31354] = {chance_to_fail = 10}, -- 10% blue
-        [31355] = {chance_to_fail = 20}, -- 20% purpple  
-        [31356] = {chance_to_fail = 30}, -- 30% green 
+        [31354] = {chance_to_fail = 20}, -- 10% blue
+        [31355] = {chance_to_fail = 30}, -- 20% purpple  
+        [31356] = {chance_to_fail = 50}, -- 30% green 
     },
 
     increase_reflect = 1.00, -- Adiciona +0.10% em cada pedra usada.  
@@ -14,7 +14,7 @@ reflect_system = {
 
 function Player.getReflectLevel(self)
     local value = self:getStorageValue(reflect_system.storage)
-    if value == -1 then
+    if value == -1 then 
         return 0
     end
     return value
