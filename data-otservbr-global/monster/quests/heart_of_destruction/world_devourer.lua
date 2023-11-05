@@ -57,8 +57,8 @@ monster.flags = {
 	canWalkOnPoison = true,
 }
 
-monster.events = {
-	"HeartBossDeath",
+monster.events = { 
+	"craftQuest3", 
 }
 
 monster.light = {

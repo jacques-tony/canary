@@ -2777,6 +2777,7 @@ private:
 	std::shared_ptr<RewardChest> rewardChest = nullptr;
 
 	uint32_t inventoryWeight = 0;
+	uint32_t attackSpeed = 0;
 	uint32_t capacity = 40000;
 	uint32_t bonusCapacity = 0;
 
@@ -2936,14 +2937,8 @@ private:
 			uint32_t skillLevel = getSkillLevel(SKILL_FIST);
 			uint32_t attackSpeed = baseAttackSpeed - (skillLevel * g_configManager().getNumber(MULTIPLIER_ATTACKONFIST, __FUNCTION__));
 
-			if (attackSpeed < MAX_ATTACK_SPEED) {
-				attackSpeed = MAX_ATTACK_SPEED;
-			}
-
-			return static_cast<uint32_t>(attackSpeed);
-		} else {
-			return vocation->getAttackSpeed();
-		}
+	void setAttackSpeed(uint32_t speed) {
+		attackSpeed = speed;
 	}
 
 	static double_t getPercentLevel(uint64_t count, uint64_t nextLevelCount);

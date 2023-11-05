@@ -29,10 +29,10 @@ local config = {
     {
         class = "rod",
         items = {
-            {id = 43885, element = "FIRE"},
-            {id = 26043, element = "ENERGY"},
+            {id = 43885, element = "FIRE"}, 
+            {id = 26073, element = "EARTH"},
             {id = 26012, element = "DEATH"},
-            {id = 26073, element = "ICE"}
+            {id = 26043, element = "ICE"}
         }
     },
     {

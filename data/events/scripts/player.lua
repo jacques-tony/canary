@@ -221,7 +221,7 @@ function Player:onLookInBattleList(creature, distance)
 	end
 
 	if creature:isPlayer() then
-		description = string.format("%s\nResets: %d | Damage: %.f%%", description, creature:getResets(), creature:getDamageResets())
+		description = string.format("%s\nResets: %d | Damage: %.2f%%", description, creature:getResets(), creature:getDamageResets())
  	end
 	
 	if creature:isPlayer() then

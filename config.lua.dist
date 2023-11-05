@@ -407,9 +407,9 @@ kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
 emoteSpells = false
 allowWalkthrough = true
-coinPacketSize = 25
+coinPacketSize = 25 
 coinImagesURL = "http://144.217.201.226/images/store/"
-classicAttackSpeed = false
+classicAttackSpeed = true
 showScriptsLogInConsole = false
 -- time to suppress negative conditions after being affected by them (ms)
 minDelayBetweenConditions = 0
@@ -422,8 +422,8 @@ experienceDisplayRates = true
 -- configure attack base on Fist Fighting skill/experience
 -- multiplierSpeedOnFist * 5  (multiplies the value obtained from the player fist skill and multiplies it * 5) max 25 is recommended due minTicks limits else player stop attack
 -- maxSpeedOnFist 500 miliseconds  (The maximum attack speed that can be obtained no matter how high the player has the Fist Fighting skill.)
-toggleAttackSpeedOnFist = true
-multiplierSpeedOnFist = 5
+toggleAttackSpeedOnFist = false
+multiplierSpeedOnFist = 5 
 maxSpeedOnFist = 500
 disableLegacyRaids = false
 disableMonsterArmor = false
@@ -463,7 +463,7 @@ rateUseStages = true
 lowLevelBonusExp = 50
 rateExp = 1
 rateSkill = 1
-rateLoot = 2
+rateLoot = 1
 rateMagic = 1
 rateSpawn = 1
 
@@ -494,7 +494,7 @@ rateBossHealth = 1.0
 rateBossAttack = 1.0
 rateBossDefense = 1.0
  
-bossDefaultTimeToFightAgain = 8 * 60 * 60 -- 20 hours
+bossDefaultTimeToFightAgain = 1 * 60 * 60 -- 20 hours
 bossDefaultTimeToDefeat = 20 * 60 -- 20 minutes
 
 -- Monsters
@@ -540,8 +540,8 @@ discordSendFooter = true
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
 vipSystemEnabled = true
-vipBonusExp = 0
-vipBonusLoot = 0
+vipBonusExp = 50
+vipBonusLoot = 50
 vipBonusSkill = 0
 vipAutoLootVipOnly = false
 vipStayOnline = false
