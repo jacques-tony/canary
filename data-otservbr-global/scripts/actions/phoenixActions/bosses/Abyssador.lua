@@ -16,7 +16,7 @@ local config = {
         to = Position(18199, 17954, 15),
     },
     exit = Position(18182, 17913, 15),
-	
+	 
     storage = 376353, 
 } 
  

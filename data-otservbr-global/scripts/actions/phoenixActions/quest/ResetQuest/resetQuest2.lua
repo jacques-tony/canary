@@ -24,7 +24,7 @@
 		end
 
 		if player:getStorageValue(storage) == -1 then
-			creature:teleportTo(Position(17735, 18525, 13))
+			creature:teleportTo(Position(17322, 17620, 10)) 
 			player:sendCancelMessage("You can't enter here yet")
 			return true
 		end

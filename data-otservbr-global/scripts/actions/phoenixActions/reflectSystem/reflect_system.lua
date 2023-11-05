@@ -39,10 +39,12 @@ function healthChange.onHealthChange(creature, attacker, primaryDamage, primaryT
     	return primaryDamage, primaryType, secondaryDamage, secondaryType 
     end
 
-    if creature:getReflectLevel() > 0 and attacker:isMonster() or attacker:isPlayer() then
-        if reflect_system.reflect_chance >= math.random(1, 100) then
-            attacker:addHealth(-math.floor(math.abs(primaryDamage) * (reflect_system.increase_reflect * creature:getReflectLevel() / 100)), reflect_system.reflect_damage_color)
-            creature:say("REFLECT!", TALKTYPE_MONSTER_SAY)
+    if creature:getReflectLevel() > 0 then
+        if attacker:isMonster() or attacker:isPlayer() then
+            if reflect_system.reflect_chance >= math.random(1, 100) then
+                attacker:addHealth(-math.floor(math.abs(primaryDamage) * (reflect_system.increase_reflect * creature:getReflectLevel() / 100)), reflect_system.reflect_damage_color)
+                creature:say("REFLECT!", TALKTYPE_MONSTER_SAY)
+            end
         end
     end
     return primaryDamage, primaryType, secondaryDamage, secondaryType
@@ -55,10 +57,12 @@ function manaChange.onManaChange(creature, attacker, primaryDamage, primaryType,
         return primaryDamage, primaryType, secondaryDamage, secondaryType 
     end
     
-    if creature:getReflectLevel() > 0 and attacker:isMonster() or attacker:isPlayer() then
-        if reflect_system.reflect_chance >= math.random(1, 100) then
-            attacker:addHealth(-math.floor(math.abs(primaryDamage) * (reflect_system.increase_reflect * creature:getReflectLevel() / 100)), reflect_system.reflect_damage_color)
-            creature:say("REFLECT!", TALKTYPE_MONSTER_SAY)
+    if creature:getReflectLevel() > 0 then
+        if attacker:isMonster() or attacker:isPlayer() then
+            if reflect_system.reflect_chance >= math.random(1, 100) then
+                attacker:addHealth(-math.floor(math.abs(primaryDamage) * (reflect_system.increase_reflect * creature:getReflectLevel() / 100)), reflect_system.reflect_damage_color)
+                creature:say("REFLECT!", TALKTYPE_MONSTER_SAY)
+            end
         end
     end
     return primaryDamage, primaryType, secondaryDamage, secondaryType
