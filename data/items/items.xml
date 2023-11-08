@@ -22742,8 +22742,8 @@
 	<item fromid="8185" toid="8190" article="a" name="fallen tree">
 		<attribute key="primarytype" value="remains"/>
 	</item>
-	<item id="8191" article="a" name="vampire doll">
-		<attribute key="primarytype" value="dolls and bears"/>
+	<item id="8191" article="a" name="mount doll">
+		<attribute key="description" value="To use this item use the command !mountsdoll"/>	 
 		<attribute key="weight" value="940"/>
 	</item>
 	<item id="8192" article="a" name="vampire lord token">
@@ -23326,8 +23326,9 @@
 	<item id="8777" article="a" name="Rerun's ring">
 		<attribute key="weight" value="90"/>
 	</item>
-	<item id="8778" article="a" name="jester doll">
+	<item id="8778" article="a" name="addon doll"> 
 		<attribute key="primarytype" value="dolls and bears"/>
+		<attribute key="description" value="To use this item use the command !addondoll"/>		
 		<attribute key="weight" value="1200"/>
 	</item>
 	<item id="8779" article="the" name="head of a jester doll">
@@ -38853,18 +38854,20 @@
 		<attribute key="primarytype" value="containers"/>
 		<attribute key="description" value="This crate is quite heavy."/>
 		<attribute key="containersize" value="15"/>
-		<attribute key="weight" value="8000"/>
+		<attribute key="weight" value="8000"/>  
 	</item>
 	<item id="19080" article="a" name="torch bearer">
 		<attribute key="primarytype" value="wall hangings"/>
 	</item>
 	<item id="19081" article="a" name="skull"/>
-	<item id="19082" article="a" name="golden raid token">
+	<item id="19082" article="a" name="online token">
+		<attribute key="description" value="every 1 hour online you receive this token, use this token to exchange for items at the npc phoenix seller."/>			
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="110"/>
 	</item>
 	<item id="19083" article="a" name="silver raid token">
 		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="A dragon tear looks like a small, luminous gem, glittering in a golden light"/>		
 		<attribute key="weight" value="100"/>
 	</item>
 	<item id="19084" article="a" name="small dragon tear">
@@ -39526,9 +39529,9 @@
 		<attribute key="description" value="The sun with its burning grasp devours the nothingness twice."/>
 	</item>
 	<item fromid="19394" toid="19396" name="RESERVED SPRITE"/>
-	<item fromid="19397" toid="19398" name="memory box">
+	<item fromid="19397" toid="19398" name="reset cooldown">
 		<attribute key="primarytype" value="fansite items"/>
-		<attribute key="description" value="It is said to freeze time itself to capture your fondest memories. Awarded by TibiaEvents.com"/>
+		<attribute key="description" value="Use this item to reset the cooldown of the !reset command"/>
 		<attribute key="weight" value="2000"/>
 	</item>
 	<item id="19399" name="RESERVED SPRITE"/>
@@ -44991,8 +44994,8 @@ Awarded by TibiaMisterios.com.br"/>
 		<attribute key="description" value="It seems to be hundreds of years old"/>
 		<attribute key="weight" value="330"/>
 	</item>
-	<item id="22706" article="a" name="rolled-up parchment">
-		<attribute key="description" value="This parchment has been rolled-up and sealed"/>
+	<item id="22706" article="a" name="premium time">
+		<attribute key="description" value="Using this scroll will add 1 day of premium time to your account once."/>
 		<attribute key="weight" value="20"/>
 	</item>
 	<item id="22707" article="an" name="Opticompass sphere">
@@ -67220,10 +67223,10 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="weight" value="1000"/>
 	</item>
 	<item fromid="36555" toid="36558" article="a" name="wall"/>
-	<item fromid="36564" toid="36583" name="eldritch floor"/>
-	<item id="36586" article="a" name="old parchment">
+	<item fromid="36564" toid="36583" name="eldritch floor"/> 
+	<item id="36586" article="a" name="familiar scroll">
 		<attribute key="primarytype" value="documents and papers"/>
-		<attribute key="description" value="This old parchment names the holy seer sphinxes and lamassu of Kilmaresh. Their names are Nasramet, Zabaya, Anunit, Nesertis, Kematef, Yaeta and Rimush"/>
+		<attribute key="description" value="When using this scroll, you will choose a custom family member skin."/>
 		<attribute key="weight" value="200"/>
 	</item>
 	<item id="36599" article="a" name="fiery gnomish stonesmasher">
