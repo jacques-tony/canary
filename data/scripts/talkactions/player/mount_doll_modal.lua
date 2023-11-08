@@ -1,7 +1,7 @@
 local mounts = {
 
     -- Config
-        dollID = 2991, -- Change this to your dolls or items, item ID
+        dollID = 8191, -- Change this to your dolls or items, item ID
      
         -- Main Window Messages (The first window the player sees)
         mainTitle = "Choose a Mount!",
@@ -100,9 +100,10 @@ local mounts = {
         [81] = {name = "Gorongra", ID = 81},
         [82] = {name = "Noctungra", ID = 82},
         [83] = {name = "Silverneck", ID = 83},
-        [84] = {name = "Kimera", ID = 84},
+        [84] = {name = "Kimera", ID = 84}, 
         [85] = {name = "Kimera Devil", ID = 85},
-        [86] = {name = "Shadow Beast", ID = 86},		
+        [86] = {name = "Shadow Beast", ID = 86},	
+        [87] = {name = "Stone Rhino", ID = 106},				
     }
      
 local mountsDollModal = TalkAction("!mountsdoll")
