@@ -23,13 +23,6 @@ npcConfig.flags = {
 	floorchange = false,
 }
 
-npcConfig.voices = {
-	interval = 15000,
-	chance = 50,
-	{ text = "Trading tokens! First-class bargains!" },
-	{ text = "Bespoke armor for all vocations! For the cost of some tokens only!" },
-	{ text = "Tokens! Bring your tokens!" },
-}
 
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
@@ -62,37 +55,23 @@ local function creatureSayCallback(npc, creature, type, message)
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false
 	end
-	return true
-end
+	return true  
+end 
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new(), npcConfig.name, true, true, true)
 
-npcConfig.currency = 22516
-
+npcConfig.currency = 19082
+ 
 npcConfig.shop = {
-	{ itemName = "earthheart cuirass", clientId = 22521, buy = 100 },
-	{ itemName = "earthheart hauberk", clientId = 22522, buy = 100 },
-	{ itemName = "earthheart platemail", clientId = 22523, buy = 100 },
-	{ itemName = "earthmind raiment", clientId = 22535, buy = 100 },
-	{ itemName = "earthsoul tabard", clientId = 22531, buy = 100 },
-	{ itemName = "fireheart cuirass", clientId = 22518, buy = 100 },
-	{ itemName = "fireheart hauberk", clientId = 22519, buy = 100 },
-	{ itemName = "fireheart platemail", clientId = 22520, buy = 100 },
-	{ itemName = "firemind raiment", clientId = 22534, buy = 100 },
-	{ itemName = "firesoul tabard", clientId = 22530, buy = 100 },
-	{ itemName = "frostheart cuirass", clientId = 22527, buy = 100 },
-	{ itemName = "frostheart hauberk", clientId = 22528, buy = 100 },
-	{ itemName = "frostheart platemail", clientId = 22529, buy = 100 },
-	{ itemName = "frostmind raiment", clientId = 22537, buy = 100 },
-	{ itemName = "frostsoul tabard", clientId = 22533, buy = 100 },
-	{ itemName = "magic shield potion", clientId = 35563, buy = 1 },
-	{ itemName = "thunderheart cuirass", clientId = 22524, buy = 100 },
-	{ itemName = "thunderheart hauberk", clientId = 22525, buy = 100 },
-	{ itemName = "thunderheart platemail", clientId = 22526, buy = 100 },
-	{ itemName = "thundermind raiment", clientId = 22536, buy = 100 },
-	{ itemName = "thundersoul tabard", clientId = 22532, buy = 100 },
-}
+	{ itemName = "Addon Doll", clientId = 8778, buy = 100 },
+	{ itemName = "Mount Doll", clientId = 2991, buy = 150 },
+	{ itemName = "Reset Cooldown", clientId = 19398, buy = 20 },
+	{ itemName = "Copper Prison Key", clientId = 20271, buy = 10 },
+	{ itemName = "Bronze Prison Key", clientId = 20272, buy = 10 },	 
+	{ itemName = "Silver Prison Key", clientId = 20270, buy = 10 },		
+	{ itemName = "Premium Time", clientId = 22706, buy = 12 },			
+} 
 
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

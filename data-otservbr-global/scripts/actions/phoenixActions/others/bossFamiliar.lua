@@ -39,12 +39,12 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     else
         window:addButton("Obtain")
     end
-
+ 
     window:addButton("Close")
     window:setDefaultEnterButton(0)
     window:setDefaultEscapeButton(1)
     window:sendToPlayer(player)
     return true
 end
-action:id(39757) 
+action:id(36586) 
 action:register() 
