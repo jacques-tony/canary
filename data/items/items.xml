@@ -14164,7 +14164,7 @@
 		<attribute key="description" value="Many mighty priests of Tibia have blessed this stake"/>
 		<attribute key="weight" value="500"/>
 	</item>
-	<item id="5943" name="Morgaroth's heart">
+	<item id="5943" name="heart">
 		<attribute key="weight" value="3500"/>
 	</item>
 	<item id="5944" article="a" name="soul orb">
@@ -22758,7 +22758,8 @@
 		<attribute key="primarytype" value="rings"/>
 		<attribute key="weight" value="40"/>
 	</item>
-	<item id="9586" article="a" name="wedding outfit box">
+	<item id="9586" article="a" name="mount box">
+		<attribute key="description" value="When using this box you will receive a random item to tame a mount."/>	
 		<attribute key="primarytype" value="valuables"/>
 		<attribute key="weight" value="2500"/>
 	</item>

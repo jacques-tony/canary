@@ -1,9 +1,11 @@
 local loginEvents = CreatureEvent("LoginEvents")
 function loginEvents.onLogin(player)
-	local events = { 
+	local events = {
+		--phoenixEvents 
+		"BountyHunterOnKill", 
 		--Monster
 		"LowerRoshamuul",
-		--Others
+		--Others  
 		"AdvanceSave",
 		"BossParticipation",
 		"DropLoot",
