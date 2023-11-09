@@ -191,7 +191,7 @@ GameStore.Categories = {
 			itemtype = 24960,  
 			count = 1,
 			description = "This item gives you part of the 6 runes that drop from Thai bosses, these runes are one of the most important ingredients for forging items in the crafting machine.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES, 
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, 
 			moveable = true
 		},
 		{		
@@ -201,7 +201,7 @@ GameStore.Categories = {
 			itemtype = 24960,  
 			count = 5,
 			description = "This item gives you part of the 6 runes that drop from Thai bosses, these runes are one of the most important ingredients for forging items in the crafting machine.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES, 
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, 
 			moveable = true
 		},
 		{		
@@ -211,7 +211,7 @@ GameStore.Categories = {
 			itemtype = 22722, 
 			count = 1,
 			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{ 
@@ -221,7 +221,7 @@ GameStore.Categories = {
 			itemtype = 22722, 
 			count = 5,
 			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{			
@@ -231,7 +231,7 @@ GameStore.Categories = {
 			itemtype = 22724, 
 			count = 1,
 			description = "You can use in Cassino Lounge good luck.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -241,7 +241,7 @@ GameStore.Categories = {
 			itemtype = 22724, 
 			count = 5,
 			description = "You can use in Cassino Lounge good luck.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -251,7 +251,7 @@ GameStore.Categories = {
 			itemtype = 20062,
 			count = 1,
 			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -261,7 +261,7 @@ GameStore.Categories = {
 			itemtype = 20062,
 			count = 5,
 			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -271,7 +271,7 @@ GameStore.Categories = {
 			itemtype = 20063,
 			count = 1,
 			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -281,7 +281,7 @@ GameStore.Categories = {
 			itemtype = 20063,
 			count = 5,
 			description = "You can change Dream Matter for items with Eraruan.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true			
 		},
 		{
@@ -291,7 +291,7 @@ GameStore.Categories = {
 			itemtype = 22721,
 			count = 25,
 			description = "You can change Gold Token for items with Yana.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -301,7 +301,7 @@ GameStore.Categories = {
 			itemtype = 22721,
 			count = 50,
 			description = "You can change Gold Token for items with Yana.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -311,7 +311,7 @@ GameStore.Categories = {
 			itemtype = 22516,
 			count = 50,
 			description = "You can change Silver Token for items with Cledywn.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -321,7 +321,7 @@ GameStore.Categories = {
 			itemtype = 22516,  
 			count = 100,
 			description = "You can change Silver Token for items with Cledywn.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true 
 		},
 		{			
@@ -331,7 +331,7 @@ GameStore.Categories = {
 			itemtype = 16167,
 			count = 10,
 			description = "This crystal is part of the recipe for creating several phoenix items in the phoenix machine.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -341,7 +341,7 @@ GameStore.Categories = {
 			itemtype = 16167,  
 			count = 100,
 			description = "This crystal is part of the recipe for creating several phoenix items in the phoenix machine.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true 			
 		},
 	},
@@ -359,9 +359,9 @@ GameStore.Categories = {
 			name = "Common Reflect Stone",
 			price = 50,
 			itemtype = 31354,
-			charges = 10, 
+			count = 10, 
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 10% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 	},
 		{
@@ -371,7 +371,7 @@ GameStore.Categories = {
 			itemtype = 31354, 
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 10% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -381,7 +381,7 @@ GameStore.Categories = {
 			itemtype = 31355,
 			count = 10,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 20% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -391,7 +391,7 @@ GameStore.Categories = {
 			itemtype = 31355,
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 20% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -401,7 +401,7 @@ GameStore.Categories = {
 			itemtype = 31356,
 			count = 10,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 30% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -411,10 +411,10 @@ GameStore.Categories = {
 			itemtype = 31356,
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 30% chance of getting a reflect bonus on your character.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true			
 		},
-	},
+	}, 
 },
 -- Gnome 
 {
@@ -431,7 +431,7 @@ GameStore.Categories = {
 			itemtype = 37110, 
 			count = 1,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{
@@ -441,7 +441,7 @@ GameStore.Categories = {
 			itemtype = 37110,
 			count = 10,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true
 		},
 		{		
@@ -451,7 +451,7 @@ GameStore.Categories = {
 			itemtype = 37160,
 			count = 10,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true		
 		},
 		{
@@ -461,10 +461,31 @@ GameStore.Categories = {
 			itemtype = 37160, 
 			count = 100, 
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
 			moveable = true		
 		},
 		{
+		
+			icons = { "Gnome_Helmet.png" },
+			name = "Forge Dusts",
+			price = 5,
+			itemtype = 37160,
+			count = 10,
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+			moveable = true		
+		},
+		{
+			icons = { "Gnome_Helmet.png" },
+			name = "Forge Dusts",
+			price = 50,
+			itemtype = 37160, 
+			count = 100, 
+			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
+			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+			moveable = true		
+		},
+		{		
 			icons = { "Gnome_Helmet.png" },
 			name = "Portable Forge",
 			price = 300,

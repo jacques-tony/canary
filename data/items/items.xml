@@ -58360,15 +58360,18 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item id="31353" article="a" name="white raven">
 		<attribute key="primarytype" value="furniture"/>
 	</item>
-	<item id="31354" article="a" name="blue memory shard">
+	<item id="31354" article="a" name="common reflect stone">
+		<attribute key="description" value="This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 10% chance of getting a reflect bonus on your character."/>	
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="13"/>
 	</item>
-	<item id="31355" article="a" name="violet memory shard">
+	<item id="31355" article="a" name="rare reflect stone">
+		<attribute key="description" value="This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 20% chance of getting a reflect bonus on your character."/>		
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="13"/>
-	</item>
-	<item id="31356" article="a" name="green memory shard">
+	</item> 
+	<item id="31356" article="a" name="epic reflect stone"> 
+		<attribute key="description" value="This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 30% chance of getting a reflect bonus on your character."/>		
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="13"/>
 	</item>
