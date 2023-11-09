@@ -117,11 +117,11 @@ GameStore.Categories = {
 		{
 
 			icons = { "Soulcutter.png" },
-			name = "Reset Boss",
-			price = 250,  
-			itemtype = 22160,  
+			name = "Familiar Doll",
+			price = 500,  
+			itemtype = 36586,  
 			charges = 1,
-			description = "This item resets the time of all bosses already done.",
+			description = "When using this item you will be able to choose a familiar skin.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			moveable = true	
 		},
@@ -204,7 +204,27 @@ GameStore.Categories = {
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES, 
 			moveable = true
 		},
-		{				
+		{		
+			icons = { "Falcon_Circlet.png" },
+			name = "Copper Token",
+			price = 300,
+			itemtype = 22722, 
+			count = 1,
+			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{ 
+			icons = { "Falcon_Circlet.png" },
+			name = "Copper Token",
+			price = 1500,
+			itemtype = 22722, 
+			count = 5,
+			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
+			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+			moveable = true
+		},
+		{			
 			icons = { "Falcon_Circlet.png" },
 			name = "Cassino Token",
 			price = 75,
@@ -7323,7 +7343,7 @@ GameStore.Categories = {
 		state = GameStore.States.STATE_NONE,
 		offers = {
 			{
-				icons = { "Flower_Bed.png" },
+				icons = { "Flower_Bed2.png" },
 				name = "Flower Bed",
 				price = 150,
 				itemtype = { 39788, 39789 },
