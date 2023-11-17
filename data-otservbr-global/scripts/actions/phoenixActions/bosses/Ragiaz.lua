@@ -21,5 +21,5 @@ local config = {
 }   
   
 local lever = BossLever(config)   
-lever:aid(37685)  
+lever:aid(37734)  
 lever:register()         
