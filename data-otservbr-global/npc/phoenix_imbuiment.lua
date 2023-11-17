@@ -61,175 +61,175 @@ keywordHandler:addKeyword({'pack imbuement'}, StdModule.say, {npcHandler = npcHa
 
 -- Skill Pack
 
-local stoneKeyword = keywordHandler:addKeyword({'bash'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill club imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'bash'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill club imbuement for 750000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9657, 20) player:addItem(22189, 15) player:addItem(10405, 10)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 750000 end,
+		function(player) if player:removeMoneyBank(750000) then player:addItem(9657, 20) player:addItem(22189, 15) player:addItem(10405, 10)  end end
 			)
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 
-local stoneKeyword = keywordHandler:addKeyword({'blockade'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill shield imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'blockade'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill shield imbuement for 1050000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(18994, 20) player:addItem(11703, 25) player:addItem(20199, 25)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1050000 end,
+		function(player) if player:removeMoneyBank(1050000) then player:addItem(18994, 20) player:addItem(11703, 25) player:addItem(20199, 25)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 		
-local stoneKeyword = keywordHandler:addKeyword({'chop'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill axe imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'chop'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill axe imbuement for 975000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(10196, 20) player:addItem(11447, 25) player:addItem(21200, 20)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 975000 end,
+		function(player) if player:removeMoneyBank(975000) then player:addItem(10196, 20) player:addItem(11447, 25) player:addItem(21200, 20)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'epiphany'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for magic level imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'epiphany'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for magic level imbuement for 825000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9635, 25) player:addItem(11452, 15) player:addItem(10309, 15)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 825000 end,
+		function(player) if player:removeMoneyBank(825000) then player:addItem(9635, 25) player:addItem(11452, 15) player:addItem(10309, 15)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'precision'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill distance imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'precision'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill distance imbuement for 825000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(11464, 25) player:addItem(18994, 20) player:addItem(10298, 10)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 825000 end,
+		function(player) if player:removeMoneyBank(825000) then player:addItem(11464, 25) player:addItem(18994, 20) player:addItem(10298, 10)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'slash'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill sword imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'slash'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for skill sword imbuement for 825000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9691, 25) player:addItem(9640, 20) player:addItem(9654, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 825000 end,
+		function(player) if player:removeMoneyBank(825000) then player:addItem(9691, 25) player:addItem(9640, 20) player:addItem(9654, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
 -- Additional Attributes
 
-local stoneKeyword = keywordHandler:addKeyword({'featherweight'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for capacity increase imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'featherweight'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for capacity increase imbuement for 525000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(25694, 20) player:addItem(25702, 10) player:addItem(20205, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 525000 end,
+		function(player) if player:removeMoneyBank(525000) then player:addItem(25694, 20) player:addItem(25702, 10) player:addItem(20205, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'strike'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for critical imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'strike'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for critical imbuement for 1000000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(11444, 20) player:addItem(10311, 25) player:addItem(22728, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1000000 end,
+		function(player) if player:removeMoneyBank(1000000) then player:addItem(11444, 20) player:addItem(10311, 25) player:addItem(22728, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'swiftness'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for speed imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'swiftness'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for speed imbuement for 1000000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(17458, 15) player:addItem(10302, 25) player:addItem(14081, 20)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1000000 end,
+		function(player) if player:removeMoneyBank(1000000) then player:addItem(17458, 15) player:addItem(10302, 25) player:addItem(14081, 20)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'vampirism'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for lifetime leech imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'vampirism'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for lifetime leech imbuement for 1000000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9685, 25) player:addItem(9633, 15) player:addItem(9663, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1000000 end,
+		function(player) if player:removeMoneyBank(1000000) then player:addItem(9685, 25) player:addItem(9633, 15) player:addItem(9663, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'vibrancy'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for paralysis removal imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'vibrancy'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for paralysis removal imbuement for 600000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(22053, 20) player:addItem(23507, 15) player:addItem(28567, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 600000 end,
+		function(player) if player:removeMoneyBank(600000) then player:addItem(22053, 20) player:addItem(23507, 15) player:addItem(28567, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'void'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for mana leech imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'void'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for mana leech imbuement for 1000000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(11492, 25) player:addItem(20200, 25) player:addItem(22730, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1000000 end,
+		function(player) if player:removeMoneyBank(1000000) then player:addItem(11492, 25) player:addItem(20200, 25) player:addItem(22730, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
 -- Elemental Damage
 
-local stoneKeyword = keywordHandler:addKeyword({'electrify'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy damage imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'electrify'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy damage imbuement for 465000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(18993, 25) player:addItem(21975, 5) player:addItem(23508, 1)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 465000 end,
+		function(player) if player:removeMoneyBank(465000) then player:addItem(18993, 25) player:addItem(21975, 5) player:addItem(23508, 1)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'frost'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for ice damage imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'frost'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for ice damage imbuement for 600000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9661, 25) player:addItem(21801, 10) player:addItem(9650, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 600000 end,
+		function(player) if player:removeMoneyBank(600000) then player:addItem(9661, 25) player:addItem(21801, 10) player:addItem(9650, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'reap'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for death damage imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'reap'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for death damage imbuement for 465000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(11484, 25) player:addItem(9647, 20) player:addItem(10420, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 465000 end,
+		function(player) if player:removeMoneyBank(465000) then player:addItem(11484, 25) player:addItem(9647, 20) player:addItem(10420, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'scorch'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for fire damage imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'scorch'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for fire damage imbuement for 525000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9636, 25) player:addItem(5920, 5) player:addItem(5954, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 525000 end,
+		function(player) if player:removeMoneyBank(525000) then player:addItem(9636, 25) player:addItem(5920, 5) player:addItem(5954, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'venom'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy damage imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'venom'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy damage imbuement for 705000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9686, 25) player:addItem(11703, 25) player:addItem(21194, 2)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 705000 end,
+		function(player) if player:removeMoneyBank(705000) then player:addItem(9686, 25) player:addItem(11703, 25) player:addItem(21194, 2)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 
 -- Elemental Protection
 
-local stoneKeyword = keywordHandler:addKeyword({'cloud fabric'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'cloud fabric'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for energy protection imbuement for 6750000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9644, 25) player:addItem(14079, 15) player:addItem(9665, 10)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 6750000 end,
+		function(player) if player:removeMoneyBank(6750000) then player:addItem(9644, 25) player:addItem(14079, 15) player:addItem(9665, 10)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'demon presence'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for holy protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'demon presence'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for holy protection imbuement for 1050000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(9639, 25) player:addItem(9638, 25) player:addItem(10304, 20)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 1050000 end,
+		function(player) if player:removeMoneyBank(1050000) then player:addItem(9639, 25) player:addItem(9638, 25) player:addItem(10304, 20)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'dragon hide'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for fire protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'dragon hide'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for fire protection imbuement for 525000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(5877, 20) player:addItem(16131, 10) player:addItem(11658, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 525000 end,
+		function(player) if player:removeMoneyBank(525000) then player:addItem(5877, 20) player:addItem(16131, 10) player:addItem(11658, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'lich shroud'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for death protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'lich shroud'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for death protection imbuement for 750000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(11466, 25) player:addItem(22007, 20) player:addItem(9660, 5)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 750000 end,
+		function(player) if player:removeMoneyBank(750000) then player:addItem(11466, 25) player:addItem(22007, 20) player:addItem(9660, 5)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'quara scale'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for ice protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'quara scale'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for ice protection imbuement for 6750000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(10295, 25) player:addItem(10307, 15) player:addItem(14012, 10)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 6750000 end,
+		function(player) if player:removeMoneyBank(6750000) then player:addItem(10295, 25) player:addItem(10307, 15) player:addItem(14012, 10)  end end
 	)
 		stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 	
-local stoneKeyword = keywordHandler:addKeyword({'snake skin'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for earth protection imbuement for 100000 gold?'})
+local stoneKeyword = keywordHandler:addKeyword({'snake skin'}, StdModule.say, {npcHandler = npcHandler, text = 'Do you want to buy items for earth protection imbuement for 825000 gold?'})
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Here you are. Take care.', reset = true},
-		function(player) return player:getMoney() + player:getBankBalance() >= 100000 end,
-		function(player) if player:removeMoneyBank(100000) then player:addItem(17823, 25) player:addItem(9694, 20) player:addItem(11702, 10)  end end
+		function(player) return player:getMoney() + player:getBankBalance() >= 825000 end,
+		function(player) if player:removeMoneyBank(825000) then player:addItem(17823, 25) player:addItem(9694, 20) player:addItem(11702, 10)  end end
 	)
 	stoneKeyword:addChildKeyword({'yes'}, StdModule.say, {npcHandler = npcHandler, text = 'Sorry, you don\'t have enough money.', reset = true})
 
 -- Basic
- 
+
 npcHandler:setMessage(MESSAGE_GREET, "Hello |PLAYERNAME| say {pack imbuement} or {trade} for buy imbuement items.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "See you later |PLAYERNAME| come back soon.")
 npcHandler:setMessage(MESSAGE_FAREWELL, "See you later |PLAYERNAME| come back soon.") 
