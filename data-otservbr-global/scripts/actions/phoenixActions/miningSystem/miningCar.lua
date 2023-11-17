@@ -6,8 +6,15 @@ local config = {
 }
 
 function miningCar.onUse(player, item, fromPosition, itemEx, toPosition)
+    local storageValue = player:getStorageValue(500) -- Obtém o valor de storage necessário
+    
+    if storageValue < 1 then
+        player:sendCancelMessage("You do not have access to this area, only reset players can enter this area.")
+        return true
+    end
+
     if player:getLevel() < 8 then
---        player:sendCancelMessage('You do not feel experienced enough to traverse the dangerous surge of waves on this treacherous coast.')
+        -- player:sendCancelMessage('You do not feel experienced enough to traverse the dangerous surge of waves on this treacherous coast.')
         return true
     end 
 
@@ -19,8 +26,7 @@ function miningCar.onUse(player, item, fromPosition, itemEx, toPosition)
             return true
         end
     end
-end
-
+end 
 
 miningCar:aid(5341, 5342)
 miningCar:register()
