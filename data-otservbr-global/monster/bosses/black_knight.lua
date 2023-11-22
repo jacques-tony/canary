@@ -14,8 +14,8 @@ monster.outfit = {
 }
 
 monster.events = {
-	"BlackKnightDeath",
-}
+	"deathMonsterCreatePortal",
+} 
 
 monster.bosstiary = {
 	bossRaceId = 229,
