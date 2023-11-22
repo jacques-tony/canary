@@ -50709,12 +50709,12 @@
 		<attribute key="weight" value="100"/>
 	</item>
 	<item id="30005" article="a" name="dream essence egg">
-		<attribute key="primarytype" value="creature products"/>
+		<attribute key="primarytype" value="creature products"/> 
 		<attribute key="description" value="Maybe the magical dream bird lays such eggs"/>
 		<attribute key="weight" value="280"/>
 	</item>
-	<item id="30006" article="a" name="bottle of sun fruit juice">
-		<attribute key="description" value="Tiny sapphire particles are floating in it"/>
+	<item id="30006" article="a" name="double heal">
+		<attribute key="description" value="When using this item you will always receive double healing from any potion you use."/>	
 		<attribute key="weight" value="400"/>
 	</item>
 	<item id="30007" article="an" name="grave"/>
