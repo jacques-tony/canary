@@ -33,8 +33,8 @@ monster.corpse = 31394
 monster.speed = 160
 monster.manaCost = 0
 
-monster.faction = FACTION_ANUMA
-monster.enemyFactions = { FACTION_FAFNAR, FACTION_PLAYER }
+--monster.faction = FACTION_ANUMA
+--monster.enemyFactions = { FACTION_FAFNAR, FACTION_PLAYER }
 
 monster.changeTarget = {
 	interval = 4000,
