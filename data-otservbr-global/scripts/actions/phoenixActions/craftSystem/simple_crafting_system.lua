@@ -20,10 +20,15 @@ local config = {
 				reqItems = { -- items and the amounts in order to craft.
 					[1] = {item = 28723, count = 1}, -- Falcon Longsword
 					[2] = {item = 30398, count = 1}, -- Cobra Sword
-					[3] = {item = 34155, count = 1}, -- Lion Longsword
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell 
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell								
+					[3] = {item = 34155, count = 1}, -- Lion Longsword	
+					[4] = {item = 16160, count = 1}, -- Crystalline Sword
+					[5] = {item = 7417, count = 1}, -- Runed Sword
+					[6] = {item = 31614, count = 1}, -- Tagralt Blade				
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell 
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell				
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI							
 				},
 			},
 			
@@ -33,9 +38,14 @@ local config = {
 					[1] = {item = 28724, count = 1}, -- Falcon Axe
 					[2] = {item = 30396, count = 1}, -- Cobra Axe
 					[3] = {item = 34253, count = 1}, -- Lion Axe
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell								
+ 					[4] = {item = 16161, count = 1}, -- Crystalline Axe
+					[5] = {item = 7420, count = 1}, -- Reaper's Axe
+					[6] = {item = 32616, count = 1}, -- Phantasmal Axe				
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 
@@ -45,9 +55,14 @@ local config = {
 					[1] = {item = 28725, count = 1}, -- Falcon Mace
 					[2] = {item = 30395, count = 1}, -- Cobra Club
 					[3] = {item = 34254, count = 1}, -- Lion Hammer
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+ 					[4] = {item = 16162, count = 1}, -- Mycological Mace
+					[5] = {item = 28831, count = 1}, -- Unliving Demonbone
+					[6] = {item = 29419, count = 1}, -- Resizer
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 
@@ -57,9 +72,14 @@ local config = {
 					[1] = {item = 28718, count = 1}, -- Falcon Bow
 					[2] = {item = 30393, count = 1}, -- Cobra Crossbow
 					[3] = {item = 34150, count = 1}, -- Lion Longbow
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	 
+ 					[4] = {item = 16163, count = 1}, -- Crystal Crossbow
+					[5] = {item = 8025, count = 1}, -- The Ironworker
+					[6] = {item = 29417, count = 1}, -- Living Vine Bow
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 
@@ -69,9 +89,14 @@ local config = {
 					[1] = {item = 28718, count = 1}, -- Falcon Bow
 					[2] = {item = 30393, count = 1}, -- Cobra Crossbow
 					[3] = {item = 34150, count = 1}, -- Lion Longbow
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	 
+ 					[4] = {item = 16163, count = 1}, -- Crystal Crossbow
+					[5] = {item = 8025, count = 1}, -- The Ironworker
+					[6] = {item = 29417, count = 1}, -- Living Vine Bow
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 
@@ -81,9 +106,14 @@ local config = {
 					[1] = {item = 28716, count = 1}, -- Falcon Rod
 					[2] = {item = 30400, count = 1}, -- Cobra Rod
 					[3] = {item = 34151, count = 1}, -- Lion rod
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	 
+ 					[4] = {item = 28826, count = 1}, -- Deepling Fork
+					[5] = {item = 16117, count = 1}, -- Muck Rod
+					[6] = {item = 29425, count = 1}, -- Energized Limb
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 			 
@@ -93,10 +123,14 @@ local config = {
 					[1] = {item = 28717, count = 1}, -- Falcon Wand
 					[2] = {item = 30399, count = 1}, -- Cobra Wand
 					[3] = {item = 34152, count = 1}, -- Lion Wand
-					[4] = {item = 27619, count = 10}, -- Giant Tentacle
-					[5] = {item = 27621, count = 10}, -- Huge Shell
-					[6] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	 					
-					
+ 					[4] = {item = 28825, count = 1}, -- Deepling Ceremonial Dagger
+					[5] = {item = 16115, count = 1}, -- Wand of Everblazing
+					[6] = {item = 12603, count = 1}, -- Wand of Dimensions
+					[7] = {item = 27619, count = 10}, -- Giant Tentacle
+					[8] = {item = 27621, count = 10}, -- Huge Shell
+					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell		
+					[10] = {item = 9058, count = 100}, -- Gold Ingot		
+					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
 				},
 			},
 		}, 

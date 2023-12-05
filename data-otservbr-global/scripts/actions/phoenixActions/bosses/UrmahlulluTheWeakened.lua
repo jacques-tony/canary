@@ -1,6 +1,6 @@
 local config = {
     boss = {
-        name = "Urmahlullu The Weakened",
+        name = "Urmahlullu The Immaculate",
         position = Position(18265, 18523, 8),
     }, 
     timeAfterKill = 60,

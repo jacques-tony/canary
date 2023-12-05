@@ -45501,7 +45501,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="25985" article="an" name="phoenix death sword">
+	<item id="25985" article="an" name="phoenix death sword mayhem">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="8"/>
@@ -45517,6 +45517,38 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
+	<item id="55004" article="an" name="phoenix energy sword">
+		<attribute key="primarytype" value="sword weapons"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementenergy" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillsword" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost sword" value="3"/> 
+		</attribute>
+	</item>	
+	<item id="55005" article="an" name="phoenix death sword">
+		<attribute key="primarytype" value="sword weapons"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementdeath" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillsword" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="25986" article="a" name="plain mayhem slayer">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45552,7 +45584,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="25991" article="an" name="phoenix death axe">
+	<item id="25991" article="an" name="phoenix death axe mayhem">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="attack" value="8"/>
@@ -45568,6 +45600,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
+	<item id="55002" article="an" name="phoenix death axe">
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementdeath" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillaxe" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="25992" article="a" name="plain mayhem chopper">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45603,7 +45651,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="25997" article="an" name="phoenix death club">
+	<item id="25997" article="an" name="phoenix death club mayhem">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
@@ -45619,6 +45667,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item> 
+	<item id="55008" article="an" name="phoenix death club">
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementdeath" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillclub" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item> 	
 	<item id="25998" article="a" name="plain mayhem hammer">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45688,7 +45752,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26009" article="an" name="phoenix death wand">
+	<item id="26009" article="an" name="phoenix death wand mayhem">
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="suddendeath"/>
@@ -45706,6 +45770,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 		</item>	
+	<item id="55014" article="an" name="phoenix death wand">
+		<attribute key="primarytype" value="wands"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="suddendeath"/>
+		<attribute key="range" value="5"/>		
+		<attribute key="absorbpercentdeath" value="7"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="firemagiclevelpoints" value="1"/>
+		<attribute key="energymagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="12"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="weight" value="2200"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+		</item>			
 	<item id="26010" article="a" name="plain mayhem rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45718,7 +45800,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26012" article="an" name="phoenix death rod"> 
+	<item id="26012" article="an" name="phoenix death rod mayhem"> 
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="suddendeath"/> 
@@ -45736,6 +45818,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 	</item>
+	<item id="55011" article="an" name="phoenix death rod"> 
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="suddendeath"/> 
+		<attribute key="absorbpercentdeath" value="7"/>
+		<attribute key="range" value="5"/>		
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="earthmagiclevelpoints" value="1"/>
+		<attribute key="icemagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="5"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="weight" value="2500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26014" article="a" name="plain remedy blade">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45801,7 +45901,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26022" article="an" name="phoenix ice axe">
+	<item id="26022" article="an" name="phoenix ice axe mayhem ">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="attack" value="8"/>
@@ -45817,7 +45917,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
-	
+	<item id="55000" article="an" name="phoenix ice axe">
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementice" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillaxe" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26023" article="a" name="plain remedy chopper">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45853,7 +45968,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26028" article="an" name="phoenix energy club">
+	<item id="26028" article="an" name="phoenix energy club mayhem">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
@@ -45869,6 +45984,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
+	<item id="55007" article="an" name="phoenix energy club">
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementenergy" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillclub" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26029" article="a" name="plain remedy hammer">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45938,7 +46069,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26040" article="an" name="phoenix energy wand">
+	<item id="26040" article="an" name="phoenix energy wand mayhem">
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energyball"/>
@@ -45956,6 +46087,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 		</item>	
+	<item id="55013" article="an" name="phoenix energy wand">
+		<attribute key="primarytype" value="wands"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="energyball"/>
+		<attribute key="range" value="5"/>		
+		<attribute key="absorbpercentenergy" value="7"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="firemagiclevelpoints" value="1"/>
+		<attribute key="energymagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="12"/>
+		<attribute key="criticalhitchance" value="10"/> 
+		<attribute key="weight" value="2200"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+		</item>			
 	<item id="26041" article="a" name="plain remedy rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -45968,7 +46117,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26043" article="an" name="phoenix ice rod">
+	<item id="26043" article="an" name="phoenix ice rod mayhem">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="ice"/>
@@ -45986,6 +46135,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 	</item>
+	<item id="55009" article="an" name="phoenix ice rod">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="ice"/>
+		<attribute key="range" value="5"/>		
+		<attribute key="absorbpercentice" value="7"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="earthmagiclevelpoints" value="1"/>
+		<attribute key="icemagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="5"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="weight" value="2500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26044" article="a" name="plain carving blade">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -46000,7 +46167,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26046" article="an" name="phoenix ice sword">
+	<item id="26046" article="an" name="phoenix ice sword mayhem">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
 		<attribute key="attack" value="8"/>
@@ -46016,6 +46183,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute> 
 	</item>
+	<item id="55003" article="an" name="phoenix ice sword">
+		<attribute key="primarytype" value="sword weapons"/>
+		<attribute key="weaponType" value="sword"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementice" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillsword" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute> 
+	</item>	
 	<item id="26047" article="a" name="plain carving slayer">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -46051,7 +46234,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26052" article="an" name="phoenix enegy axe">
+	<item id="26052" article="an" name="phoenix energy axe mayhem">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
 		<attribute key="attack" value="8"/>
@@ -46067,6 +46250,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
+	<item id="55001" article="an" name="phoenix energy axe">
+		<attribute key="primarytype" value="axe weapons"/>
+		<attribute key="weaponType" value="axe"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementenergy" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillaxe" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26053" article="a" name="plain carving chopper">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -46102,7 +46301,7 @@
 		<attribute key="defense" value="5"/>
 		<attribute key="weight" value="5000"/>
 	</item>
-	<item id="26058" article="an" name="phoenix ice club">
+	<item id="26058" article="an" name="phoenix ice club mayhem">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
 		<attribute key="attack" value="8"/>
@@ -46118,6 +46317,22 @@
 			<attribute key="skillboost axe" value="3"/>
 		</attribute>
 	</item>
+	<item id="55006" article="an" name="phoenix ice club">
+		<attribute key="primarytype" value="club weapons"/>
+		<attribute key="weaponType" value="club"/>
+		<attribute key="attack" value="8"/>
+		<attribute key="elementice" value="46"/>
+		<attribute key="extradef" value="3"/>
+		<attribute key="defense" value="32"/>
+		<attribute key="skillclub" value="5"/>
+		<attribute key="weight" value="7200"/>
+		<attribute key="imbuementslot" value="3">
+			<attribute key="life leech" value="3"/>
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost axe" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26059" article="a" name="plain carving hammer">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -46187,7 +46402,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26070" article="an" name="phoenix ice wand">
+	<item id="26070" article="an" name="phoenix ice wand mayhem">
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="ice"/>
@@ -46205,6 +46420,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 		</item>	
+	<item id="55012" article="an" name="phoenix ice wand">
+		<attribute key="primarytype" value="wands"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="ice"/>
+		<attribute key="range" value="5"/>		
+		<attribute key="absorbpercentice" value="7"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="firemagiclevelpoints" value="1"/>
+		<attribute key="energymagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="12"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="weight" value="2200"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+		</item>			
 	<item id="26071" article="a" name="plain carving rod">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="description" value="This replica looks charged"/>
@@ -46217,7 +46450,7 @@
 		<attribute key="range" value="3"/>
 		<attribute key="weight" value="3500"/>
 	</item>
-	<item id="26073" article="an" name="phoenix earth rod">
+	<item id="26073" article="an" name="phoenix earth rod mayhem">
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="earth"/>
@@ -46235,6 +46468,24 @@
 			<attribute key="skillboost magic level" value="3"/>
 		</attribute>
 	</item>
+	<item id="55010" article="an" name="phoenix earth rod">
+		<attribute key="primarytype" value="rods"/>
+		<attribute key="weaponType" value="wand"/>
+		<attribute key="shootType" value="earth"/>
+		<attribute key="range" value="5"/>		 
+		<attribute key="absorbpercentearth" value="7"/>
+		<attribute key="magiclevelpoints" value="5"/>
+		<attribute key="earthmagiclevelpoints" value="1"/>
+		<attribute key="icemagiclevelpoints" value="1"/>
+		<attribute key="criticalhitdamage" value="5"/>
+		<attribute key="criticalhitchance" value="10"/>
+		<attribute key="weight" value="2500"/>
+		<attribute key="imbuementslot" value="2">
+			<attribute key="mana leech" value="3"/>
+			<attribute key="critical hit" value="3"/>
+			<attribute key="skillboost magic level" value="3"/>
+		</attribute>
+	</item>	
 	<item id="26074" article="a" name="blessed acorn">
 		<attribute key="primarytype" value="quest items"/>
 		<attribute key="weight" value="50"/>
