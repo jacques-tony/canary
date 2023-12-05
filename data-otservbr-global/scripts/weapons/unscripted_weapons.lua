@@ -29,10 +29,10 @@ local weapons = {
 	},
 	{
 		-- phoenix ice rod		
-		itemId = 26043,
+		itemId = 55009, 
 		type = WEAPON_WAND,
 		wandType = "ice",
---		level = 600,
+--		level = 600, 
 		mana = 20,
 		damage = { 1600, 2400 },
 		unproperly = true, 
@@ -43,7 +43,7 @@ local weapons = {
 	},
 	{	
 		-- phoenix death rod	
-		itemId = 26012,
+		itemId = 55011,
 		type = WEAPON_WAND,
 		wandType = "death",
 --		level = 600,
@@ -57,7 +57,7 @@ local weapons = {
 	},
 	{	
 		-- phoenix earth rod	
-		itemId = 26073,
+		itemId = 55010,
 		type = WEAPON_WAND,
 		wandType = "earth",
 --		level = 600,
@@ -273,6 +273,40 @@ local weapons = {
 		},
 	},
 	{
+		-- phoenix energy axe
+		itemId = 55000,
+		type = WEAPON_AXE,
+		type = WEAPON_AXE,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
+		-- phoenix death axe
+		itemId = 55001,
+		type = WEAPON_AXE,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
+		-- phoenix ice axe
+		itemId = 55002,
+		type = WEAPON_AXE,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{		
 		-- grand sanguine cudgel
 		itemId = 43867,
 		type = WEAPON_CLUB,
@@ -295,6 +329,39 @@ local weapons = {
 		},
 	},
 	{
+		-- phoenix energy club
+		itemId = 55007,
+		type = WEAPON_CLUB,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix death club
+		itemId = 55008,
+		type = WEAPON_CLUB,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix ice club
+		itemId = 55006,
+		type = WEAPON_CLUB,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
 		-- grand sanguine blade
 		itemId = 43865,
 		type = WEAPON_SWORD,

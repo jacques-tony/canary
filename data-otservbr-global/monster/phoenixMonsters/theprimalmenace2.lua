@@ -1,15 +1,16 @@
-local mType = Game.createMonsterType("Kroazur")
+local mType = Game.createMonsterType("ThePrimalMenace2")
 local monster = {}
 
-monster.description = "Kroazur"
+monster.name = "The Primal Menace"
+monster.description = "The Primal Menace"
 monster.experience = 2700
 monster.outfit = {
-	lookType = 842,
+	lookType = 1566,
 	lookHead = 0,
-	lookBody = 114,
-	lookLegs = 94,
-	lookFeet = 80,
-	lookAddons = 2,
+	lookBody = 0,
+	lookLegs = 0,
+	lookFeet = 0,
+	lookAddons = 0,
 	lookMount = 0,
 }
 
@@ -95,7 +96,7 @@ monster.loot = {
 monster.attacks = {
 	{ name = "melee", interval = 200, chance = 20, minDamage = 0, maxDamage = -650 },
 	{ name = "combat", interval = 200, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -300, maxDamage = -500, target = false },
-	{ name = "combat", interval = 500, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -300, length = 8, spread = 0, effect = CONST_ME_MORTAREA, target = true },
+	{ name = "combat", interval = 500, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -300, length = 8, spread = 3, effect = CONST_ME_MORTAREA, target = true },
 	{ name = "combat", interval = 500, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -250, maxDamage = -300, radius = 8, effect = CONST_ME_MORTAREA, target = false },
 }
 

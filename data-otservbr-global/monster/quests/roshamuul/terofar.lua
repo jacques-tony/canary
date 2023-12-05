@@ -100,6 +100,10 @@ monster.loot = {
 	{ id = 813, chance = 2910 }, -- terra boots
 	{ id = 3079, chance = 1910 }, -- boots of haste
 	{ id = 5741, chance = 1910 }, -- skull helmet
+	
+	{ name = "copper token", chance = 4000, maxCount = 1 },	
+	{ name = "gold token", chance = 6000, maxCount = 4  },
+	{ name = "silver token", chance = 6500, maxCount = 4 },	
 }
 
 monster.attacks = {

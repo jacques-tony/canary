@@ -3,45 +3,45 @@ local config = {
         class = "axe",
         items = {
             {id = 43868, element = "FIRE"},
-            {id = 26052, element = "ENERGY"},
-            {id = 25991, element = "DEATH"},
-            {id = 26022, element = "ICE"}
-        }
+            {id = 55001, element = "ENERGY"},
+            {id = 55002, element = "DEATH"},
+            {id = 55000, element = "ICE"}
+        } 
     },
-    {
+    { 
         class = "sword",
         items = {
             {id = 43864, element = "FIRE"},
-            {id = 26016, element = "ENERGY"},
-            {id = 25985, element = "DEATH"},
-            {id = 26046, element = "ICE"}
+            {id = 55004, element = "ENERGY"},
+            {id = 55005, element = "DEATH"},
+            {id = 55003, element = "ICE"}
         }
     },
     {
         class = "club",
         items = {
             {id = 43866, element = "FIRE"},
-            {id = 26028, element = "ENERGY"},
-            {id = 25997, element = "DEATH"},
-            {id = 26058, element = "ICE"}
+            {id = 55007, element = "ENERGY"},
+            {id = 55008, element = "DEATH"},
+            {id = 55006, element = "ICE"}
         }
     },
     {
         class = "rod",
         items = {
             {id = 43885, element = "FIRE"}, 
-            {id = 26073, element = "EARTH"},
-            {id = 26012, element = "DEATH"},
-            {id = 26043, element = "ICE"}
+            {id = 55010, element = "EARTH"},
+            {id = 55011, element = "DEATH"},
+            {id = 55009, element = "ICE"}
         }
     },
     {
         class = "wand",
         items = {
             {id = 43882, element = "FIRE"},
-            {id = 26040, element = "ENERGY"},
-            {id = 26009, element = "DEATH"},
-            {id = 26070, element = "ICE"}
+            {id = 55013, element = "ENERGY"},
+            {id = 55014, element = "DEATH"},
+            {id = 55012, element = "ICE"}
         }
     }
 }
@@ -67,6 +67,11 @@ local function sendItemsElementsModal(player, item)
                         return true
                     end
 
+                    if player:getStorageValue(storage) >= os.time() then
+                        player:sendTextMessage(MESSAGE_INFO_DESCR, "You must wait for the cooldown to change the element again.")
+                        return true
+                    end
+
                     if not player:removeMoneyBank(price) then
                         player:sendTextMessage(MESSAGE_INFO_DESCR, "You need " .. price .. " golds to change the element.")
                         return true
@@ -74,11 +79,6 @@ local function sendItemsElementsModal(player, item)
 
                     if player:getItemCount(item.itemid) == 0 then
                         player:sendTextMessage(MESSAGE_INFO_DESCR, "Sorry, but you don't have this item. Please keep it in your inventory.")
-                        return true
-                    end
-
-                    if player:getStorageValue(storage) >= os.time() then
-                        player:sendTextMessage(MESSAGE_INFO_DESCR, "You must wait for the cooldown to change the element again.")
                         return true
                     end
 

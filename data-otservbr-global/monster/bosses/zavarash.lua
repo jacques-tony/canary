@@ -100,6 +100,11 @@ monster.loot = {
 	{ id = 7431, chance = 700 }, -- demonbone
 	{ id = 8049, chance = 350 }, -- lavos armor
 	{ id = 8100, chance = 170 }, -- obsidian truncheon
+	
+	{ name = "copper token", chance = 4000, maxCount = 1 },	
+	{ name = "gold token", chance = 6000, maxCount = 4  },
+	{ name = "silver token", chance = 6500, maxCount = 4 },	
+	
 }
 
 monster.attacks = {

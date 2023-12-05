@@ -1,6 +1,5 @@
 local BountyHunterOnKill = CreatureEvent("BountyHunterOnKill")
-function BountyHunterOnKill.onKill(player, target)
-    return onBountyHunterKill(player, target)
+function BountyHunterOnKill.onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified) 
+    return onBountyHunterKill(killer, creature)
 end
-
-BountyHunterOnKill:register()  
+BountyHunterOnKill:register()

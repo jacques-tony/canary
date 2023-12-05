@@ -1,15 +1,15 @@
-function Player:sendAddonDollsWindow(outfits)
+function Player:sendAddonWindow(outfits)
+	-- Check if player has storage.
+	if self:getStorageValue(outfits.storageID) == 1 then
+		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've already picked up a outfit.")
+		return true
+	end
+
 	local function buttonCallback(player, button, choice)
 		local outfitName = string.lower(outfits[choice.id].name) -- Converts the outfit name to lowercase
 	-- Modal window functionallity
 		if button.name == "Confirm" then
 		-- Start Checks
-			-- Check if player has addon doll in backpack.
-			if self:getItemCount(outfits.dollID) == 0 then
-				self:sendAddonDollsWindow_noDoll(outfits)
-				return false
-			end
- 
 			-- If choiceID equals 0 return false and close window (If player alread has all addons choiceID will be 0).
 			if choice.id == 0 then
 				return false
@@ -17,7 +17,7 @@ function Player:sendAddonDollsWindow(outfits)
  
 			-- Check if player already has the outfit if true send error message and reopen window
 			if self:hasOutfit(outfits[choice.id].male, 3) or self:hasOutfit(outfits[choice.id].female, 3) == true then
-				self:sendAddonDollsWindow_owned(outfits)
+				self:sendAddonWindow_owned(outfits)
 				return false
 			end
  
@@ -31,7 +31,7 @@ function Player:sendAddonDollsWindow(outfits)
 		-- End Checks
  
 		-- Remove addon doll, send confirmation message and send super special sparkles. 
-		self:removeItem(outfits.dollID, 1)
+		self:setStorageValue(outfits.storageID, 1)
 		self:getPosition():sendMagicEffect(CONST_ME_FIREWORK_YELLOW)
 		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can now wear the " ..outfitName.. " outfit and addons!")
 	end
@@ -80,7 +80,7 @@ end
  
  
 --- The modal window that is played if player already has the addon.
-function Player:sendAddonDollsWindow_owned(outfits)
+function Player:sendAddonWindow_owned(outfits)
 	local function buttonCallback(player, button, choice)
  
 		if button.name == "Back" then
@@ -91,32 +91,6 @@ function Player:sendAddonDollsWindow_owned(outfits)
 	local window = ModalWindow {
 		title = outfits.ownedTitle, -- Title of the modal window
 		message = outfits.ownedMsg, -- The message to be displayed on the modal window
-	}
- 
-	-- Add buttons to the window (Note: if you change the names of these you must change the functions in the modal window functionallity!)
-	window:addButton("Back", buttonCallback)
- 
-	-- Set what button is pressed when the player presses enter or escape
-	window:setDefaultEnterButton("Back")
-	window:setDefaultEscapeButton("Back")
- 
-	-- Send the window to player
-	window:sendToPlayer(self)
-end
- 
---- The modal window that is displayed if the player doesnt have the doll in his BP
-function Player:sendAddonDollsWindow_noDoll(outfits)
-	local function buttonCallback(player, button, choice)
- 
-		if button.name == "Back" then
-			self:sendAddonWindow(outfits)
-		end
- 
-	end
--- Modal window design
-	local window = ModalWindow {
-		title = outfits.dollTitle, -- Title of the modal window
-		message = outfits.dollMsg, -- The message to be displayed on the modal window
 	}
  
 	-- Add buttons to the window (Note: if you change the names of these you must change the functions in the modal window functionallity!)
