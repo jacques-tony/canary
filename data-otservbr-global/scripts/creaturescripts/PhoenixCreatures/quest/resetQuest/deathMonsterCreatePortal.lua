@@ -12,15 +12,7 @@ local portalId, t = 775,
         message = "The soul of black knight generated a portal!",
         config = {
             createPos = {x = 17551, y = 17824, z = 11},
-            toPos = {x = 17545, y = 17818, z = 10}, 
-            portalTime = 1, --minutes
-        }
-    },
-    ["orshabaal"] = {
-        message = "You have defeated Orshabaal!",	
-        config = {
-            createPos = {x = 17551, y = 17822, z = 10}, --NOTE: You may use empty brackets to create the portal where the monster dies.
-            toPos = {x = 17548, y = 17822, z = 11},
+            toPos = {x = 17548, y = 17820, z = 11},
             portalTime = 1, --minutes
         }
     },
@@ -49,7 +41,6 @@ local function spectatorStartCountdown(time, position)
     end
 end
 
-
 local function removePortal(position)
     local portal = Tile(position):getItemById(portalId)
     if portal then
@@ -57,20 +48,19 @@ local function removePortal(position)
     end
 end
 
-local killMonsterCreatePortal = CreatureEvent("killMonsterCreatePortal")
+local deathMonsterCreatePortal = CreatureEvent("deathMonsterCreatePortal")
 
-function killMonsterCreatePortal.onKill(creature, target)
-    if not target:isMonster() or target:getMaster() then
+function deathMonsterCreatePortal.onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified)   
+    if not creature:isMonster() or creature:getMaster() then
         return true
     end
     
-    local player = Player(creature:getGuid())
-    local k = t[target:getName():lower()]
+    local k = t[creature:getName():lower()]
     if not k then
         return true
     end
     
-    local pos, cPos = target:getPosition()
+    local pos, cPos = creature:getPosition()
     if type(k.config.createPos) == 'table' then
         if next(k.config.createPos) == nil then
             cPos = pos
@@ -90,23 +80,10 @@ function killMonsterCreatePortal.onKill(creature, target)
     
     local pt = k.config.portalTime
 
+
     addEvent(spectatorStartCountdown, 500, pt * 60, cPos)
     addEvent(removePortal, pt * 60 * 1000, cPos)
     return true
 end
 
-killMonsterCreatePortal:type("kill")
-killMonsterCreatePortal:register()
-
----------------------------------------------------------------------------------------
--- Register script onLogin
----------------------------------------------------------------------------------------
-local monsterKillLogin = CreatureEvent("monsterKillLogin")
-
-function monsterKillLogin.onLogin(player)
-    player:registerEvent("killMonsterCreatePortal")
-    return true
-end
-
-monsterKillLogin:type("login")
-monsterKillLogin:register()
+deathMonsterCreatePortal:register()

@@ -1,4 +1,10 @@
-function Player:sendMountdollsWindow(mounts)
+function Player:sendMountWindow(mounts)
+	-- Check if player has storage.
+	if self:getStorageValue(mounts.storageID) == 1 then
+		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You've already picked up a mount.")
+		return true
+	end
+
 	local function buttonCallback(player, button, choice)
 		local mountName = string.lower(mounts[choice.id].name) -- Converts the mount name to lowercase
 	-- Modal window functionallity
@@ -6,13 +12,7 @@ function Player:sendMountdollsWindow(mounts)
 		-- Start Checks
 			-- Check if player already has the mount if true send error message and reopen window
 			if self:hasMount(mounts[choice.id].ID) == true then
-				self:sendMountdollsWindow_owned(mounts)
-				return false
-			end
- 
-			-- Check if player has mount doll in backpack.
-			if self:getItemCount(mounts.dollID) == 0 then
-				self:sendMountdollsWindow_noDoll(mounts)
+				self:sendMountWindow_owned(mounts)
 				return false
 			end
 		end
@@ -20,7 +20,7 @@ function Player:sendMountdollsWindow(mounts)
  
 		-- Add mount to play, remove mount doll, send confirmation message and send super special sparkles. 
 		self:addMount(mounts[choice.id].ID)
-		self:removeItem(mounts.dollID, 1)
+		self:setStorageValue(mounts.storageID, 1)
 		self:getPosition():sendMagicEffect(CONST_ME_FIREWORK_YELLOW)
 		self:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You can now use the " ..mountName.. " mount!")
 	end
@@ -59,42 +59,17 @@ end
  
  
 --- The modal window that is played if player already has the addon.
-function Player:sendMountdollsWindow_owned(mounts)
+function Player:sendMountWindow_owned(mounts)
 	local function buttonCallback(player, button, choice)
  
 		if button.name == "Back" then
-			self:sendMountdollsWindow(mounts)
+			self:sendMountWindow(mounts)
 		end
 	end
 -- Modal window design
 	local window = ModalWindow {
 		title = mounts.ownedTitle, -- Title of the modal window
 		message = mounts.ownedMsg, -- The message to be displayed on the modal window
-	}
- 
-	-- Add buttons to the window (Note: if you change the names of these you must change the functions in the modal window functionallity!)
-	window:addButton("Back", buttonCallback)
- 
-	-- Set what button is pressed when the player presses enter or escape
-	window:setDefaultEnterButton("Back")
-	window:setDefaultEscapeButton("Back")
- 
-	-- Send the window to player
-	window:sendToPlayer(self)
-end
- 
---- The modal window that is displayed if the player doesnt have the doll in his BP
-function Player:sendMountdollsWindow_noDoll(mounts)
-	local function buttonCallback(player, button, choice)
- 
-		if button.name == "Back" then
-			self:sendMountdollsWindow(mounts)
-		end	
-	end
--- Modal window design
-	local window = ModalWindow {
-		title = mounts.dollTitle, -- Title of the modal window
-		message = mounts.dollMsg, -- The message to be displayed on the modal window
 	}
  
 	-- Add buttons to the window (Note: if you change the names of these you must change the functions in the modal window functionallity!)

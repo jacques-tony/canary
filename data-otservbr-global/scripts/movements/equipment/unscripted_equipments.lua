@@ -90,6 +90,72 @@ local items = {
 		},
 	},
 	{
+		-- phoenix earth rod
+		itemid = 55010,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix earth rod
+		itemid = 55010,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix death rod
+		itemid = 55011,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix death rod
+		itemid = 55011,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix ice rod
+		itemid = 55009,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix ice rod
+		itemid = 55009,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{	
 		-- sanguine boots
 		itemid = 43884,
 		type = "equip",
@@ -156,6 +222,72 @@ local items = {
 		},
 	},
 	{
+		-- phoenix energy wand
+		itemid = 55013,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{
+		-- phoenix energy wand
+		itemid = 55013,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{
+		-- phoenix death wand
+		itemid = 55014,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{
+		-- phoenix death wand
+		itemid = 55014,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{
+		-- phoenix ice wand
+		itemid = 55012,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{
+		-- phoenix ice wand
+		itemid = 55012,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Sorcerer", true, true },
+			{ "Master Sorcerer" },
+		},
+	},
+	{	
 		-- sanguine Greaves
 		itemid = 43881,
 		type = "equip",
@@ -508,6 +640,72 @@ local items = {
 		},
 	},
 	{
+		-- phoenix energy club
+		itemid = 55007,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix energy club
+		itemid = 55007,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix death club
+		itemid = 55008,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix death club
+		itemid = 55008,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix ice club
+		itemid = 55006,
+		type = "equip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix ice club
+		itemid = 55006,
+		type = "deequip",
+		slot = "hand",
+--		level = 600,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
 		-- grand sanguine blade
 		itemid = 43865,
 		type = "equip",
@@ -531,7 +729,7 @@ local items = {
 	},
 	{
 		-- sanguine blade
-		itemid = 43864,
+		itemid = 43864, 
 		type = "equip",
 		slot = "hand",
 --		level = 600,
@@ -4912,6 +5110,78 @@ local items = {
 		slot = "hand",
 	},
 	{
+		-- phoenix ice sword
+		itemid = 55003,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix ice sword
+		itemid = 55003,
+		type = "deequip",
+		slot = "hand",
+	},
+	{
+		-- phoenix death sword
+		itemid = 55005,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix death sword
+		itemid = 55005,
+		type = "deequip",
+		slot = "hand",
+	},
+	{
+		-- phoenix energy sword
+		itemid = 55004,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix energy sword
+		itemid = 55004,
+		type = "deequip",
+		slot = "hand",
+	},
+	{
+		-- phoenix energy axe
+		itemid = 55000,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix energy axe
+		itemid = 55000,
+		type = "deequip",
+		slot = "hand",
+	},
+	{
+		-- phoenix death axe
+		itemid = 55001,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix death axe
+		itemid = 55001,
+		type = "deequip",
+		slot = "hand",
+	},
+	{	
+		-- phoenix ice axe
+		itemid = 55002,
+		type = "equip",
+		slot = "hand",
+	},
+	{
+		-- phoenix ice axe
+		itemid = 55002,
+		type = "deequip",
+		slot = "hand",
+	},
+	{	
 		-- ornate carving slayer
 		itemid = 26049,
 		type = "equip",

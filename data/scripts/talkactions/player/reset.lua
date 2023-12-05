@@ -27,6 +27,11 @@ function talkactions.onSay(player, words, param)
         player:sendCancelMessage("You need level " .. player:getResetLevel() .. " or more to reset.")
         return false
     end
+
+    if not player:removeMoneyBank(player:getResetsPrice()) then
+		player:sendCancelMessage("You do not have enough money.")
+		return false
+	end
    
     local oldCap = player:getCapacity()
     player:addReset(1)

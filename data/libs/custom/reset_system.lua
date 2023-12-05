@@ -54,13 +54,13 @@ resetConfig = {
     battle = true, -- need to be without battle to reset?
     pz = true, -- need to be in protect zone to reset?
     stages = {
-        {resets = 4,      level = 950,  premium  = 900},
-        {resets = 9,      level = 1330,  premium  = 1170},
-        {resets = 14,     level = 1862,  premium  = 1521},
-        {resets = 19,     level = 2607,  premium  = 1977},
-        {resets = 24,     level = 3780,  premium  = 2570},
-        {resets = 30,     level = 5481,  premium  = 3342},
-        {resets = 100,     level = 999999, premium  = 999999}
+        {resets = 4,      level = 1850,  premium  = 1800},
+        {resets = 9,      level = 2590,  premium  = 2340},
+        {resets = 14,     level = 3626,  premium  = 3042},
+        {resets = 19,     level = 5076,  premium  = 3955},
+        {resets = 24,     level = 7361,  premium  = 5141},
+        {resets = 30,     level = 10673,  premium  = 6683},
+        {resets = 100,     level = 15476, premium  = 8688} 
     } 
 }
 

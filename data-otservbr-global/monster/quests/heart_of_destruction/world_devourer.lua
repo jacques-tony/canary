@@ -18,10 +18,10 @@ monster.bosstiary = {
 	bossRace = RARITY_NEMESIS,
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 2500000
+monster.maxHealth = 2500000
 monster.race = "venom"
-monster.corpse = 0
+monster.corpse = 21113
 monster.speed = 225
 monster.manaCost = 0
 
@@ -96,6 +96,8 @@ monster.loot = {
 	{ id = 23477, chance = 6000, unique = true }, -- void boots
 	{ id = 23686, chance = 4000, unique = true }, -- devourer core
 	{ id = 23684, chance = 2000, unique = true }, -- crackling egg
+	{ id = 23538, chance = 2000, unique = true }, -- vibrant egg	
+	{ id = 23512, chance = 2000, unique = true }, -- spying eye		
 }
 
 monster.attacks = {

@@ -103,7 +103,8 @@ function castleLever.onUse(player, item, fromPosition, target, toPosition, isHot
         __setTeleportCastle(config.actionid_closed)
         __startTime_castleOpen()
         Game.setStorageValue(3560, newGuild)
-		db.query("UPDATE `guilds` SET `owns_castle` = 1 WHERE `id` = ".. newGuild ..";")
+		db.query("UPDATE `guilds` SET `owns_castle` = 0;")
+		db.query("UPDATE `guilds` SET `owns_castle` = 1 WHERE `id` = ".. newGuild ..";") 
         Game.setStorageValue(3561, os.time() + (2 * 60))
         local currentGuild = Guild(oldGuild)
         if currentGuild then
