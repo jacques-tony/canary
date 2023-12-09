@@ -54,13 +54,13 @@ resetConfig = {
     battle = true, -- need to be without battle to reset?
     pz = true, -- need to be in protect zone to reset?
     stages = {
-        {resets = 4,      level = 1850,  premium  = 1800},
-        {resets = 9,      level = 2590,  premium  = 2340},
-        {resets = 14,     level = 3626,  premium  = 3042},
-        {resets = 19,     level = 5076,  premium  = 3955},
-        {resets = 24,     level = 7361,  premium  = 5141},
-        {resets = 30,     level = 10673,  premium  = 6683},
-        {resets = 100,     level = 15476, premium  = 8688} 
+        {resets = 4,      level = 1850,   premium  = 1800, price_free = 1000000, price_premium = 500000},
+        {resets = 9,      level = 2590,   premium  = 2340, price_free = 2000000, price_premium = 1000000},
+        {resets = 14,     level = 3626,   premium  = 3042, price_free = 3000000, price_premium = 1500000},
+        {resets = 19,     level = 5076,   premium  = 3955, price_free = 4000000, price_premium = 2000000},
+        {resets = 24,     level = 7361,   premium  = 5141, price_free = 5000000, price_premium = 2500000},
+        {resets = 30,     level = 10673,  premium  = 6683, price_free = 6000000, price_premium = 3000000},
+        {resets = 100,    level = 15476,  premium  = 8688, price_free = 7000000, price_premium = 3500000} 
     } 
 }
 
@@ -87,4 +87,15 @@ function Player.getResetLevel(self)
 		end
 	end
 	return level
+end
+
+function Player.getResetsPrice(self)
+	local price = 0
+	for _, info in ipairs(resetConfig.stages) do
+		if self:getResets() <= info.resets then
+			price = self:isPremium() and info.price_premium or info.price_free
+			break
+		end
+	end
+	return price
 end
