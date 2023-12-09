@@ -1,7 +1,7 @@
 local items = {
 	{
-		-- phoenix boots
-		itemid = 24515,
+		-- phoenix shoes
+		itemid = 55030,
 		type = "equip",
 		slot = "feet",
 --		level = 500,
@@ -13,17 +13,39 @@ local items = {
 		},
 	},
 	{
+		-- phoenix shoes
+		itemid = 55030,
+		type = "deequip",
+		slot = "feet",
+--		level = 500,
+		vocation = {
+			{ "Druid", true, true },
+			{ "Elder Druid" },
+		},
+	},
+	{	
 		-- phoenix boots
-		itemid = 24515,
+		itemid = 55034,
+		type = "equip",
+		slot = "feet",
+--		level = 500,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix boots
+		itemid = 55034,
 		type = "deequip",
 		slot = "feet",
 --		level = 500,
 		vocation = {
-			{ "Druid", true, true },
-			{ "Elder Druid" },
+			{ "Knight", true },
+			{ "Elite Knight" },
 		},
 	},
-	{	
+	{		
 		-- sanguine galoshes
 		itemid = 43887,
 		type = "equip",
@@ -310,6 +332,29 @@ local items = {
 		},
 	},
 	{
+	
+		-- phoenix Greaves
+		itemid = 55037,
+		type = "equip",
+		slot = "legs",
+--		level = 500,
+		vocation = {
+			{ "Paladin", true, true },
+			{ "Royal Paladin" },
+		},
+	},
+	{
+		-- phoenix Greaves
+		itemid = 55037,
+		type = "deequip",
+		slot = "legs",
+--		level = 500,
+		vocation = {
+			{ "Paladin", true, true },
+			{ "Royal Paladin" },
+		},
+	},
+	{	
 		-- grand sanguine crossbow
 		itemid = 43880,
 		type = "equip",
@@ -2568,6 +2613,23 @@ local items = {
 		},
 	},
 	{
+		-- phoenix galoshes
+		itemid = 55038,
+		type = "deequip",
+		slot = "feet",
+	},
+	{
+		-- phoenix galoshes
+		itemid = 55038,
+		type = "equip",
+		slot = "feet",
+--		level = 400,
+		vocation = {
+			{ "Paladin", true },
+			{ "Royal Paladin" },
+		},
+	},
+	{	
 		-- pair of soulwalkers
 		itemid = 34097,
 		type = "deequip",
@@ -2637,6 +2699,24 @@ local items = {
 		},
 	},
 	{
+		-- phoenix chestplate
+		itemid = 55036,
+		type = "deequip",
+		slot = "armor",
+--		level = 400,
+	},
+	{
+		-- phoenix chestplate
+		itemid = 55036,
+		type = "equip",
+		slot = "armor",
+--		level = 400,
+		vocation = {
+			{ "Paladin", true },
+			{ "Royal Paladin" },
+		},
+	},
+	{	
 		-- soulstrider legs
 		itemid = 34093,
 		type = "deequip",
@@ -2656,14 +2736,14 @@ local items = {
 	},
 	{
 		-- phoenix kilt
-		itemid = 24514,
+		itemid = 55029,
 		type = "deequip",
 		slot = "legs",
 --		level = 400,
 	},
 	{
 		-- phoenix kilt
-		itemid = 24514,
+		itemid = 55029,
 		type = "equip",
 		slot = "legs",
 --		level = 400, 
@@ -2675,6 +2755,24 @@ local items = {
 		},
 	},
 	{	
+		-- phoenix legs
+		itemid = 55033,
+		type = "deequip",
+		slot = "legs",
+--		level = 400,
+	},
+	{
+		-- phoenix legs
+		itemid = 55033,
+		type = "equip",
+		slot = "legs",
+--		level = 400, 
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{		
 		-- soulshanks legs
 		itemid = 34092,
 		type = "deequip",
@@ -3936,6 +4034,24 @@ local items = {
 --		level = 180,
 	},
 	{
+		-- phoenix cowl
+		itemid = 55035,
+		type = "equip",
+		slot = "head",
+--		level = 180,
+		vocation = {
+			{ "Paladin", true },
+			{ "Royal Paladin" },
+		},
+	},
+	{
+		-- phoenix cowl
+		itemid = 55035,
+		type = "deequip",
+		slot = "head",
+--		level = 180,
+	},
+	{	
 		-- brain in a jar
 		itemid = 29426,
 		type = "equip",
@@ -4534,7 +4650,7 @@ local items = {
 	},
 	{
 		-- phoenix mask
-		itemid = 24534,
+		itemid = 55027,
 		type = "equip",
 		slot = "head",
 --		level = 300,
@@ -4546,13 +4662,31 @@ local items = {
 		},
 	},
 	{	
-		-- phoenix mask
-		itemid = 24534,
+		-- phoenix helmet
+		itemid = 55031,
 		type = "deequip",
 		slot = "head",
 --		level = 300,
 	},
 	{	
+		-- phoenix helmet
+		itemid = 55031,
+		type = "equip",
+		slot = "head",
+--		level = 300,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
+		-- phoenix mask
+		itemid = 55027,
+		type = "deequip",
+		slot = "head",
+--		level = 300,
+	},
+	{		
 		-- falcon circlet
 		itemid = 28714,
 		type = "deequip",
@@ -11152,7 +11286,7 @@ local items = {
 	},
 	{
 		-- phoenix cape
-		itemid = 24529,
+		itemid = 55028,
 		type = "equip",
 		slot = "armor",
 --		level = 100,
@@ -11164,13 +11298,31 @@ local items = {
 		},
 	},
 	{
-		-- phoenix cape
-		itemid = 24529,
+		-- phoenix armor
+		itemid = 55032,
 		type = "deequip",
 		slot = "armor",
 --		level = 100,
 	}, 
 	{	
+		-- phoenix armor
+		itemid = 55032,
+		type = "equip",
+		slot = "armor",
+--		level = 100,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{
+		-- phoenix cape
+		itemid = 55028,
+		type = "deequip",
+		slot = "armor",
+--		level = 100,
+	}, 
+	{		
 		-- royal draken mail
 		itemid = 11686,
 		type = "equip",
