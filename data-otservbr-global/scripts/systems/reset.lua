@@ -1,13 +1,12 @@
 local hazard = Hazard.new({
 	name = "hazard.gnomprona-gardens",
-	from = Position(16888, 17559, 6),
-	to = Position(17165, 17804, 8),
+	from = Position(17373, 18363, 0),
+	to = Position(17720, 19030, 14),
 	maxLevel = 12,
 
 	crit = true,
 	dodge = true,
 	damageBoost = true,
-	defenseBoost = true,
 })
 
 hazard:register()

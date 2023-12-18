@@ -553,6 +553,10 @@ function Player:onGainExperience(target, exp, rawExp)
 	local xpBoostPercent = stillHasXpBoost and self:getXpBoostPercent() or 0
 
 	self:setXpBoostPercent(xpBoostPercent)
+	
+	-- Sistema topRank
+    self:setAllDWBMExperience(exp)
+    self:setLastDWBMExperience(exp) 
 
 	-- Stamina Bonus
 	local staminaBonusXp = 1

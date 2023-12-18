@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Single Spawns-->
+	<announce delay="1000" type="event" message="White Pale! in the invasion area." />		
+	<singlespawn delay="1000" name="White Pale" x="17606" y="17621" z="7"/>	
+</raid>
