@@ -1,7 +1,7 @@
 local config = {
 	monsterName = "Mawhawk",
-	bossPosition = Position(33703, 32461, 7),
-	centerPosition = Position(33703, 32461, 7),
+	bossPosition = Position(18371, 17503, 7),
+	centerPosition = Position(18371, 17503, 7),
 	rangeX = 50,
 	rangeY = 50,
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="event" message="Chayenne! in the invasion area." />
+	<!--Single Spawns-->
+	<singlespawn delay="1000" name="Chayenne" x="17606" y="17621" z="7"/>	
+</raid>

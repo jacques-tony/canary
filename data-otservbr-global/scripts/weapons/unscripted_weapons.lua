@@ -100,7 +100,7 @@ local weapons = {
 	{
 	
 		-- phoenix energy wand
-		itemId = 26040,
+		itemId = 55013,
 		type = WEAPON_WAND,
 		wandType = "energy",
 --		level = 250,
@@ -114,7 +114,7 @@ local weapons = {
 	},
 	{	
 		-- phoenix death wand	
-		itemId = 26009,
+		itemId = 55014,
 		type = WEAPON_WAND,
 		wandType = "death",
 --		level = 250,
@@ -128,7 +128,7 @@ local weapons = {
 	},
 	{	
 		-- phoenix ice wand	
-		itemId = 26070,
+		itemId = 55012,
 		type = WEAPON_WAND,
 		wandType = "ice",
 --		level = 250,
@@ -296,6 +296,17 @@ local weapons = {
 		},
 	},
 	{	
+		-- phoenix death sword
+		itemId = 55005,
+		type = WEAPON_SWORD,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{		
 		-- phoenix ice axe
 		itemId = 55002,
 		type = WEAPON_AXE,
@@ -306,7 +317,18 @@ local weapons = {
 			{ "Elite Knight" },
 		},
 	},
-	{		
+	{	
+		-- phoenix ice sword
+		itemId = 55003,
+		type = WEAPON_SWORD,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
 		-- grand sanguine cudgel
 		itemId = 43867,
 		type = WEAPON_CLUB,

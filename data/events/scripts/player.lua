@@ -544,6 +544,10 @@ function Player:onGainExperience(target, exp, rawExp)
 	local storeXpBoostAmount = stillHasBoost and self:getStoreXpBoost() or 0
 
 	self:setStoreXpBoost(storeXpBoostAmount)
+	
+	-- Sistema topRank
+    self:setAllDWBMExperience(exp)
+    self:setLastDWBMExperience(exp) 
 
 	-- Stamina Bonus
 	local staminaBonusXp = 1
