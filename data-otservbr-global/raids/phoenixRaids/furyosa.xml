@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="1000" type="event" message="Furyosa! in the invasion area." />
+	<areaspawn delay="2000" fromx="17600" fromy="17619" fromz="7" tox="17611" toy="17624" toz="7">
+		<monster name="Demon" amount="5" />
+	</areaspawn>
+	<areaspawn delay="2000" fromx="17600" fromy="17619" fromz="7" tox="17611" toy="17624" toz="7">
+		<monster name="Demon" amount="5" />
+	</areaspawn>
+	<singlespawn delay="2000" name="Furyosa" x="17606" y="17621" z="7"/>
+</raid>

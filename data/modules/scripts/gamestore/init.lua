@@ -1577,10 +1577,10 @@ function GameStore.processStackablePurchase(player, offerId, offerCount, offerNa
 	local inboxItems = inbox:getItems()
 	if inbox and #inboxItems <= inbox:getMaxCapacity() then
 		if (isKeg and offerCount > 500) or offerCount > 100 then
-			local parcel = inbox:addItem(PARCEL_ID, 1)
-			parcel:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
-			if parcel then
-				parcel:setAttribute(ITEM_ATTRIBUTE_NAME, "" .. offerCount .. "x " .. offerName .. " package.")
+--			local parcel = inbox:addItem(PARCEL_ID, 1)
+--			parcel:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
+--			if parcel then
+--				parcel:setAttribute(ITEM_ATTRIBUTE_NAME, "" .. offerCount .. "x " .. offerName .. " package.")
 				local pendingCount = offerCount
 				local limit = isKeg and 500 or 100
 				while pendingCount > 0 do
@@ -1591,21 +1591,21 @@ function GameStore.processStackablePurchase(player, offerId, offerCount, offerNa
 						pack = pendingCount
 					end
 					if isKeg then
-						local kegItem = parcel:addItem(offerId, 1)
+						local kegItem = inbox:addItem(offerId, 1)
 						kegItem:setAttribute(ITEM_ATTRIBUTE_CHARGES, pack)
 
 						if movable ~= true and kegItem then
 							kegItem:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
 						end
 					else
-						local parcelItem = parcel:addItem(offerId, pack)
-						if movable ~= true and parcelItem then
-							parcelItem:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
+						local inboxItem = inbox:addItem(offerId, pack)
+						if movable ~= true and inboxItem then
+							inboxItem:setAttribute(ITEM_ATTRIBUTE_STORE, systemTime())
 						end
 					end
 					pendingCount = pendingCount - pack
 				end
-			end
+--			end
 		else
 			local item = inbox:addItem(offerId, isKeg and 1 or offerCount)
 			if movable ~= true and item then

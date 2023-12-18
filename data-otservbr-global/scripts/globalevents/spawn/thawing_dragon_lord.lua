@@ -1,7 +1,7 @@
 local config = {
 	monsterName = "Thawing Dragon Lord",
-	bossPosition = Position(33361, 31316, 5),
-	centerPosition = Position(33361, 31316, 5),
+	bossPosition = Position(18173, 17735, 5),
+	centerPosition = Position(18173, 17735, 5),
 	rangeX = 50,
 	rangeY = 50,
 }

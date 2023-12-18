@@ -45520,8 +45520,8 @@
 	<item id="55004" article="an" name="phoenix energy sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementenergy" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementenergy" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillsword" value="5"/>
@@ -45536,8 +45536,8 @@
 	<item id="55005" article="an" name="phoenix death sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementdeath" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementdeath" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillsword" value="5"/>
@@ -45603,8 +45603,8 @@
 	<item id="55002" article="an" name="phoenix death axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementdeath" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementdeath" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
@@ -45670,8 +45670,8 @@
 	<item id="55008" article="an" name="phoenix death club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementdeath" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementdeath" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -45782,7 +45782,7 @@
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2200"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -45830,7 +45830,7 @@
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2500"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -45920,8 +45920,8 @@
 	<item id="55000" article="an" name="phoenix ice axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementice" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementice" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
@@ -45987,8 +45987,8 @@
 	<item id="55007" article="an" name="phoenix energy club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementenergy" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementenergy" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -46099,7 +46099,7 @@
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/> 
 		<attribute key="weight" value="2200"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -46147,7 +46147,7 @@
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2500"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -46186,8 +46186,8 @@
 	<item id="55003" article="an" name="phoenix ice sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementice" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementice" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillsword" value="5"/>
@@ -46253,8 +46253,8 @@
 	<item id="55001" article="an" name="phoenix energy axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementenergy" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementenergy" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
@@ -46320,8 +46320,8 @@
 	<item id="55006" article="an" name="phoenix ice club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementice" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementice" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -46432,7 +46432,7 @@
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2200"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -46480,7 +46480,7 @@
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2500"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -59184,6 +59184,23 @@
 			<attribute key="skillboost shielding" value="3"/>
 		</attribute>
 	</item>
+	<item id="55040" article="a" name="phoenix battle shield">
+		<attribute key="primarytype" value="shields"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="absorbpercentphysical" value="10"/>
+		<attribute key="absorbpercentdeath" value="10"/>
+		<attribute key="defense" value="44"/>
+		<attribute key="weight" value="5800"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection energy" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+		</attribute>
+	</item>24	
 	<item id="34100" name="Katex' blood">
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="weight" value="70"/>
@@ -65990,6 +66007,25 @@
 			<attribute key="skillboost shielding" value="3"/>
 		</attribute>
 	</item>
+	<item id="55041" article="an" name="phoenix spellbook">
+		<attribute key="primarytype" value="spellbooks"/>
+		<attribute key="weaponType" value="shield"/>
+		<attribute key="absorbpercentphysical" value="5"/>
+		<attribute key="absorbpercentenergy" value="7"/>
+		<attribute key="magiclevelpoints" value="6"/>
+		<attribute key="healingmagiclevelpoints" value="1"/>
+		<attribute key="icemagiclevelpoints" value="1"/>
+		<attribute key="defense" value="22"/>
+		<attribute key="weight" value="2300"/>
+		<attribute key="imbuementslot" value="1">
+			<attribute key="elemental protection death" value="3"/>
+			<attribute key="elemental protection earth" value="3"/>
+			<attribute key="elemental protection fire" value="3"/>
+			<attribute key="elemental protection ice" value="3"/>
+			<attribute key="elemental protection holy" value="3"/>
+			<attribute key="skillboost shielding" value="3"/>
+		</attribute>
+	</item>	
 	<item id="39155" article="a" name="naga sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
@@ -69173,10 +69209,10 @@
 	<item id="43864" article="a" name="phoenix sword">
 		<attribute key="primarytype" value="sword weapons"/>
 		<attribute key="weaponType" value="sword"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementfire" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementfire" value="66"/>
 		<attribute key="extradef" value="3"/>
-		<attribute key="defense" value="32"/>
+		<attribute key="defense" value="32"/> 
 		<attribute key="skillsword" value="5"/>
 		<attribute key="weight" value="6100"/>
 		<attribute key="imbuementslot" value="3">
@@ -69205,8 +69241,8 @@
 	<item id="43866" article="a" name="phoenix club">
 		<attribute key="primarytype" value="club weapons"/>
 		<attribute key="weaponType" value="club"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementfire" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementfire" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillclub" value="5"/>
@@ -69237,8 +69273,8 @@
 	<item id="43868" article="a" name="phoenix axe">
 		<attribute key="primarytype" value="axe weapons"/>
 		<attribute key="weaponType" value="axe"/>
-		<attribute key="attack" value="8"/>
-		<attribute key="elementfire" value="46"/>
+		<attribute key="attack" value="16"/>
+		<attribute key="elementfire" value="66"/>
 		<attribute key="extradef" value="3"/>
 		<attribute key="defense" value="32"/>
 		<attribute key="skillaxe" value="5"/>
@@ -69498,7 +69534,7 @@
 		<attribute key="criticalhitdamage" value="12"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2200"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>
@@ -69546,7 +69582,7 @@
 		<attribute key="criticalhitdamage" value="5"/>
 		<attribute key="criticalhitchance" value="10"/>
 		<attribute key="weight" value="2500"/>
-		<attribute key="imbuementslot" value="2">
+		<attribute key="imbuementslot" value="3">
 			<attribute key="mana leech" value="3"/>
 			<attribute key="critical hit" value="3"/>
 			<attribute key="skillboost magic level" value="3"/>

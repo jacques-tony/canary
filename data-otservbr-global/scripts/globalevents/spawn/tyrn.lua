@@ -1,7 +1,7 @@
 local config = {
 	monsterName = "Tyrn",
-	bossPosition = Position(33056, 32393, 14),
-	centerPosition = Position(33056, 32393, 14),
+	bossPosition = Position(17891, 17755, 9),
+	centerPosition = Position(17891, 17755, 9),
 	rangeX = 50,
 	rangeY = 50,
 }

@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Oozing Carcass")
 local monster = {}
 
 monster.description = "a Oozing Carcass"
-monster.experience = 21719
+monster.experience = 29550
 monster.outfit = {
 	lookType = 1626,
 	lookHead = 0,
@@ -90,17 +90,17 @@ monster.loot = {
 
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1050, effect = CONST_ME_DRAWBLOOD },
-	{ name ="combat", interval = 6000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -840, maxDamage = -1260, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false },
-	{ name ="combat", interval = 2750, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -840, maxDamage = -1260, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false },
-	{ name ="combat", interval = 2500, chance = 22, type = COMBAT_DEATHDAMAGE, minDamage = -840, maxDamage = -1260, radius = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name ="combat", interval = 3300, chance = 24, type = COMBAT_ICEDAMAGE, minDamage = -840, maxDamage = -1260, length = 4, spread = 0, effect = CONST_ME_ICEATTACK, target = false },
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -909, effect = CONST_ME_DRAWBLOOD },
+	{ name ="combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -909, maxDamage = -1363, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false },
+	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -707, maxDamage = -1010, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false },
+	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -960, maxDamage = -1272, radius = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -840, maxDamage = -1260, length = 4, spread = 0, effect = CONST_ME_ICEATTACK, target = false },
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 102
-}
+	defense = 110,
+	armor = 112
+} 
 
 monster.elements = {
 	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },

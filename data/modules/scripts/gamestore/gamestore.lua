@@ -123,7 +123,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "When using this item you will be able to choose a familiar skin.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true	
+			movable = true,
 		},
 		{		
             icons = { "Gold_Pouch.png" },
@@ -151,7 +151,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Item Infinite.\n\nonly usable by purchasing characterTeleport to the house without this pz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true	
+			movable = true,
 		},
 		{
 			icons = { "Soulshredder.png" },
@@ -161,7 +161,7 @@ GameStore.Categories = {
 			charges = 1, 
 			description = "Item Infinite.\n\ncan only be used by purchasing character Teleport to important places, such as temple, quest room, monsters and others...",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true	
+			movable = true,
 		},
 		{
 			icons = { "stoneMining.png" },
@@ -171,7 +171,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Infinite item.\no Can only be used indoors. When using this box it will transform into a mining stone. \nWith this item you can extract precious resources from inside your home.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true  
+			movable = true  
 		},
 		{
 			icons = { "Souleater.png" },
@@ -181,7 +181,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Infinite item.\n With this pick you will have double the chance of extracting precious ores.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -201,7 +201,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "This item gives you part of the 6 runes that drop from Thai bosses, these runes are one of the most important ingredients for forging items in the crafting machine.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, 
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Circlet.png" },
@@ -211,7 +211,7 @@ GameStore.Categories = {
 			count = 5,
 			description = "This item gives you part of the 6 runes that drop from Thai bosses, these runes are one of the most important ingredients for forging items in the crafting machine.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, 
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Circlet.png" },
@@ -221,7 +221,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{ 
 			icons = { "Falcon_Circlet.png" },
@@ -231,7 +231,7 @@ GameStore.Categories = {
 			count = 5,
 			description = "This token is used in the crafting machine, to forge weapons and other equipment.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{			
 			icons = { "Falcon_Circlet.png" },
@@ -241,7 +241,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "You can use in Cassino Lounge good luck.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Circlet.png" },
@@ -251,7 +251,7 @@ GameStore.Categories = {
 			count = 5,
 			description = "You can use in Cassino Lounge good luck.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Coif.png" },
@@ -261,7 +261,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "You can change Dream Matter for items with Eraruan.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Coif.png" },
@@ -271,7 +271,7 @@ GameStore.Categories = {
 			count = 5,
 			description = "You can change Dream Matter for items with Eraruan.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Rod.png" },
@@ -281,7 +281,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "You can change Dream Matter for items with Eraruan.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Rod.png" },
@@ -291,7 +291,7 @@ GameStore.Categories = {
 			count = 5,
 			description = "You can change Dream Matter for items with Eraruan.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true			
+			movable = true,		
 		},
 		{
 			icons = { "Falcon_Wand.png" },
@@ -301,7 +301,7 @@ GameStore.Categories = {
 			count = 25,
 			description = "You can change Gold Token for items with Yana.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Bow.png" },
@@ -311,7 +311,7 @@ GameStore.Categories = {
 			count = 50,
 			description = "You can change Gold Token for items with Yana.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Plate.png" },
@@ -321,7 +321,7 @@ GameStore.Categories = {
 			count = 50,
 			description = "You can change Silver Token for items with Cledywn.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Greaves.png" },
@@ -331,7 +331,7 @@ GameStore.Categories = {
 			count = 100,
 			description = "You can change Silver Token for items with Cledywn.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true 
+			movable = true 
 		},
 		{			
 			icons = { "Falcon_Plate.png" },
@@ -341,7 +341,7 @@ GameStore.Categories = {
 			count = 10,
 			description = "This crystal is part of the recipe for creating several phoenix items in the phoenix machine.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Greaves.png" },
@@ -351,7 +351,7 @@ GameStore.Categories = {
 			count = 100,
 			description = "This crystal is part of the recipe for creating several phoenix items in the phoenix machine.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true 			
+			movable = true 			
 		},
 	},
 },
@@ -371,7 +371,7 @@ GameStore.Categories = {
 			count = 10, 
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 10% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 	},
 		{
 			icons = { "Falcon_Circlet.png" },
@@ -381,7 +381,7 @@ GameStore.Categories = {
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 10% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Coif.png" },
@@ -391,7 +391,7 @@ GameStore.Categories = {
 			count = 10,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 20% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Coif.png" },
@@ -401,7 +401,7 @@ GameStore.Categories = {
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 20% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Rod.png" },
@@ -411,7 +411,7 @@ GameStore.Categories = {
 			count = 10,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 30% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Falcon_Rod.png" },
@@ -421,7 +421,7 @@ GameStore.Categories = {
 			count = 50,
 			description = "This stone grants a percentage of reflect when attacked, when using this stone on your character you will have a 30% chance of getting a reflect bonus on your character.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true			
+			movable = true,		
 		},
 	}, 
 },
@@ -441,7 +441,7 @@ GameStore.Categories = {
 			count = 1,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Gnome_Helmet.png" },
@@ -451,7 +451,7 @@ GameStore.Categories = {
 			count = 10,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true
+			movable = true
 		},
 		{		
 			icons = { "Gnome_Helmet.png" },
@@ -461,7 +461,7 @@ GameStore.Categories = {
 			count = 10,
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true		
+			movable = true,	
 		},
 		{ 
 			icons = { "Gnome_Helmet.png" },
@@ -471,7 +471,7 @@ GameStore.Categories = {
 			count = 100, 
 			description = "Dust is a special resource obtained by killing influenced and fiendish creatures. It is not an actual item you pick and drag into your backpack. You can see it similarly to points you obtain and are bound to your character.\n\n 60 dusts are needed in order to create 3 Slivers Sliver at the Exaltation Forge (part of the Equipment Upgrade System).",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-			moveable = true		
+			movable = true,	
 		},
 		{	
 			icons = { "Gnome_Helmet.png" },
@@ -481,7 +481,7 @@ GameStore.Categories = {
 			count = 1, 
 			description = "Item Infinite.\n\nonly usable by purchasing character Are you tired of walking? Relax... \nYou can forge anywhere with this item.", 
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true					
+			movable = true,				
 		},
 	},
 }, 
@@ -501,7 +501,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 3 promotion points to the Wheel of Fate.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Amulet.png" },
@@ -511,7 +511,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 5 promotion points to the Wheel of Fate.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Boots.png" },
@@ -521,7 +521,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 9 promotion points to the Wheel of Fate.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Club.png" },
@@ -531,7 +531,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 13 promotion points to the Wheel of Fate.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Axe.png" },
@@ -541,7 +541,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "Only a hero of level 51, 1 reset+ or higher can decipher this scroll to gain 20 promotion points to the Wheel of Fate.", 
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -568,7 +568,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:7 physical + 45 death, Def:32 +3, sword fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 63.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true			
+			movable = true,		
 		},
 		{
 			icons = { "Soulshredder.png" },
@@ -578,7 +578,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:10 physical + 47 ice, Def:35, sword fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 81.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulbiter.png" },
@@ -588,7 +588,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:7 physical + 45 death, Def:32 +3, axe fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 40.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Souleater.png" },
@@ -598,7 +598,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:10 physical + 47 ice, Def:35, axe fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 72.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulcrusher.png" },
@@ -608,7 +608,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:6 physical + 46 ice, Def:33 +3, club fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 41.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulmaimer.png" },
@@ -618,7 +618,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:10 physical + 47 energy, Def:35, club fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 89.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	 	{
 			icons = { "Soulbleeder.png" },
@@ -628,7 +628,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 6, Atk +8, Hit% +5, distance fighting +4, critical hit chance 10, critical extra damage +10, protection holy +7%). It can only be wielded properly by paladins of level 400 or higher. It weighs 47.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	 	{
 			icons = { "Soulpiercer.png" },
@@ -638,7 +638,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 6, Atk +9, Hit% +6, distance fighting +4, critical hit chance 10, critical extra damage +10, protection death +7%). It can only be wielded properly by paladins of level 400 or higher. It weighs 40.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soultainter.png" },
@@ -648,7 +648,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(critical hit chance 10%, critical extra damage +10%, magic level +5, protection death +12%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 19.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulhexer.png" },
@@ -658,7 +658,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%, magic level +5, protection ice +12%). It can only be wielded properly by druids of level 400 or higher. It weighs 25.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulshanks.png" },
@@ -668,7 +668,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:10, magic level +3, protection death +10%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 38.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulstrider.png" },
@@ -678,7 +678,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:10, magic level +3, protection fire +10%). It can only be wielded properly by druids of level 400 or higher. It weighs 38.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	 	{
 			icons = { "Soulshell.png" },
@@ -688,7 +688,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:18, distance fighting +4, protection physical +3%, fire +15%). It can only be wielded properly by paladins of level 400 or higher. It weighs 123.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulmantle.png" },
@@ -698,7 +698,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:17, magic level +4, protection physical +4%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 24.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulshroud.png" },
@@ -708,7 +708,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:17, magic level +4, protection death +10%). It can only be wielded properly by druids of level 400 or higher. It weighs 24.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Pair_Of_Soulwalkers.png" },
@@ -718,7 +718,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:4, club fighting +1, sword fighting +1, axe fighting +1, protection physical +7%, fire +5%, speed +15). It can only be wielded properly by knights of level 400 or higher. It weighs 13.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Pair_Of_Soulstalkers.png" },
@@ -728,7 +728,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:3, distance fighting +1, protection physical +5%, speed +20). It can only be wielded properly by paladins of level 400 or higher. It weighs 13.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Soulbastion.png" },
@@ -738,7 +738,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:42, protection physical +10%, death +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 58.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -758,7 +758,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:8, magic level +2, protection fire +9%). It can only be wielded properly by sorcerers and druids of level 300 or higher. It weighs 13.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Coif.png" },
@@ -768,7 +768,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:10, distance fighting +2, shielding +2, protection physical +3%, fire +10%). It can only be wielded properly by knights and paladins of level 300 or higher. It weighs 28.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Rod.png" },
@@ -778,7 +778,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(magic level +3, protection energy +8%). It can only be wielded properly by druids of level 300 or higher. It weighs 37.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Wand.png" },
@@ -788,7 +788,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(magic level +3, protection fire +8%). It can only be wielded properly by sorcerers of level 300 or higher. It weighs 33.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Bow.png" },
@@ -798,7 +798,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 6, Atk +7, Hit% +5, distance fighting +2, protection fire +5%). It can only be wielded properly by paladins of level 300 or higher. It weighs 35.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Plate.png" },
@@ -808,7 +808,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:18, shielding +4, protection physical +12%). It can only be wielded properly by knights of level 300 or higher. It weighs 188.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Greaves.png" },
@@ -818,7 +818,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:10, club fighting +3, sword fighting +3, axe fighting +3, distance fighting +3, protection physical +7%, ice +7%). It can only be wielded properly by knights and paladins of level 300 or higher. It weighs 36.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Shield.png" },
@@ -828,7 +828,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:39, protection physical +6%, fire +10%). It can only be wielded properly by knights and paladins of level 300 or higher. It weighs 57.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Escutcheon.png" },
@@ -838,7 +838,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:40, protection physical +7%, fire +15%). It can only be wielded properly by knights and paladins of level 300 or higher. It weighs 60.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Longsword.png" },
@@ -848,7 +848,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:56, Def:34, sword fighting +4, protection earth +10%). It can only be wielded properly by knights of level 300 or higher. It weighs 82.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Battleaxe.png" },
@@ -858,7 +858,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:10 physical + 47 energy, Def:33, axe fighting +4, protection energy +12%). It can only be wielded properly by knights of level 300 or higher. It weighs 95.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Falcon_Mace.png" },
@@ -868,7 +868,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:11 physical + 41 energy, Def:33 +3, club fighting +3, protection energy +7%). It can only be wielded properly by knights of level 300 or higher. It weighs 68.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -888,7 +888,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 6, Atk +6, Hit% +4, distance fighting +2, protection ice +5%). It can only be wielded properly by paladins of level 270 or higher. It weighs 48.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Rod.png" },
@@ -898,7 +898,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(critical hit chance 10%, critical extra damage +35%, magic level +2). It can only be wielded properly by druids of level 270 or higher. It weighs 26.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_wand.png" },
@@ -908,7 +908,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(life leech chance +100%, life leech amount +18%, magic level +2). It can only be wielded properly by sorcerers of level 220 or higher. It weighs 21.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Spellbook.png" },
@@ -918,7 +918,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:20, magic level +4, protection physical +3%, ice +7%). It can only be wielded properly by sorcerers and druids of level 220 or higher. It weighs 25.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Longsword.png" },
@@ -928,7 +928,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:8 physical + 44 earth, Def:31 +2, sword fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 75.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Spangenhelm.png" },
@@ -938,7 +938,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:7, distance fighting +2, protection physical +3%, earth +5%). It can only be wielded properly by paladins of level 230 or higher. It weighs 30.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Plate.png" },
@@ -948,7 +948,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:17, club fighting +3, sword fighting +3, axe fighting +3, protection physical +6%). It can only be wielded properly by knights of level 270 or higher. It weighs 150.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Amulet.png" },
@@ -958,7 +958,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:3, protection physical +3%, ice +7%). It can only be wielded properly by players of level 230 or higher. It weighs 5.20 oz. The heraldic animal of the Order of the Lion is emblazoned on this imposing amulet. It is worn with pride by true knights of the lion.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Hammer.png" },
@@ -968,7 +968,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:8 physical + 44 earth, Def:31 +2, club fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 65.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Shield.png" },
@@ -978,7 +978,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:39, protection physical +7%, earth +10%). It can only be wielded properly by knights of level 250 or higher. It weighs 65.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Lion_Axe.png" },
@@ -988,7 +988,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:8 physical + 44 earth, Def:31 +2, axe fighting +3). It can only be wielded properly by knights of level 270 or higher. It weighs 79.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -1008,7 +1008,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:7, magic level +2, protection physical +3%, energy +8%, ice -2%). It can only be wielded properly by sorcerers and druids of level 200 or higher. It weighs 24.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Gnome_Armor.png" },
@@ -1018,7 +1018,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:17, distance fighting +3, protection physical +4%, energy +8%, ice -2%). It can only be wielded properly by paladins of level 200 or higher. It weighs 120.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Gnome_Legs.png" },
@@ -1028,7 +1028,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:9, magic level +2, protection energy +7%, ice -2%). It can only be wielded properly by sorcerers and druids of level 200 or higher. It weighs 25.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Gnome_Shield.png" },
@@ -1038,7 +1038,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Def:38, shielding +2, protection physical +6%, energy +8%, ice -2%). It can only be wielded properly by knights and paladins of level 200 or higher. It weighs 60.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Gnome_Sword.png" },
@@ -1048,7 +1048,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:10 physical + 42 energy, Def:29 +3, sword fighting +3, protection energy +6%). It can only be wielded properly by knights of level 250 or higher. It weighs 85.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -1068,7 +1068,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:7, Range: 6, Hit% +6, distance fighting +2). It can only be wielded properly by paladins of level 220 or higher. It weighs 40.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Amulet.png" },
@@ -1078,7 +1078,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:4, protection death +9%). It can only be wielded properly by players of level 250 or higher. It weighs 5.30 oz. The bearer of this amulet will command the gaze, the resilience and deadliness of the cobra. Yet what firmly has its place in the heart of its wearer, the cobra will conceal.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Boots.png" },
@@ -1088,7 +1088,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:3, protection physical +6%, speed +10). It can only be wielded properly by knights of level 220 or higher. It weighs 9.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Club.png" },
@@ -1098,7 +1098,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:8 physical + 44 fire, Def:29 +2, club fighting +2). It can only be wielded properly by knights of level 220 or higher. It weighs 25.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Axe.png" },
@@ -1108,7 +1108,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:8 physical + 44 ice, Def:29 +2, axe fighting +2). It can only be wielded properly by knights of level 220 or higher. It weighs 40.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Hood.png" },
@@ -1118,7 +1118,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Arm:9, club fighting +1, sword fighting +1, axe fighting +1, protection physical +5%). It can only be wielded properly by knights of level 270 or higher. It weighs 27.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Sword.png" },
@@ -1128,7 +1128,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:52, Def:31 +2, sword fighting +3). It can only be wielded properly by knights of level 220 or higher. It weighs 63.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Wand.png" },
@@ -1138,7 +1138,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(critical hit chance 10%, critical extra damage +35%, magic level +2). It can only be wielded properly by sorcerers of level 270 or higher. It weighs 19.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Cobra_Rod.png" },
@@ -1148,7 +1148,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(life leech chance +100%, life leech amount +18%, magic level +2). It can only be wielded properly by druids of level 220 or higher. It weighs 25.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 }, 
@@ -1168,7 +1168,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:50, Def:33). It can only be wielded properly by knights of level 200 or higher. It weighs 50.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Slayer_Of_Destruction.png" },
@@ -1178,7 +1178,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:52, Def:32). It can only be wielded properly by knights of level 200 or higher. It weighs 70.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Axe_Of_Destruction.png" },
@@ -1188,7 +1188,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:51, Def:31). It can only be wielded properly by knights of level 200 or higher. It weighs 50.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 	 	},
 		{
 			icons = { "Chopper_Of_Destruction.png" },
@@ -1198,7 +1198,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:52, Def:32). It can only be wielded properly by knights of level 200 or higher. It weighs 70.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Mace_Of_Destruction.png" },
@@ -1208,7 +1208,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:50, Def:30). It can only be wielded properly by knights of level 200 or higher. It weighs 50.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Hammer_Of_Destruction.png" },
@@ -1218,7 +1218,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Atk:53, Def:30). It can only be wielded properly by knights of level 200 or higher. It weighs 70.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Bow_Of_Destruction.png" },
@@ -1228,7 +1228,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 6, Atk +6, Hit% +6). It can only be wielded properly by paladins of level 200 or higher. It weighs 55.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Crossbow_Of_Destruction.png" },
@@ -1238,7 +1238,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(Range: 5, Atk +6, Hit% +6). It can only be wielded properly by paladins of level 200 or higher. It weighs 65.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Wand_Of_Destruction.png" },
@@ -1248,7 +1248,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(magic level +2). It can only be wielded properly by sorcerers of level 200 or higher. It weighs 35.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 		{
 			icons = { "Rod_Of_Destruction.png" },
@@ -1258,7 +1258,7 @@ GameStore.Categories = {
 			charges = 1,
 			description = "(magic level +2). It can only be wielded properly by druids of level 200 or higher. It weighs 35.00 oz.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			moveable = true
+			movable = true
 		},
 	},
 },
@@ -1387,6 +1387,7 @@ GameStore.Categories = {
 				count = 1000,
 				description = "<i>Place it in your house and fill up potions to refill your mana!</i>\n\n{house}\n{box}\n{storeinbox}\n{usablebyallicon} can be used to fill up potions by all characters that have access to the house\n{storeinboxicon} potions created from this cask will be sent to your Store inbox and can only be stored there and in depot box\n{backtoinbox}\n{info} usable 1000 times a piece\n{transferableprice}",
 				type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Spirit_Cask.png" },
@@ -1415,6 +1416,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,					
 			},
 			{
 				icons = { "Durable_Exercise_Bow.png" },
@@ -1424,6 +1426,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Durable_Exercise_Club.png" },
@@ -1433,6 +1436,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Durable_Exercise_Rod.png" },
@@ -1442,6 +1446,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Durable_Exercise_Sword.png" },
@@ -1451,6 +1456,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Durable_Exercise_Wand.png" },
@@ -1460,6 +1466,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Durable_Exercise_Shield.png" },
@@ -1469,6 +1476,7 @@ GameStore.Categories = {
 				charges = 2000,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 1800 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Exercise_Axe.png" },
@@ -1478,6 +1486,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your axe fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your axe fighting skill\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Bow.png" },
@@ -1487,6 +1496,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your distance fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your distance fighting skill\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Club.png" },
@@ -1496,6 +1506,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your club fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your club fighting skill\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Rod.png" },
@@ -1505,6 +1516,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Sword.png" },
@@ -1514,6 +1526,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your sword fighting skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your sword fighting skill\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Wand.png" },
@@ -1523,6 +1536,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your magic level on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your magic level\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 			{
 				icons = { "Lasting_Exercise_Shield.png" },
@@ -1532,6 +1546,7 @@ GameStore.Categories = {
 				charges = 15500,
 				description = "<i>Use it to train your shielding skill on an exercise dummy!</i>\n\n{character}\n{storeinbox}\n{info} use it on an exercise dummy to train your shielding skill\n{info} usable 14400 times a piece",
 				type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
+				movable = true,						
 			},
 		},
 	},
@@ -1659,6 +1674,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Health_Potion.png" },
@@ -1668,6 +1684,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Mana_Potion.png" },
@@ -1677,6 +1694,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Mana_Potion.png" },
@@ -1686,6 +1704,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n-{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Spirit_Potion.png" },
@@ -1695,6 +1714,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Spirit_Potion.png" },
@@ -1704,6 +1724,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Health_Potion.png" },
@@ -1713,6 +1734,7 @@ GameStore.Categories = {
 				count = 125,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Health_Potion.png" },
@@ -1722,6 +1744,7 @@ GameStore.Categories = {
 				count = 300,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Mana_Potion.png" },
@@ -1731,6 +1754,7 @@ GameStore.Categories = {
 				count = 125,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Mana_Potion.png" },
@@ -1740,6 +1764,7 @@ GameStore.Categories = {
 				count = 300,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Strong_Health_Potion.png" },
@@ -1749,6 +1774,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Strong_Health_Potion.png" },
@@ -1758,6 +1784,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Strong_Mana_Potion.png" },
@@ -1767,6 +1794,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Strong_Mana_Potion.png" },
@@ -1776,6 +1804,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Supreme_Health_Potion.png" },
@@ -1785,6 +1814,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Supreme_Health_Potion.png" },
@@ -1794,6 +1824,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Health_Potion.png" },
@@ -1803,6 +1834,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Health_Potion.png" },
@@ -1812,6 +1844,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Mana_Potion.png" },
@@ -1821,6 +1854,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Mana_Potion.png" },
@@ -1830,6 +1864,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Refills your character's mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Spirit_Potion.png" },
@@ -1839,6 +1874,7 @@ GameStore.Categories = {
 				count = 100,
 				description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Spirit_Potion.png" },
@@ -1848,6 +1884,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "<i>Restores your character's hit points and mana.</i>\n\n{character}\n{vocationlevelcheck}\n{storeinbox}\n{battlesign}\n{capacity}",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 		},
 	},
@@ -1867,7 +1904,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion fills up stamina by one hour.", 
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true		
+				movable = true
 			},
 			{
 				icons = { "Great_Mana_Potion.png" },
@@ -1877,7 +1914,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily makes kills count twice for the Bestiary.", 
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Great_Spirit_Potion.png" },
@@ -1887,7 +1924,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases offensive charm trigger chances except Cripple.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Health_Potion.png" },
@@ -1897,7 +1934,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% death damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Health_Potion.png" },
@@ -1907,7 +1944,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% death protection.", 
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Strong_Health_Potion.png" },
@@ -1917,7 +1954,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% earth damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, 
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Strong_Health_Potion.png" },
@@ -1927,7 +1964,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% earth protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Strong_Mana_Potion.png" },
@@ -1937,7 +1974,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% energy damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Strong_Mana_Potion.png" },
@@ -1947,7 +1984,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% energy protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Supreme_Health_Potion.png" },
@@ -1957,7 +1994,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% fire damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Supreme_Health_Potion.png" },
@@ -1967,7 +2004,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% fire protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Health_Potion.png" },
@@ -1977,7 +2014,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% holy damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Health_Potion.png" },
@@ -1987,7 +2024,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% holy protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Mana_Potion.png" },
@@ -1997,7 +2034,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% ice damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Mana_Potion.png" },
@@ -2007,7 +2044,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% ice protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Spirit_Potion.png" },
@@ -2017,7 +2054,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily amplifies 8% physical damage against monsters.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true
+				movable = true
 			},
 			{
 				icons = { "Ultimate_Spirit_Potion.png" },
@@ -2027,7 +2064,7 @@ GameStore.Categories = {
 				count = 1,
 				description = "Drinking this potion temporarily increases 8% physical protection.",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
-				moveable = true 
+				movable = true 
 			},
 		},
 	},	
@@ -2056,6 +2093,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>The ice damage which arises from this rune is a useful weapon in every battle but it comes in particularly handy if you fight against a horde of creatures dominated by the element fire.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Chameleon_Rune.png" },
@@ -2065,6 +2103,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>The metamorphosis caused by this rune is only superficial, and while casters who are using the rune can take on the exterior form of nearly any inanimate object, they will always retain their original smell and mental abilities. So there is no real practical use for this rune, making this largely a fun rune.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Convince_Creature_Rune.png" },
@@ -2074,6 +2113,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Using this rune together with some mana, you can convince certain creatures. The needed amount of mana is determined by the power of the creature one wishes to convince, so the amount of mana to convince a rat is lower than that which is needed for an orc.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Cure_Poison_Rune_(Item).png" },
@@ -2083,6 +2123,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>In the old days, many adventurers fell prey to poisonous creatures that were roaming the caves and forests. After many years of research druids finally succeeded in altering the cure poison spell so it could be bound to a rune. By using this rune it is possible to stop the effect of any known poison.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Disintegrate_Rune.png" },
@@ -2092,6 +2133,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Nothing is worse than being cornered when fleeing from an enemy you just cannot beat, especially if the obstacles in your way are items you could easily remove if only you had the time! However, there is one reliable remedy: The Disintegrate rune will instantly destroy up to 500 movable items that are in your way, making room for a quick escape.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Energy_Bomb_Rune.png" },
@@ -2101,6 +2143,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Using the Energy Bomb rune will create a field of deadly energy that deals damage to all who carelessly step into it. Its area of effect is covering a full 9 square metres! Creatures that are caught in the middle of an Energy Bomb are frequently confused by the unexpected effect, and some may even stay in the field of deadly sparks for a while.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Energy_Field_Rune.png" },
@@ -2110,6 +2153,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This spell creates a limited barrier made up of crackling energy that will cause electrical damage to all those passing through. Since there are few creatures that are immune to the harmful effects of energy this spell is not to be underestimated.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Energy_Wall_Rune.png" },
@@ -2119,6 +2163,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Casting this spell generates a solid wall made up of magical energy. Walls made this way surpass any other magically created obstacle in width, so it is always a good idea to have an Energy Wall rune or two in one's pocket when travelling through the wilderness.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Explosion_Rune.png" },
@@ -2128,6 +2173,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This rune must be aimed at areas rather than at specific creatures, so it is possible for explosions to be unleashed even if no targets are close at all. These explosions cause a considerable physical damage within a substantial blast radius.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Fireball_Rune.png" },
@@ -2137,6 +2183,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>When this rune is used a massive fiery ball is released which hits the aimed foe with immense power. It is especially effective against opponents of the element earth.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Fire_Bomb_Rune.png" },
@@ -2146,6 +2193,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This rune is a deadly weapon in the hands of the skilled user. On releasing it an area of 9 square metres is covered by searing flames that will scorch all those that are unfortunate enough to be caught in them. Worse, many monsters are confused by the unexpected blaze, and with a bit of luck a caster will even manage to trap his opponents by using the spell.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Fire_Field_Rune.png" },
@@ -2155,6 +2203,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>When this rune is used a field of one square metre is covered by searing fire that will last for some minutes, gradually diminishing as the blaze wears down. As with all field spells, Fire Field is quite useful to block narrow passageways or to create large, connected barriers.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Fire_Wall_Rune.png" },
@@ -2164,6 +2213,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This rune offers reliable protection against all creatures that are afraid of fire. The exceptionally long duration of the spell as well as the possibility to form massive barriers or even protective circles out of fire walls make this a versatile, practical spell.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Great_Fireball_Rune.png" },
@@ -2173,6 +2223,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>A shot of this rune affects a huge area - up to 37 square metres! It stands to reason that the Great Fireball is a favourite of most Tibians, as it is well suited both to hit whole crowds of monsters and individual targets that are difficult to hit because they are fast or hard to spot.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Icicle_Rune.png" },
@@ -2182,6 +2233,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Particularly creatures determined by the element fire are vulnerable against this ice-cold rune. Being hit by the magic stored in this rune, an ice arrow seems to pierce the heart of the struck victim. The damage done by this rune is quite impressive which makes this a quite popular rune among Tibian mages.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Intense_Healing_Rune.png" },
@@ -2191,6 +2243,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This rune is commonly used by young adventurers who are not skilled enough to use the rune's stronger version. Also, since the rune's effectiveness is determined by the user's magic skill, it is still popular among experienced spell casters who use it to get effective healing magic at a cheap price.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Magic_Wall_Rune.png" },
@@ -2200,6 +2253,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This spell causes all particles that are contained in the surrounding air to quickly gather and contract until a solid wall is formed that covers one full square metre. The wall that is formed that way is impenetrable to any missiles or to light and no creature or character can walk through it. However, the wall will only last for a couple of seconds.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Poison_Bomb_Rune.png" },
@@ -2209,6 +2263,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>This rune causes an area of 9 square metres to be contaminated with toxic gas that will poison anybody who is caught within it. Conceivable applications include the blocking of areas or the combat against fast-moving or invisible targets. Keep in mind, however, that there are a number of creatures that are immune to poison.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Poison_Wall_Rune.png" },
@@ -2218,6 +2273,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>When this rune is used a wall of concentrated toxic fumes is created which inflicts a moderate poison on all those who are foolish enough to enter it. The effect is usually impressive enough to discourage monsters from doing so, although few of the stronger ones will hesitate if there is nothing but a poison wall between them and their dinner.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Soulfire_Rune.png" },
@@ -2227,6 +2283,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Soulfire is an immensely evil spell as it directly targets a creature's very life essence. When the rune is used on a victim, its soul is temporarily moved out of its body, casting it down into the blazing fires of hell itself! Note that the experience and the mental strength of the caster influence the damage that is caused.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Stone_Shower_Rune.png" },
@@ -2236,6 +2293,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Particularly creatures with an affection to energy will suffer greatly from this rune filled with powerful earth damage. As the name already says, a shower of stones drums on the opponents of the rune user in an area up to 37 squares.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Sudden_Death_Rune.png" },
@@ -2245,6 +2303,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Nearly no other spell can compare to Sudden Death when it comes to sheer damage. For this reason it is immensely popular despite the fact that only a single target is affected. However, since the damage caused by the rune is of deadly nature, it is less useful against most undead creatures.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Thunderstorm_Rune.png" },
@@ -2254,6 +2313,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>Flashes filled with dangerous energy hit the rune user's opponent when this rune is being used. It is especially effective against ice dominated creatures. Covering up an area up to 37 squares, this rune is particularly useful when you meet a whole mob of opponents.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Ultimate_Healing_Rune.png" },
@@ -2263,6 +2323,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>The coveted Ultimate Healing rune is an all-time favourite among all vocations. No other healing enchantments that are bound into runes can compare to its salutary effect.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 			{
 				icons = { "Wild_Growth_Rune.png" },
@@ -2272,6 +2333,7 @@ GameStore.Categories = {
 				count = 250,
 				description = "{character}\n{storeinbox}\n{vocationlevelcheck}\n{battlesign}\n{capacity}\n\n<i>By unleashing this spell, all seeds that are lying dormant in the surrounding quickly sprout and grow into full-sized plants, thus forming an impenetrable thicket. Unfortunately, plant life created this way is short-lived and will collapse within minutes, so the magically created obstacle will not last long.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
+				movable = true,						
 			},
 		},
 	},

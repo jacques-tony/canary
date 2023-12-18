@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mycobiontic Beetle")
 local monster = {}
 
 monster.description = "a Mycobiontic Beetle"
-monster.experience = 23640
+monster.experience = 29550
 monster.outfit = {
 	lookType = 1620,
 	lookHead = 0,
@@ -88,14 +88,14 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name ="combat", interval = 2000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -960, maxDamage = -1440, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -960, maxDamage = -1440, range = 7, radius = 4, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = true },
-	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -960, maxDamage = -1440, range = 7, radius = 4, effect = CONST_ME_ENERGYAREA, target = false }
+	{ name ="combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -909, maxDamage = -1363, range = 5, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_ENERGYDAMAGE, minDamage = -707, maxDamage = -1010, range = 7, radius = 4, shootEffect = CONST_ANI_ENERGY, effect = CONST_ME_ENERGYAREA, target = true },
+	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -960, maxDamage = -1272, range = 7, radius = 4, effect = CONST_ME_ENERGYAREA, target = false }
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 116
+	defense = 105,
+	armor = 105,
 }
 
 monster.elements = {

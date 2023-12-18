@@ -1492,6 +1492,25 @@ local items = {
 		slot = "shield",
 	},
 	{
+		-- phoenix spellbook	
+		itemid = 55041,
+		type = "equip",
+		slot = "shield",
+--		level = 400,
+		vocation = {
+			{ "Sorcerer", true },
+			{ "Druid", true, true },
+			{ "Master Sorcerer" },
+			{ "Elder Druid" },
+		},
+	},
+	{
+		-- phoenix spellbook
+		itemid = 55041,
+		type = "deequip",
+		slot = "shield",
+	},
+	{	
 		-- arboreal crown
 		itemid = 39153,
 		type = "equip",
@@ -2596,6 +2615,23 @@ local items = {
 		},
 	},
 	{
+		-- phoenix shield
+		itemid = 55040,
+		type = "deequip",
+		slot = "shield",
+	},
+	{
+		-- phoenix shield
+		itemid = 55040,
+		type = "equip",
+		slot = "shield",
+--		level = 400, 
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{	
 		-- pair of soulstalkers
 		itemid = 34098,
 		type = "deequip",

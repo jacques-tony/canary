@@ -50,7 +50,7 @@ local foundClass = nil
 local itemsInSameClass = {}
 local cooldownOnUse = 1 * 60 -- 1 minute.
 local storage = 12233
-local price = 1000 -- golds.
+local price = 250000 -- golds.
 
 local function sendItemsElementsModal(player, item)
     local window = ModalWindow({

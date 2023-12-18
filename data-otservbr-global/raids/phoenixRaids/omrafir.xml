@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<announce delay="20000" type="Event" message="Omrafir is about to enter the invasion area. Run for your lives!" />
+	<announce delay="60000" type="Event" message="Bewarehas Omrafir." />
+	<!--Single Spawns-->
+	<singlespawn delay="60000" name="Omrafir" x="17606" y="17621" z="7"/>	
+</raid>
