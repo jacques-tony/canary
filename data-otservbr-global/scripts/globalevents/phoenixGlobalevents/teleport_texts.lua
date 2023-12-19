@@ -32,6 +32,8 @@ local effects = {
     {position = Position(17625, 17703, 6), text = 'PALADIN', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17629, 17704, 6), text = 'KNIGHT', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17616, 17698, 6), text = 'GO CITY!', effect = CONST_ME_GROUNDSHAKER},
+    ------- INVASÃO
+    {position = Position(17591, 17621, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
 
 }
 

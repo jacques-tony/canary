@@ -290,7 +290,7 @@ housePriceEachSQM = 1000
 houseRentPeriod = "never"
 houseRentRate = 1.0
 houseOwnedByAccount = false
-houseBuyLevel = 8 
+houseBuyLevel = 1 
 housePurchasedShowPrice = false
 houseLoseAfterInactivity = 30 -- days; 0 = never
 onlyInvitedCanMoveHouseItems = true
@@ -363,7 +363,7 @@ toggleMountInProtectionZone = true
 freePremium = false
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
-emoteSpells = false
+emoteSpells = true
 allowWalkthrough = true
 coinPacketSize = 25 
 coinImagesURL = "http://144.217.201.226/images/store/"
@@ -424,7 +424,7 @@ rateSoulRegenSpeed = 1.0
 rateSpellCooldown = 1.0
 rateAttackSpeed = 1.0
 rateOfflineTrainingSpeed = 1.1
-rateExerciseTrainingSpeed = 5.0
+rateExerciseTrainingSpeed = 3.0
 
 -- Monster rates
 rateMonsterHealth = 1.0
@@ -436,7 +436,7 @@ rateBossHealth = 1.0
 rateBossAttack = 1.0
 rateBossDefense = 1.0
  
-bossDefaultTimeToFightAgain = 1 * 60 * 60 -- 20 hours
+bossDefaultTimeToFightAgain = 10 * 60 * 60 -- 20 hours
 bossDefaultTimeToDefeat = 20 * 60 -- 20 minutes
 
 -- Monsters
@@ -465,7 +465,7 @@ location = "South America"
 -- Sends Discord webhook notifications on startup, raids and shutdown.
 -- The URL layout is https://discord.com/api/webhooks/:id/:token
 -- Leave empty if you wish to disable.
-discordWebhookURL = ""
+discordWebhookURL = "https://discord.com/api/webhooks/1186315252548251758/6FoZOnsPngHDRAVx8KuvpBXqKxhR7bv5mVyyAaY9Y2zOXArBJAjz3SM691YYP_DJrB0o"
 
 -- Vip System (Get more info in: https://github.com/opentibiabr/canary/pull/1063)
 -- NOTE: set vipSystemEnabled to true to enable the vip system functionalities (this overrides premium checks)
@@ -481,8 +481,8 @@ discordWebhookURL = ""
 -- NOTE: GainCoin function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_coins.lua
 -- NOTE: GainToken function, please configure script: data-otservbr-global/scripts/globalevents/vip/online_tokens.lua
 vipSystemEnabled = true
-vipBonusExp = 50
-vipBonusLoot = 50
+vipBonusExp = 25
+vipBonusLoot = 25
 vipBonusSkill = 0
 vipAutoLootVipOnly = false
 vipStayOnline = false
