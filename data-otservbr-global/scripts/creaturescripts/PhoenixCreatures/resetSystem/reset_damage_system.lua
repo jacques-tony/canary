@@ -34,9 +34,9 @@ function manaChange.onManaChange(creature, attacker, primaryDamage, primaryType,
 end
 manaChange:register()
 
-local talkaction = TalkAction("!bonusreset")
-function talkaction.onSay(player, words, param)
-    player:sendTextMessage(MESSAGE_INFO_DESCR, "You have ".. player:getDamageResets() .."% more attack!")
-end
-talkaction:groupType("normal")
-talkaction:register()
+--local talkaction = TalkAction("!bonusreset")
+--function talkaction.onSay(player, words, param)
+--    player:sendTextMessage(MESSAGE_INFO_DESCR, "You have ".. player:getDamageResets() .."% more attack!")
+--end
+--talkaction:groupType("normal")
+--talkaction:register()

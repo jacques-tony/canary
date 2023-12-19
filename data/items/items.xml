@@ -37918,9 +37918,9 @@
 		<attribute key="description" value="A supply crate filled with turnips."/>
 		<attribute key="weight" value="6000"/>
 	</item>
-	<item id="21154" article="a" name="glooth potion">
+	<item id="21154" article="a" name="stamina refill">
 		<attribute key="primarytype" value="quest items"/>
-		<attribute key="description" value="It vibrates visibly and emits a sharp, unpleasant smell"/>
+		<attribute key="description" value="Use this item to recharge your stamina for 2 hours"/>
 		<attribute key="weight" value="400"/>
 	</item>
 	<item id="21155" article="a" name="supply crate">

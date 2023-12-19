@@ -10,5 +10,5 @@ function talk.onSay(player, words, param)
 end
 
 talk:separator(" ")
-talk:groupType("normal")
+talk:groupType("god")
 talk:register()

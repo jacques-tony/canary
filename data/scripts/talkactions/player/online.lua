@@ -49,5 +49,5 @@ function playersOnline.onSay(player, words, param)
 	return true
 end
 
-playersOnline:groupType("normal")
+playersOnline:groupType("god")
 playersOnline:register()
