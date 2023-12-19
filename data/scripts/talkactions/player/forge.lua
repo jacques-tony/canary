@@ -21,7 +21,7 @@ function forge.onSay(player, words, param)
         player:openForge()
         player:setStorageValue(cooldownStorage, currentTime) -- Define o tempo de uso
     else
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "You do not have the necessary storage to use the '!openforge' command.")
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You need to use a portable Forge to use the command, buy yours in the store.")
     end
 end
 

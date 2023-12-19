@@ -13,7 +13,7 @@ function nvmining.onSay(player, words, param)
     
     -- Constrói a mensagem a ser exibida.
     local message = string.format(
-        "Você está no nível %s e restam %d pontos para o nível %s.",
+        "You are at level %s and have %d points left for the level %s.",
         currentLevelData.name,
         pointsToNextLevel,
         nextLevelData.name

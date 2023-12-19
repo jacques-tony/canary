@@ -1,14 +1,14 @@
 local carts = {
-	{ clickPos = { x = 33543, y = 32912, z = 15 }, destination = Position(33637, 32841, 15) },
-	{ clickPos = { x = 33637, y = 32840, z = 15 }, destination = Position(33543, 32913, 15) },
-	{ clickPos = { x = 33546, y = 32911, z = 15 }, destination = Position(33765, 32909, 15) },
-	{ clickPos = { x = 33765, y = 32908, z = 15 }, destination = Position(33546, 32912, 15) },
-	{ clickPos = { x = 33549, y = 32912, z = 15 }, destination = Position(33563, 32862, 15) },
-	{ clickPos = { x = 33562, y = 32862, z = 15 }, destination = Position(33549, 32913, 15) },
-	{ clickPos = { x = 33571, y = 32868, z = 15 }, destination = Position(33592, 32909, 15) },
-	{ clickPos = { x = 33591, y = 32909, z = 15 }, destination = Position(33571, 32869, 15) },
-	{ clickPos = { x = 33597, y = 32914, z = 15 }, destination = Position(33662, 32976, 15) },
-	{ clickPos = { x = 33661, y = 32976, z = 15 }, destination = Position(33597, 32913, 15) },
+    { clickPos = {x = 16924, y = 17731, z = 8}, destination = Position(17018, 17660, 8) },
+    { clickPos = {x = 17018, y = 17659, z = 8}, destination = Position(16924, 17732, 8) },
+    { clickPos = {x = 16927, y = 17730, z = 8}, destination = Position(17146, 17728, 8) },
+    { clickPos = {x = 17146, y = 17727, z = 8}, destination = Position(16927, 17731, 8) },
+    { clickPos = {x = 16930, y = 17731, z = 8}, destination = Position(16944, 17681, 8) },
+    { clickPos = {x = 16943, y = 17681, z = 8}, destination = Position(16930, 17732, 8) },
+    { clickPos = {x = 16952, y = 17687, z = 8}, destination = Position(16973, 17728, 8) },
+    { clickPos = {x = 16972, y = 17728, z = 8}, destination = Position(16952, 17688, 8) },
+    { clickPos = {x = 16978, y = 17733, z = 8}, destination = Position(17043, 17795, 8) },
+    { clickPos = {x = 17042, y = 17795, z = 8}, destination = Position(16978, 17732, 8) },
 }
 
 local gnompronaCarts = Action()
