@@ -543,11 +543,7 @@ function Player:onGainExperience(target, exp, rawExp)
 	local stillHasBoost = Boost > 0
 	local storeXpBoostAmount = stillHasBoost and self:getStoreXpBoost() or 0
 
-	self:setStoreXpBoost(storeXpBoostAmount)
-	
-	-- Sistema topRank
-    self:setAllDWBMExperience(exp)
-    self:setLastDWBMExperience(exp) 
+	self:setStoreXpBoost(storeXpBoostAmount) 
 
 	-- Stamina Bonus
 	local staminaBonusXp = 1
@@ -589,6 +585,10 @@ function Player:onGainExperience(target, exp, rawExp)
 		exp = 0
 		self:sendTextMessage(MESSAGE_STATUS_WARNING, "Voce nao ganhara mais experiencia a partir de agora, voce atingiu o level maximo, por favor reset seu personagem.")
 	end
+
+	-- Sistema topRank
+    self:setAllDWBMExperience(exp)
+    self:setLastDWBMExperience(exp)
 	
 	return (exp + (exp * (storeXpBoostAmount / 100) + (exp * (lowLevelBonuxExp / 100)))) * staminaBonusXp * baseRate
 end

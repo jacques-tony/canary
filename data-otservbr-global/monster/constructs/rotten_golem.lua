@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Rotten Golem")
 local monster = {}
 
 monster.description = "a rotten golem"
-monster.experience = 17860
+monster.experience = 30026
 monster.outfit = {
 	lookType = 1312,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Rotten Wasteland.",
 }
 
-monster.health = 28000
-monster.maxHealth = 28000
+monster.health = 21000
+monster.maxHealth = 21000
 monster.race = "venom"
 monster.corpse = 33897
 monster.speed = 200
@@ -95,18 +95,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -950 },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -1200, maxDamage = -1450, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -900, maxDamage = -1400, radius = 5, effect = CONST_ME_BIGPLANTS, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1100, maxDamage = -1300, radius = 7, effect = CONST_ME_BIGPLANTS, target = false },
-	{ name = "poison chain", interval = 2000, chance = 20, minDamage = -1050, maxDamage = -1200, radius = 7, effect = CONST_ME_BIGPLANTS, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1103 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -717, maxDamage = -1169, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -662, maxDamage = -1213, radius = 5, effect = CONST_ME_BIGPLANTS, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -717, maxDamage = -1268, radius = 7, effect = CONST_ME_BIGPLANTS, target = false },
+	{ name = "poison chain", interval = 2000, chance = 20, minDamage = -772, maxDamage = -1279, radius = 7, effect = CONST_ME_BIGPLANTS, target = false },
 	{ name = "root", interval = 2000, chance = 1, target = true },
 }
 
 monster.defenses = {
-	defense = 108,
-	armor = 108,
-	mitigation = 3.04,
+	defense = 44,
+	armor = 90,
+	mitigation = 2.38,
 }
 
 monster.elements = {

@@ -13,12 +13,12 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 20000
-monster.maxHealth = 20000
+monster.health = 40000
+monster.maxHealth = 40000
 monster.race = "undead"
 monster.corpse = 0
 monster.speed = 154
-monster.manaCost = 3000
+monster.manaCost = 6000
 
 monster.changeTarget = {
 	interval = 4000,
@@ -66,17 +66,17 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -300 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -230, maxDamage = -260, range = 5, shootEffect = CONST_ANI_EARTH, effect = CONST_ME_STONES, target = true },
-	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -90, maxDamage = -150, length = 2, spread = 0, effect = CONST_ME_GROUNDSHAKER, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -600 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -460, maxDamage = -520, range = 5, shootEffect = CONST_ANI_EARTH, effect = CONST_ME_STONES, target = true },
+	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_EARTHDAMAGE, minDamage = -180, maxDamage = -300, length = 2, spread = 0, effect = CONST_ME_GROUNDSHAKER, target = false },
 	{ name = "summon challenge", interval = 2000, chance = 40, target = false },
 }
 
 monster.defenses = {
-	defense = 55,
-	armor = 55,
+	defense = 110,
+	armor = 110,
 	--	mitigation = ???,
-	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 600, maxDamage = 600, effect = CONST_ME_MAGIC_GREEN, target = false },
+	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 1200, maxDamage = 1200, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
 monster.elements = {

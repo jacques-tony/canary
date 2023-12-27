@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Paladin's Apparition")
 local monster = {}
 
 monster.description = "a paladin's apparition"
-monster.experience = 28600
+monster.experience = 67559
 monster.outfit = {
 	lookType = 129,
 	lookHead = 57,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Mirrored Nightmare.",
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 24310
+monster.maxHealth = 24310
 monster.race = "blood"
 monster.corpse = 111
 monster.speed = 235
@@ -95,18 +95,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -850 },
-	{ name = "combat", interval = 4000, chance = 26, type = COMBAT_ICEDAMAGE, minDamage = -840, maxDamage = -1000, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
-	{ name = "ice chain", interval = 5000, chance = 20, minDamage = -1050, maxDamage = -1300, range = 7 },
-	{ name = "combat", interval = 9500, chance = 52, type = COMBAT_HOLYDAMAGE, minDamage = -1050, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "combat", interval = 3000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -1200, maxDamage = -1400, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
-	{ name = "combat", interval = 4000, chance = 23, type = COMBAT_PHYSICALDAMAGE, minDamage = -900, maxDamage = -1350, radius = 4, shootEffect = CONST_ANI_EXPLOSION, range = 7, effect = CONST_ME_EXPLOSIONHIT, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1216 },
+	{ name = "combat", interval = 4000, chance = 26, type = COMBAT_ICEDAMAGE, minDamage = -790, maxDamage = -1288, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
+	{ name = "ice chain", interval = 5000, chance = 20, minDamage = -729, maxDamage = -1337, range = 7 },
+	{ name = "combat", interval = 9500, chance = 52, type = COMBAT_HOLYDAMAGE, minDamage = -790, maxDamage = -1398, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "combat", interval = 3000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -851, maxDamage = -1410, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
+	{ name = "combat", interval = 4000, chance = 23, type = COMBAT_PHYSICALDAMAGE, minDamage = -669, maxDamage = -1155, radius = 4, shootEffect = CONST_ANI_EXPLOSION, range = 7, effect = CONST_ME_EXPLOSIONHIT, target = true },
 }
 
 monster.defenses = {
-	defense = 100,
+	defense = 49,
 	armor = 100,
-	mitigation = 3.04,
+	mitigation = 2.63,
 }
 
 monster.elements = {
