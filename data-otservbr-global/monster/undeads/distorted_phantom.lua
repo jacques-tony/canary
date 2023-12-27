@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Distorted Phantom")
 local monster = {}
 
 monster.description = "a distorted phantom"
-monster.experience = 18870
+monster.experience = 67559
 monster.outfit = {
 	lookType = 1298,
 	lookHead = 113,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Mirrored Nightmare.",
 }
 
-monster.health = 26000
-monster.maxHealth = 26000
+monster.health = 24310
+monster.maxHealth = 24310
 monster.race = "undead"
 monster.corpse = 34133
 monster.speed = 240
@@ -96,19 +96,19 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -750 },
-	{ name = "combat", interval = 4000, chance = 33, type = COMBAT_HOLYDAMAGE, minDamage = -1000, maxDamage = -1250, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = false },
-	{ name = "combat", interval = 5000, chance = 44, type = COMBAT_ICEDAMAGE, minDamage = -1050, maxDamage = -1300, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICETORNADO, target = true },
-	{ name = "ice chain", interval = 10000, chance = 59, minDamage = -1100, maxDamage = -1300, range = 7 },
-	{ name = "combat", interval = 3000, chance = 18, type = COMBAT_HOLYDAMAGE, minDamage = -1050, maxDamage = -1250, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "combat", interval = 4000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -900, maxDamage = -1100, range = 7, radius = 4, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "extended holy chain", interval = 10000, chance = 59, minDamage = -400, maxDamage = -700, range = 7 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1216 },
+	{ name = "combat", interval = 4000, chance = 33, type = COMBAT_HOLYDAMAGE, minDamage = -790, maxDamage = -1250, radius = 4, effect = CONST_ME_EXPLOSIONHIT, target = false },
+	{ name = "combat", interval = 5000, chance = 44, type = COMBAT_ICEDAMAGE, minDamage = -729, maxDamage = -1300, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICETORNADO, target = true },
+	{ name = "ice chain", interval = 10000, chance = 59, minDamage = -1100, maxDamage = -790, range = 7 },
+	{ name = "combat", interval = 3000, chance = 18, type = COMBAT_HOLYDAMAGE, minDamage = -851, maxDamage = -1250, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "combat", interval = 4000, chance = 25, type = COMBAT_HOLYDAMAGE, minDamage = -669, maxDamage = -1155, range = 7, radius = 4, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "extended holy chain", interval = 10000, chance = 59, minDamage = -790, maxDamage = -1250, range = 7 },
 }
 
 monster.defenses = {
-	defense = 100,
+	defense = 49,
 	armor = 100,
-	mitigation = 2.45,
+	mitigation = 2.63,
 }
 
 monster.elements = {

@@ -223,4 +223,5 @@
 	<mount id="221" clientid="1687" name="Corpsefire Skull" speed="10" premium="no" type="store" />
 	<mount id="222" clientid="1721" name="Mystic Jaguar" speed="10" premium="yes" type="quest" />
 	<mount id="223" clientid="1724" name="Gorgon Hydra" speed="10" premium="no" type="store" />
+	<mount id="222" clientid="1725" name="Golden Wardragon" speed="20" premium="no" type="store" />	
 </mounts>

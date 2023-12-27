@@ -36,7 +36,7 @@
 
 __configDWBM = {
     ["daily_experience"] = {
-        time = 7 * 1 * 60 * 60,           -- Tempo em segundos para a tag de experi?ncia di?ria (1 dia)
+        time = 1 * 24 * 60 * 60,           -- Tempo em segundos para a tag de experi?ncia di?ria (1 dia)
         { item = 14758, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
         { item = 3043, count = 100 }
     },
@@ -123,7 +123,7 @@ function addInboxWinnerReward(player_id, item, count)
 
     local sid = result.getNumber(selectQuery, "max_sid") + 1
 
-    local insertQuery = string.format("INSERT INTO `player_inboxitems` (`player_id`, `sid`, `itemtype`, `count`) VALUES (%d, %d, %d, %d)", player_id, sid, item, count)
+    local insertQuery = string.format("INSERT INTO `player_inboxitems` (`player_id`, `sid`, `itemtype`, `count`, `attributes`) VALUES (%d, %d, %d, %d, %q)", player_id, sid, item, count, '')
     db.query(insertQuery)
 end
 

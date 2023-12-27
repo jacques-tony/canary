@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Druid's Apparition")
 local monster = {}
 
 monster.description = "a druid's apparition"
-monster.experience = 28600
+monster.experience = 67559
 monster.outfit = {
 	lookType = 148,
 	lookHead = 114,
@@ -25,8 +25,8 @@ monster.Bestiary = {
 	Locations = "Mirrored Nightmare.",
 }
 
-monster.health = 25000
-monster.maxHealth = 25000
+monster.health = 24310
+monster.maxHealth = 24310
 monster.race = "blood"
 monster.corpse = 6081
 monster.speed = 235
@@ -94,17 +94,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -850 },
-	{ name = "combat", interval = 3000, chance = 31, type = COMBAT_ICEDAMAGE, minDamage = -1080, maxDamage = -1300, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
-	{ name = "ice chain", interval = 9500, chance = 37, minDamage = -1100, maxDamage = -1300, range = 7 },
-	{ name = "combat", interval = 4000, chance = 55, type = COMBAT_HOLYDAMAGE, minDamage = -1100, maxDamage = -1250, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "combat", interval = 3000, chance = 23, type = COMBAT_HOLYDAMAGE, minDamage = -1250, maxDamage = -1400, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1216 },
+	{ name = "combat", interval = 3000, chance = 31, type = COMBAT_ICEDAMAGE, minDamage = -790, maxDamage = -1288, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
+	{ name = "ice chain", interval = 9500, chance = 37, minDamage = -729, maxDamage = -1337, range = 7 },
+	{ name = "combat", interval = 4000, chance = 55, type = COMBAT_HOLYDAMAGE, minDamage = -790, maxDamage = -1398, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "combat", interval = 3000, chance = 23, type = COMBAT_HOLYDAMAGE, minDamage = -851, maxDamage = -1410, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
 }
 
 monster.defenses = {
-	defense = 100,
+	defense = 49,
 	armor = 100,
-	mitigation = 2.75,
+	mitigation = 2.63,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 1000, maxDamage = 1100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

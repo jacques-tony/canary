@@ -52302,13 +52302,13 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 	<item fromid="27501" toid="27502" article="a" name="fragile lava funnel">
 		<attribute key="primarytype" value="machines (objects)"/>
 	</item>
-	<item fromid="27503" toid="27504" article="a" name="large harvestable crystals">
+	<item fromid="27503" toid="27504" article="a" name="mining stone">
 		<attribute key="primarytype" value="rocks"/>
 	</item>
 	<item fromid="27505" toid="27506" article="a" name="harvestable crystals">
 		<attribute key="primarytype" value="rocks"/>
 	</item>
-	<item fromid="27507" toid="27508" article="a" name="small harvestable crystals">
+	<item fromid="27507" toid="27508" article="a" name="mining stone">
 		<attribute key="primarytype" value="rocks"/>
 	</item>
 	<item id="27509" article="a" name="heavy crystal fragment">
@@ -64815,7 +64815,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="elemental protection holy" value="3"/>
 			<attribute key="skillboost shielding" value="3"/>
 		</attribute>
-	</item>24	
+	</item>
 	<item id="34100" name="Katex' blood">
 		<attribute key="primarytype" value="creature products"/>
 		<attribute key="weight" value="70"/>
@@ -64843,6 +64843,36 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="description" value="It contains the most powerful artifacts from the depths of Zarganash's darkest realms"/>
 		<attribute key="weight" value="30"/>
 	</item>
+	<item id="55057" article="a" name="eldritch bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an eldritch item."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="55060" article="a" name="falcon bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an falcon item."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="55061" article="a" name="lion bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an lion item."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="55056" article="a" name="gnome bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an gnome item."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="55059" article="a" name="cobra bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an cobra item."/>
+		<attribute key="weight" value="30"/>
+	</item>
+	<item id="55058" article="a" name="destruciton bag">
+		<attribute key="primarytype" value="valuables"/>
+		<attribute key="description" value="When using this bag you will gain an destruciton item."/>
+		<attribute key="weight" value="30"/>
+	</item>	
 	<item id="34110" article="a" name="sandstone statue">
 		<attribute key="primarytype" value="statues"/>
 	</item>

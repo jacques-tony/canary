@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Many Faces")
 local monster = {}
 
 monster.description = "a many faces"
-monster.experience = 18870
+monster.experience = 101339
 monster.outfit = {
 	lookType = 1296,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Mirrored Nightmare.",
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 25526
+monster.maxHealth = 25526
 monster.race = "undead"
 monster.corpse = 33805
 monster.speed = 215
@@ -99,18 +99,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1300 },
-	{ name = "combat", interval = 4000, chance = 33, type = COMBAT_ICEDAMAGE, minDamage = -1220, maxDamage = -1400, range = 7, shootEffect = CONST_ANI_SNOWBALL, effect = CONST_ME_ICEATTACK, target = true },
-	{ name = "combat", interval = 5000, chance = 44, type = COMBAT_ICEDAMAGE, minDamage = -1000, maxDamage = -1450, range = 7, radius = 5, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEAREA, target = true },
-	{ name = "combat", interval = 9500, chance = 59, type = COMBAT_HOLYDAMAGE, minDamage = -1050, maxDamage = -1300, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
-	{ name = "extended holy chain", interval = 10000, chance = 59, minDamage = -1150, maxDamage = -1300, range = 7 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1276 },
+	{ name = "combat", interval = 4000, chance = 33, type = COMBAT_ICEDAMAGE, minDamage = -830, maxDamage = -1353, range = 7, shootEffect = CONST_ANI_SNOWBALL, effect = CONST_ME_ICEATTACK, target = true },
+	{ name = "combat", interval = 5000, chance = 44, type = COMBAT_ICEDAMAGE, minDamage = -766, maxDamage = -1404, range = 7, radius = 5, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEAREA, target = true },
+	{ name = "combat", interval = 9500, chance = 59, type = COMBAT_HOLYDAMAGE, minDamage = -830, maxDamage = -1468, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
+	{ name = "extended holy chain", interval = 10000, chance = 59, minDamage = -893, maxDamage = -1480, range = 7 },
 	{ name = "destroy magic walls", interval = 1000, chance = 30 },
 }
 
 monster.defenses = {
-	defense = 105,
+	defense = 51,
 	armor = 105,
-	mitigation = 3.34,
+	mitigation = 2.76,
 }
 
 monster.elements = {
@@ -131,6 +131,6 @@ monster.immunities = {
 	{ type = "outfit", condition = true },
 	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
-}
+} 
 
 mType:register(monster)

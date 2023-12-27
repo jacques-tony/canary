@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mirror Image")
 local monster = {}
 
 monster.description = "a mirror image"
-monster.experience = 27000
+monster.experience = 67559
 monster.outfit = {
 	lookType = 136,
 	lookHead = 76,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 35000
-monster.maxHealth = 35000
+monster.health = 24310
+monster.maxHealth = 24310
 monster.race = "blood"
 monster.corpse = 0
 monster.speed = 117
@@ -69,17 +69,17 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -700 },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -800, maxDamage = -1100, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
-	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_HOLYDAMAGE, minDamage = -950, maxDamage = -1400, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -1080, maxDamage = -1350, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "ice chain", interval = 2000, chance = 15, minDamage = -900, maxDamage = -1300, range = 7 },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1216 },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -790, maxDamage = -1288, range = 7, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_BIGCLOUDS, target = true },
+	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_HOLYDAMAGE, minDamage = -729, maxDamage = -1337, radius = 4, effect = CONST_ME_HOLYAREA, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -790, maxDamage = -1398, range = 7, shootEffect = CONST_ANI_HOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "ice chain", interval = 2000, chance = 15, minDamage = -851, maxDamage = -1410, range = 7 },
 }
 
 monster.defenses = {
-	defense = 75,
-	armor = 0,
-	--	mitigation = ???,
+	defense = 49,
+	armor = 100,
+	mitigation = 2.63,
 }
 
 monster.elements = {

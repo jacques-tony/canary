@@ -598,6 +598,10 @@ function Player:onGainExperience(target, exp, rawExp)
 		exp = 0
 		self:sendTextMessage(MESSAGE_STATUS_WARNING, "Voce nao ganhara mais experiencia a partir de agora, voce atingiu o level maximo, por favor reset seu personagem.")
 	end
+
+	-- Sistema topRank
+    self:setAllDWBMExperience(exp)
+    self:setLastDWBMExperience(exp)
 	
 	return (exp + (exp * (xpBoostPercent / 100) + (exp * (lowLevelBonuxExp / 100)))) * staminaBonusXp * baseRate
 end
