@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Cunning Werepanther")
 local monster = {}
 
 monster.description = "a Cunning Werepanther"
-monster.experience = 49019
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1648,
 	lookHead = 18,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 35735
-monster.maxHealth = 35735
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "undead"
 monster.corpse = 43959
 monster.speed = 125
@@ -91,14 +91,15 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2488 },
-	{ name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -1990, maxDamage = -2985, radius = 2, effect = CONST_ME_GROUNDSHAKER, target = false },
-	{ name ="combat", interval = 2000, chance = 14, type = COMBAT_HOLYDAMAGE, minDamage = -1990, maxDamage = -2985, length = 5, spread = 3, effect = CONST_ME_BLOCKHIT, target = false }
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1340 },
+	{ name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -871, maxDamage = -1421, radius = 2, effect = CONST_ME_GROUNDSHAKER, target = false },
+	{ name ="combat", interval = 2000, chance = 14, type = COMBAT_HOLYDAMAGE, minDamage = -804, maxDamage = -1474, length = 5, spread = 3, effect = CONST_ME_BLOCKHIT, target = false }
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 72
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 }
 
 monster.elements = {

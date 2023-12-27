@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Weretiger")
 local monster = {}
 
 monster.description = "a Weretiger"
-monster.experience = 23945
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1646,
 	lookHead = 120,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 29136
-monster.maxHealth = 29136
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "undead"
 monster.corpse = 43669
 monster.speed = 210
@@ -90,14 +90,15 @@ monster.loot = {
 
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1215 },
-	{ name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -972, maxDamage = -1458, radius = 2, effect = CONST_ME_GROUNDSHAKER, target = false },
-	{ name ="combat", interval = 2000, chance = 14, type = COMBAT_HOLYDAMAGE, minDamage = -972, maxDamage = -1458, length = 5, spread = 3, effect = CONST_ME_BLOCKHIT, target = false }
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1340 },
+	{ name ="combat", interval = 2000, chance = 18, type = COMBAT_EARTHDAMAGE, minDamage = -871, maxDamage = -1421, radius = 2, effect = CONST_ME_GROUNDSHAKER, target = false },
+	{ name ="combat", interval = 2000, chance = 14, type = COMBAT_HOLYDAMAGE, minDamage = -804, maxDamage = -1474, length = 5, spread = 3, effect = CONST_ME_BLOCKHIT, target = false }
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 100
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 }
 
 monster.elements = {
