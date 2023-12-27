@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("White Weretiger")
 local monster = {}
 
 monster.description = "a White Weretiger"
-monster.experience = 22805
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1646,
 	lookHead = 0,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 28848
-monster.maxHealth = 28848
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "undead"
 monster.corpse = 43762
 monster.speed = 120
@@ -88,14 +88,15 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -480 },
-	{ name ="explosion wave", interval = 2000, chance = 15, minDamage = -280, maxDamage = -400, target = false },
-	{ name ="combat", interval = 2000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -350, maxDamage = -520, radius = 4, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_GREEN_RINGS, target = true }
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1407 },
+	{ name ="explosion wave", interval = 2000, chance = 15, minDamage = -915, maxDamage = -1492, target = false },
+	{ name ="combat", interval = 2000, chance = 12, type = COMBAT_EARTHDAMAGE, minDamage = -844, maxDamage = -1548, radius = 4, shootEffect = CONST_ANI_SMALLEARTH, effect = CONST_ME_GREEN_RINGS, target = true }
 }
 
 monster.defenses = {
-	defense = 83,
-	armor = 83
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 }
 
 monster.elements = {

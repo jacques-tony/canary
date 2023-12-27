@@ -1,10 +1,10 @@
-local mType = Game.createMonsterType("Oozing Carcass")
+local mType = Game.createMonsterType("Oozing Corpus")
 local monster = {}
 
-monster.description = "a Oozing Carcass"
-monster.experience = 29550
+monster.description = "a Oozing Corpus"
+monster.experience = 342018
 monster.outfit = {
-	lookType = 1626,
+	lookType = 1625,
 	lookHead = 0,
 	lookBody = 0,
 	lookLegs = 0,
@@ -13,14 +13,14 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 28562
-monster.maxHealth = 28562
+monster.health = 29549
+monster.maxHealth = 29549
 monster.race = "undead"
-monster.corpse = 43579
-monster.speed = 215
+monster.corpse = 43575
+monster.speed = 220
 monster.manaCost = 0
 
-monster.raceId = 2377
+monster.raceId = 2381
 monster.Bestiary = {
 	class = "Undead",
 	race = BESTY_RACE_UNDEAD,
@@ -88,31 +88,30 @@ monster.loot = {
 	{ name = "spellbook of warding", chance = 5084, maxCount = 1 },
 }
 
-
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -909, effect = CONST_ME_DRAWBLOOD },
-	{ name ="combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -909, maxDamage = -1363, length = 8, spread = 3, effect = CONST_ME_HOLYAREA, target = false },
-	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_DEATHDAMAGE, minDamage = -707, maxDamage = -1010, range = 7, shootEffect = CONST_ANI_SUDDENDEATH, effect = CONST_ME_MORTAREA, target = false },
-	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -960, maxDamage = -1272, radius = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -840, maxDamage = -1260, length = 4, spread = 0, effect = CONST_ME_ICEATTACK, target = false },
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1477 },
+	{ name ="combat", interval = 2000, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -960, maxDamage = -1566, radius = 4, effect = CONST_ME_MORTAREA, target = false },
+	{ name ="combat", interval = 2000, chance = 15, type = COMBAT_FIREDAMAGE, minDamage = -886, maxDamage = -1625, range = 7, shootEffect = CONST_ANI_FIRE, effect = CONST_ME_FIREAREA, target = true },
+	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_FIREDAMAGE, minDamage = -960, maxDamage = -1699, length = 8, effect = CONST_ME_EXPLOSIONHIT, target = false }
 }
 
 monster.defenses = {
-	defense = 110,
-	armor = 112
-} 
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
+}
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 25 },
-	{ type = COMBAT_EARTHDAMAGE, percent = -20 },
-	{ type = COMBAT_FIREDAMAGE, percent = -10 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 30 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = -25 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 40 },
+	{ type = COMBAT_FIREDAMAGE, percent = 25 },
 	{ type = COMBAT_LIFEDRAIN, percent = 0 },
 	{ type = COMBAT_MANADRAIN, percent = 0 },
 	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
-	{ type = COMBAT_ICEDAMAGE, percent = 35 },
-	{ type = COMBAT_HOLYDAMAGE , percent = -25 },
-	{ type = COMBAT_DEATHDAMAGE , percent = 40 }
+	{ type = COMBAT_ICEDAMAGE, percent = -10 },
+	{ type = COMBAT_HOLYDAMAGE , percent = -10 },
+	{ type = COMBAT_DEATHDAMAGE , percent = 0 }
 }
 
 monster.immunities = {

@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Feral Werecrocodile")
 local monster = {}
 
 monster.description = "a Feral Werecrocodile"
-monster.experience = 34041
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1647,
 	lookHead = 116,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Sanctuary."
 	}
 
-monster.health = 32413
-monster.maxHealth = 32413
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "undead"
 monster.corpse = 43767
 monster.speed = 110
@@ -98,8 +98,9 @@ monster.attacks = {
 }
 
 monster.defenses = {
-	defense = 85,
-	armor = 85
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 }
 
 monster.elements = {

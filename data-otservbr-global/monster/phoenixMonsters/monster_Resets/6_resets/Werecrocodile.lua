@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Werecrocodile")
 local monster = {}
 
 monster.description = "a Werecrocodile"
-monster.experience = 40849
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1647,
 	lookHead = 95,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
  
-monster.health = 34034
-monster.maxHealth = 34034
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "undead"
 monster.corpse = 43754
 monster.speed = 115
@@ -90,14 +90,15 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -2073, effect = CONST_ME_DRAWBLOOD },
-	{ name ="combat", interval = 6000, chance = 9, type = COMBAT_DEATHDAMAGE, minDamage = -1658, maxDamage = -2488, radius = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name ="combat", interval = 6000, chance = 13, type = COMBAT_ICEDAMAGE, minDamage = -1658, maxDamage = -2488, length = 4, spread = 0, effect = CONST_ME_ICEATTACK, target = false },
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1407, effect = CONST_ME_DRAWBLOOD },
+	{ name ="combat", interval = 6000, chance = 9, type = COMBAT_DEATHDAMAGE, minDamage = -915, maxDamage = -1492, radius = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name ="combat", interval = 6000, chance = 13, type = COMBAT_ICEDAMAGE, minDamage = -844, maxDamage = -1548, length = 4, spread = 0, effect = CONST_ME_ICEATTACK, target = false },
 	}
 
 monster.defenses = {
-	defense = 82,
-	armor = 82
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 }
 
 monster.elements = {

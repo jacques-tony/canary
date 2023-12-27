@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Werepanther")
 local monster = {}
 
 monster.description = "a Werepanther"
-monster.experience = 25142
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1648,
 	lookHead = 1,
@@ -13,8 +13,8 @@ monster.outfit = {
 	lookMount = 0
 }
 
-monster.health = 29428
-monster.maxHealth = 29428
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "undead"
 monster.corpse = 43758
 monster.speed = 125
@@ -92,15 +92,16 @@ monster.loot = {
 
 
 monster.attacks = {
-	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1276, effect = CONST_ME_DRAWBLOOD },
-	{ name ="singledeathchain", interval = 6000, chance = 7, minDamage = -1021, maxDamage = -1531, range = 5, effect = CONST_ME_MORTAREA, target = true },
-	{ name ="singleicechain", interval = 6000, chance = 8, minDamage = -1021, maxDamage = -1531, range = 5, effect = CONST_ME_ICEATTACK, target = true },
-	{ name ="combat", interval = 4000, chance = 11, type = COMBAT_ICEDAMAGE, minDamage = -1021, maxDamage = -1531, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEATTACK, target = true } -- avalanche
+	{ name ="melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1340, effect = CONST_ME_DRAWBLOOD },
+	{ name ="singledeathchain", interval = 6000, chance = 7, minDamage = -871, maxDamage = -1421, range = 5, effect = CONST_ME_MORTAREA, target = true },
+	{ name ="singleicechain", interval = 6000, chance = 8, minDamage = -804, maxDamage = -1474, range = 5, effect = CONST_ME_ICEATTACK, target = true },
+	{ name ="combat", interval = 4000, chance = 11, type = COMBAT_ICEDAMAGE, minDamage = -938, maxDamage = -1555, radius = 4, shootEffect = CONST_ANI_ICE, effect = CONST_ME_ICEATTACK, target = true } -- avalanche
 }
 
 monster.defenses = {
-	defense = 72,
-	armor = 72
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 }
 
 monster.elements = {
