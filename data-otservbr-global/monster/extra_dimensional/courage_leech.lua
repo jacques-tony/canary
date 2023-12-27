@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Courage Leech")
 local monster = {}
 
 monster.description = "a courage leech"
-monster.experience = 18900
+monster.experience = 101339
 monster.outfit = {
 	lookType = 1315,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Furious Crater",
 }
 
-monster.health = 27000
-monster.maxHealth = 27000
+monster.health = 25526
+monster.maxHealth = 25526
 monster.race = "undead"
 monster.corpse = 33909
 monster.speed = 226
@@ -96,18 +96,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -700 },
-	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -1100, maxDamage = -1400, radius = 4, shootEffect = CONST_ANI_ETHEREALSPEAR, effect = CONST_ME_ENERGYAREA, target = true },
-	{ name = "combat", interval = 3000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -1100, maxDamage = -1400, radius = 4, effect = CONST_ME_ENERGYHIT, target = false },
-	{ name = "combat", interval = 3000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -900, maxDamage = -1100, length = 7, spread = 0, effect = CONST_ME_ENERGYHIT, target = false },
-	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -1100, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
-	{ name = "energy chain", interval = 2000, chance = 20, minDamage = -900, maxDamage = -1000, range = 3, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1276 },
+	{ name = "combat", interval = 2000, chance = 17, type = COMBAT_ENERGYDAMAGE, minDamage = -830, maxDamage = -1400, radius = 4, shootEffect = CONST_ANI_ETHEREALSPEAR, effect = CONST_ME_ENERGYAREA, target = true },
+	{ name = "combat", interval = 3000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -766, maxDamage = -1400, radius = 4, effect = CONST_ME_ENERGYHIT, target = false },
+	{ name = "combat", interval = 3000, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -830, maxDamage = -1100, length = 7, spread = 0, effect = CONST_ME_ENERGYHIT, target = false },
+	{ name = "combat", interval = 2000, chance = 20, type = COMBAT_HOLYDAMAGE, minDamage = -893, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYDAMAGE, target = true },
+	{ name = "energy chain", interval = 2000, chance = 20, minDamage = -702, maxDamage = -1212, range = 3, target = true },
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 100,
-	mitigation = 3.04,
+	defense = 51,
+	armor = 105,
+	mitigation = 2.76,
 }
 
 monster.elements = {

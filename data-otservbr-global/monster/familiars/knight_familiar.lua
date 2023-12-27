@@ -13,12 +13,12 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 10000
-monster.maxHealth = 10000
+monster.health = 20000
+monster.maxHealth = 20000
 monster.race = "undead"
 monster.corpse = 0
 monster.speed = 154
-monster.manaCost = 1000
+monster.manaCost = 2000
 
 monster.changeTarget = {
 	interval = 4000,
@@ -66,20 +66,20 @@ monster.voices = {
 monster.loot = {}
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -200 },
-	{ name = "sudden death rune", interval = 2000, chance = 17, minDamage = -300, maxDamage = -350, range = 7, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -250, range = 6, radius = 2, effect = CONST_ME_MORTAREA, target = true },
-	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -180, maxDamage = -250, range = 5, radius = 3, effect = CONST_ME_MORTAREA, target = true },
-	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_ICEDAMAGE, minDamage = -180, maxDamage = -250, range = 5, radius = 3, effect = CONST_ME_ICEAREA, target = true },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -250, range = 6, radius = 2, effect = CONST_ME_ICETORNADO, target = true },
-	{ name = "ice strike", interval = 2000, chance = 17, minDamage = -300, maxDamage = -350, range = 5, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -400 },
+	{ name = "sudden death rune", interval = 2000, chance = 17, minDamage = -600, maxDamage = -700, range = 7, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -400, maxDamage = -500, range = 6, radius = 2, effect = CONST_ME_MORTAREA, target = true },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -360, maxDamage = -500, range = 5, radius = 3, effect = CONST_ME_MORTAREA, target = true },
+	{ name = "combat", interval = 3000, chance = 25, type = COMBAT_ICEDAMAGE, minDamage = -360, maxDamage = -500, range = 5, radius = 3, effect = CONST_ME_ICEAREA, target = true },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -400, maxDamage = -500, range = 6, radius = 2, effect = CONST_ME_ICETORNADO, target = true },
+	{ name = "ice strike", interval = 2000, chance = 17, minDamage = -600, maxDamage = -1400, range = 5, target = true },
 }
 
 monster.defenses = {
-	defense = 55,
-	armor = 55,
+	defense = 110,
+	armor = 110,
 	--	mitigation = ???,
-	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 300, maxDamage = 300, effect = CONST_ME_MAGIC_GREEN, target = false },
+	{ name = "combat", interval = 2000, chance = 75, type = COMBAT_HEALING, minDamage = 600, maxDamage = 600, effect = CONST_ME_MAGIC_GREEN, target = false },
 }
 
 monster.elements = {

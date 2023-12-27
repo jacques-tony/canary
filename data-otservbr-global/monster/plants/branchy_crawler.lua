@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Branchy Crawler")
 local monster = {}
 
 monster.description = "a branchy crawler"
-monster.experience = 17860
+monster.experience = 30026
 monster.outfit = {
 	lookType = 1297,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Rotten Wasteland.",
 }
 
-monster.health = 27000
-monster.maxHealth = 27000
+monster.health = 21000
+monster.maxHealth = 21000
 monster.race = "blood"
 monster.corpse = 33809
 monster.speed = 235
@@ -98,18 +98,18 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -950 },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -1100, maxDamage = -1300, range = 7, shootEffect = CONST_ANI_PIERCINGBOLT, effect = CONST_ME_GREEN_RINGS, target = true },
-	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_EARTHDAMAGE, minDamage = -1000, maxDamage = -1280, radius = 4, effect = CONST_ME_SMALLPLANTS, target = true },
-	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -1100, maxDamage = -1250, radius = 4, effect = CONST_ME_HOLYDAMAGE, target = false },
-	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -1100, maxDamage = -1400, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYAREA, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1103 },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_EARTHDAMAGE, minDamage = -717, maxDamage = -1169, range = 7, shootEffect = CONST_ANI_PIERCINGBOLT, effect = CONST_ME_GREEN_RINGS, target = true },
+	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_EARTHDAMAGE, minDamage = -662, maxDamage = -1213, radius = 4, effect = CONST_ME_SMALLPLANTS, target = true },
+	{ name = "combat", interval = 2000, chance = 22, type = COMBAT_HOLYDAMAGE, minDamage = -717, maxDamage = -1268, radius = 4, effect = CONST_ME_HOLYDAMAGE, target = false },
+	{ name = "combat", interval = 2000, chance = 15, type = COMBAT_HOLYDAMAGE, minDamage = -772, maxDamage = -1279, range = 7, shootEffect = CONST_ANI_SMALLHOLY, effect = CONST_ME_HOLYAREA, target = true },
 	{ name = "root", interval = 2000, chance = 1, target = true },
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 100,
-	mitigation = 3.04,
+	defense = 44,
+	armor = 90,
+	mitigation = 2.38,
 }
 
 monster.elements = {

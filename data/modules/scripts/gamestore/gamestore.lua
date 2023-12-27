@@ -573,22 +573,12 @@ GameStore.Categories = {
 	state = GameStore.States.STATE_NONE, 
 	offers = {
 		{
-			icons = { "Soulcutter.png" },
-			name = "Bag You Covet",
-			price = 600,
-			itemtype = 43898,
-			charges = 1,
-			description = "(Atk:7 physical + 45 death, Def:32 +3, sword fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 63.00 oz.",
-			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
-			movable = true,		
-		},
-		{
 			icons = { "Soulshredder.png" },
 			name = "Primal Bag",
 			price = 550,
 			itemtype = 39546,
 			charges = 1,
-			description = "(Atk:10 physical + 47 ice, Def:35, sword fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 81.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Alicorn Headguard, Alicorn Quiver, Alicorn Ring, Arboreal Crown, Arboreal Ring, Arboreal Tome, Arcanomancer Folio, Arcanomancer Regalia, Arcanomancer Sigil, Spiritthorn Armor, Spiritthorn Helmet, Spiritthorn Ring.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -598,7 +588,7 @@ GameStore.Categories = {
 			price = 500,
 			itemtype = 55057,
 			charges = 1,
-			description = "(Atk:7 physical + 45 death, Def:32 +3, axe fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 40.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Eldritch Bow, Eldritch Breeches, Eldritch Claymore, Eldritch Cowl, Eldritch Cuirass, Eldritch Folio, Eldritch Greataxe, Eldritch Hood, Eldritch Quiver, Eldritch Rod, Eldritch Shield, Eldritch Tome, Eldritch Wand, Eldritch Warmace.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -608,7 +598,7 @@ GameStore.Categories = {
 			price = 450,
 			itemtype = 34109,
 			charges = 1,
-			description = "(Atk:10 physical + 47 ice, Def:35, axe fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 72.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Pair of Soulstalkers, Pair of Soulwalkers, Soulbastion, Soulbiter, Soulbleeder, Soulcrusher, Soulcutter, Souleater (Axe), Soulhexer, Soulmaimer, Soulmantle, Soulpiercer, Soulshanks, Soulshell, Soulshredder, Soulshroud, Soulstrider, Soultainter.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -618,7 +608,7 @@ GameStore.Categories = {
 			price = 400,
 			itemtype = 55060,
 			charges = 1,
-			description = "(Atk:6 physical + 46 ice, Def:33 +3, club fighting +5, life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%). It can only be wielded properly by knights of level 400 or higher. It weighs 41.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Falcon Coif, Falcon Circlet, Falcon Plate, Falcon Greaves, Falcon Rod, Falcon Wand, Falcon Longsword, Falcon Mace, Falcon Battleaxe, Falcon Bow, Falcon Shield, Falcon Escutcheon.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -628,7 +618,7 @@ GameStore.Categories = {
 			price = 350,
 			itemtype = 55061,
 			charges = 1,
-			description = "(Atk:10 physical + 47 energy, Def:35, club fighting +5, critical hit chance 10%, critical extra damage +10%). It can only be wielded properly by knights of level 400 or higher. It weighs 89.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Lion Spangenhelm, Lion Plate, Lion Rod, Lion Wand, Lion Longsword, Lion Hammer, Lion Axe, Lion Longbow, Lion Shield, Lion Spellbook.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -638,7 +628,7 @@ GameStore.Categories = {
 			price = 300,
 			itemtype = 55056,
 			charges = 1,
-			description = "(Range: 6, Atk +8, Hit% +5, distance fighting +4, critical hit chance 10, critical extra damage +10, protection holy +7%). It can only be wielded properly by paladins of level 400 or higher. It weighs 47.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Gnome Helmet, Gnome Armor, Gnome Sword, Gnome Shield, Gnome Legs.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -648,7 +638,7 @@ GameStore.Categories = {
 			price = 250,
 			itemtype = 55059,
 			charges = 1,
-			description = "(critical hit chance 10%, critical extra damage +10%, magic level +5, protection death +12%). It can only be wielded properly by sorcerers of level 400 or higher. It weighs 19.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Cobra Axe, Cobra Boots, Cobra Club, Cobra Crossbow, Cobra Hood, Cobra Rod, Cobra Sword, Cobra Wand, The Cobra Amulet.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
@@ -658,7 +648,7 @@ GameStore.Categories = {
 			price = 200,
 			itemtype = 55058,
 			charges = 1,
-			description = "(life leech chance +100%, life leech amount +5%, mana leech chance +100%, mana leech amount +3%, magic level +5, protection ice +12%). It can only be wielded properly by druids of level 400 or higher. It weighs 25.00 oz.",
+			description = "When using this item, you have the chance to randomly acquire one of the following items: Axe of Destruction, Blade of Destruction, Chopper of Destruction, Hammer of Destruction, Mace of Destruction, Slayer of Destruction, Bow of Destruction, Crossbow of Destruction, Rod of Destruction, Wand of Destruction.",
 			type = GameStore.OfferTypes.OFFER_TYPE_CHARGES,
 			movable = true
 		},
