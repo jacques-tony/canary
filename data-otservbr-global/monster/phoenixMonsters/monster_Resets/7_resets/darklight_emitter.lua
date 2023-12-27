@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Darklight Emitter")
 local monster = {}
 
 monster.description = "a Darklight Emitter"
-monster.experience = 28368
+monster.experience = 342018
 monster.outfit = {
 	lookType = 1627,
 	lookHead = 0,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Sanctuary."
 	}
 
-monster.health = 30870
-monster.maxHealth = 30870
+monster.health = 29549
+monster.maxHealth = 29549
 monster.race = "undead"
 monster.corpse = 43583
 monster.speed = 210
@@ -85,15 +85,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -1152, maxDamage = -1728, range = 7, radius = 3, shootEffect = CONST_ANI_POISONARROW, effect = CONST_ME_GREEN_RINGS, target = true },
-	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -1152, maxDamage = -1728, length = 6, spread = 4, effect = CONST_ME_GREEN_RINGS, target = false },
-	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -1152, maxDamage = -1728, radius = 3, effect = CONST_ME_ICETORNADO, target = false },
-	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -1152, maxDamage = -1728, range = 7, radius = 4, effect = CONST_ME_ICEATTACK, target = true }
+	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_EARTHDAMAGE, minDamage = -960, maxDamage = -1566, range = 7, radius = 3, shootEffect = CONST_ANI_POISONARROW, effect = CONST_ME_GREEN_RINGS, target = true },
+	{ name ="combat", interval = 2000, chance = 10, type = COMBAT_EARTHDAMAGE, minDamage = -886, maxDamage = -1625, length = 6, spread = 4, effect = CONST_ME_GREEN_RINGS, target = false },
+	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -960, maxDamage = -1699, radius = 3, effect = CONST_ME_ICETORNADO, target = false },
+	{ name ="combat", interval = 3000, chance = 20, type = COMBAT_ICEDAMAGE, minDamage = -1034, maxDamage = -1714, range = 7, radius = 4, effect = CONST_ME_ICEATTACK, target = true }
 }
 
 monster.defenses = {
-	defense = 100,
-	armor = 120
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 }
 
 monster.elements = {
