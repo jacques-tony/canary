@@ -1403,9 +1403,7 @@ void PlayerWheel::loadDedicationAndConvictionPerks() {
 			if (it != wheelFunctions.end()) {
 				internalData = it->second;
 			}
-			if (internalData == nullptr) {
-				g_logger().warn("[{}] 'internalData' cannot be null on slot type: {}, for player: {}", __FUNCTION__, i, m_player.getName());
-			} else {
+			if (internalData) {
 				internalData(m_player.getPlayer(), points, vocationCipId, m_playerBonusData);
 			}
 		}
@@ -1819,7 +1817,7 @@ bool PlayerWheel::checkDivineEmpowerment() {
 	int32_t damageBonus = 0;
 	bool isOwner = false;
 	for (const auto &item : *items) {
-		if (item->getID() == ITEM_DIVINE_EMPOWERMENT && item->getAttribute<uint32_t>(ItemAttribute_t::OWNER) == m_player.getID()) {
+		if (item->getID() == ITEM_DIVINE_EMPOWERMENT && item->isOwner(m_player.getGUID())) {
 			isOwner = true;
 			break;
 		}
