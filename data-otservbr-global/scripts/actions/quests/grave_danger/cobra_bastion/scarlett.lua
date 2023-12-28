@@ -1,5 +1,5 @@
 local armorId = 31482
-local armorPos = Position(33398, 32640, 6)
+local armorPos = Position(18181, 17824, 6)
 local metalWallId = 31449
 
 local function createArmor(id, amount, pos)
@@ -13,30 +13,30 @@ local config = {
 	boss = {
 		name = "Scarlett Etzel",
 		createFunction = function()
-			local scarlett = Game.createMonster("Scarlett Etzel", Position(33396, 32643, 6), true, true)
+			local scarlett = Game.createMonster("Scarlett Etzel", Position(18179, 17827, 6), true, true)
 			scarlett:setStorageValue(Storage.GraveDanger.CobraBastion.Questline, 1)
 			return scarlett
 		end,
 	},
 	playerPositions = {
-		{ pos = Position(33395, 32661, 6), teleport = Position(33396, 32651, 6) },
-		{ pos = Position(33394, 32662, 6), teleport = Position(33396, 32651, 6) },
-		{ pos = Position(33396, 32662, 6), teleport = Position(33396, 32651, 6) },
-		{ pos = Position(33395, 32662, 6), teleport = Position(33396, 32651, 6) },
-		{ pos = Position(33395, 32663, 6), teleport = Position(33396, 32651, 6) },
+		{ pos = Position(18178, 17845, 6), teleport = Position(18179, 17835, 6) },
+		{ pos = Position(18177, 17846, 6), teleport = Position(18179, 17835, 6) },
+		{ pos = Position(18179, 17846, 6), teleport = Position(18179, 17835, 6) },
+		{ pos = Position(18178, 17846, 6), teleport = Position(18179, 17835, 6) },
+		{ pos = Position(18178, 17847, 6), teleport = Position(18179, 17835, 6) },
 	},
 	specPos = {
-		from = Position(33385, 32638, 6),
-		to = Position(33406, 32660, 6),
+		from = Position(18168, 17822, 6),
+		to = Position(18189, 17844, 6),
 	},
 	onUseExtra = function()
 		SCARLETT_MAY_TRANSFORM = 0
 	end,
-	exit = Position(33395, 32665, 6),
+	exit = Position(18178, 17849, 6),
 }
 
 local lever = BossLever(config)
-lever:position(Position(33395, 32660, 6))
+lever:position(Position(18178, 17844, 6))
 lever:register()
 
 local transformTo = {
@@ -88,10 +88,10 @@ function graveScarlettAid.onUse(player, item, fromPosition, target, toPosition, 
 			SCARLETT_MAY_TRANSFORM = 0
 		end, 2000)
 	elseif item.itemid == metalWallId then
-		if player:getPosition().y == 32666 then
-			player:teleportTo(Position(33395, 32668, 6))
+		if player:getPosition().y == 17580 then
+			player:teleportTo(Position(18178, 17852, 6))
 		else
-			player:teleportTo(Position(33395, 32666, 6))
+			player:teleportTo(Position(18178, 17850, 6))
 		end
 	end
 	return true
