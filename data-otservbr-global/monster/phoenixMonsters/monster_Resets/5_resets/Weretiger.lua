@@ -81,7 +81,7 @@ monster.loot = {
 	{ name = "furry club", chance = 8523, maxCount = 1 },
 	{ name = "violet crystal shard", chance = 6028, maxCount = 1 },
 	{ name = "knight armor", chance = 5692, maxCount = 1 },
-	{ name = "moonlight crystal", chance = 11494, maxCount = 1 },
+	{ name = "moonlight crystals", chance = 11494, maxCount = 1 },
 	{ name = "angelic axe", chance = 6617, maxCount = 1 },
 	{ name = "blue gem", chance = 5379, maxCount = 1 },
 	{ name = "weretiger trophy", chance = 7645, maxCount = 1 },

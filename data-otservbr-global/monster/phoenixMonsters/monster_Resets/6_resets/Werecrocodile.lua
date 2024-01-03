@@ -81,7 +81,7 @@ monster.loot = {
 	{ name = "crocodile boots", chance = 6240, maxCount = 1 },
 	{ name = "meat", chance = 12266, maxCount = 4 },
 	{ id = 3039, chance = 14768, maxCount = 1 }, -- red gem
-	{ name = "moonlight crystal", chance = 13193, maxCount = 1 },
+	{ name = "moonlight crystals", chance = 13193, maxCount = 1 },
 	{ name = "green crystal shard", chance = 11106, maxCount = 1 },
 	{ name = "glorious axe", chance = 13477, maxCount = 1 },
 	{ name = "golden sun coin", chance = 8290, maxCount = 1 },
