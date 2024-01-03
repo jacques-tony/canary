@@ -76,8 +76,8 @@ monster.voices = {
 monster.loot = {
 	{ name = "crystal coin", chance = 5230, maxCount = 1 },
 	{ name = "darklight obsidian axe", chance = 6963, maxCount = 1 },
-	{ name = "darklight matter (object)", chance = 6927, maxCount = 1 },
-	{ name = "darklight core (object)", chance = 10715, maxCount = 1 },
+	{ id = 43851, chance = 6927, maxCount = 1 }, -- darklight mtter (item)
+	{ id = 43853, chance = 10715, maxCount = 1 }, -- darklight core (item)
 	{ name = "wand of starstorm", chance = 8797, maxCount = 1 },
 	{ name = "blue gem", chance = 9372, maxCount = 1 },
 	{ name = "ultimate health potion", chance = 9851, maxCount = 5 },
