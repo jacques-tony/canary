@@ -1,25 +1,25 @@
 local config = {
     boss = {
         name = "The Baron From Below",
-        position = Position(18009, 18232, 14),
+        position = Position(18037, 17830, 14),
     }, 
     timeAfterKill = 60,
     playerPositions = {
-        { pos = Position(17981, 18232, 14), teleport = Position(18008, 18236, 14) },
-        { pos = Position(17982, 18232, 14), teleport = Position(18009, 18236, 14) },
-        { pos = Position(17983, 18232, 14), teleport = Position(18010, 18236, 14) },
-        { pos = Position(17980, 18232, 14), teleport = Position(18007, 18236, 14) },
-        { pos = Position(17979, 18232, 14), teleport = Position(18006, 18236, 14) },
+        { pos = Position(18062, 17822, 14), teleport = Position(18035, 17836, 14) },
+        { pos = Position(18061, 17822, 14), teleport = Position(18036, 17836, 14) },
+        { pos = Position(18060, 17822, 14), teleport = Position(18037, 17836, 14) },
+        { pos = Position(18063, 17822, 14), teleport = Position(18038, 17836, 14) },
+        { pos = Position(18064, 17822, 14), teleport = Position(18039, 17836, 14) },
     },
     specPos = {
-        from = Position(17997, 18225, 14), 
-        to = Position(18020, 18240, 14),
+        from = Position(18027, 17819, 14), 
+        to = Position(18048, 17842, 14),
     },
-    exit = Position(18065, 17820, 14), 
+    exit = Position(17978, 18235, 14), 
 	
     storage = 376360, 
 }  
  
-local lever = BossLever(config) 
+local lever = BossLever(config)  
 lever:aid(37642)
 lever:register()   
