@@ -1,4 +1,6 @@
 local effects = {
+    ------- TEMPLO
+    {position = Position(17568, 17563, 6), text = 'BETA DAILY REWARD!', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17563, 17566, 6), text = 'Welcome to, PHOENIX OT!', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17572, 17564, 6), text = 'RESETS', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17574, 17564, 6), text = 'MONSTERS', effect = CONST_ME_GROUNDSHAKER},
@@ -6,6 +8,18 @@ local effects = {
     {position = Position(17579, 17564, 6), text = 'TRAINER', effect = CONST_ME_GROUNDSHAKER}, 
     {position = Position(17581, 17564, 6), text = 'BOSSES', effect = CONST_ME_GROUNDSHAKER},
     {position = Position(17583, 17564, 6), text = 'INVASION', effect = CONST_ME_GROUNDSHAKER},  
+    ------- RESET
+    {position = Position(17503, 17610, 6), text = 'RESET CITY', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17503, 17611, 6), text = 'VIP SHORTCUT', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17508, 17605, 6), text = '+ 1 RESET', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17508, 17605, 6), text = '+ 1.400 LEVEL', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17510, 17605, 6), text = '+ 4 RESET', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17510, 17605, 6), text = '+ 1.700 LEVEL', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17508, 17605, 5), text = '+ 6 RESET', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17508, 17605, 5), text = '+ 1.950 LEVEL', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17510, 17605, 5), text = '+ 9 RESET', effect = CONST_ME_GROUNDSHAKER},
+    {position = Position(17510, 17605, 5), text = '+ 2.400 LEVEL', effect = CONST_ME_GROUNDSHAKER},
+
     ------- QUESTS
     {position = Position(17548, 17818, 11), text = 'USE!', effect = CONST_ME_GROUNDSHAKER}, 	
     {position = Position(18109, 17700, 12), text = 'USE!', effect = CONST_ME_GROUNDSHAKER}, 	 	
@@ -34,6 +48,7 @@ local effects = {
     {position = Position(17616, 17698, 6), text = 'GO CITY!', effect = CONST_ME_GROUNDSHAKER},
     ------- INVASÃO
     {position = Position(17591, 17621, 6), text = 'THE CARPET DISAPPEARS ITEMS, BEWARE!!', effect = CONST_ME_GROUNDSHAKER},
+
 
 }
 

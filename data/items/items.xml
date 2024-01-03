@@ -9088,7 +9088,7 @@
 	</item>
 	<item id="3457" article="a" name="shovel">
 		<attribute key="primarytype" value="tools"/>
-		<attribute key="weight" value="3500"/>
+		<attribute key="weight" value="0"/>
 	</item>
 	<item id="3458" article="an" name="anvil">
 		<attribute key="primarytype" value="utilities"/>
@@ -16564,15 +16564,15 @@
 	</item>
 	<item id="6973" article="a" name="mammoth totem">
 		<attribute key="primarytype" value="pillars"/>
-	</item>
+	</item> 
 	<item fromid="6974" toid="6977" article="a" name="mammoth skull">
 		<attribute key="primarytype" value="remains"/>
 	</item>
 	<item fromid="6978" toid="6980" name="mammoth fur"/>
 	<item fromid="6981" toid="6983" article="a" name="rope">
 		<attribute key="primarytype" value="tools"/>
-		<attribute key="weight" value="1800"/>
-	</item>
+		<attribute key="weight" value="0"/> 
+	</item> 
 	<item fromid="6984" toid="6985" article="a" name="fish">
 		<attribute key="primarytype" value="food"/>
 		<attribute key="weight" value="520"/>
