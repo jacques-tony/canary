@@ -81,7 +81,7 @@ monster.loot = {
 	{ name = "small topaz", chance = 7513, maxCount = 4 },
 	{ name = "meat", chance = 12545, maxCount = 2 },
 	{ name = "yellow gem", chance = 14190, maxCount = 1 },
-	{ name = "moonlight crystal", chance = 13613, maxCount = 1 },
+	{ name = "moonlight crystals", chance = 13613, maxCount = 1 },
 	{ name = "lightning headband", chance = 11638, maxCount = 1 },
 	{ name = "lightning pendant", chance = 5298, maxCount = 1 },
 	{ name = "ripper lance", chance = 6667, maxCount = 1 },

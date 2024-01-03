@@ -77,7 +77,7 @@ monster.loot = {
 	{ name = "dark obsidian splinter", chance = 12735, maxCount = 1 },
 	{ id = 3039, chance = 8781, maxCount = 1 }, -- red gem
 	{ name = "small emerald", chance = 6646, maxCount = 3 },
-	{ name = "zaoan sho", chance = 8614, maxCount = 1 },
+	{ name = "zaoan shoes", chance = 8614, maxCount = 1 },
 	{ name = "darklight core", chance = 5659, maxCount = 1 },
 	{ name = "darklight obsidian axe", chance = 11129, maxCount = 1 },
 	{ name = "magma amulet", chance = 13240, maxCount = 1 },

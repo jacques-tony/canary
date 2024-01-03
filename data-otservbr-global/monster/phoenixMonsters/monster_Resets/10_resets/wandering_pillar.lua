@@ -76,14 +76,14 @@ monster.voices = {
 monster.loot = {
 	{ name = "crystal coin", chance = 6629, maxCount = 1 },
 	{ name = "darklight obsidian axe", chance = 14652, maxCount = 1 },
-	{ name = "basalt crumb", chance = 8184, maxCount = 1 },
+	{ id = 43858, chance = 8184, maxCount = 1 }, -- basalt crumb
 	{ name = "sulphurous stone", chance = 5873, maxCount = 1 },
 	{ name = "magma boots", chance = 5080, maxCount = 1 },
-	{ name = "coal", chance = 9802, maxCount = 4 },
+	{ id = 12600, chance = 9802, maxCount = 4 }, -- coal
 	{ name = "dark helmet", chance = 7490, maxCount = 1 },
 	{ name = "magma coat", chance = 11753, maxCount = 1 },
 	{ name = "onyx chip", chance = 9311, maxCount = 2 },
-	{ name = "darklight core (object)", chance = 5957, maxCount = 1 },
+	{ id = 43853, chance = 5957, maxCount = 1 }, -- darklight core (item)
 	{ name = "fire sword", chance = 8319, maxCount = 1 },
 	{ name = "magma clump", chance = 6260, maxCount = 1 },
 	{ id = 3039, chance = 9915, maxCount = 1 }, -- red gem
