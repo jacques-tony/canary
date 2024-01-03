@@ -79,7 +79,7 @@ monster.loot = {
 	{ name = "werecrocodile tongue", chance = 13336, maxCount = 1 },
 	{ name = "ham", chance = 9592, maxCount = 2 },
 	{ name = "war hammer", chance = 5086, maxCount = 1 },
-	{ name = "moonlight crystal", chance = 11701, maxCount = 1 },
+	{ name = "moonlight crystals", chance = 11701, maxCount = 1 },
 	{ name = "golden sun coin", chance = 7323, maxCount = 1 },
 	{ name = "violet gem", chance = 12362, maxCount = 1 },
 	{ name = "ornate crossbow", chance = 8599, maxCount = 1 },

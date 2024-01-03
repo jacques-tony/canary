@@ -76,7 +76,7 @@ monster.voices = {
 monster.loot = {
 	{ name = "crystal coin", chance = 14380, maxCount = 1 },
 	{ name = "unstable darklight matter", chance = 14492, maxCount = 1 },
-	{ name = "darklight core (object)", chance = 9783, maxCount = 1 },
+	{ id = 43853, chance = 9783, maxCount = 1 }, -- darklight core (item)
 	{ name = "small topaz", chance = 11140, maxCount = 3 },
 	{ name = "ice rapier", chance = 5104, maxCount = 1 },
 	{ name = "dark obsidian splinter", chance = 14185, maxCount = 1 },

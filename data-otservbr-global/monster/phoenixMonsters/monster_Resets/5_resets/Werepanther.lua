@@ -80,7 +80,7 @@ monster.loot = {
 	{ name = "golden sickle", chance = 10866, maxCount = 1 },
 	{ name = "meat", chance = 9537, maxCount = 2 },
 	{ name = "small ruby", chance = 6497, maxCount = 3 },
-	{ name = "moonlight crystal", chance = 9974, maxCount = 1 },
+	{ name = "moonlight crystals", chance = 9974, maxCount = 1 },
 	{ id = 3039, chance = 8037, maxCount = 1 }, -- red gem
 	{ name = "magma monocle", chance = 14789, maxCount = 1 },
 	{ name = "ripper lance", chance = 5160, maxCount = 1 },

@@ -77,8 +77,8 @@ monster.loot = {
 	{ name = "crystal coin", chance = 12186, maxCount = 1 },
 	{ name = "yellow darklight matter", chance = 5354, maxCount = 1 },
 	{ name = "magma clump", chance = 11440, maxCount = 1 },
-	{ name = "darklight core (object)", chance = 10276, maxCount = 1 },
-	{ name = "coal", chance = 8489, maxCount = 4 },
+	{ id = 43853, chance = 10276, maxCount = 1 }, -- darklight core (item)
+	{ id = 12600, chance = 8489, maxCount = 4 }, -- coal
 	{ name = "darklight basalt chunk", chance = 12855, maxCount = 1 },
 	{ name = "onyx chip", chance = 12831, maxCount = 2 },
 	{ name = "strange helmet", chance = 11001, maxCount = 1 },
