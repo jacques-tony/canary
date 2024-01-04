@@ -52,7 +52,7 @@ end
 
 
 attackspeed_resets = { 
-    {1, 30, 1},
+    {1, 30, 11},
 }
 
 function Player.getAttackSpeedResets(self) 
@@ -67,8 +67,8 @@ function Player.getAttackSpeedResets(self)
         end
     end
  
-    local limitSpeed = 200 
-    local maxResetToSpeed = 30 
+    local limitSpeed = 100 
+    local maxResetToSpeed = 100  
     if resets >= maxResetToSpeed then
         return limitSpeed
     else 
