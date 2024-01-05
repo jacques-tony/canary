@@ -15,7 +15,7 @@ function loginEvents.onLogin(player)
 		"FamiliarAdvance",
 		--Quests
 		--Cults Of Tibia Quest
-		"LeidenHeal",
+		--"LeidenHeal",
 		"HealthPillar",
 		"YalahariHealth",
 	}
