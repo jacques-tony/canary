@@ -575,6 +575,11 @@ function Player:onGainExperience(target, exp, rawExp)
 		exp = exp * 2
 	end
 
+	--- Castle
+	if self:getGuild() and self:getGuild():getId() == getOwnsCastle(self) then
+		exp = exp * 1.20 -- 20%
+	end
+
 	-- Prey system
 	if configManager.getBoolean(configKeys.PREY_ENABLED) then
 		local monsterType = target:getType()
@@ -610,6 +615,7 @@ function Player:onLoseExperience(exp)
 	return exp
 end
 
+    
 function Player:onGainSkillTries(skill, tries)
 	-- Dawnport skills limit
 	if IsRunningGlobalDatapack() and isSkillGrowthLimited(self, skill) then

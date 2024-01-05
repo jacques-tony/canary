@@ -76,9 +76,10 @@ end
 
 local teleportCastle = GlobalEvent("__teleportCastle")
 function teleportCastle.onStartup()
+    db.query("UPDATE `guilds` SET `owns_castle` = 0;")
     __startTime_castleClosed()
 end
-teleportCastle:register()
+teleportCastle:register()   
 
 local castleLever = Action()
 function castleLever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
