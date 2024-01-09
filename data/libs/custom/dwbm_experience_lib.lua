@@ -37,23 +37,27 @@
 __configDWBM = {
     ["daily_experience"] = {
         time = 1 * 24 * 60 * 60,           -- Tempo em segundos para a tag de experi?ncia di?ria (1 dia)
-        { item = 14758, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
-        { item = 3043, count = 100 }
+        { item = 55072, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
+        { item = 37317, count = 50 },
+        { item = 3043, count = 50 }
     },
     ["weekly_experience"] = {
         time = 7 * 24 * 60 * 60,          -- Tempo em segundos para a tag de experi?ncia semanal (7 dias)
-        { item = 14758, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
+        { item = 55070, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
+        { item = 37317, count = 100 },
         { item = 3043, count = 100 }
     },
     ["biweekly_experience"] = {
         time = 15 * 24 * 60 * 60,         -- Tempo em segundos para a tag de experi?ncia quinzenal (15 dias)
-        { item = 14758, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
-        { item = 3043, count = 100 }
+        { item = 55071, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
+        { item = 37317, count = 150 },
+        { item = 3043, count = 200 }
     },
     ["monthly_experience"] = {
         time = 30 * 24 * 60 * 60,         -- Tempo em segundos para a tag de experi?ncia mensal (30 dias)
-        { item = 14758, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
-        { item = 3043, count = 100 }
+        { item = 55068, count = 1 },      -- Item e quantidade para a experi?ncia di?ria
+        { item = 37317, count = 200 },
+        { item = 3043, count = 250 }
     }
 }
 
@@ -137,7 +141,7 @@ function addWinnerReward(target)
 end
 
 function getCurrentDateTime(currentTime)
-    local formattedDateTime = os.date("%d/%m/%Y ?s %H:%M:%S", currentTime)
+    local formattedDateTime = os.date("%d/%m/%Y às %H:%M:%S", currentTime)
     return formattedDateTime
 end
 
@@ -188,9 +192,9 @@ function checkDWBM(tag, time)
     local entryTime = os.time() + dwbm.time
 
     local message = string.format(
-        "* [%s] *\n%s%s com a maior experi?ncia acumulada.\n\n* [%s] *\n-- Reiniciando novamente --\nPr?ximo resultado: %s",
+        "* [%s] *\n%s%s com a maior experiência acumulada.\n\n* [%s] *\n-- Reiniciando novamente --\nPróximo resultado: %s",
         formattedTag,
-        experience > 0 and playerName .. " foi o vencedor" or "N?o houve vencedor",
+        experience > 0 and playerName .. " foi o vencedor" or "Não houve vencedor",
         experience and " " or "",
         formattedTag,
         getCurrentDateTime(entryTime)
