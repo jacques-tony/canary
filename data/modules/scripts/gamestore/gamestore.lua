@@ -117,7 +117,7 @@ GameStore.Categories = {
 		{
 			icons = { "Soulcutter.png" },
 			name = "Stamina Refill",
-			price = 500,  
+			price = 0,  
 			itemtype = 21154,  
 			charges = 1,
 			description = "Use this item to recharge your stamina for 2 hours.",
@@ -127,7 +127,7 @@ GameStore.Categories = {
 		{	
 			icons = { "Soulcutter.png" },
 			name = "Reset Cooldown",
-			price = 500,  
+			price = 0,  
 			itemtype = 19398,  
 			charges = 1,
 			description = "When using this item you reset the cooldown time for using the !reset command.",
@@ -137,7 +137,7 @@ GameStore.Categories = {
 		{	
 			icons = { "Soulcutter.png" },
 			name = "Familiar scroll",
-			price = 500,  
+			price = 0,  
 			itemtype = 36586,  
 			charges = 1,
 			description = "When using this item you will be able to choose a familiar skin.",
@@ -156,7 +156,7 @@ GameStore.Categories = {
 		{			
             icons = { "Gold_Pouch.png" },
 			name = "Loot Pouch",
-			price = 500,
+			price = 0,
 			itemtype = 23721,
 			count = 1,
 			description = "<i>Load as many items as your capacity allows.</i>\n\n{character}\n{storeinbox}\n{once}\n{useicon} use it to open it\n{info} always placed on the first position of your Store inbox",
@@ -175,7 +175,7 @@ GameStore.Categories = {
 		{
 			icons = { "Soulshredder.png" },
 			name = "Teleport Cube",
-			price = 250,  
+			price = 0,  
 			itemtype = 23515,  
 			charges = 1, 
 			description = "Item Infinite.\n\ncan only be used by purchasing character Teleport to important places, such as temple, quest room, monsters and others...",
@@ -195,7 +195,7 @@ GameStore.Categories = {
 		{
 			icons = { "Souleater.png" },
 			name = "Phoenix Pick",
-			price = 500,
+			price = 0,
 			itemtype = 32711,
 			charges = 1,
 			description = "Infinite item.\n With this pick you will have double the chance of extracting precious ores.",
@@ -285,7 +285,7 @@ GameStore.Categories = {
 		{
 			icons = { "Falcon_Coif.png" },
 			name = "Cluster Of Solace",
-			price = 500,
+			price = 100,
 			itemtype = 20062,
 			count = 5,
 			description = "You can change Dream Matter for items with Eraruan.",
@@ -495,7 +495,7 @@ GameStore.Categories = {
 		{	
 			icons = { "Gnome_Helmet.png" },
 			name = "Portable Forge",
-			price = 300,
+			price = 0,
 			itemtype = 35909,  
 			count = 1, 
 			description = "Item Infinite.\n\nonly usable by purchasing character Are you tired of walking? Relax... \nYou can forge anywhere with this item.", 
@@ -1745,14 +1745,6 @@ GameStore.Categories = {
 		state = GameStore.States.STATE_NONE,
 		offers = {
 			{
-				icons = { "Arctic_Unicorn.png" },
-				name = "Artic Unicorn",
-				price = 170,
-				id = 114,
-				description = "{character}\n{speedboost}\n\n<i>The Arctic Unicorn lives in a deep rivalry with its cousin the Blazing Unicorn. Even though they were born in completely different areas, they somehow share the same bloodline. The eternal battle between fire and ice continues. Who will win? Tangerine vs.crystal blue! The choice is yours!</i>",
-				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
-			},
-			{
 				icons = { "Armoured_War_Horse.png" },
 				name = "Armoured War Horse",
 				price = 170,
@@ -1814,14 +1806,6 @@ GameStore.Categories = {
 				price = 150,
 				id = 92,
 				description = "{character}\n{speedboost}\n\n<i>You are fascinated by insectoid creatures and can picture yourself riding one during combat or just for travelling? The Bloodcurl will carry you through the Tibian wilderness with ease.</i>",
-				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
-			},
-			{
-				icons = { "Bogwurm.png" },
-				name = "Bogwurm",
-				price = 870,
-				id = 189,
-				description = "{character}\n{speedboost}\n\n<i>The Bogwurm, Gloomwurm, and Rustwurm belong to a little known subset of the dragon family, and usually live out their lives in habitats far away from human interaction. Them being cunning hunters, and their keen sense of perception make these wurms great companions for whomever can locate and tame them.</i>",
 				type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
 			},
 			{
@@ -7041,7 +7025,7 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 50,
+				price = 0,
 				id = GameStore.SubActions.PREY_WILDCARD,
 				count = 5,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog\n{info} maximum amount that can be owned by character: 50",
@@ -7074,7 +7058,7 @@ GameStore.Categories = {
 			{
 				icons = { "Permanent_Prey_Slot.png" },
 				name = "Permanent Prey Slot",
-				price = 300,
+				price = 0,
 				id = GameStore.SubActions.PREY_THIRDSLOT_REDIRECT,
 				description = "<i>Get an additional prey slot to activate additional prey!</i>\n\n{character}\n{info} maximum amount that can be owned by character: 3\n{info} added directly to Prey dialog",
 				type = GameStore.OfferTypes.OFFER_TYPE_PREYSLOT,
@@ -7117,7 +7101,7 @@ GameStore.Categories = {
 			{
 				icons = { "Prey_Bonus_Reroll.png" },
 				name = "Prey Wildcard",
-				price = 200,
+				price = 0,
 				count = 20,
 				description = "<i>Use Prey Wildcards to reroll the bonus of an active prey, to lock your active prey or to select a prey of your choice.</i>\n\n{character}\n{info} added directly to Prey dialog\n{info} maximum amount that can be owned by character: 50",
 				type = GameStore.OfferTypes.OFFER_TYPE_PREYBONUS,
