@@ -31,9 +31,8 @@ function onlineTokensEvent.onThink(interval)
             if seconds >= 3600 then 
                 player:setStorageValue(config.storage, 0)
                 local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
-                local targetContainer = inbox and inbox:getEmptySlots() > 0 and inbox or player
-                if targetContainer then
-                    targetContainer:addItem(config.tokenItemId, config.tokensPerHour)
+                if inbox and inbox:getEmptySlots() > 0 then
+                    inbox:addItem(config.tokenItemId, config.tokensPerHour)
                     player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You received an Online Token for being online for one hour.")
                 end
                 return true
