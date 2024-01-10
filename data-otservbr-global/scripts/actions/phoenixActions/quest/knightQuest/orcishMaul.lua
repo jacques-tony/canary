@@ -18,5 +18,5 @@ function orcishMaul.onUse(player, item, fromPosition, target, toPosition, isHotk
        end
 end
 
-orcishMaul:uid(44414)
+orcishMaul:aid(44414)
 orcishMaul:register()
