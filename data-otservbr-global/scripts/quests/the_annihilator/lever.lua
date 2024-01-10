@@ -46,7 +46,7 @@ function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 
         -- Checks if there are still players inside the room, if so, return true
-        if Position.hasPlayer(setting.centerDemonRoomPosition, 4, 4) then
+        if roomIsOccupied(setting.centerDemonRoomPosition, true, 4, 4) then
             player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A team is already inside the quest room.")
             return true
         end
@@ -70,7 +70,7 @@ function lever.onUse(player, item, fromPosition, target, toPosition, isHotkey)
             return true
         end
         -- Not be able to push the lever back if someone is still inside the monsters room
-        if Position.hasPlayer(setting.centerDemonRoomPosition, 4, 4) then
+        if roomIsOccupied(setting.centerDemonRoomPosition, true, 4, 4) then
             player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "A team is already inside the quest room.")
             return true
         end
