@@ -5,11 +5,11 @@ local config = {
     }, 
     timeAfterKill = 60, 
     playerPositions = {
-        { pos = Position(17635, 18031, 14), teleport = Position(17601, 18038, 14) },
-        { pos = Position(17635, 18031, 14), teleport = Position(17602, 18038, 14) },
-        { pos = Position(17635, 18031, 14), teleport = Position(17603, 18038, 14) },
-        { pos = Position(17635, 18031, 14), teleport = Position(17604, 18038, 14) },
-        { pos = Position(17635, 18031, 14), teleport = Position(17605, 18038, 14) },	
+        { pos = Position(17635, 18031, 14), teleport = Position(17602, 18040, 14) },
+        { pos = Position(17636, 18031, 14), teleport = Position(17603, 18040, 14) },
+        { pos = Position(17637, 18031, 14), teleport = Position(17604, 18040, 14) },
+        { pos = Position(17638, 18031, 14), teleport = Position(17605, 18040, 14) },
+        { pos = Position(17639, 18031, 14), teleport = Position(17606, 18040, 14) },	
 		 
     }, 
     specPos = { 
