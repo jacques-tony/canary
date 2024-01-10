@@ -18,5 +18,5 @@ function blacksteelSword.onUse(player, item, fromPosition, target, toPosition, i
        end
 end
 
-blacksteelSword:uid(44416)
+blacksteelSword:aid(44416)
 blacksteelSword:register()
