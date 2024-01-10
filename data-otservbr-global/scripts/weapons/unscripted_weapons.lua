@@ -329,6 +329,17 @@ local weapons = {
 		},
 	},
 	{	
+		-- phoenix Energy sword
+		itemId = 55004,
+		type = WEAPON_SWORD,
+--		level = 600,
+		unproperly = true,
+		vocation = {
+			{ "Knight", true },
+			{ "Elite Knight" },
+		},
+	},
+	{		
 		-- grand sanguine cudgel
 		itemId = 43867,
 		type = WEAPON_CLUB,
