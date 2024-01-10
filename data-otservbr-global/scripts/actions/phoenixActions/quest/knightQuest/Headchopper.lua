@@ -18,5 +18,5 @@ function Headchopper.onUse(player, item, fromPosition, target, toPosition, isHot
        end
 end
 
-Headchopper:uid(44415)
+Headchopper:aid(44415)
 Headchopper:register()
