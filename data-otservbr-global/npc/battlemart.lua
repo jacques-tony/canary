@@ -177,7 +177,9 @@ local itemsTable = {
 		{ itemName = "stealth ring", clientId = 3049, buy = 5000 },
 		{ itemName = "time ring", clientId = 3053, buy = 2000 },
 		{ itemName = "dwarven ring", clientId = 3097, buy = 2000 },
-		{ itemName = "energy ring", clientId = 3051, buy = 2000 },
+		{ itemName = "sword ring", clientId = 3091, buy = 2000 },
+		{ itemName = "axe ring", clientId = 3092, buy = 2000 },
+		{ itemName = "club ring", clientId = 3093, buy = 2000 },
 	},
 	["potions"] = {
 		{ itemName = "great health potion", clientId = 239, buy = 225 },
