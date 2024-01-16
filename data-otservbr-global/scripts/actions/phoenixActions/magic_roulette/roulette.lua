@@ -5,7 +5,7 @@ local config = {
         right = 9111
     },
     playItem = {
-        itemId = 43732, -- item required to pull lever
+        itemId = 55073, -- item required to pull lever
         count = 1
     },
     rouletteOptions = {
@@ -22,7 +22,7 @@ local config = {
         {itemId = 34209, count = {1, 1}, chance = 500},
         {itemId = 24948, count = {1, 1},  chance = 500}, 
         {itemId = 20139, count = {1, 1},  chance = 500},
-        {itemId = 20138, count = {1, 1},  chance = 500},
+        {itemId = 20138, count = {1, 1},  chance = 500}, 
         {itemId = 21445, count = {1, 1},    chance = 500},
         {itemId = 3043, count = {100, 100},    chance = 500}, 
         {itemId = 37536, count = {1, 1},    chance = 500},
