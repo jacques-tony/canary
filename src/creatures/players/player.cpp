@@ -339,6 +339,11 @@ int32_t Player::getWeaponSkill(std::shared_ptr<Item> item) const {
 			attackSkill = getSkillLevel(SKILL_DISTANCE);
 			break;
 		}
+		
+		case WEAPON_WAND: {
+            attackSkill = getMagicLevel();
+            break;
+        }
 
 		default: {
 			attackSkill = 0;
