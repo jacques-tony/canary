@@ -1,13 +1,18 @@
 local talkactions = TalkAction("!reset")
 function talkactions.onSay(player, words, param) 
-    if player:getStorageValue(67606) == -1 then
-        player:sendCancelMessage("You need to do a mission first to be able to reset.")
+    if player:getStorageValue(resetConfig.storage_mission_first) == -1 then
+        player:sendCancelMessage("Now you need to do a mission first to be able to reset.")
+        return false
+    end
+
+    if player:getStorageValue(resetConfig.storage_acess_to_reset) == -1 then
+        player:sendCancelMessage("Now you need access that you only have in the store.")
         return false
     end
 
     if player:getResets() >= resetConfig.limitResets then
-    player:sendCancelMessage("You have reached the maximum reset limit.")
-    return false
+        player:sendCancelMessage("You have reached the maximum reset limit.")
+        return false
     end
 
     if player:getStorageValue(resetConfig.storage_time) >= os.time() then
@@ -32,32 +37,51 @@ function talkactions.onSay(player, words, param)
 		player:sendCancelMessage("You do not have enough money.")
 		return false
 	end
-   
-    local oldCap = player:getCapacity()
-    player:addReset(1)
-    player:removeExperience(getExperienceForLevel(player:getLevel()) - getExperienceForLevel(resetConfig.backToLevel))
-    player:setMaxHealth(185)
-    player:setMaxMana(90) 
-    player:addHealth(185) 
-    player:addMana(90)
-	player:setCapacity(oldCap)
 
-    player:setAttackSpeed(player:getAttackSpeedResets())
-    player:setStorageValue(resetConfig.storage_time, os.time() + resetConfig.time_to_reset)
-	
-	local conditionsToRemove = {CONDITION_CURSED, CONDITION_DAZZLED, CONDITION_FREEZING, CONDITION_DRUNK, CONDITION_BLEEDING, CONDITION_ENERGY, CONDITION_DROWN, CONDITION_PARALYZE, CONDITION_POISON, CONDITION_SLEEP}
-    for _, condition in ipairs(conditionsToRemove) do
-        if player:getCondition(condition) then
-            player:removeCondition(condition) 
-        end
-    end
-
-    player:getPosition():sendMagicEffect(CONST_ME_FIREWORK_RED)
-    player:sendTextMessage(MESSAGE_INFO_DESCR, "Now you have " .. player:getResets() .. " " .. (player:getResets() == 1 and "reset" or "resets") .. ".")
+    player:restarting()
     return false
 end
 talkactions:groupType("normal")
-talkactions:register() 
+talkactions:register()
+
+local talkactions = TalkAction("!limit")
+function talkactions.onSay(player, words, param) 
+    if (param == "off") then
+        if player:getStorageValue(resetConfig.storage_state_message) == -1 then
+            player:setStorageValue(resetConfig.storage_state_message, 1)
+            player:sendTextMessage(MESSAGE_INFO_DESCR, "Message blocked.")
+        else
+            player:sendCancelMessage("You already been deactivated.")
+        end
+    elseif (param == "on") then
+        if player:getStorageValue(resetConfig.storage_state_message) == 1 then
+            player:setStorageValue(resetConfig.storage_state_message, -1)
+            player:sendTextMessage(MESSAGE_INFO_DESCR, "Message unlocked.")
+        else
+            player:sendCancelMessage("You already been activated.")
+        end
+    else
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "Use: !limit on / off")
+    end
+    return false
+end
+talkactions:groupType("normal")
+talkactions:separator(" ")
+talkactions:register()
+
+local action = Action()
+function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
+    if player:getStorageValue(resetConfig.storage_acess_to_reset) == -1 then
+        player:setStorageValue(resetConfig.storage_acess_to_reset, 1)
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been granted access to the !reset command.")
+        item:remove()
+    else
+        player:sendCancelMessage("You already have access!")
+    end
+	return true
+end
+action:id(resetConfig.item_acess_to_reset)
+action:register()
 
 local login = CreatureEvent('__setAttackSpeed')
 function login.onLogin(player)

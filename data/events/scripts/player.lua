@@ -589,7 +589,9 @@ function Player:onGainExperience(target, exp, rawExp)
 
 	if self:getLevel() >= self:getResetLevel() then
 		exp = 0
-		self:sendTextMessage(MESSAGE_STATUS_WARNING, "Voce nao ganhara mais experiencia a partir de agora, voce atingiu o level maximo, por favor reset seu personagem.")
+		if self:getStorageValue(resetConfig.storage_state_message) == -1 then
+			self:sendTextMessage(MESSAGE_STATUS_WARNING, "Voce nao ganhara mais experiencia a partir de agora, voce atingiu o level maximo, por favor reset seu personagem.")
+		end
 	end
 
 	-- Sistema topRank

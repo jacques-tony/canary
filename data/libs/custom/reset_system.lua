@@ -81,42 +81,46 @@ resetConfig = {
     time_to_reset = 24 * 60 * 60, -- 24 horas.
 	storage = 500,
 	limitResets = 30,
+    storage_mission_first = 67606,
+    item_acess_to_reset = 43853, -- Item that gives access to the storage 152233.
+    storage_acess_to_reset = 152233, -- Storage that gives access to the command !reset.
+    storage_state_message = 456688,
     backToLevel = 8, 
     redskull = true, -- need to be without redskull to reset?
     battle = true, -- need to be without battle to reset?
     pz = true, -- need to be in protect zone to reset?
     stages = {
-            {resets = 0, level = 1850, premium = 1800, price_free = 1500000, price_premium = 1000000},
-            {resets = 1, level = 2000, premium = 1900, price_free = 3000000, price_premium = 2000000},
-            {resets = 2, level = 2150, premium = 2000, price_free = 4500000, price_premium = 3000000},
-            {resets = 3, level = 2300, premium = 2100, price_free = 6000000, price_premium = 4000000},
-            {resets = 4, level = 2450, premium = 2200, price_free = 7500000, price_premium = 5000000},
-            {resets = 5, level = 2650, premium = 2350, price_free = 9500000, price_premium = 6500000},
-            {resets = 6, level = 2850, premium = 2500, price_free = 11500000, price_premium = 8000000},
-            {resets = 7, level = 3050, premium = 2650, price_free = 13500000, price_premium = 9500000},
-            {resets = 8, level = 3250, premium = 2800, price_free = 15500000, price_premium = 11000000},
-            {resets = 9, level = 3450, premium = 2950, price_free = 17500000, price_premium = 12500000},
-            {resets = 10, level = 3700, premium = 3150, price_free = 20000000, price_premium = 14500000},
-            {resets = 11, level = 3950, premium = 3350, price_free = 22500000, price_premium = 16500000},
-            {resets = 12, level = 4200, premium = 3550, price_free = 25000000, price_premium = 18500000},
-            {resets = 13, level = 4450, premium = 3750, price_free = 27500000, price_premium = 20500000},
-            {resets = 14, level = 4700, premium = 3950, price_free = 30000000, price_premium = 22500000},
-            {resets = 15, level = 5000, premium = 4200, price_free = 33000000, price_premium = 25000000},
-            {resets = 16, level = 5300, premium = 4450, price_free = 36000000, price_premium = 27500000},
-            {resets = 17, level = 5600, premium = 4700, price_free = 39000000, price_premium = 30000000},
-            {resets = 18, level = 5900, premium = 4950, price_free = 42000000, price_premium = 32500000},
-            {resets = 19, level = 6200, premium = 5200, price_free = 45000000, price_premium = 35000000},
-            {resets = 20, level = 6550, premium = 5500, price_free = 48500000, price_premium = 38000000},
-            {resets = 21, level = 6900, premium = 5800, price_free = 52000000, price_premium = 41000000},
-            {resets = 22, level = 7250, premium = 6100, price_free = 55500000, price_premium = 44000000},
-            {resets = 23, level = 7600, premium = 6400, price_free = 59000000, price_premium = 47000000},
-            {resets = 24, level = 7950, premium = 6700, price_free = 62500000, price_premium = 50000000},
-            {resets = 25, level = 8350, premium = 7050, price_free = 66500000, price_premium = 53500000},
-            {resets = 26, level = 8750, premium = 7400, price_free = 70500000, price_premium = 57000000},
-            {resets = 27, level = 9150, premium = 7750, price_free = 74500000, price_premium = 60500000},
-            {resets = 28, level = 9550, premium = 8100, price_free = 78500000, price_premium = 64000000},
-            {resets = 29, level = 9950, premium = 8450, price_free = 82500000, price_premium = 67500000},
-            {resets = 30, level = 10350, premium = 8800, price_free = 86500000, price_premium = 71000000},
+            {resets = 0, level = 1850, premium = 1850, price_free = 1500000, price_premium = 1500000},
+            {resets = 1, level = 2000, premium = 2000, price_free = 3000000, price_premium = 3000000},
+            {resets = 2, level = 2150, premium = 2150, price_free = 4500000, price_premium = 4500000},
+            {resets = 3, level = 2300, premium = 2300, price_free = 6000000, price_premium = 6000000},
+            {resets = 4, level = 2450, premium = 2450, price_free = 7500000, price_premium = 7500000},
+            {resets = 5, level = 2650, premium = 2650, price_free = 9500000, price_premium = 9500000},
+            {resets = 6, level = 2850, premium = 2850, price_free = 11500000, price_premium = 11500000},
+            {resets = 7, level = 3050, premium = 3050, price_free = 13500000, price_premium = 13500000},
+            {resets = 8, level = 3250, premium = 3250, price_free = 15500000, price_premium = 15500000},
+            {resets = 9, level = 3450, premium = 3450, price_free = 17500000, price_premium = 17500000},
+            {resets = 10, level = 3700, premium = 3700, price_free = 20000000, price_premium = 20000000},
+            {resets = 11, level = 3950, premium = 3950, price_free = 22500000, price_premium = 22500000},
+            {resets = 12, level = 4200, premium = 4200, price_free = 25000000, price_premium = 25000000},
+            {resets = 13, level = 4450, premium = 4450, price_free = 27500000, price_premium = 27500000},
+            {resets = 14, level = 4700, premium = 4700, price_free = 30000000, price_premium = 30000000},
+            {resets = 15, level = 5000, premium = 5000, price_free = 33000000, price_premium = 33000000},
+            {resets = 16, level = 5300, premium = 5300, price_free = 36000000, price_premium = 36000000},
+            {resets = 17, level = 5600, premium = 5600, price_free = 39000000, price_premium = 39000000},
+            {resets = 18, level = 5900, premium = 5900, price_free = 42000000, price_premium = 42000000},
+            {resets = 19, level = 6200, premium = 6200, price_free = 45000000, price_premium = 45000000},
+            {resets = 20, level = 6550, premium = 6550, price_free = 48500000, price_premium = 48500000},
+            {resets = 21, level = 6900, premium = 6900, price_free = 52000000, price_premium = 52000000},
+            {resets = 22, level = 7250, premium = 7250, price_free = 55500000, price_premium = 55500000},
+            {resets = 23, level = 7600, premium = 7600, price_free = 59000000, price_premium = 59000000},
+            {resets = 24, level = 7950, premium = 7950, price_free = 62500000, price_premium = 62500000},
+            {resets = 25, level = 8350, premium = 8350, price_free = 66500000, price_premium = 66500000},
+            {resets = 26, level = 8750, premium = 8750, price_free = 70500000, price_premium = 70500000},
+            {resets = 27, level = 9150, premium = 9150, price_free = 74500000, price_premium = 74500000},
+            {resets = 28, level = 9550, premium = 9550, price_free = 78500000, price_premium = 78500000},
+            {resets = 29, level = 9950, premium = 9950, price_free = 82500000, price_premium = 82500000},
+            {resets = 30, level = 10350, premium = 10350, price_free = 86500000, price_premium = 86500000},
 
     } 
 }
@@ -139,7 +143,7 @@ function Player.getResetLevel(self)
 	local level = 0
 	for _, info in ipairs(resetConfig.stages) do
 		if self:getResets() <= info.resets then
-			level = self:isPremium() and info.premium or info.level
+			level = self:getPremiumDays() > 0 and info.premium or info.level
 			break
 		end
 	end
@@ -150,9 +154,34 @@ function Player.getResetsPrice(self)
 	local price = 0
 	for _, info in ipairs(resetConfig.stages) do
 		if self:getResets() <= info.resets then
-			price = self:isPremium() and info.price_premium or info.price_free
+			price = self:getPremiumDays() > 0 and info.price_premium or info.price_free
 			break
 		end
 	end
 	return price
 end
+
+function Player.restarting(self)
+    local oldCap = self:getCapacity()
+    self:addReset(1)
+    self:removeExperience(self:getExperience() - getExperienceForLevel(resetConfig.backToLevel))
+    self:setMaxHealth(185)
+    self:setMaxMana(90) 
+    self:addHealth(185) 
+    self:addMana(90)
+    self:setCapacity(oldCap)
+
+    self:setAttackSpeed(self:getAttackSpeedResets())
+    self:setStorageValue(resetConfig.storage_time, os.time() + resetConfig.time_to_reset)
+    
+    local conditionsToRemove = {CONDITION_CURSED, CONDITION_DAZZLED, CONDITION_FREEZING, CONDITION_DRUNK, CONDITION_BLEEDING, CONDITION_ENERGY, CONDITION_DROWN, CONDITION_PARALYZE, CONDITION_POISON, CONDITION_SLEEP}
+    for _, condition in ipairs(conditionsToRemove) do
+        if self:getCondition(condition) then
+            self:removeCondition(condition) 
+        end
+    end
+
+    self:getPosition():sendMagicEffect(CONST_ME_FIREWORK_RED)
+    self:sendTextMessage(MESSAGE_INFO_DESCR, "Now you have " .. self:getResets() .. " " .. (self:getResets() == 1 and "reset" or "resets") .. ".")
+end
+                
