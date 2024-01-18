@@ -68,11 +68,20 @@ CombatDamage Combat::getCombatDamage(std::shared_ptr<Creature> creature, std::sh
 			if (params.valueCallback) {
 				params.valueCallback->getMinMaxValues(player, damage, params.useCharges);
 			} else if (formulaType == COMBAT_FORMULA_LEVELMAGIC) {
-				int32_t levelFormula = getLevelFormula(player, wheelSpell, damage);
-				damage.primary.value = normal_random(
-					static_cast<int32_t>(levelFormula * mina + minb),
-					static_cast<int32_t>(levelFormula * maxa + maxb)
-				);
+				std::shared_ptr<Item> tool = player->getWeapon();
+				const WeaponShared_ptr weapon = g_weapons().getWeapon(tool);
+				if (weapon) {
+					damage.primary.value = normal_random(
+						static_cast<int32_t>(minb),
+						static_cast<int32_t>(weapon->getWeaponDamage(player, target, tool, false) * maxa + maxb)
+					);
+				}else{
+					int32_t levelFormula = player->getLevel() * 2 + player->getMagicLevel() * 3;
+					damage.primary.value = normal_random(
+						static_cast<int32_t>(levelFormula * mina + minb),
+						static_cast<int32_t>(levelFormula * maxa + maxb)
+					);
+				}
 			} else if (formulaType == COMBAT_FORMULA_SKILL) {
 				std::shared_ptr<Item> tool = player->getWeapon();
 				const WeaponShared_ptr weapon = g_weapons().getWeapon(tool);
