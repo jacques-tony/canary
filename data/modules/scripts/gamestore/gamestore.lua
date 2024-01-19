@@ -254,9 +254,9 @@ GameStore.Categories = {
 		},
 		{			
 			icons = { "Falcon_Circlet.png" },
-			name = "Cassino Token",
+			name = "Phoenix Roulet Token",
 			price = 75,
-			itemtype = 22724, 
+			itemtype = 55073, 
 			count = 1,
 			description = "You can use in Cassino Lounge good luck.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
@@ -264,9 +264,9 @@ GameStore.Categories = {
 		},
 		{
 			icons = { "Falcon_Circlet.png" },
-			name = "Cassino Token",
+			name = "Phoenix Roulet Token",
 			price = 375,
-			itemtype = 22724, 
+			itemtype = 55073, 
 			count = 5,
 			description = "You can use in Cassino Lounge good luck.",
 			type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE,
