@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Cunning Werepanther")
 local monster = {}
 
 monster.description = "a cunning werepanther"
-monster.experience = 3620
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1648,
 	lookHead = 18,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns, Oskayaat",
 }
 
-monster.health = 4300
-monster.maxHealth = 4300
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "blood"
 monster.corpse = 43959
 monster.speed = 125
@@ -94,17 +94,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -540 },
-	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -175, maxDamage = -350, radius = 2, effect = CONST_ME_ENERGYAREA, shootEffect = CONST_ANI_ENERGY, range = 4, target = true },
-	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -250, maxDamage = -425, radius = 3, effect = CONST_ME_ENERGYAREA, target = false },
-	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -225, maxDamage = -350, radius = 2, effect = CONST_ME_YELLOWSMOKE, shootEffect = CONST_ANI_LARGEROCK, range = 4, target = true },
-	{ name = "combat", interval = 3700, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -375, radius = 3, effect = CONST_ME_STONE_STORM, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -1340  },
+	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -871, maxDamage = -1421, radius = 2, effect = CONST_ME_ENERGYAREA, shootEffect = CONST_ANI_ENERGY, range = 4, target = true },
+	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_ENERGYDAMAGE, minDamage = -804, maxDamage = -1474, radius = 3, effect = CONST_ME_ENERGYAREA, target = false },
+	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -938, maxDamage = -1555, radius = 2, effect = CONST_ME_YELLOWSMOKE, shootEffect = CONST_ANI_LARGEROCK, range = 4, target = true },
+	{ name = "combat", interval = 3700, chance = 35, type = COMBAT_PHYSICALDAMAGE, minDamage = -737, maxDamage = -1273, radius = 3, effect = CONST_ME_STONE_STORM, target = false },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 72,
-	mitigation = 2.05,
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

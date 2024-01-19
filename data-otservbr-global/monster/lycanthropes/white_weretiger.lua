@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("White Weretiger")
 local monster = {}
 
 monster.description = "a white weretiger"
-monster.experience = 5200
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1646,
 	lookHead = 19,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns",
 }
 
-monster.health = 6100
-monster.maxHealth = 6100
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "blood"
 monster.corpse = 43762
 monster.speed = 120
@@ -88,16 +88,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -585 },
-	{ name = "white weretiger ice ring", interval = 3700, chance = 20, minDamage = -300, maxDamage = -425 },
-	{ name = "energy ring", interval = 4300, chance = 40, minDamage = -300, maxDamage = -425 },
-	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -200, maxDamage = -375, radius = 2, effect = CONST_ME_ICEAREA, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -1407 },
+	{ name = "white weretiger ice ring", interval = 3700, chance = 20, minDamage = -915, maxDamage = -1492 },
+	{ name = "energy ring", interval = 4300, chance = 40, minDamage = -844, maxDamage = -1548 },
+	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_ICEDAMAGE, minDamage = -985, maxDamage = -1632, radius = 2, effect = CONST_ME_ICEAREA, target = false },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 83,
-	mitigation = 2.25,
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
