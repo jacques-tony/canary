@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mirror Image")
 local monster = {}
 
 monster.description = "a mirror image"
-monster.experience = 67559
+monster.experience = 19538
 monster.outfit = {
 	lookType = 136,
 	lookHead = 76,

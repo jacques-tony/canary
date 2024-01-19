@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Wandering Pillar")
 local monster = {}
 
 monster.description = "a Wandering Pillar"
-monster.experience = 1154310
+monster.experience = 38075
 monster.outfit = {
 	lookType = 1657,
 	lookHead = 0,

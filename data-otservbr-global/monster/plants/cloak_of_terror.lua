@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Cloak of Terror")
 local monster = {}
 
 monster.description = "a cloak of terror"
-monster.experience = 101339
+monster.experience = 21492
 monster.outfit = {
 	lookType = 1295,
 	lookHead = 0,
