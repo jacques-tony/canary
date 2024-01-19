@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Weretiger")
 local monster = {}
 
 monster.description = "a weretiger"
-monster.experience = 3920
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1646,
 	lookHead = 97,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns",
 }
 
-monster.health = 5000
-monster.maxHealth = 5000
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "blood"
 monster.corpse = 43669
 monster.speed = 125
@@ -90,16 +90,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -50, maxDamage = -625 },
-	{ name = "energy chain", interval = 3300, chance = 20, minDamage = -175, maxDamage = -375, range = 3, target = true },
-	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -200, maxDamage = -375, length = 5, spread = 2, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
-	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -175, maxDamage = -325, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -1340 },
+	{ name = "energy chain", interval = 3300, chance = 20, minDamage = -175, maxDamage = -1421, range = 3, target = true },
+	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_ENERGYDAMAGE, minDamage = -804, maxDamage = -1474, length = 5, spread = 2, effect = CONST_ME_BLUE_ENERGY_SPARK, target = false },
+	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -938, maxDamage = -1555, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 76,
-	mitigation = 2.16,
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

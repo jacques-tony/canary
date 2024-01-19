@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Werepanther")
 local monster = {}
 
 monster.description = "a werepanther"
-monster.experience = 3550
+monster.experience = 152008
 monster.outfit = {
 	lookType = 1648,
 	lookHead = 114,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns, Oskayaat",
 }
 
-monster.health = 4200
-monster.maxHealth = 4200
+monster.health = 26802
+monster.maxHealth = 26802
 monster.race = "blood"
 monster.corpse = 43758
 monster.speed = 125
@@ -94,17 +94,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -75, maxDamage = -525 },
-	{ name = "combat", interval = 3700, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -265, maxDamage = -400, radius = 3, effect = CONST_ME_FIREATTACK, target = false },
-	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -275, maxDamage = -375, radius = 3, effect = CONST_ME_GROUNDSHAKER, range = 4, target = true },
-	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -200, maxDamage = -375, radius = 2, effect = CONST_ME_YELLOWSMOKE, target = false },
-	{ name = "combat", interval = 3300, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -175, maxDamage = -300, radius = 2, effect = CONST_ME_MORTAREA, range = 4, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = 0, maxDamage = -1340 },
+	{ name = "combat", interval = 3700, chance = 40, type = COMBAT_FIREDAMAGE, minDamage = -871, maxDamage = -1421, radius = 3, effect = CONST_ME_FIREATTACK, target = false },
+	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_PHYSICALDAMAGE, minDamage = -804, maxDamage = -1474, radius = 3, effect = CONST_ME_GROUNDSHAKER, range = 4, target = true },
+	{ name = "combat", interval = 2300, chance = 15, type = COMBAT_PHYSICALDAMAGE, minDamage = -938, maxDamage = -1555, radius = 2, effect = CONST_ME_YELLOWSMOKE, target = false },
+	{ name = "combat", interval = 3300, chance = 15, type = COMBAT_DEATHDAMAGE, minDamage = -737, maxDamage = -1273, radius = 2, effect = CONST_ME_MORTAREA, range = 4, target = true },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 72,
-	mitigation = 2.05,
+	defense = 54,
+	armor = 110,
+	mitigation = 2.89,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

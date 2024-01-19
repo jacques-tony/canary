@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Werecrocodile")
 local monster = {}
 
 monster.description = "a werecrocodile"
-monster.experience = 4140
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1647,
 	lookHead = 95,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns",
 }
 
-monster.health = 5280
-monster.maxHealth = 5280
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "blood"
 monster.corpse = 43754
 monster.speed = 115
@@ -90,16 +90,16 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -100, maxDamage = -575 },
-	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -175, maxDamage = -325, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
-	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -200, maxDamage = -375, length = 6, spread = 3, effect = CONST_ME_BLACKSMOKE, target = false },
-	{ name = "combat", interval = 3700, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -250, maxDamage = -400, radius = 2, range = 4, effect = CONST_ME_MORTAREA, target = true },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -1407 },
+	{ name = "combat", interval = 2700, chance = 37, type = COMBAT_PHYSICALDAMAGE, minDamage = -915, maxDamage = -1492, radius = 1, effect = CONST_ME_BIG_SCRATCH, range = 1, target = true },
+	{ name = "combat", interval = 3300, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -844, maxDamage = -1548, length = 6, spread = 3, effect = CONST_ME_BLACKSMOKE, target = false },
+	{ name = "combat", interval = 3700, chance = 25, type = COMBAT_DEATHDAMAGE, minDamage = -985, maxDamage = -1632, radius = 2, range = 4, effect = CONST_ME_MORTAREA, target = true },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 82,
-	mitigation = 2.28,
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 

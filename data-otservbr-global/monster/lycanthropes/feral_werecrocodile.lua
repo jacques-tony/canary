@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Feral Werecrocodile")
 local monster = {}
 
 monster.description = "a feral werecrocodile"
-monster.experience = 5430
+monster.experience = 228012
 monster.outfit = {
 	lookType = 1647,
 	lookHead = 116,
@@ -26,8 +26,8 @@ monster.Bestiary = {
 	Locations = "Murky Caverns",
 }
 
-monster.health = 6400
-monster.maxHealth = 6400
+monster.health = 28142
+monster.maxHealth = 28142
 monster.race = "blood"
 monster.corpse = 43767
 monster.speed = 110
@@ -90,17 +90,17 @@ monster.loot = {
 }
 
 monster.attacks = {
-	{ name = "melee", interval = 2000, chance = 100, minDamage = -50, maxDamage = -485 },
-	{ name = "combat", interval = 3400, chance = 33, type = COMBAT_DEATHDAMAGE, minDamage = -300, maxDamage = -450, length = 7, spread = 3, effect = CONST_ME_MORTAREA, target = false },
-	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -300, maxDamage = -450, radius = 3, effect = CONST_ME_MORTAREA, shootEffect = CONST_ANI_DEATH, range = 4, target = true },
-	{ name = "combat", interval = 3300, chance = 30, type = COMBAT_LIFEDRAIN, minDamage = -175, maxDamage = -350, radius = 1, effect = CONST_ME_MAGIC_RED, range = 1, target = true },
-	{ name = "werecrocodile fire ring", interval = 4100, chance = 25, minDamage = -275, maxDamage = -350, target = false },
+	{ name = "melee", interval = 2000, chance = 100, minDamage = -0, maxDamage = -1407 },
+	{ name = "combat", interval = 3400, chance = 33, type = COMBAT_DEATHDAMAGE, minDamage = -915, maxDamage = -1492, length = 7, spread = 3, effect = CONST_ME_MORTAREA, target = false },
+	{ name = "combat", interval = 2700, chance = 20, type = COMBAT_DEATHDAMAGE, minDamage = -844, maxDamage = -1548, radius = 3, effect = CONST_ME_MORTAREA, shootEffect = CONST_ANI_DEATH, range = 4, target = true },
+	{ name = "combat", interval = 3300, chance = 30, type = COMBAT_LIFEDRAIN, minDamage = -915, maxDamage = -1618, radius = 1, effect = CONST_ME_MAGIC_RED, range = 1, target = true },
+	{ name = "werecrocodile fire ring", interval = 4100, chance = 25, minDamage = -985, maxDamage = -1632, target = false },
 }
 
 monster.defenses = {
-	defense = 30,
-	armor = 82,
-	mitigation = 2.28,
+	defense = 56,
+	armor = 115,
+	mitigation = 3.04,
 	{ name = "combat", interval = 2000, chance = 25, type = COMBAT_HEALING, minDamage = 50, maxDamage = 100, effect = CONST_ME_MAGIC_BLUE, target = false },
 }
 
