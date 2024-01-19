@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Branchy Crawler")
 local monster = {}
 
 monster.description = "a branchy crawler"
-monster.experience = 30026
+monster.experience = 16147
 monster.outfit = {
 	lookType = 1297,
 	lookHead = 0,

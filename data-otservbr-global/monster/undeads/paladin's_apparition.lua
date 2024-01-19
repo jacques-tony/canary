@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Paladin's Apparition")
 local monster = {}
 
 monster.description = "a paladin's apparition"
-monster.experience = 67559
+monster.experience = 19538
 monster.outfit = {
 	lookType = 129,
 	lookHead = 57,

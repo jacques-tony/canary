@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Converter")
 local monster = {}
 
 monster.description = "a Converter"
-monster.experience = 513027
+monster.experience = 31467
 monster.outfit = {
 	lookType = 1623,
 	lookHead = 0,

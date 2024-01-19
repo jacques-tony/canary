@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mould Phantom")
 local monster = {}
 
 monster.description = "a mould phantom"
-monster.experience = 30026
+monster.experience = 16147
 monster.outfit = {
 	lookType = 1298,
 	lookHead = 106,

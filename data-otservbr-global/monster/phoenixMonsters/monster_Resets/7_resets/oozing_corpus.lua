@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Oozing Corpus")
 local monster = {}
 
 monster.description = "a Oozing Corpus"
-monster.experience = 342018
+monster.experience = 28606
 monster.outfit = {
 	lookType = 1625,
 	lookHead = 0,
