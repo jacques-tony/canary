@@ -67,7 +67,7 @@ end
 
 function Party:onShareExperience(exp)
     -- Configuração do multiplicador de experiência compartilhada
-    local sharedExperienceMultiplier = 2.0 -- 100%
+    local sharedExperienceMultiplier = 1.0 -- 100%
 
     -- Lista de vocações dos membros para evitar contar membros com a mesma vocação
     local vocationsIds = {}
@@ -87,11 +87,11 @@ function Party:onShareExperience(exp)
     end
 
     -- Calcula o número total de membros na party (limitado a 4 membros, incluindo o líder)
-    local size = math.min(#self:getMembers() + 1, 5) -- Limita a contagem a 5 membros, incluindo o líder
+    local size = math.min(#self:getMembers() + 1, 4) -- Limita a contagem a 5 membros, incluindo o líder
 
     -- Calcula o bônus de experiência para membros adicionais (limitado a 15% para 4 membros)
     local bonusMultiplier = (size > 1) and (size - 1) * 0.05 or 0
-    local limitedBonusMultiplier = math.min(bonusMultiplier, 0.15) -- Limita o bônus a 15%
+    local limitedBonusMultiplier = math.min(bonusMultiplier, 0.20) -- Limita o bônus a 15%
 
     -- Calcula o multiplicador total
     local multiplier = 1.0 + limitedBonusMultiplier
