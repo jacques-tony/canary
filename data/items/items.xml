@@ -7014,6 +7014,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallearth"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="17"/>			
 		<attribute key="weight" value="2500"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="26"/>
@@ -7032,6 +7033,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallearth"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="10"/>			
 		<attribute key="weight" value="1900"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="6"/>
@@ -7050,6 +7052,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="19"/>			
 		<attribute key="weight" value="2700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="33"/>
@@ -7072,6 +7075,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="death"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="15"/>			
 		<attribute key="weight" value="2300"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="19"/>
@@ -7090,6 +7094,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="13"/>			
 		<attribute key="weight" value="2100"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="13"/>
@@ -7107,6 +7112,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="19"/>			
 		<attribute key="weight" value="2700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="33"/>
@@ -7124,6 +7130,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="death"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="15"/>			
 		<attribute key="weight" value="2300"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="19"/>
@@ -7141,6 +7148,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="17"/>			
 		<attribute key="weight" value="2500"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="26"/>
@@ -7157,7 +7165,8 @@
 		<attribute key="description" value="Surges of energy rush through the tip of this wand"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
-		<attribute key="range" value="3"/>
+		<attribute key="range" value="3"/> 
+		<attribute key="attack" value="10"/>			
 		<attribute key="weight" value="1900"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="6"/>
@@ -7175,6 +7184,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="13"/>			
 		<attribute key="weight" value="2300"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -22076,6 +22086,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="death"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="22"/>			
 		<attribute key="weight" value="2900"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -22099,6 +22110,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="16"/>			
 		<attribute key="weight" value="2900"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -22122,6 +22134,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallearth"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="20"/>			
 		<attribute key="weight" value="2700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="37"/>
@@ -22156,6 +22169,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="20"/>			
 		<attribute key="weight" value="2550"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -22178,6 +22192,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="16"/>			
 		<attribute key="weight" value="2700"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -22200,6 +22215,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="death"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="22"/>			
 		<attribute key="weight" value="2850"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -30446,6 +30462,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="20"/>			
 		<attribute key="weight" value="2800"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="37"/>
@@ -33962,6 +33979,7 @@
 		<attribute key="shootType" value="energy"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="24"/>			
 		<attribute key="weight" value="3700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="65"/>
@@ -34179,6 +34197,7 @@
 		<attribute key="shootType" value="fire"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="24"/>			
 		<attribute key="weight" value="3700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="65"/>
@@ -34212,6 +34231,7 @@
 		<attribute key="shootType" value="smallearth"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="30"/>			
 		<attribute key="weight" value="3700"/>
 		<attribute key="script" value="moveevent;weapon">
 			<attribute key="level" value="65"/>
@@ -34230,6 +34250,7 @@
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="magiclevelpoints" value="1"/>
+		<attribute key="attack" value="30"/>			
 		<attribute key="range" value="4"/>
 		<attribute key="weight" value="3700"/>
 		<attribute key="script" value="moveevent;weapon">
@@ -44259,6 +44280,7 @@ Awarded by TibiaMisterios.com.br"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallearth"/>
 		<attribute key="range" value="3"/>
+		<attribute key="attack" value="20"/>			
 		<attribute key="weight" value="2900"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -48700,6 +48722,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="description" value="It's a gnarly branch with a gleaming blue blossom"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
+		<attribute key="attack" value="29"/>		
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="5"/>
 		<attribute key="weight" value="3200"/>
@@ -52154,6 +52177,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="shootType" value="energy"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="35"/>			
 		<attribute key="weight" value="3500"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -52177,6 +52201,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="35"/>			
 		<attribute key="weight" value="3500"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -54434,11 +54459,13 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		</attribute>
 	</item>
 	<item id="28716" article="a" name="falcon rod">
+		<attribute key="attack" value="100"/>
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="earth"/>
 		<attribute key="absorbpercentenergy" value="8"/>
 		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="attack" value="45"/>			
 		<attribute key="range" value="5"/>
 		<attribute key="weight" value="3700"/>
 		<attribute key="imbuementslot" value="2">
@@ -54464,6 +54491,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="shootType" value="energy"/>
 		<attribute key="absorbpercentfire" value="8"/>
 		<attribute key="magiclevelpoints" value="3"/>
+		<attribute key="attack" value="45"/>			
 		<attribute key="range" value="5"/>
 		<attribute key="weight" value="3300"/>
 		<attribute key="imbuementslot" value="2">
@@ -55041,6 +55069,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="shootType" value="smallice"/>
 		<attribute key="absorbpercentpoison" value="5"/>
 		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="attack" value="33"/>		
 		<attribute key="range" value="6"/>
 		<attribute key="weight" value="3200"/>
 		<attribute key="imbuementslot" value="2">
@@ -55064,6 +55093,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallice"/>
+		<attribute key="attack" value="35"/>		
 		<attribute key="absorbpercentholy" value="8"/>
 		<attribute key="magiclevelpoints" value="2"/>
 		<attribute key="criticalhitdamage" value="2500"/>
@@ -55921,6 +55951,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="shootType" value="fire"/>
 		<attribute key="absorbpercentenergy" value="10"/>
 		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="attack" value="34"/>				
 		<attribute key="range" value="5"/>
 		<attribute key="weight" value="2700"/>
 		<attribute key="imbuementslot" value="2">
@@ -57742,7 +57773,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		</attribute>
 	</item>
 	<item id="30399" name="cobra wand">
-        <attribute key="attack" value="70"/>	 
+        <attribute key="attack" value="42"/>	 
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
@@ -57768,6 +57799,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		</attribute>
 	</item>
 	<item id="30400" name="cobra rod">
+		<attribute key="attack" value="42"/>
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="smallearth"/>
@@ -64519,6 +64551,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="criticalhitdamage" value="1000"/>
 		<attribute key="range" value="6"/>
+		<attribute key="attack" value="55"/>			
 		<attribute key="weight" value="1900"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -64547,6 +64580,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="lifeleechamount" value="500"/>
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="range" value="6"/>
+		<attribute key="attack" value="55"/>			
 		<attribute key="weight" value="2500"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -65057,6 +65091,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="criticalhitdamage" value="3500"/>
 		<attribute key="criticalhitchance" value="1000"/>
 		<attribute key="range" value="5"/>
+		<attribute key="attack" value="40"/>				
 		<attribute key="weight" value="2600"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -65082,6 +65117,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="lifeleechamount" value="1800"/>
 		<attribute key="lifeleechchance" value="100"/>
 		<attribute key="range" value="5"/>
+		<attribute key="attack" value="40"/>			
 		<attribute key="weight" value="2100"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -66499,6 +66535,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="absorbpercentpoison" value="3"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="33"/>			
 		<attribute key="weight" value="3700"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -66523,6 +66560,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="absorbpercentice" value="3"/>
 		<attribute key="magiclevelpoints" value="1"/>
 		<attribute key="range" value="4"/>
+		<attribute key="attack" value="33"/>			
 		<attribute key="weight" value="3200"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68082,6 +68120,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="shootType" value="fire"/>
 		<attribute key="absorbpercentenergy" value="4"/>
 		<attribute key="magiclevelpoints" value="2"/>
+		<attribute key="attack" value="38"/>				
 		<attribute key="range" value="5"/>		
 		<attribute key="firemagiclevelpoints" value="1"/>
 		<attribute key="perfectShotDamage" value="65"/>
@@ -68115,6 +68154,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="perfectshotdamage" value="65"/>
 		<attribute key="perfectshotrange" value="4"/>
 		<attribute key="weight" value="3700"/>
+		<attribute key="attack" value="38"/>			
 		<attribute key="range" value="5"/>		
 		<attribute key="imbuementslot" value="2">
 			<attribute key="mana leech" value="3"/>
@@ -68228,6 +68268,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="absorbpercentpoison" value="4"/>
 		<attribute key="magiclevelpoints" value="2"/>
 		<attribute key="healingmagiclevelpoints" value="2"/>
+		<attribute key="attack" value="38"/>				
 		<attribute key="range" value="4"/>
 		<attribute key="weight" value="3500"/>
 		<attribute key="imbuementslot" value="2">
@@ -68258,6 +68299,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="absorbpercentpoison" value="4"/>
 		<attribute key="magiclevelpoints" value="2"/>
 		<attribute key="healingmagiclevelpoints" value="2"/>
+		<attribute key="attack" value="38"/>			
 		<attribute key="range" value="4"/>
 		<attribute key="weight" value="3600"/>
 		<attribute key="imbuementslot" value="2">
@@ -72160,6 +72202,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="magiclevelpoints" value="2"/>
 		<attribute key="energymagiclevelpoints" value="2"/>
 		<attribute key="range" value="6"/>
+		<attribute key="attack" value="38"/>			
 		<attribute key="weight" value="2800"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -72187,6 +72230,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="magiclevelpoints" value="2"/>
 		<attribute key="icemagiclevelpoints" value="2"/>
 		<attribute key="range" value="5"/>
+		<attribute key="attack" value="38"/>			
 		<attribute key="weight" value="2900"/>
 		<attribute key="imbuementslot" value="2">
 			<attribute key="life leech" value="3"/>
@@ -76080,7 +76124,9 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/> 
+		<attribute key="attack" value="30"/>			
 		<attribute key="range" value="5"/>		
+		<attribute key="attack" value="90"/>			
 		<attribute key="absorbpercentfire" value="7"/>
 		<attribute key="magiclevelpoints" value="5"/>
 		<attribute key="firemagiclevelpoints" value="1"/>
@@ -76109,6 +76155,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="wands"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="energy"/>
+		<attribute key="attack" value="70"/>			
+		<attribute key="range" value="5"/>				
 		<attribute key="absorbpercentearth" value="7"/>
 		<attribute key="magiclevelpoints" value="5"/>
 		<attribute key="firemagiclevelpoints" value="1"/>
@@ -76155,6 +76203,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="fire"/>
+		<attribute key="attack" value="15"/>			
 		<attribute key="range" value="5"/>		
 		<attribute key="absorbpercentfire" value="7"/>
 		<attribute key="magiclevelpoints" value="5"/>
@@ -76184,6 +76233,8 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="rods"/>
 		<attribute key="weaponType" value="wand"/>
 		<attribute key="shootType" value="earth"/>
+		<attribute key="attack" value="70"/>			
+		<attribute key="range" value="5"/>				
 		<attribute key="absorbpercentdeath" value="7"/>
 		<attribute key="magiclevelpoints" value="5"/>
 		<attribute key="earthmagiclevelpoints" value="1"/>
