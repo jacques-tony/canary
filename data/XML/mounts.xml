@@ -221,5 +221,5 @@
 	<mount id="219" clientid="1685" name="Doom Skull" speed="10" premium="no" type="store" />
 	<mount id="220" clientid="1686" name="Magma Skull" speed="10" premium="no" type="store" />
 	<mount id="221" clientid="1687" name="Corpsefire Skull" speed="10" premium="no" type="store" />
-	<mount id="222" clientid="1725" name="Golden Wardragon" speed="20" premium="no" type="store" />	
+	<mount id="222" clientid="5000" name="Golden Wardragon" speed="20" premium="no" type="store" />	
 </mounts>
