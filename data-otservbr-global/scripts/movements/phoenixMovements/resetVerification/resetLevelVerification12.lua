@@ -16,7 +16,7 @@ function resetLevelVerification12.onStepIn(creature, item, position, fromPositio
 
     -- Verifica se o jogador completou a quest necessária
     if player:getStorageValue(Storage) < 9 then
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "You need 6 resets to access this area..")
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You need 9 resets to access this area..")
         player:teleportTo({x = 17509, y = 17611, z = 5}) 
         return true
     end
