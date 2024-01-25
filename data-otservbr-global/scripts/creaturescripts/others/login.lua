@@ -77,9 +77,6 @@ function playerLogin.onLogin(player)
 		if player:getGuild() then
 			player:openChannel(0x00) -- guild
 		end
-	--- Começou aqui
-	elseif player:isPromoted() then
-		player:setVocation(vocation:getDemotion())
 	end
 
     -- Mining 
