@@ -94,8 +94,6 @@ function playerLogin.onLogin(player)
 		if not player:isPromoted() and hasPromotion then
 			player:setVocation(promotion)
 		end
-	elseif player:isPromoted() then
-		player:setVocation(vocation:getDemotion())
 	end
 
     -- Mining 
