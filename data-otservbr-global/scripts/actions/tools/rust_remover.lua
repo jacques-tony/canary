@@ -22,7 +22,24 @@ local config = {
 		{ { 94001, 98500 }, CRUSADER_HELMET },
 		{ { 98501, 100000 }, ROYAL_HELMET },
 	},
-
+	[8908] = { -- slightly rusted helmet
+		{ { 1, 35165 } },
+		{ { 35166, 57500 }, BRASS_HELMET },
+		{ { 57501, 70000 }, IRON_HELMET },
+		{ { 70001, 81000 }, STEEL_HELMET },
+		{ { 81001, 94000 }, CROWN_HELMET },
+		{ { 94001, 98500 }, CRUSADER_HELMET },
+		{ { 98501, 100000 }, ROYAL_HELMET },
+	},
+	[8907] = { --  rare rusted helmet
+		{ { 1, 35165 } },
+		{ { 35166, 57500 }, BRASS_HELMET },
+		{ { 57501, 70000 }, IRON_HELMET },
+		{ { 70001, 81000 }, STEEL_HELMET },
+		{ { 81001, 94000 }, CROWN_HELMET },
+		{ { 94001, 98500 }, CRUSADER_HELMET },
+		{ { 98501, 100000 }, ROYAL_HELMET },
+	},
 	[8895] = { -- semi-rare rusty armor
 		{ { 1, 35165 } },
 		{ { 35166, 57500 }, CHAIN_ARMOR },
@@ -30,7 +47,7 @@ local config = {
 		{ { 70001, 81000 }, BRASS_ARMOR },
 		{ { 81001, 90000 }, PLATE_ARMOR },
 		{ { 90001, 96500 }, KNIGHT_ARMOR },
-		{ { 96501, 99500 }, PALADIN_ARMOR },
+		{ { 96501, 99500 }, PALADIN_ARMOR }, 
 		{ { 99501, 100000 }, CROWN_ARMOR },
 	},
 	[8896] = { -- rare rusty armor
@@ -79,6 +96,22 @@ local config = {
 		{ { 88311, 97601 }, NORSE_SHIELD },
 		{ { 97602, 99901 }, CROWN_SHIELD },
 		{ { 99902, 100000 }, VAMPIRE_SHIELD },
+	},
+	[8901] = { -- rusted shield
+		{ { 1, 28070 } },
+		{ { 28071, 59440 }, PLATE_SHIELD },
+		{ { 59441, 88310 }, ANCIENT_SHIELD },
+		{ { 88311, 97601 }, NORSE_SHIELD },
+		{ { 97602, 99901 }, CROWN_SHIELD },
+		{ { 99902, 100000 }, VAMPIRE_SHIELD },
+	},
+	[8900] = { -- rare rusted shield
+		{ { 1, 28070 } },
+		{ { 28071, 59440 }, PLATE_SHIELD },
+		{ { 59441, 88310 }, ANCIENT_SHIELD },
+		{ { 88311, 97601 }, NORSE_SHIELD },
+		{ { 97602, 99901 }, CROWN_SHIELD },
+		{ { 99902, 100000 }, VAMPIRE_SHIELD },				
 	},
 }
 
