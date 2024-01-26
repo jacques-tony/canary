@@ -130,7 +130,7 @@ forgeTierLossReduction = 50
 forgeAmountMultiplier = 30 
 forgeMinSlivers = 3
 forgeMaxSlivers = 7 
-forgeInfluencedLimit = 50000
+forgeInfluencedLimit = 5000
 forgeFiendishLimit = 500
 forgeFiendishIntervalType = "minute"
 forgeFiendishIntervalTime = "1"
@@ -197,7 +197,7 @@ pvpMaxLevelDifference = 0
 -- NOTE: set wheelSystemEnabled = false to disable the wheel of destiny
 -- NOTE: only the wheel points are modified, all other data is on the client executable and cannot be modified
 wheelSystemEnabled = true
-wheelPointsPerResets = 42
+wheelPointsPerResets = 67
 
 -- Gem Atelier
 wheelAtelierRotateLesserCost = 125000
@@ -468,14 +468,14 @@ rateMagic = 1
 rateSpawn = 1
 
 -- Killing in the name of Quest
-rateKillingInTheNameOfPoints = 1
+rateKillingInTheNameOfPoints = 1 
 
 -- Today regeneration condition over an loop every 1 second,
 -- So values which should regenerated less then 1 second or won't will work
-rateHealthRegen = 10.0
-rateHealthRegenSpeed = 1.0
-rateManaRegen = 10.0
-rateManaRegenSpeed = 1.0
+rateHealthRegen = 100.0
+rateHealthRegenSpeed = 5.0
+rateManaRegen = 50.0
+rateManaRegenSpeed = 5.0
 rateSoulRegen = 1.0
 rateSoulRegenSpeed = 1.0
 
@@ -486,7 +486,7 @@ rateExerciseTrainingSpeed = 3.0
 
 -- Monster rates
 rateMonsterHealth = 1.0
-rateMonsterAttack = 1.0
+rateMonsterAttack = 1.0 
 rateMonsterDefense = 1.0
 
 -- Boss rates
