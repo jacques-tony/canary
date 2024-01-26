@@ -28,7 +28,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell 
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell				
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI							
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI							
 				},
 			},
 			
@@ -45,7 +45,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 
@@ -62,7 +62,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 
@@ -79,7 +79,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 
@@ -96,7 +96,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 
@@ -113,7 +113,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell	
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 			 
@@ -130,7 +130,7 @@ local config = {
 					[8] = {item = 27621, count = 10}, -- Huge Shell
 					[9] = {item = 27627, count = 10}, -- Huge Spiky Snail Shell		
 					[10] = {item = 9058, count = 100}, -- Gold Ingot		
-					[11] = {item = 24959, count = 100}, -- Part of a Rune VI						
+					[11] = {item = 24959, count = 1}, -- Part of a Rune VI						
 				},
 			},
 		}, 

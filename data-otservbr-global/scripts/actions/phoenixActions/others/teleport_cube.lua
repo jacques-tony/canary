@@ -7,7 +7,7 @@ local config = {
     { name = "Monster Room", position = Position(17501, 17620, 7) },
 
     redskull = true, -- Defina como 'true' se o jogador precisar estar sem red skull
-    pz = true, -- Defina como 'true' se o jogador precisar estar em uma protection zone
+    pz = false, -- Defina como 'true' se o jogador precisar estar em uma protection zone
     battle = true, -- Defina como 'true' se o jogador precisar estar fora de batalha 
     town = true, townid = 1 -- Defina como 'true' se o jogador precisar estar na townid 1.
 }
