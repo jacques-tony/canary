@@ -3,7 +3,7 @@ local craftQuest3 = CreatureEvent("craftQuest3")
 function craftQuest3.onDeath(cid, corpse, killer) 
 
 local M ={
- ["World Devourer"] = {Pos = {x=18461, y=18276, z=14},id= 6406 ,time = 20},
+ ["World Devourer"] = {Pos = {x=18461, y=18276, z=14},id= 6406 ,time = 60},
 }
 
 local x = M[getCreatureName(cid)]
