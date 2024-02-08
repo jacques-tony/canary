@@ -16,7 +16,7 @@ end
 
 local action = Action()
 function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-    local sold = false
+    local sold, notSold = false, false
     local profited = 0
 
     if amz_time >= os.time() then
@@ -29,28 +29,76 @@ function action.onUse(player, item, fromPosition, target, toPosition, isHotkey)
         return true
     end
 
-    for category, items in pairs(LootShopConfigTable) do -- LootShopConfigTable LIB!
-        for _, item in ipairs(items) do
+    local menu = ModalWindow({
+		title = "Seller Portatil",
+		message = "Location",
+	})
+
+    menu:addChoice(target:getName(), function(player, button, choice)
+        if button.name == "Exit" then
+            return true
+        end
+
+        if button.name == "Clean" then
             for _, loot in pairs(target:getLootBackpack(target:getId())) do
-                if loot:getId() == item.clientId then
+                local notInConfigTable = false
+                for _, category in pairs(LootShopConfigTable) do -- LootShopConfigTable LIB!
+                    for _, item in pairs(category) do
+                        if loot:getId() == item.clientId then
+                            notInConfigTable = true
+                            break
+                        end
+                    end
+                end
+
+                if not notInConfigTable then
                     local itemCount = loot:getCount()
                     if itemCount > 0 then
-                        local money = itemCount * item.sell
-                        sold, profited = true, profited + money
                         loot:remove(itemCount)
+                        notSold = true
                     end
                 end
             end
+
+            if notSold then
+                player:sendTextMessage(MESSAGE_INFO_DESCR, "[Portable]:\nItems that don't sell have been cleaned.")
+            else
+                player:sendCancelMessage("[Portable]:\nYour backpack is clean or empty!")
+            end
+            return true
         end
-    end
 
-    if sold then
+        if button.name == "Sell" then
+            for _, loot in pairs(target:getLootBackpack(target:getId())) do
+                for _, category in pairs(LootShopConfigTable) do -- LootShopConfigTable LIB!
+                    for _, item in pairs(category) do
+                        if loot:getId() == item.clientId then
+                            local itemCount = loot:getCount()
+                            if itemCount > 0 then
+                                local money = itemCount * item.sell
+                                sold, profited = true, profited + money
+                                loot:remove(itemCount)
+                            end
+                        end
+                    end
+                end
+            end
 
-        player:setBankBalance(player:getBankBalance() + profited)
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "[Portable]:\nYou sold all items and profited " .. profited .. " golds.")
-    else
-        player:sendCancelMessage("[Portable]:\nYou have no items to sell.")
-    end
+            if sold then
+                -- amz_time = os.time() + cooldown
+                player:setBankBalance(player:getBankBalance() + profited)
+                player:sendTextMessage(MESSAGE_INFO_DESCR, "[Portable]:\nYou sold all items and profited " .. profited .. " golds.")
+            else
+                player:sendCancelMessage("[Portable]:\nYou have no items to sell.")
+            end
+            return true
+        end
+    end)
+
+    menu:addButton("Sell")
+	menu:addButton("Clean")
+    menu:addButton("Exit")
+	menu:sendToPlayer(player)
     return true
 end
 action:id(item_portable)
