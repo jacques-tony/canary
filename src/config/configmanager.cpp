@@ -10,6 +10,7 @@
 #include "pch.hpp"
 
 #include "config/configmanager.hpp"
+#include "lib/di/container.hpp"
 #include "declarations.hpp"
 #include "game/game.hpp"
 #include "server/network/webhook/webhook.hpp"
@@ -18,6 +19,10 @@
 	#undef lua_strlen
 	#define lua_strlen lua_rawlen
 #endif
+
+ConfigManager &ConfigManager::getInstance() {
+	return inject<ConfigManager>();
+}
 
 bool ConfigManager::load() {
 	lua_State* L = luaL_newstate();
@@ -117,6 +122,7 @@ bool ConfigManager::load() {
 	loadBoolConfig(L, CLEAN_PROTECTION_ZONES, "cleanProtectionZones", false);
 	loadBoolConfig(L, GLOBAL_SERVER_SAVE_SHUTDOWN, "globalServerSaveShutdown", true);
 	loadBoolConfig(L, PUSH_WHEN_ATTACKING, "pushWhenAttacking", false);
+	loadIntConfig(L, MIN_DELAY_BETWEEN_CONDITIONS, "minDelayBetweenConditions", 0);
 
 	loadBoolConfig(L, WEATHER_RAIN, "weatherRain", false);
 	loadBoolConfig(L, WEATHER_THUNDER, "thunderEffect", false);
@@ -395,6 +401,9 @@ bool ConfigManager::load() {
 
 	loadBoolConfig(L, METRICS_ENABLE_OSTREAM, "metricsEnableOstream", false);
 	loadIntConfig(L, METRICS_OSTREAM_INTERVAL, "metricsOstreamInterval", 1000);
+
+	loadIntConfig(L, STOREINBOX_MAXLIMIT, "storeInboxMaxLimit", 2000);
+	loadIntConfig(L, LOOTPOUCH_MAXLIMIT, "lootPouchMaxLimit", 2000);
 
 	loaded = true;
 	lua_close(L);

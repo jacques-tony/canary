@@ -4,17 +4,14 @@ dofile(CORE_DIRECTORY .. "/libs/functions/load.lua")
 -- Core/data Global Storage System
 dofile(CORE_DIRECTORY .. "/libs/core/global_storage.lua")
 
--- Daily reward library
-dofile(CORE_DIRECTORY .. "/libs/daily_reward/daily_reward.lua")
-dofile(CORE_DIRECTORY .. "/libs/daily_reward/player.lua")
+-- Compatibility library for our old Lua API
+dofile(CORE_DIRECTORY .. "/libs/compat/compat.lua")
 
 -- Debugging helper function for Lua developers
 dofile(CORE_DIRECTORY .. "/libs/debugging/dump.lua")
 
--- Reward boss library
-dofile(CORE_DIRECTORY .. "/libs/reward_boss/reward_boss.lua")
-dofile(CORE_DIRECTORY .. "/libs/reward_boss/player.lua")
-dofile(CORE_DIRECTORY .. "/libs/reward_boss/monster.lua")
+-- Systems
+dofile(CORE_DIRECTORY .. "/libs/systems/load.lua")
 
 dofile(CORE_DIRECTORY .. "/libs/achievements_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/bitwise_flags.lua")
@@ -33,6 +30,7 @@ dofile(CORE_DIRECTORY .. "/libs/encounters_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/raids_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/concoctions_lib.lua")
 dofile(CORE_DIRECTORY .. "/libs/kill_lib.lua")
+dofile(CORE_DIRECTORY .. "/libs/features_lib.lua")
 
 -- Custom 
 dofile(CORE_DIRECTORY .. "/libs/custom/items_with_resets.lua") 
@@ -45,4 +43,6 @@ dofile(CORE_DIRECTORY .. "/libs/custom/lib_reflect_system.lua")
 dofile(CORE_DIRECTORY .. "/libs/custom/bounty_system.lua")     
 dofile(CORE_DIRECTORY .. "/libs/custom/dwbm_experience_lib.lua")     
 dofile(CORE_DIRECTORY .. "/libs/custom/castle_system_exp.lua")     
-dofile(CORE_DIRECTORY .. "/libs/features_lib.lua")
+
+-- Tables
+dofile(CORE_DIRECTORY .. "/libs/tables/load.lua")
