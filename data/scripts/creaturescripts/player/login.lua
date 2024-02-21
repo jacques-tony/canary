@@ -40,9 +40,13 @@ function playerLoginGlobal.onLogin(player)
 		if not player:isPromoted() and hasPromotion then
 			player:setVocation(promotion)
 		end
-	elseif player:isPromoted() then
-		player:setVocation(vocation:getDemotion())
 	end
+
+    -- Mining 
+    if player:getStorageValue(configMining.level.storageTentativas) == -1 or player:getStorageValue(configMining.level.storageNivel) == -1 then
+        player:setStorageValue(configMining.level.storageTentativas, 0) -- Tentativas
+        player:setStorageValue(configMining.level.storageNivel, 1) -- Level
+    end
 
 	-- Boosted
 	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, "Today's boosted creature: " .. Game.getBoostedCreature() .. " \
