@@ -4826,14 +4826,14 @@ local weapons = {
 		itemId = 3348,
 		type = WEAPON_CLUB,
 	},
-	-- {
-	-- 	-- hunting spear
-	-- 	itemId = 3347,
-	-- 	type = WEAPON_MISSILE,
-	-- 	level = 20,
-	-- 	unproperly = true,
-	-- 	breakchance = 6
-	-- },
+	{
+		-- hunting spear
+		itemId = 3347,
+		type = WEAPON_MISSILE,
+		level = 20,
+		unproperly = true,
+		breakchance = 6,
+	},
 	{
 		-- ripper lance
 		itemId = 3346,
@@ -4871,17 +4871,17 @@ local weapons = {
 		unproperly = true,
 		action = "removecount",
 	},
-	-- {
-	-- 	-- -- arrow
-	-- 	-- itemId = 3447,
-	-- 	-- type = WEAPON_AMMO,
-	-- 	-- -- action = "removecount"
-	-- },
+	{
+		-- arrow
+		itemId = 3447,
+		type = WEAPON_AMMO,
+		action = "removecount",
+	},
 	{
 		-- bolt
 		itemId = 3446,
 		type = WEAPON_AMMO,
-		-- action = "removecount"
+		action = "removecount",
 	},
 	{
 		-- bow
@@ -5253,12 +5253,12 @@ local weapons = {
 --		level = 80,
 		unproperly = true,
 	},
-	-- {
-	-- 	-- throwing star
-	-- 	itemId = 3287,
-	-- 	type = WEAPON_MISSILE,
-	-- 	breakchance = 10
-	-- },
+	{
+		-- throwing star
+		itemId = 3287,
+		type = WEAPON_MISSILE,
+		breakchance = 10,
+	},
 	{
 		-- mace
 		itemId = 3286,
@@ -5325,12 +5325,12 @@ local weapons = {
 			{ "Elite Knight" },
 		},
 	},
-	-- {
-	-- 	-- spear
-	-- 	itemId = 3277,
-	-- 	type = WEAPON_MISSILE,
-	-- 	-- breakchance = 3
-	-- },
+	{
+		-- spear
+		itemId = 3277,
+		type = WEAPON_MISSILE,
+		breakchance = 3,
+	},
 	{
 		-- hatchet
 		itemId = 3276,

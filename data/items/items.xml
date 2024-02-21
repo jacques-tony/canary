@@ -7370,8 +7370,6 @@
 		<attribute key="range" value="3"/>
 		<attribute key="attack" value="25"/>
 		<attribute key="weight" value="2000"/>
-		<attribute key="lifeleechamount" value="600"/>
-		<attribute key="lifeleechchance" value="100"/>
 	</item>
 	<item id="3278" article="a" name="magic longsword">
 		<attribute key="primarytype" value="sword weapons"/>
@@ -12144,6 +12142,7 @@
 	<item fromid="4597" toid="4602" name="shallow water">
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="fluidsource" value="water"/>
+		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
 	</item>
 	<item fromid="4603" toid="4608" name="grass"/>
@@ -12151,11 +12150,13 @@
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="description" value="You see the silvery movement of fish."/>
 		<attribute key="fluidsource" value="water"/>
+		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
 	</item>
 	<item id="4612" name="shallow water">
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="fluidsource" value="water"/>
+		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
 		<attribute key="duration" value="1200"/>
 		<attribute key="decayTo" value="4597"/>
@@ -12163,6 +12164,7 @@
 	<item id="4613" name="shallow water">
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="fluidsource" value="water"/>
+		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
 		<attribute key="duration" value="1200"/>
 		<attribute key="decayTo" value="4598"/>
@@ -12170,6 +12172,7 @@
 	<item id="4614" name="shallow water">
 		<attribute key="primarytype" value="natural tiles"/>
 		<attribute key="fluidsource" value="water"/>
+		<attribute key="type" value="trashholder"/>
 		<attribute key="effect" value="bluebubble"/>
 		<attribute key="duration" value="1200"/>
 		<attribute key="decayTo" value="4599"/>

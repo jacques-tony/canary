@@ -15,8 +15,10 @@
 #include "creatures/monsters/monsters.hpp"
 #include "creatures/players/player.hpp"
 #include "creatures/players/wheel/player_wheel.hpp"
+#include "creatures/players/achievement/player_achievement.hpp"
 #include "creatures/players/storages/storages.hpp"
 #include "game/game.hpp"
+#include "game/modal_window/modal_window.hpp"
 #include "game/scheduling/dispatcher.hpp"
 #include "game/scheduling/task.hpp"
 #include "game/scheduling/save_manager.hpp"
@@ -32,6 +34,10 @@
 #include "core.hpp"
 #include "map/spectators.hpp"
 #include "lib/metrics/metrics.hpp"
+#include "enums/object_category.hpp"
+#include "enums/account_errors.hpp"
+#include "enums/account_type.hpp"
+#include "enums/account_group_type.hpp"
 
 MuteCountMap Player::muteCountMap;
 
@@ -42,6 +48,7 @@ Player::Player(ProtocolGame_ptr p) :
 	inbox(std::make_shared<Inbox>(ITEM_INBOX)),
 	client(std::move(p)) {
 	m_wheelPlayer = std::make_unique<PlayerWheel>(*this);
+	m_playerAchievement = std::make_unique<PlayerAchievement>(*this);
 }
 
 Player::~Player() {
@@ -215,7 +222,12 @@ std::shared_ptr<Item> Player::getInventoryItem(Slots_t slot) const {
 	return inventory[slot];
 }
 
-bool Player::isSuppress(ConditionType_t conditionType) const {
+bool Player::isSuppress(ConditionType_t conditionType, bool attackerPlayer) const {
+	auto minDelay = g_configManager().getNumber(MIN_DELAY_BETWEEN_CONDITIONS, __FUNCTION__);
+	if (IsConditionSuppressible(conditionType) && checkLastConditionTimeWithin(conditionType, minDelay)) {
+		return true;
+	}
+
 	return m_conditionSuppressions[static_cast<size_t>(conditionType)];
 }
 
@@ -455,7 +467,7 @@ float Player::getDefenseFactor() const {
 uint32_t Player::getClientIcons() {
 	uint32_t icons = 0;
 	for (const auto &condition : conditions) {
-		if (!isSuppress(condition->getType())) {
+		if (!isSuppress(condition->getType(), false)) {
 			icons |= condition->getIcons();
 		}
 	}
@@ -3170,12 +3182,18 @@ ReturnValue Player::queryAdd(int32_t index, const std::shared_ptr<Thing> &thing,
 	ReturnValue ret = RETURNVALUE_NOERROR;
 
 	const int32_t &slotPosition = item->getSlotPosition();
-	if ((slotPosition & SLOTP_HEAD) || (slotPosition & SLOTP_NECKLACE) || (slotPosition & SLOTP_BACKPACK) || (slotPosition & SLOTP_ARMOR) || (slotPosition & SLOTP_LEGS) || (slotPosition & SLOTP_FEET) || (slotPosition & SLOTP_RING)) {
-		ret = RETURNVALUE_CANNOTBEDRESSED;
-	} else if (slotPosition & SLOTP_TWO_HAND) {
-		ret = RETURNVALUE_PUTTHISOBJECTINBOTHHANDS;
-	} else if ((slotPosition & SLOTP_RIGHT) || (slotPosition & SLOTP_LEFT)) {
-		ret = RETURNVALUE_CANNOTBEDRESSED;
+
+	bool allowPutItemsOnAmmoSlot = g_configManager().getBoolean(ENABLE_PLAYER_PUT_ITEM_IN_AMMO_SLOT, __FUNCTION__);
+	if (allowPutItemsOnAmmoSlot && index == CONST_SLOT_AMMO) {
+		ret = RETURNVALUE_NOERROR;
+	} else {
+		if ((slotPosition & SLOTP_HEAD) || (slotPosition & SLOTP_NECKLACE) || (slotPosition & SLOTP_BACKPACK) || (slotPosition & SLOTP_ARMOR) || (slotPosition & SLOTP_LEGS) || (slotPosition & SLOTP_FEET) || (slotPosition & SLOTP_RING)) {
+			ret = RETURNVALUE_CANNOTBEDRESSED;
+		} else if (slotPosition & SLOTP_TWO_HAND) {
+			ret = RETURNVALUE_PUTTHISOBJECTINBOTHHANDS;
+		} else if ((slotPosition & SLOTP_RIGHT) || (slotPosition & SLOTP_LEFT)) {
+			ret = RETURNVALUE_CANNOTBEDRESSED;
+		}
 	}
 
 	switch (index) {
@@ -3317,8 +3335,12 @@ ReturnValue Player::queryAdd(int32_t index, const std::shared_ptr<Thing> &thing,
 		}
 
 		case CONST_SLOT_AMMO: {
-			if ((slotPosition & SLOTP_AMMO)) {
+			if (allowPutItemsOnAmmoSlot) {
 				ret = RETURNVALUE_NOERROR;
+			} else {
+				if ((slotPosition & SLOTP_AMMO)) {
+					ret = RETURNVALUE_NOERROR;
+				}
 			}
 			break;
 		}
@@ -4107,16 +4129,11 @@ void Player::postAddNotification(std::shared_ptr<Thing> thing, std::shared_ptr<C
 	}
 
 	bool requireListUpdate = true;
-
 	if (link == LINK_OWNER || link == LINK_TOPPARENT) {
 		std::shared_ptr<Item> i = (oldParent ? oldParent->getItem() : nullptr);
-
-		// Check if we owned the old container too, so we don't need to do anything,
-		// as the list was updated in postRemoveNotification
-		assert(i ? i->getContainer() != nullptr : true);
-
-		if (i) {
-			requireListUpdate = i->getContainer()->getHoldingPlayer() != getPlayer();
+		const auto &container = i ? i->getContainer() : nullptr;
+		if (container) {
+			requireListUpdate = container->getHoldingPlayer() != getPlayer();
 		} else {
 			requireListUpdate = oldParent != getPlayer();
 		}
@@ -4168,15 +4185,9 @@ void Player::postRemoveNotification(std::shared_ptr<Thing> thing, std::shared_pt
 
 	if (link == LINK_OWNER || link == LINK_TOPPARENT) {
 		std::shared_ptr<Item> i = (newParent ? newParent->getItem() : nullptr);
-
-		// Check if we owned the old container too, so we don't need to do anything,
-		// as the list was updated in postRemoveNotification
-		assert(i ? i->getContainer() != nullptr : true);
-
-		if (i) {
-			if (auto container = i->getContainer()) {
-				requireListUpdate = container->getHoldingPlayer() != getPlayer();
-			}
+		const auto &container = i ? i->getContainer() : nullptr;
+		if (container) {
+			requireListUpdate = container->getHoldingPlayer() != getPlayer();
 		} else {
 			requireListUpdate = newParent != getPlayer();
 		}
@@ -4486,6 +4497,9 @@ void Player::onAddCondition(ConditionType_t type) {
 }
 
 void Player::onAddCombatCondition(ConditionType_t type) {
+	if (IsConditionSuppressible(type)) {
+		updateLastConditionTime(type);
+	}
 	switch (type) {
 		case CONDITION_POISON:
 			sendTextMessage(MESSAGE_FAILURE, "You are poisoned.");
@@ -5364,6 +5378,14 @@ uint16_t Player::getSkillLevel(skills_t skill) const {
 	return std::min<uint16_t>(std::numeric_limits<uint16_t>::max(), std::max<uint16_t>(0, static_cast<uint16_t>(skillLevel)));
 }
 
+bool Player::isAccessPlayer() const {
+	return group->access;
+}
+
+bool Player::isPlayerGroup() const {
+	return group->id <= GROUP_TYPE_SENIORTUTOR;
+}
+
 bool Player::isPremium() const {
 	if (g_configManager().getBoolean(FREE_PREMIUM, __FUNCTION__) || hasFlag(PlayerFlags_t::IsAlwaysPremium)) {
 		return true;
@@ -5374,6 +5396,14 @@ bool Player::isPremium() const {
 	}
 
 	return account->getPremiumRemainingDays() > 0 || account->getPremiumLastDay() > getTimeNow();
+}
+
+uint32_t Player::getPremiumDays() const {
+	return account->getPremiumRemainingDays();
+}
+
+time_t Player::getPremiumLastDay() const {
+	return account->getPremiumLastDay();
 }
 
 void Player::setTibiaCoins(int32_t v) {
@@ -5893,7 +5923,6 @@ void Player::dismount() {
 	}
 
 	defaultOutfit.lookMount = 0;
-	setCurrentMount(0);
 }
 
 bool Player::addOfflineTrainingTries(skills_t skill, uint64_t tries) {
@@ -6092,6 +6121,12 @@ void Player::sendClosePrivate(uint16_t channelId) {
 
 	if (client) {
 		client->sendClosePrivate(channelId);
+	}
+}
+
+void Player::sendCyclopediaCharacterAchievements(uint16_t secretsUnlocked, std::vector<std::pair<Achievement, uint32_t>> achievementsUnlocked) {
+	if (client) {
+		client->sendCyclopediaCharacterAchievements(secretsUnlocked, achievementsUnlocked);
 	}
 }
 
@@ -6537,6 +6572,17 @@ void Player::initializeTaskHunting() {
 }
 
 std::string Player::getBlessingsName() const {
+	static const phmap::flat_hash_map<Blessings_t, std::string> BlessingNames = {
+		{ TWIST_OF_FATE, "Twist of Fate" },
+		{ WISDOM_OF_SOLITUDE, "The Wisdom of Solitude" },
+		{ SPARK_OF_THE_PHOENIX, "The Spark of the Phoenix" },
+		{ FIRE_OF_THE_SUNS, "The Fire of the Suns" },
+		{ SPIRITUAL_SHIELDING, "The Spiritual Shielding" },
+		{ EMBRACE_OF_TIBIA, "The Embrace of Tibia" },
+		{ BLOOD_OF_THE_MOUNTAIN, "Blood of the Mountain" },
+		{ HEARTH_OF_THE_MOUNTAIN, "Heart of the Mountain" },
+	};
+
 	uint8_t count = 0;
 	std::for_each(blessings.begin(), blessings.end(), [&count](uint8_t amount) {
 		if (amount != 0) {
@@ -7008,6 +7054,11 @@ bool Player::saySpell(
 
 // Forge system
 void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint8_t tier, uint16_t secondItemId, bool success, bool reduceTierLoss, bool convergence, uint8_t bonus, uint8_t coreCount) {
+	if (getFreeBackpackSlots() == 0) {
+		sendCancelMessage(RETURNVALUE_NOTENOUGHROOM);
+		return;
+	}
+
 	ForgeHistory history;
 	history.actionType = actionType;
 	history.tier = tier;
@@ -7246,6 +7297,11 @@ void Player::forgeFuseItems(ForgeAction_t actionType, uint16_t firstItemId, uint
 }
 
 void Player::forgeTransferItemTier(ForgeAction_t actionType, uint16_t donorItemId, uint8_t tier, uint16_t receiveItemId, bool convergence) {
+	if (getFreeBackpackSlots() == 0) {
+		sendCancelMessage(RETURNVALUE_NOTENOUGHROOM);
+		return;
+	}
+
 	ForgeHistory history;
 	history.actionType = actionType;
 	history.tier = tier;
@@ -7734,6 +7790,29 @@ bool Player::canAutoWalk(const Position &toPosition, const std::function<void()>
 	return false;
 }
 
+// Account
+bool Player::setAccount(uint32_t accountId) {
+	if (account) {
+		g_logger().warn("Account was already set!");
+		return true;
+	}
+
+	account = std::make_shared<Account>(accountId);
+	return AccountErrors_t::Ok == enumFromValue<AccountErrors_t>(account->load());
+}
+
+uint8_t Player::getAccountType() const {
+	return account ? account->getAccountType() : AccountType::ACCOUNT_TYPE_NORMAL;
+}
+
+uint32_t Player::getAccountId() const {
+	return account ? account->getID() : 0;
+}
+
+std::shared_ptr<Account> Player::getAccount() const {
+	return account;
+}
+
 /*******************************************************************************
  * Hazard system
  ******************************************************************************/
@@ -7875,6 +7954,15 @@ std::unique_ptr<PlayerWheel> &Player::wheel() {
 
 const std::unique_ptr<PlayerWheel> &Player::wheel() const {
 	return m_wheelPlayer;
+}
+
+// Achievement interface
+std::unique_ptr<PlayerAchievement> &Player::achiev() {
+	return m_playerAchievement;
+}
+
+const std::unique_ptr<PlayerAchievement> &Player::achiev() const {
+	return m_playerAchievement;
 }
 
 void Player::sendLootMessage(const std::string &message) const {

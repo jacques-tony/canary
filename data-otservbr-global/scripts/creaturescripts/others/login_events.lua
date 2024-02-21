@@ -7,9 +7,6 @@ function loginEvents.onLogin(player)
 		"LowerRoshamuul",
 		--Others  
 		"AdvanceSave",
-		"BossParticipation",
-		"DropLoot",
-		"PlayerDeath",
 		"RookgaardAdvance",
 		"FamiliarLogin",
 		"FamiliarAdvance",

@@ -26,6 +26,10 @@ class ProtocolGame;
 class PreySlot;
 class TaskHuntingSlot;
 class TaskHuntingOption;
+
+struct ModalWindow;
+struct Achievement;
+
 using ProtocolGame_ptr = std::shared_ptr<ProtocolGame>;
 
 struct TextMessage {
@@ -314,7 +318,7 @@ private:
 	void sendCyclopediaCharacterCombatStats();
 	void sendCyclopediaCharacterRecentDeaths(uint16_t page, uint16_t pages, const std::vector<RecentDeathEntry> &entries);
 	void sendCyclopediaCharacterRecentPvPKills(uint16_t page, uint16_t pages, const std::vector<RecentPvPKillEntry> &entries);
-	void sendCyclopediaCharacterAchievements();
+	void sendCyclopediaCharacterAchievements(uint16_t secretsUnlocked, std::vector<std::pair<Achievement, uint32_t>> achievementsUnlocked);
 	void sendCyclopediaCharacterItemSummary();
 	void sendCyclopediaCharacterOutfitsMounts();
 	void sendCyclopediaCharacterStoreSummary();
@@ -504,6 +508,8 @@ private:
 
 	void sendSingleSoundEffect(const Position &pos, SoundEffect_t id, SourceEffect_t source);
 	void sendDoubleSoundEffect(const Position &pos, SoundEffect_t mainSoundId, SourceEffect_t mainSource, SoundEffect_t secondarySoundId, SourceEffect_t secondarySource);
+
+	void sendDisableLoginMusic();
 
 	uint8_t m_playerDeathTime = 0;
 
